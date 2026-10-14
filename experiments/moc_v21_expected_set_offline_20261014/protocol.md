@@ -31,3 +31,10 @@
 
 ## 可重现与成本
 记录输入两个 questions.jsonl 的 SHA256、固定折、源码哈希、原 train/cal 边界、模型配置。仅 CPU 数值拟合，不调用主 LLM；新增模型 token=0。冻结 v1/v2 原数据/源码/报告保持不变。
+
+## 运行后的数据 schema 更正（第二次评价之前提交）
+独立源码审查发现 frozen collect_v2 对 empty→a/b 使用完整 episode 的 pair.path，导致这些 singleton 的 group_is_connected_path=True；production evidence_groups 的 singleton.path 只有本来源，flag=False。这是训练/生产特征不一致，首次35题OOF归档为 attempt00_stored_features，不作为修复后方法效果。
+
+修订仅生成派生 initial-state 行：singleton 的 path改成自身，info.is_connected_path与唯一对应77维特征改false/0；pairs、奖励、语义特征、题界、费用与所有原件不变。记录逐字段差异和派生 hash，增加不可变性/费用标签不变检查。三项候选使用同一修正，不重新搜索特征/参数/折；同一固定方案只复核一次。该更正不需要重新生成标签、读取val或启GPU。
+
+frozen_v2_mean 始终仅为旧公式参照，不属于可部署晋级候选；只有 centered_full/centered_compact 可以通过训练内门槛。动作平局统一为net高、cost低、size小、来源字符串顺序小；这只是确定性规则，不参与超参搜索。
