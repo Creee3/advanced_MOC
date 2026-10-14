@@ -1,0 +1,12 @@
+version: 1
+phase: offline_protocol
+goal: expected_net_group_utility_without_v2_forced_exploration
+fit_questions: 35
+calibration_questions: 12
+calibration_role: already_exposed_final_diagnostic_only_if_train_gate_passes
+val_used: false
+test: false
+gpu_launch: false
+new_llm_tokens: 0
+baseline_reuse: true
+reflection: after_one_locked_offline_comparison
