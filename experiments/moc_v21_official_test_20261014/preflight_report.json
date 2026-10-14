@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "test_questions": 254,
+  "test_conditions": 1016,
+  "graphs": [
+    {
+      "density": 0.3,
+      "nodes": 7,
+      "edges": 7
+    },
+    {
+      "density": 0.7,
+      "nodes": 7,
+      "edges": 15
+    }
+  ],
+  "fake_native_graph_checks": [
+    {
+      "density": 0.3,
+      "arm": "moc",
+      "ordinary_and_final_calls": 8,
+      "merger_calls": 0
+    },
+    {
+      "density": 0.3,
+      "arm": "adaptive_sampling",
+      "ordinary_and_final_calls": 8,
+      "merger_calls": 0
+    },
+    {
+      "density": 0.7,
+      "arm": "moc",
+      "ordinary_and_final_calls": 8,
+      "merger_calls": 25
+    },
+    {
+      "density": 0.7,
+      "arm": "adaptive_sampling",
+      "ordinary_and_final_calls": 8,
+      "merger_calls": 0
+    }
+  ],
+  "real_model_calls": 0,
+  "network_calls": 0,
+  "gpu_allocations": 0,
+  "test_gold_present": false,
+  "checkpoint_unchanged": true,
+  "historical_test_exposure_disclosed": true
+}

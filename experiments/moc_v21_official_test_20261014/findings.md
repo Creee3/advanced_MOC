@@ -1,0 +1,5 @@
+# Findings
+
+不重划已接触test；用户明确沿用官方test254并保留限制。当前GPU只有1张达到27B门槛，可另用闲置但显存较少的GPU放9B。两组共用27B服务，不能用墙钟宣称独立双GPU延迟比较。
+
+旧六组全图test仅two_hop_raw/independent50全254和no_communication33；它们不是本次同配方MOC的完整结果。可复用精确调用但不能把不同算法结果冒充MOC，避免重做兼容调用同时保留费用。

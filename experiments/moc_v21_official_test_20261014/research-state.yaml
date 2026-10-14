@@ -1,0 +1,17 @@
+phase: prepared_not_launched
+test_questions: 254
+test_conditions: 1016
+arms: [v21_expected_set, moc]
+densities: [0.3, 0.7]
+main_gpu_services: 1
+merger_gpu_services: 1
+user_approved_shared_main_gpu: true
+historical_test_exposure_disclosed: true
+test_gold_deployed: false
+checkpoint_changed: false
+new_training: false
+preflight: passed
+max_wall_seconds: 28800
+max_new_calls: 30000
+max_new_tokens: 12000000
+automation_created: false

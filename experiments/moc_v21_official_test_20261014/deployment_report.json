@@ -1,0 +1,8 @@
+{
+  "files": 39,
+  "sha256": "654ff8b9b4ca3aa6537554c52440a817bba9144ef519892cb5c0f9412a26c6d0",
+  "bytes": 2549464,
+  "conditions": 1016,
+  "test_gold": false,
+  "model_sha256": "e2ce9cd7f69d3b4e6c2e6be7af1df0a852d44b972396989e5b02428a655fd210"
+}
