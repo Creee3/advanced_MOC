@@ -6,16 +6,17 @@ evidence:
   current_validation: diagnostic_only
 hypotheses:
   - id: H1
-    statement: "Some useful ancestor pairs have effects missed by their separate local labels."
+    statement: "Some ancestor pairs uniquely improve final correctness when empty and both singletons are incorrect."
     status: not_supported_in_current_quartets
   - id: H2
     statement: "Local receiver correctness and downstream final correctness disagree for a material subset."
     status: observed_in_37_of_47_train_groups
 constraints:
-  train_only: true
+  supervision_train_only: true
+  validation_development_only: true
   baseline_reuse: true
   test: false
-reflection: "After evidence/caching audit and after one bounded discriminator batch."
+reflection: "Train-calibration-val completed. Independent motivation gate was superseded by user steering; reflect on surrogate learning and the disabled stopping rule before new work."
 final_observation: "Train-calibration-val pipeline completed; no baseline reruns. Interval radius1.22035 disables confident stop, all reads optimistic and no group reads. Per-density quality-cost targets failed."
 test_run: false
 owned_cloud_cleanup: complete
