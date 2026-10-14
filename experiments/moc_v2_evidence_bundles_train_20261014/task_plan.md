@@ -7,8 +7,11 @@
 1. 核验原始训练材料、缓存可复用范围、图与角色覆盖 — complete。
 2. 实现证据组构造、下游干预回放及可审计缓存 — complete。
 3. 实现帮助/损害预测与不确定性停止的可替换接口 — complete。
-4. 冻结 train/calibration/val 协议、离线验证并提交 Git — in progress。
-5. 在资源允许时有界采集、拟合/冻结及120个新方法val条件，下载审计并收口 — pending。
+4. 冻结 train/calibration/val 协议、离线验证并提交 Git — complete。
+5. 在资源允许时有界采集、拟合/冻结及120个新方法val条件，下载审计并收口 — complete。
+
+## Final outcome
+47/47 train questions,378 labels,35fit/12calibration,120/120 val complete. No baseline reruns or test. Both per-density operational targets failed; poor calibration leads to almost-full reading and zero group reads/confidence stops. Raw79 files/hash verified, cost/label audit passed, owned cloud resources cleaned. Do not equate task execution complete with research hypothesis supported.
 
 ## 约束
 - 不重复整批 Single/Vanilla/MOC/w/o Phi 基准；精确输入及解码匹配的调用直接复用。

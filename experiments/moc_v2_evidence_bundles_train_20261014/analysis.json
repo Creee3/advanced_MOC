@@ -1,0 +1,484 @@
+{
+  "metrics": {
+    "0.3": {
+      "valid_questions": 60,
+      "correct": 27,
+      "full_inference_model_tokens": 389273,
+      "new_validation_model_tokens": 353428,
+      "cache_hits": 57,
+      "nonroot_receivers": 360,
+      "empty_nonroot_receivers": 0,
+      "read_action_modes": {
+        "uncertain_optimistic": 1128
+      },
+      "stop_reasons": {
+        "candidates_exhausted": 348,
+        "no_group_fits_remaining_budget": 12
+      },
+      "group_reads": 0,
+      "read_hops": {
+        "1": 418,
+        "2": 298,
+        "3": 236,
+        "4": 176
+      }
+    },
+    "0.7": {
+      "valid_questions": 60,
+      "correct": 26,
+      "full_inference_model_tokens": 410804,
+      "new_validation_model_tokens": 224273,
+      "cache_hits": 274,
+      "nonroot_receivers": 360,
+      "empty_nonroot_receivers": 0,
+      "read_action_modes": {
+        "uncertain_optimistic": 1233
+      },
+      "stop_reasons": {
+        "candidates_exhausted": 337,
+        "no_group_fits_remaining_budget": 23
+      },
+      "group_reads": 0,
+      "read_hops": {
+        "1": 885,
+        "2": 348
+      }
+    }
+  },
+  "comparisons": {
+    "0.3_vs_moc": {
+      "pairs": 60,
+      "accuracy_difference": 0.05,
+      "improved": 9,
+      "degraded": 6,
+      "two_sided_sign_p": 0.60723876953125,
+      "paired_accuracy_bootstrap95": [
+        -0.06666666666666667,
+        0.18333333333333332
+      ],
+      "one_sided_accuracy_lower95": -0.05,
+      "prespecified_margin": 0.05,
+      "bootstrap_noninferiority_screen": false,
+      "total_token_ratio": 1.1486435446653565,
+      "token_ratio_bootstrap95": [
+        1.1030315921978202,
+        1.1924870186200431
+      ],
+      "observed_operational_target_met": false,
+      "interpretation": "observed screening result; bootstrap/significance alone does not establish general quality guarantee"
+    },
+    "0.3_vs_moc_without_phi": {
+      "pairs": 60,
+      "accuracy_difference": 0.016666666666666666,
+      "improved": 10,
+      "degraded": 9,
+      "two_sided_sign_p": 1.0,
+      "paired_accuracy_bootstrap95": [
+        -0.11666666666666667,
+        0.15
+      ],
+      "one_sided_accuracy_lower95": -0.1,
+      "prespecified_margin": 0.05,
+      "bootstrap_noninferiority_screen": false,
+      "total_token_ratio": 1.141723761702527,
+      "token_ratio_bootstrap95": [
+        1.1073340884347647,
+        1.1780549541295635
+      ],
+      "observed_operational_target_met": false,
+      "interpretation": "observed screening result; bootstrap/significance alone does not establish general quality guarantee"
+    },
+    "0.3_vs_vanilla_mas": {
+      "pairs": 60,
+      "accuracy_difference": 0.03333333333333333,
+      "improved": 11,
+      "degraded": 9,
+      "two_sided_sign_p": 0.8238029479980469,
+      "paired_accuracy_bootstrap95": [
+        -0.11666666666666667,
+        0.18333333333333332
+      ],
+      "one_sided_accuracy_lower95": -0.08333333333333333,
+      "prespecified_margin": 0.05,
+      "bootstrap_noninferiority_screen": false,
+      "total_token_ratio": 1.2620335938842402,
+      "token_ratio_bootstrap95": [
+        1.2207957693004605,
+        1.3048454675987973
+      ],
+      "observed_operational_target_met": false,
+      "interpretation": "observed screening result; bootstrap/significance alone does not establish general quality guarantee"
+    },
+    "0.3_vs_adaptive_sampling": {
+      "pairs": 60,
+      "accuracy_difference": 0.13333333333333333,
+      "improved": 14,
+      "degraded": 6,
+      "two_sided_sign_p": 0.11531829833984375,
+      "paired_accuracy_bootstrap95": [
+        -0.016666666666666666,
+        0.26666666666666666
+      ],
+      "one_sided_accuracy_lower95": 0.016666666666666666,
+      "prespecified_margin": 0.05,
+      "bootstrap_noninferiority_screen": true,
+      "total_token_ratio": 1.2888852835711186,
+      "token_ratio_bootstrap95": [
+        1.2395837590598855,
+        1.3380465765550031
+      ],
+      "observed_operational_target_met": false,
+      "interpretation": "observed screening result; bootstrap/significance alone does not establish general quality guarantee"
+    },
+    "0.7_vs_moc": {
+      "pairs": 60,
+      "accuracy_difference": -0.03333333333333333,
+      "improved": 7,
+      "degraded": 9,
+      "two_sided_sign_p": 0.803619384765625,
+      "paired_accuracy_bootstrap95": [
+        -0.16666666666666666,
+        0.1
+      ],
+      "one_sided_accuracy_lower95": -0.15,
+      "prespecified_margin": 0.05,
+      "bootstrap_noninferiority_screen": false,
+      "total_token_ratio": 0.5174824998645842,
+      "token_ratio_bootstrap95": [
+        0.4836869850956141,
+        0.5545073853339219
+      ],
+      "observed_operational_target_met": false,
+      "interpretation": "observed screening result; bootstrap/significance alone does not establish general quality guarantee"
+    },
+    "0.7_vs_moc_without_phi": {
+      "pairs": 60,
+      "accuracy_difference": -0.03333333333333333,
+      "improved": 7,
+      "degraded": 9,
+      "two_sided_sign_p": 0.803619384765625,
+      "paired_accuracy_bootstrap95": [
+        -0.16666666666666666,
+        0.1
+      ],
+      "one_sided_accuracy_lower95": -0.15,
+      "prespecified_margin": 0.05,
+      "bootstrap_noninferiority_screen": false,
+      "total_token_ratio": 0.9540823317656622,
+      "token_ratio_bootstrap95": [
+        0.9160161874521214,
+        0.9934470350677802
+      ],
+      "observed_operational_target_met": false,
+      "interpretation": "observed screening result; bootstrap/significance alone does not establish general quality guarantee"
+    },
+    "0.7_vs_vanilla_mas": {
+      "pairs": 60,
+      "accuracy_difference": -0.03333333333333333,
+      "improved": 8,
+      "degraded": 10,
+      "two_sided_sign_p": 0.8145294189453125,
+      "paired_accuracy_bootstrap95": [
+        -0.16666666666666666,
+        0.1
+      ],
+      "one_sided_accuracy_lower95": -0.15,
+      "prespecified_margin": 0.05,
+      "bootstrap_noninferiority_screen": false,
+      "total_token_ratio": 1.0915042578348146,
+      "token_ratio_bootstrap95": [
+        1.0478015950188841,
+        1.1373259391264239
+      ],
+      "observed_operational_target_met": false,
+      "interpretation": "observed screening result; bootstrap/significance alone does not establish general quality guarantee"
+    },
+    "0.7_vs_adaptive_sampling": {
+      "pairs": 60,
+      "accuracy_difference": -0.03333333333333333,
+      "improved": 9,
+      "degraded": 11,
+      "two_sided_sign_p": 0.8238029479980469,
+      "paired_accuracy_bootstrap95": [
+        -0.18333333333333332,
+        0.11666666666666667
+      ],
+      "one_sided_accuracy_lower95": -0.15,
+      "prespecified_margin": 0.05,
+      "bootstrap_noninferiority_screen": false,
+      "total_token_ratio": 1.5689362807253395,
+      "token_ratio_bootstrap95": [
+        1.5052536801955005,
+        1.6371325296567565
+      ],
+      "observed_operational_target_met": false,
+      "interpretation": "observed screening result; bootstrap/significance alone does not establish general quality guarantee"
+    }
+  },
+  "integrity_sensitivity": {
+    "0.3_vs_moc": {
+      "excluded_question_ids": [
+        "00afabe7a7e1c8e0a4dbe35464e21aca8d63e4d0b2e816971e293e6a8e3380d8"
+      ],
+      "paired": {
+        "pairs": 59,
+        "accuracy_difference": 0.05084745762711865,
+        "improved": 9,
+        "degraded": 6,
+        "two_sided_sign_p": 0.60723876953125,
+        "paired_accuracy_bootstrap95": [
+          -0.0847457627118644,
+          0.1694915254237288
+        ],
+        "one_sided_accuracy_lower95": -0.05084745762711865,
+        "prespecified_margin": 0.05,
+        "bootstrap_noninferiority_screen": false,
+        "total_token_ratio": 1.1627611334308576,
+        "token_ratio_bootstrap95": [
+          1.1255633577368547,
+          1.2015600633217798
+        ],
+        "observed_operational_target_met": false,
+        "interpretation": "observed screening result; bootstrap/significance alone does not establish general quality guarantee"
+      }
+    },
+    "0.3_vs_moc_without_phi": {
+      "excluded_question_ids": [
+        "00afabe7a7e1c8e0a4dbe35464e21aca8d63e4d0b2e816971e293e6a8e3380d8"
+      ],
+      "paired": {
+        "pairs": 59,
+        "accuracy_difference": 0.01694915254237288,
+        "improved": 10,
+        "degraded": 9,
+        "two_sided_sign_p": 1.0,
+        "paired_accuracy_bootstrap95": [
+          -0.13559322033898305,
+          0.1694915254237288
+        ],
+        "one_sided_accuracy_lower95": -0.1016949152542373,
+        "prespecified_margin": 0.05,
+        "bootstrap_noninferiority_screen": false,
+        "total_token_ratio": 1.1417359987099163,
+        "token_ratio_bootstrap95": [
+          1.1062369323931691,
+          1.1787581584159614
+        ],
+        "observed_operational_target_met": false,
+        "interpretation": "observed screening result; bootstrap/significance alone does not establish general quality guarantee"
+      }
+    },
+    "0.3_vs_vanilla_mas": {
+      "excluded_question_ids": [
+        "00afabe7a7e1c8e0a4dbe35464e21aca8d63e4d0b2e816971e293e6a8e3380d8"
+      ],
+      "paired": {
+        "pairs": 59,
+        "accuracy_difference": 0.01694915254237288,
+        "improved": 10,
+        "degraded": 9,
+        "two_sided_sign_p": 1.0,
+        "paired_accuracy_bootstrap95": [
+          -0.13559322033898305,
+          0.15254237288135594
+        ],
+        "one_sided_accuracy_lower95": -0.1016949152542373,
+        "prespecified_margin": 0.05,
+        "bootstrap_noninferiority_screen": false,
+        "total_token_ratio": 1.2655209395315583,
+        "token_ratio_bootstrap95": [
+          1.2241076145689678,
+          1.3087832547581053
+        ],
+        "observed_operational_target_met": false,
+        "interpretation": "observed screening result; bootstrap/significance alone does not establish general quality guarantee"
+      }
+    },
+    "0.3_vs_adaptive_sampling": {
+      "excluded_question_ids": [
+        "00afabe7a7e1c8e0a4dbe35464e21aca8d63e4d0b2e816971e293e6a8e3380d8"
+      ],
+      "paired": {
+        "pairs": 59,
+        "accuracy_difference": 0.11864406779661017,
+        "improved": 13,
+        "degraded": 6,
+        "two_sided_sign_p": 0.1670684814453125,
+        "paired_accuracy_bootstrap95": [
+          -0.01694915254237288,
+          0.2542372881355932
+        ],
+        "one_sided_accuracy_lower95": 0.0,
+        "prespecified_margin": 0.05,
+        "bootstrap_noninferiority_screen": true,
+        "total_token_ratio": 1.28987027884145,
+        "token_ratio_bootstrap95": [
+          1.2402269908055048,
+          1.3401293498877553
+        ],
+        "observed_operational_target_met": false,
+        "interpretation": "observed screening result; bootstrap/significance alone does not establish general quality guarantee"
+      }
+    },
+    "0.7_vs_moc": {
+      "excluded_question_ids": [],
+      "paired": {
+        "pairs": 60,
+        "accuracy_difference": -0.03333333333333333,
+        "improved": 7,
+        "degraded": 9,
+        "two_sided_sign_p": 0.803619384765625,
+        "paired_accuracy_bootstrap95": [
+          -0.16666666666666666,
+          0.1
+        ],
+        "one_sided_accuracy_lower95": -0.15,
+        "prespecified_margin": 0.05,
+        "bootstrap_noninferiority_screen": false,
+        "total_token_ratio": 0.5174824998645842,
+        "token_ratio_bootstrap95": [
+          0.4836869850956141,
+          0.5545073853339219
+        ],
+        "observed_operational_target_met": false,
+        "interpretation": "observed screening result; bootstrap/significance alone does not establish general quality guarantee"
+      }
+    },
+    "0.7_vs_moc_without_phi": {
+      "excluded_question_ids": [],
+      "paired": {
+        "pairs": 60,
+        "accuracy_difference": -0.03333333333333333,
+        "improved": 7,
+        "degraded": 9,
+        "two_sided_sign_p": 0.803619384765625,
+        "paired_accuracy_bootstrap95": [
+          -0.16666666666666666,
+          0.1
+        ],
+        "one_sided_accuracy_lower95": -0.15,
+        "prespecified_margin": 0.05,
+        "bootstrap_noninferiority_screen": false,
+        "total_token_ratio": 0.9540823317656622,
+        "token_ratio_bootstrap95": [
+          0.9160161874521214,
+          0.9934470350677802
+        ],
+        "observed_operational_target_met": false,
+        "interpretation": "observed screening result; bootstrap/significance alone does not establish general quality guarantee"
+      }
+    },
+    "0.7_vs_vanilla_mas": {
+      "excluded_question_ids": [],
+      "paired": {
+        "pairs": 60,
+        "accuracy_difference": -0.03333333333333333,
+        "improved": 8,
+        "degraded": 10,
+        "two_sided_sign_p": 0.8145294189453125,
+        "paired_accuracy_bootstrap95": [
+          -0.16666666666666666,
+          0.1
+        ],
+        "one_sided_accuracy_lower95": -0.15,
+        "prespecified_margin": 0.05,
+        "bootstrap_noninferiority_screen": false,
+        "total_token_ratio": 1.0915042578348146,
+        "token_ratio_bootstrap95": [
+          1.0478015950188841,
+          1.1373259391264239
+        ],
+        "observed_operational_target_met": false,
+        "interpretation": "observed screening result; bootstrap/significance alone does not establish general quality guarantee"
+      }
+    },
+    "0.7_vs_adaptive_sampling": {
+      "excluded_question_ids": [],
+      "paired": {
+        "pairs": 60,
+        "accuracy_difference": -0.03333333333333333,
+        "improved": 9,
+        "degraded": 11,
+        "two_sided_sign_p": 0.8238029479980469,
+        "paired_accuracy_bootstrap95": [
+          -0.18333333333333332,
+          0.11666666666666667
+        ],
+        "one_sided_accuracy_lower95": -0.15,
+        "prespecified_margin": 0.05,
+        "bootstrap_noninferiority_screen": false,
+        "total_token_ratio": 1.5689362807253395,
+        "token_ratio_bootstrap95": [
+          1.5052536801955005,
+          1.6371325296567565
+        ],
+        "observed_operational_target_met": false,
+        "interpretation": "observed screening result; bootstrap/significance alone does not establish general quality guarantee"
+      }
+    }
+  },
+  "invalid_val": [],
+  "training": {
+    "valid_questions": 47,
+    "labels": 378,
+    "disagreement_question_groups": 37,
+    "joint_only_help_question_groups": 0,
+    "joint_only_harm_question_groups": 2,
+    "downstream_counts": {
+      "0": 274,
+      "-1": 59,
+      "1": 45
+    },
+    "local_counts": {
+      "0": 310,
+      "1": 35,
+      "-1": 33
+    }
+  },
+  "new_cost": {
+    "training_tokens_including_exclusions": 888561,
+    "validation_tokens_including_invalid": 577701,
+    "ledger_all_new_tokens_including_warmup": 1466294,
+    "unresolved_reserved_tokens": 0,
+    "previous_v1_training_and_waste_tokens": 657528
+  },
+  "model_calibration": {
+    "fit_questions": 35,
+    "calibration_questions": 12,
+    "fit_labels": 282,
+    "calibration_labels": 96,
+    "fit_delta_counts": {
+      "-1": 47,
+      "0": 210,
+      "1": 25
+    },
+    "calibration_delta_counts": {
+      "-1": 12,
+      "0": 64,
+      "1": 20
+    },
+    "calibration_gain_mse": 0.34191016566841986,
+    "constant_zero_gain_mse": 0.3333333333333333,
+    "calibration_help_brier": 0.17464464087294548,
+    "calibration_harm_brier": 0.11056530315404452,
+    "interval_radius": 1.2203492875385398,
+    "finite_calibration": true,
+    "supported_calibration_rows": 96,
+    "role_counts": {
+      "Inspector": 23,
+      "Math Solver": 120,
+      "Programming Expert": 115,
+      "Mathematical Analyst": 120
+    },
+    "target_scope": "fixed-material receiver intervention, original Vanilla downstream continuation",
+    "val_used": false,
+    "parameters_tuned_on_val": false
+  },
+  "stopping_implication": {
+    "all_feasible_candidates_have_positive_upper_net": true,
+    "reason": "mean>=-1 and radius>1+penalty imply every supported upper net is positive; unsupported bounds are wider",
+    "no_learning_success_claim_from_token_savings_alone": true
+  },
+  "interpretation": "development val, same60 questions in two densities, no test, historical baselines reused",
+  "cached_savings_are_not_algorithm_savings": true
+}

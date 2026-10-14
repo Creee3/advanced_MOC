@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "record_and_cost_consistency": "passed",
+  "training_labels_recomputed": 378,
+  "valid_training_questions": 47,
+  "validation_conditions": 120,
+  "valid_val_conditions": 120,
+  "output_limit_calls": [],
+  "all_new_model_tokens_including_warmup": 1466294,
+  "owned_cleanup_complete": true,
+  "checkpoint_and_policy_timestamps_before_first_val": true,
+  "scope": "consistency audit, not proof that the learned method improves quality or cost"
+}

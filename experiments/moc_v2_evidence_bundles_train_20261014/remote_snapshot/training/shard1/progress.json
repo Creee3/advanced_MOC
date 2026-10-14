@@ -1,0 +1,11 @@
+{
+  "completed_questions": 23,
+  "excluded_questions": 0,
+  "target_questions": 23,
+  "last_question": "001f1b4cbae0fca1cb8b28a90be99b5ac7ded7b9025c1723f6a9cdfa5590b159",
+  "logical_calls": 570,
+  "new_calls": 443,
+  "cache_hits": 127,
+  "logical_model_tokens": 515281,
+  "new_model_tokens": 428782
+}

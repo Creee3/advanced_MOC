@@ -1,0 +1,12 @@
+{
+  "completed_conditions": 60,
+  "invalid_conditions": 0,
+  "processed_conditions": 60,
+  "target_conditions": 60,
+  "last_question": "e5c419fc62ca064ac9a4900a3fe924dd22831dda5ef0bda346d1669cc3212b4d",
+  "logical_calls": 480,
+  "new_calls": 323,
+  "cache_hits": 157,
+  "logical_model_tokens": 404068,
+  "new_model_tokens": 296538
+}

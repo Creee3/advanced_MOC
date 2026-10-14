@@ -1,0 +1,32 @@
+{
+  "fit_questions": 35,
+  "calibration_questions": 12,
+  "fit_labels": 282,
+  "calibration_labels": 96,
+  "fit_delta_counts": {
+    "-1": 47,
+    "0": 210,
+    "1": 25
+  },
+  "calibration_delta_counts": {
+    "-1": 12,
+    "0": 64,
+    "1": 20
+  },
+  "calibration_gain_mse": 0.34191016566841986,
+  "constant_zero_gain_mse": 0.3333333333333333,
+  "calibration_help_brier": 0.17464464087294548,
+  "calibration_harm_brier": 0.11056530315404452,
+  "interval_radius": 1.2203492875385398,
+  "finite_calibration": true,
+  "supported_calibration_rows": 96,
+  "role_counts": {
+    "Inspector": 23,
+    "Math Solver": 120,
+    "Programming Expert": 115,
+    "Mathematical Analyst": 120
+  },
+  "target_scope": "fixed-material receiver intervention, original Vanilla downstream continuation",
+  "val_used": false,
+  "parameters_tuned_on_val": false
+}
