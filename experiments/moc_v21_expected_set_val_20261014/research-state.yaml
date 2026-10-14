@@ -1,0 +1,16 @@
+version: 1
+phase: preparing_val_only
+model: centered_compact22
+train_gate_passed: false
+user_authorized_diagnostic_val: true
+fit_questions: 35
+new_training: false
+validation_questions: 60
+conditions: 120
+baseline_reuse: true
+test: false
+val_for_tuning: false
+max_wall_seconds: 7200
+max_new_calls: 1200
+max_new_tokens: 1500000
+automation_created_or_resumed: false

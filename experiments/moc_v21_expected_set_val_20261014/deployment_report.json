@@ -1,0 +1,10 @@
+{
+  "files": 35,
+  "bytes": 1405620,
+  "sha256": "0843b5357a9db380f3c843a27af41282c5d315f84d0e028f563eace77d937c2b",
+  "model_sha256": "e2ce9cd7f69d3b4e6c2e6be7af1df0a852d44b972396989e5b02428a655fd210",
+  "val_conditions": 120,
+  "training": false,
+  "val_gold": false,
+  "test": false
+}

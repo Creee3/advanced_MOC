@@ -1,0 +1,302 @@
+{
+  "schema": "v21_cloud_read_only_preflight",
+  "utc": "2026-10-14T21:16:15.334724+08:00",
+  "hostname": "liuxin-1",
+  "uid": 1033,
+  "remote_mutations": false,
+  "gpu_started": false,
+  "container_cgroup": "0::/init.scope\n",
+  "experiments": {
+    "moc_stateful_sampling_val_20261014": {
+      "phase": "complete",
+      "updated_utc": "2026-10-14T14:02:55.075503+08:00",
+      "cleanup_complete": true,
+      "completed_conditions": 540,
+      "completed_val_conditions": null,
+      "error": null,
+      "saved_process_checks": [
+        {
+          "pid": 1502607,
+          "exists": false
+        },
+        {
+          "pid": 1513739,
+          "exists": false
+        },
+        {
+          "pid": 1513740,
+          "exists": false
+        },
+        {
+          "pid": 1503157,
+          "exists": false
+        },
+        {
+          "pid": 1504088,
+          "exists": false
+        },
+        {
+          "pid": 1504844,
+          "exists": false
+        }
+      ],
+      "inspect_run_exit_code": 0,
+      "inspected": {
+        "phase": "complete"
+      }
+    },
+    "moc_v2_evidence_bundles_train_20261014": {
+      "phase": "complete",
+      "updated_utc": "2026-10-14T16:50:36.969355+08:00",
+      "cleanup_complete": true,
+      "completed_conditions": null,
+      "completed_val_conditions": 120,
+      "error": null,
+      "saved_process_checks": [
+        {
+          "pid": 1633904,
+          "exists": false
+        },
+        {
+          "pid": 1652199,
+          "exists": false
+        },
+        {
+          "pid": 1652200,
+          "exists": false
+        },
+        {
+          "pid": 1634029,
+          "exists": false
+        },
+        {
+          "pid": 1634492,
+          "exists": false
+        }
+      ],
+      "inspect_run_exit_code": 0,
+      "inspected": {
+        "phase": "complete",
+        "actual_processes": [
+          {
+            "pid": 1633904,
+            "exists": false
+          },
+          {
+            "pid": 1652199,
+            "exists": false
+          },
+          {
+            "pid": 1652200,
+            "exists": false
+          },
+          {
+            "pid": 1634029,
+            "exists": false
+          },
+          {
+            "pid": 1634492,
+            "exists": false
+          }
+        ],
+        "training": [
+          {
+            "shard": "shard0",
+            "raw_age_seconds": 17200.4,
+            "committed_questions": 24,
+            "excluded_questions": 0,
+            "validation_results": 0
+          },
+          {
+            "shard": "shard1",
+            "raw_age_seconds": 17491.9,
+            "committed_questions": 23,
+            "excluded_questions": 0,
+            "validation_results": 0
+          }
+        ],
+        "val": [
+          {
+            "shard": "shard0",
+            "raw_age_seconds": 15950.3,
+            "committed_questions": 0,
+            "excluded_questions": 0,
+            "validation_results": 60
+          },
+          {
+            "shard": "shard1",
+            "raw_age_seconds": 16054.0,
+            "committed_questions": 0,
+            "excluded_questions": 0,
+            "validation_results": 60
+          }
+        ]
+      }
+    }
+  },
+  "matching_owned_processes": [],
+  "private_port_listeners": [],
+  "ss_exit_code": 0,
+  "gpu_samples": [
+    {
+      "utc": "2026-10-14T21:16:16.861534+08:00",
+      "gpus": [
+        {
+          "index": 0,
+          "uuid": "GPU-0a075077-3745-799a-aff3-f0d34a17b6ac",
+          "utilization_percent": 0,
+          "free_mib": 21227,
+          "eligible_main": true
+        },
+        {
+          "index": 1,
+          "uuid": "GPU-d7d04192-bf97-dfdb-3276-75ff261a9f51",
+          "utilization_percent": 50,
+          "free_mib": 19643,
+          "eligible_main": false
+        },
+        {
+          "index": 2,
+          "uuid": "GPU-2121fa39-275f-d7eb-3c84-c7292ed702bc",
+          "utilization_percent": 0,
+          "free_mib": 20743,
+          "eligible_main": false
+        },
+        {
+          "index": 3,
+          "uuid": "GPU-dcb52b28-8342-ab3b-cd6f-74719b63586f",
+          "utilization_percent": 0,
+          "free_mib": 20743,
+          "eligible_main": false
+        },
+        {
+          "index": 4,
+          "uuid": "GPU-89523765-dcd4-46ea-1f2d-4ff7d509138c",
+          "utilization_percent": 0,
+          "free_mib": 20743,
+          "eligible_main": false
+        },
+        {
+          "index": 5,
+          "uuid": "GPU-8b952bd3-5cdf-11d4-561a-bc9ef3717773",
+          "utilization_percent": 0,
+          "free_mib": 20741,
+          "eligible_main": false
+        },
+        {
+          "index": 6,
+          "uuid": "GPU-0179fbe0-2ace-59a4-7794-fa483dda1e46",
+          "utilization_percent": 38,
+          "free_mib": 21003,
+          "eligible_main": false
+        },
+        {
+          "index": 7,
+          "uuid": "GPU-e230f5a4-ad5d-341f-2840-4f737f3c0c26",
+          "utilization_percent": 0,
+          "free_mib": 20743,
+          "eligible_main": false
+        }
+      ]
+    },
+    {
+      "utc": "2026-10-14T21:16:27.020483+08:00",
+      "gpus": [
+        {
+          "index": 0,
+          "uuid": "GPU-0a075077-3745-799a-aff3-f0d34a17b6ac",
+          "utilization_percent": 0,
+          "free_mib": 21227,
+          "eligible_main": true
+        },
+        {
+          "index": 1,
+          "uuid": "GPU-d7d04192-bf97-dfdb-3276-75ff261a9f51",
+          "utilization_percent": 30,
+          "free_mib": 19643,
+          "eligible_main": false
+        },
+        {
+          "index": 2,
+          "uuid": "GPU-2121fa39-275f-d7eb-3c84-c7292ed702bc",
+          "utilization_percent": 0,
+          "free_mib": 20743,
+          "eligible_main": false
+        },
+        {
+          "index": 3,
+          "uuid": "GPU-dcb52b28-8342-ab3b-cd6f-74719b63586f",
+          "utilization_percent": 0,
+          "free_mib": 20743,
+          "eligible_main": false
+        },
+        {
+          "index": 4,
+          "uuid": "GPU-89523765-dcd4-46ea-1f2d-4ff7d509138c",
+          "utilization_percent": 0,
+          "free_mib": 20743,
+          "eligible_main": false
+        },
+        {
+          "index": 5,
+          "uuid": "GPU-8b952bd3-5cdf-11d4-561a-bc9ef3717773",
+          "utilization_percent": 0,
+          "free_mib": 20741,
+          "eligible_main": false
+        },
+        {
+          "index": 6,
+          "uuid": "GPU-0179fbe0-2ace-59a4-7794-fa483dda1e46",
+          "utilization_percent": 67,
+          "free_mib": 21003,
+          "eligible_main": false
+        },
+        {
+          "index": 7,
+          "uuid": "GPU-e230f5a4-ad5d-341f-2840-4f737f3c0c26",
+          "utilization_percent": 0,
+          "free_mib": 20743,
+          "eligible_main": false
+        }
+      ]
+    }
+  ],
+  "stable_eligible_main_gpus": [
+    0
+  ],
+  "two_worker_resource_ready": false,
+  "gpu_compute_processes": {
+    "exit_code": 0,
+    "stdout": "GPU-0a075077-3745-799a-aff3-f0d34a17b6ac, 1624623, [Not Found], 2844\nGPU-d7d04192-bf97-dfdb-3276-75ff261a9f51, 1518829, [Not Found], 4428\nGPU-2121fa39-275f-d7eb-3c84-c7292ed702bc, 2931576, [Not Found], 3330\nGPU-dcb52b28-8342-ab3b-cd6f-74719b63586f, 2931590, [Not Found], 3330\nGPU-89523765-dcd4-46ea-1f2d-4ff7d509138c, 2931587, [Not Found], 3330\nGPU-8b952bd3-5cdf-11d4-561a-bc9ef3717773, 2931593, [Not Found], 3330\nGPU-0179fbe0-2ace-59a4-7794-fa483dda1e46, 1518830, [Not Found], 3068\nGPU-e230f5a4-ad5d-341f-2840-4f737f3c0c26, 2931598, [Not Found], 3330",
+    "stderr": ""
+  },
+  "runtime_paths": {
+    "python_executable": "/home/liuxin/.conda/envs/moc/bin/python",
+    "ollama_executable": "/home/liuxin/.local/bin/ollama",
+    "author_directory": "/home/liuxin/ICML2027/experiments/moc_stateful_sampling_val_20261014/author_source",
+    "model_directory": "/home/liuxin/.ollama/models",
+    "tokenizer_path": "/home/liuxin/ICML2027/experiments/moc_index_pull_20261013/tokenizer/tokenizer.json"
+  },
+  "runtime_paths_exist": {
+    "python_executable": true,
+    "ollama_executable": true,
+    "author_directory": true,
+    "model_directory": true,
+    "tokenizer_path": true
+  },
+  "tokenizer_sha256": "3f289bc05132635a8bc7aca7aa21255efd5e18f3710f43e3cdb96bcd41be4922",
+  "main_manifest_sha256": "53261bc9c192c1cb5fcc898dd3aa15da093f5ab6f08e17e48cf838bb1c58abfe",
+  "main_digest_matches": true,
+  "cuda_library_exists": true,
+  "minilm_cache_exists": true,
+  "reuse_sources": [
+    "/home/liuxin/ICML2027/experiments/moc_v2_evidence_bundles_train_20261014/inspect_run.py",
+    "/home/liuxin/ICML2027/experiments/moc_v2_evidence_bundles_train_20261014/gpu_runtime.py",
+    "/home/liuxin/ICML2027/experiments/moc_v2_evidence_bundles_train_20261014/launch.py",
+    "/home/liuxin/ICML2027/experiments/moc_v2_evidence_bundles_train_20261014/supervise.py",
+    "/home/liuxin/ICML2027/experiments/moc_v2_evidence_bundles_train_20261014/run_val.py",
+    "/home/liuxin/ICML2027/experiments/moc_v2_evidence_bundles_train_20261014/runtime_controls.py",
+    "/home/liuxin/ICML2027/experiments/moc_v2_evidence_bundles_train_20261014/common.py",
+    "/home/liuxin/ICML2027/experiments/moc_v2_evidence_bundles_train_20261014/trace_hooks.py"
+  ]
+}
