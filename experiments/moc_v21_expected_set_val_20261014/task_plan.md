@@ -6,7 +6,7 @@
 2. 实施val-only脚本、冻结协议/config/checkpoint/源码并提交 — complete；compact22固定，保留2shards共享1serial GPU。
 3. 模型无调用预检、部署SHA核验、CUDA/短生成/全显存驻留门槛 — complete；2原DAG、35文件hash、CUDA实际分配/OK生成/size_vram=size通过。
 4. 启动有界120条件，核对真实生成、进度与错误 — complete；2026-10-14 21:31北京时间核对9/120全部有效、raw持续更新，无中断。全批仍在运行。
-5. 完成后下载raw/hash、分析质量成本与行为、核验资源清理 — pending。
+5. 完成后下载raw/hash、分析质量成本与行为、核验资源清理 — complete；120/120有效，65文件hash/33冻结hash、原答案解析/费用/cache审查通过。稀疏29/60与−10.91%token；稠密35/60与−62.41%。准确率区间跨0，仍为开发val。
 
 不重采训练、不重跑既有基准、不跑test、不用val调参。新唯一运行目录，禁止重置状态/预算或恢复旧任务。
 

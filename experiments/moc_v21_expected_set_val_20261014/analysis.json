@@ -1,0 +1,684 @@
+{
+  "metrics": {
+    "0.3": {
+      "valid_questions": 60,
+      "correct": 29,
+      "full_inference_model_tokens": 301925,
+      "new_validation_model_tokens": 235474,
+      "logical_calls": 480,
+      "cache_hits": 130,
+      "ordinary_receivers": 420,
+      "nonroot_receivers": 360,
+      "empty_nonroot_receivers": 104,
+      "selected_set_sizes": {
+        "1": 252,
+        "0": 104,
+        "2": 4
+      },
+      "read_messages_by_hop": {
+        "1": 33,
+        "2": 88,
+        "3": 84,
+        "4": 55
+      },
+      "available_messages_by_hop": {
+        "1": 420,
+        "2": 300,
+        "3": 240,
+        "4": 180
+      },
+      "group_reads": 4,
+      "candidate_group_scores": 1913,
+      "unsupported_candidate_groups": 538,
+      "stop_reasons": {
+        "one_evidence_set_selected": 256,
+        "expected_net_utility_nonpositive": 104
+      },
+      "communication_text_tokens": 55798,
+      "encoding_seconds": 28.09063515785965,
+      "routing_seconds": 3.146687552216463,
+      "sketch_bytes_generated": 1290240,
+      "selection_by_receiver_role": {
+        "Inspector": {
+          "receivers": 60,
+          "empty": 32,
+          "singleton": 28,
+          "pair": 0
+        },
+        "Math Solver": {
+          "receivers": 120,
+          "empty": 36,
+          "singleton": 84,
+          "pair": 0
+        },
+        "Programming Expert": {
+          "receivers": 120,
+          "empty": 3,
+          "singleton": 113,
+          "pair": 4
+        },
+        "Mathematical Analyst": {
+          "receivers": 60,
+          "empty": 33,
+          "singleton": 27,
+          "pair": 0
+        }
+      }
+    },
+    "0.7": {
+      "valid_questions": 60,
+      "correct": 35,
+      "full_inference_model_tokens": 298387,
+      "new_validation_model_tokens": 191336,
+      "logical_calls": 480,
+      "cache_hits": 233,
+      "ordinary_receivers": 420,
+      "nonroot_receivers": 360,
+      "empty_nonroot_receivers": 130,
+      "selected_set_sizes": {
+        "1": 174,
+        "0": 130,
+        "2": 56
+      },
+      "read_messages_by_hop": {
+        "1": 129,
+        "2": 157
+      },
+      "available_messages_by_hop": {
+        "1": 900,
+        "2": 360
+      },
+      "group_reads": 56,
+      "candidate_group_scores": 3050,
+      "unsupported_candidate_groups": 1135,
+      "stop_reasons": {
+        "one_evidence_set_selected": 230,
+        "no_supported_expected_action": 60,
+        "expected_net_utility_nonpositive": 70
+      },
+      "communication_text_tokens": 51922,
+      "encoding_seconds": 27.886746879754355,
+      "routing_seconds": 5.516465809079818,
+      "sketch_bytes_generated": 1290240,
+      "selection_by_receiver_role": {
+        "Inspector": {
+          "receivers": 60,
+          "empty": 32,
+          "singleton": 28,
+          "pair": 0
+        },
+        "Math Solver": {
+          "receivers": 120,
+          "empty": 33,
+          "singleton": 86,
+          "pair": 1
+        },
+        "Programming Expert": {
+          "receivers": 120,
+          "empty": 65,
+          "singleton": 0,
+          "pair": 55
+        },
+        "Mathematical Analyst": {
+          "receivers": 60,
+          "empty": 0,
+          "singleton": 60,
+          "pair": 0
+        }
+      }
+    }
+  },
+  "comparisons": {
+    "0.3_vs_moc": {
+      "pairs": 60,
+      "accuracy_difference": 0.08333333333333333,
+      "improved": 11,
+      "degraded": 6,
+      "two_sided_sign_p": 0.332305908203125,
+      "paired_accuracy_bootstrap95": [
+        -0.05,
+        0.21666666666666667
+      ],
+      "one_sided_accuracy_lower95": -0.03333333333333333,
+      "total_token_ratio": 0.890902277381395,
+      "token_ratio_bootstrap95": [
+        0.8573275529231544,
+        0.9247819580214707
+      ],
+      "observed_operational_target_met": true,
+      "interpretation": "observed screening result; bootstrap/significance alone does not establish general quality guarantee",
+      "reference_correct": 24,
+      "candidate_correct": 29,
+      "reference_tokens": 338898,
+      "candidate_tokens": 301925,
+      "interval_scope": "descriptive paired question bootstrap; exposed development val; no noninferiority claim"
+    },
+    "0.3_vs_moc_without_phi": {
+      "pairs": 60,
+      "accuracy_difference": 0.05,
+      "improved": 10,
+      "degraded": 7,
+      "two_sided_sign_p": 0.629058837890625,
+      "paired_accuracy_bootstrap95": [
+        -0.08333333333333333,
+        0.18333333333333332
+      ],
+      "one_sided_accuracy_lower95": -0.06666666666666667,
+      "total_token_ratio": 0.8855352073019076,
+      "token_ratio_bootstrap95": [
+        0.8584703166630042,
+        0.912853176735638
+      ],
+      "observed_operational_target_met": true,
+      "interpretation": "observed screening result; bootstrap/significance alone does not establish general quality guarantee",
+      "reference_correct": 26,
+      "candidate_correct": 29,
+      "reference_tokens": 340952,
+      "candidate_tokens": 301925,
+      "interval_scope": "descriptive paired question bootstrap; exposed development val; no noninferiority claim"
+    },
+    "0.3_vs_vanilla_mas": {
+      "pairs": 60,
+      "accuracy_difference": 0.06666666666666667,
+      "improved": 13,
+      "degraded": 9,
+      "two_sided_sign_p": 0.5234670639038086,
+      "paired_accuracy_bootstrap95": [
+        -0.08333333333333333,
+        0.21666666666666667
+      ],
+      "one_sided_accuracy_lower95": -0.06666666666666667,
+      "total_token_ratio": 0.9788490155584878,
+      "token_ratio_bootstrap95": [
+        0.9520722160095896,
+        1.006554863510576
+      ],
+      "observed_operational_target_met": true,
+      "interpretation": "observed screening result; bootstrap/significance alone does not establish general quality guarantee",
+      "reference_correct": 25,
+      "candidate_correct": 29,
+      "reference_tokens": 308449,
+      "candidate_tokens": 301925,
+      "interval_scope": "descriptive paired question bootstrap; exposed development val; no noninferiority claim"
+    },
+    "0.3_vs_adaptive_sampling": {
+      "pairs": 60,
+      "accuracy_difference": 0.16666666666666666,
+      "improved": 14,
+      "degraded": 4,
+      "two_sided_sign_p": 0.0308837890625,
+      "paired_accuracy_bootstrap95": [
+        0.03333333333333333,
+        0.3
+      ],
+      "one_sided_accuracy_lower95": 0.05,
+      "total_token_ratio": 0.999675521400688,
+      "token_ratio_bootstrap95": [
+        0.9774855121266561,
+        1.0221484845678974
+      ],
+      "observed_operational_target_met": true,
+      "interpretation": "observed screening result; bootstrap/significance alone does not establish general quality guarantee",
+      "reference_correct": 19,
+      "candidate_correct": 29,
+      "reference_tokens": 302023,
+      "candidate_tokens": 301925,
+      "interval_scope": "descriptive paired question bootstrap; exposed development val; no noninferiority claim"
+    },
+    "0.3_vs_v2": {
+      "pairs": 60,
+      "accuracy_difference": 0.03333333333333333,
+      "improved": 11,
+      "degraded": 9,
+      "two_sided_sign_p": 0.8238029479980469,
+      "paired_accuracy_bootstrap95": [
+        -0.11666666666666667,
+        0.18333333333333332
+      ],
+      "one_sided_accuracy_lower95": -0.08333333333333333,
+      "total_token_ratio": 0.7756124878941,
+      "token_ratio_bootstrap95": [
+        0.751890103994124,
+        0.8010253657107815
+      ],
+      "observed_operational_target_met": true,
+      "interpretation": "observed screening result; bootstrap/significance alone does not establish general quality guarantee",
+      "reference_correct": 27,
+      "candidate_correct": 29,
+      "reference_tokens": 389273,
+      "candidate_tokens": 301925,
+      "interval_scope": "descriptive paired question bootstrap; exposed development val; no noninferiority claim"
+    },
+    "0.7_vs_moc": {
+      "pairs": 60,
+      "accuracy_difference": 0.11666666666666667,
+      "improved": 14,
+      "degraded": 7,
+      "two_sided_sign_p": 0.18924713134765625,
+      "paired_accuracy_bootstrap95": [
+        -0.03333333333333333,
+        0.26666666666666666
+      ],
+      "one_sided_accuracy_lower95": 0.0,
+      "total_token_ratio": 0.375872802326885,
+      "token_ratio_bootstrap95": [
+        0.35231866014846386,
+        0.40258415426722255
+      ],
+      "observed_operational_target_met": true,
+      "interpretation": "observed screening result; bootstrap/significance alone does not establish general quality guarantee",
+      "reference_correct": 28,
+      "candidate_correct": 35,
+      "reference_tokens": 793851,
+      "candidate_tokens": 298387,
+      "interval_scope": "descriptive paired question bootstrap; exposed development val; no noninferiority claim"
+    },
+    "0.7_vs_moc_without_phi": {
+      "pairs": 60,
+      "accuracy_difference": 0.11666666666666667,
+      "improved": 12,
+      "degraded": 5,
+      "two_sided_sign_p": 0.143463134765625,
+      "paired_accuracy_bootstrap95": [
+        -0.016666666666666666,
+        0.25
+      ],
+      "one_sided_accuracy_lower95": 0.0,
+      "total_token_ratio": 0.6929965743482552,
+      "token_ratio_bootstrap95": [
+        0.6659178202632401,
+        0.7202917723726985
+      ],
+      "observed_operational_target_met": true,
+      "interpretation": "observed screening result; bootstrap/significance alone does not establish general quality guarantee",
+      "reference_correct": 28,
+      "candidate_correct": 35,
+      "reference_tokens": 430575,
+      "candidate_tokens": 298387,
+      "interval_scope": "descriptive paired question bootstrap; exposed development val; no noninferiority claim"
+    },
+    "0.7_vs_vanilla_mas": {
+      "pairs": 60,
+      "accuracy_difference": 0.11666666666666667,
+      "improved": 10,
+      "degraded": 3,
+      "two_sided_sign_p": 0.09228515625,
+      "paired_accuracy_bootstrap95": [
+        0.0,
+        0.23333333333333334
+      ],
+      "one_sided_accuracy_lower95": 0.016666666666666666,
+      "total_token_ratio": 0.7928128279728455,
+      "token_ratio_bootstrap95": [
+        0.7639937895893801,
+        0.8219102759397215
+      ],
+      "observed_operational_target_met": true,
+      "interpretation": "observed screening result; bootstrap/significance alone does not establish general quality guarantee",
+      "reference_correct": 28,
+      "candidate_correct": 35,
+      "reference_tokens": 376365,
+      "candidate_tokens": 298387,
+      "interval_scope": "descriptive paired question bootstrap; exposed development val; no noninferiority claim"
+    },
+    "0.7_vs_adaptive_sampling": {
+      "pairs": 60,
+      "accuracy_difference": 0.11666666666666667,
+      "improved": 14,
+      "degraded": 7,
+      "two_sided_sign_p": 0.18924713134765625,
+      "paired_accuracy_bootstrap95": [
+        -0.03333333333333333,
+        0.26666666666666666
+      ],
+      "one_sided_accuracy_lower95": 0.0,
+      "total_token_ratio": 1.1395950136726807,
+      "token_ratio_bootstrap95": [
+        1.1131105043959792,
+        1.1673827241013113
+      ],
+      "observed_operational_target_met": false,
+      "interpretation": "observed screening result; bootstrap/significance alone does not establish general quality guarantee",
+      "reference_correct": 28,
+      "candidate_correct": 35,
+      "reference_tokens": 261836,
+      "candidate_tokens": 298387,
+      "interval_scope": "descriptive paired question bootstrap; exposed development val; no noninferiority claim"
+    },
+    "0.7_vs_v2": {
+      "pairs": 60,
+      "accuracy_difference": 0.15,
+      "improved": 14,
+      "degraded": 5,
+      "two_sided_sign_p": 0.063568115234375,
+      "paired_accuracy_bootstrap95": [
+        0.016666666666666666,
+        0.2833333333333333
+      ],
+      "one_sided_accuracy_lower95": 0.03333333333333333,
+      "total_token_ratio": 0.7263488184146211,
+      "token_ratio_bootstrap95": [
+        0.7024121390028047,
+        0.7515246947672426
+      ],
+      "observed_operational_target_met": true,
+      "interpretation": "observed screening result; bootstrap/significance alone does not establish general quality guarantee",
+      "reference_correct": 26,
+      "candidate_correct": 35,
+      "reference_tokens": 410804,
+      "candidate_tokens": 298387,
+      "interval_scope": "descriptive paired question bootstrap; exposed development val; no noninferiority claim"
+    }
+  },
+  "integrity_sensitivity": {
+    "0.3_vs_moc": {
+      "excluded_question_ids": [
+        "00afabe7a7e1c8e0a4dbe35464e21aca8d63e4d0b2e816971e293e6a8e3380d8"
+      ],
+      "paired": {
+        "pairs": 59,
+        "accuracy_difference": 0.1016949152542373,
+        "improved": 11,
+        "degraded": 5,
+        "two_sided_sign_p": 0.210113525390625,
+        "paired_accuracy_bootstrap95": [
+          -0.03389830508474576,
+          0.23728813559322035
+        ],
+        "one_sided_accuracy_lower95": 0.0,
+        "total_token_ratio": 0.9003792498334889,
+        "token_ratio_bootstrap95": [
+          0.8709283324491122,
+          0.9303688867232013
+        ],
+        "observed_operational_target_met": true,
+        "interpretation": "observed screening result; bootstrap/significance alone does not establish general quality guarantee",
+        "reference_correct": 23,
+        "candidate_correct": 29,
+        "reference_tokens": 328807,
+        "candidate_tokens": 296051,
+        "interval_scope": "descriptive paired question bootstrap; exposed development val; no noninferiority claim"
+      }
+    },
+    "0.3_vs_moc_without_phi": {
+      "excluded_question_ids": [
+        "00afabe7a7e1c8e0a4dbe35464e21aca8d63e4d0b2e816971e293e6a8e3380d8"
+      ],
+      "paired": {
+        "pairs": 59,
+        "accuracy_difference": 0.06779661016949153,
+        "improved": 10,
+        "degraded": 6,
+        "two_sided_sign_p": 0.454498291015625,
+        "paired_accuracy_bootstrap95": [
+          -0.06779661016949153,
+          0.2033898305084746
+        ],
+        "one_sided_accuracy_lower95": -0.05084745762711865,
+        "total_token_ratio": 0.8840985241681648,
+        "token_ratio_bootstrap95": [
+          0.8564611020639861,
+          0.9114496516639573
+        ],
+        "observed_operational_target_met": true,
+        "interpretation": "observed screening result; bootstrap/significance alone does not establish general quality guarantee",
+        "reference_correct": 25,
+        "candidate_correct": 29,
+        "reference_tokens": 334862,
+        "candidate_tokens": 296051,
+        "interval_scope": "descriptive paired question bootstrap; exposed development val; no noninferiority claim"
+      }
+    },
+    "0.3_vs_vanilla_mas": {
+      "excluded_question_ids": [
+        "00afabe7a7e1c8e0a4dbe35464e21aca8d63e4d0b2e816971e293e6a8e3380d8"
+      ],
+      "paired": {
+        "pairs": 59,
+        "accuracy_difference": 0.06779661016949153,
+        "improved": 13,
+        "degraded": 9,
+        "two_sided_sign_p": 0.5234670639038086,
+        "paired_accuracy_bootstrap95": [
+          -0.0847457627118644,
+          0.22033898305084745
+        ],
+        "one_sided_accuracy_lower95": -0.06779661016949153,
+        "total_token_ratio": 0.9799508784937837,
+        "token_ratio_bootstrap95": [
+          0.9524600474483518,
+          1.0078247725324585
+        ],
+        "observed_operational_target_met": true,
+        "interpretation": "observed screening result; bootstrap/significance alone does not establish general quality guarantee",
+        "reference_correct": 25,
+        "candidate_correct": 29,
+        "reference_tokens": 302108,
+        "candidate_tokens": 296051,
+        "interval_scope": "descriptive paired question bootstrap; exposed development val; no noninferiority claim"
+      }
+    },
+    "0.3_vs_adaptive_sampling": {
+      "excluded_question_ids": [
+        "00afabe7a7e1c8e0a4dbe35464e21aca8d63e4d0b2e816971e293e6a8e3380d8"
+      ],
+      "paired": {
+        "pairs": 59,
+        "accuracy_difference": 0.1694915254237288,
+        "improved": 14,
+        "degraded": 4,
+        "two_sided_sign_p": 0.0308837890625,
+        "paired_accuracy_bootstrap95": [
+          0.03389830508474576,
+          0.3050847457627119
+        ],
+        "one_sided_accuracy_lower95": 0.05084745762711865,
+        "total_token_ratio": 0.9988056881631552,
+        "token_ratio_bootstrap95": [
+          0.9763688456686829,
+          1.0218560993830719
+        ],
+        "observed_operational_target_met": true,
+        "interpretation": "observed screening result; bootstrap/significance alone does not establish general quality guarantee",
+        "reference_correct": 19,
+        "candidate_correct": 29,
+        "reference_tokens": 296405,
+        "candidate_tokens": 296051,
+        "interval_scope": "descriptive paired question bootstrap; exposed development val; no noninferiority claim"
+      }
+    },
+    "0.3_vs_v2": {
+      "excluded_question_ids": [
+        "00afabe7a7e1c8e0a4dbe35464e21aca8d63e4d0b2e816971e293e6a8e3380d8"
+      ],
+      "paired": {
+        "pairs": 59,
+        "accuracy_difference": 0.05084745762711865,
+        "improved": 11,
+        "degraded": 8,
+        "two_sided_sign_p": 0.6476058959960938,
+        "paired_accuracy_bootstrap95": [
+          -0.0847457627118644,
+          0.2033898305084746
+        ],
+        "one_sided_accuracy_lower95": -0.06779661016949153,
+        "total_token_ratio": 0.7743458427930238,
+        "token_ratio_bootstrap95": [
+          0.7501540612490168,
+          0.7999390182036707
+        ],
+        "observed_operational_target_met": true,
+        "interpretation": "observed screening result; bootstrap/significance alone does not establish general quality guarantee",
+        "reference_correct": 26,
+        "candidate_correct": 29,
+        "reference_tokens": 382324,
+        "candidate_tokens": 296051,
+        "interval_scope": "descriptive paired question bootstrap; exposed development val; no noninferiority claim"
+      }
+    },
+    "0.7_vs_moc": {
+      "excluded_question_ids": [],
+      "paired": {
+        "pairs": 60,
+        "accuracy_difference": 0.11666666666666667,
+        "improved": 14,
+        "degraded": 7,
+        "two_sided_sign_p": 0.18924713134765625,
+        "paired_accuracy_bootstrap95": [
+          -0.03333333333333333,
+          0.26666666666666666
+        ],
+        "one_sided_accuracy_lower95": 0.0,
+        "total_token_ratio": 0.375872802326885,
+        "token_ratio_bootstrap95": [
+          0.35231866014846386,
+          0.40258415426722255
+        ],
+        "observed_operational_target_met": true,
+        "interpretation": "observed screening result; bootstrap/significance alone does not establish general quality guarantee",
+        "reference_correct": 28,
+        "candidate_correct": 35,
+        "reference_tokens": 793851,
+        "candidate_tokens": 298387,
+        "interval_scope": "descriptive paired question bootstrap; exposed development val; no noninferiority claim"
+      }
+    },
+    "0.7_vs_moc_without_phi": {
+      "excluded_question_ids": [],
+      "paired": {
+        "pairs": 60,
+        "accuracy_difference": 0.11666666666666667,
+        "improved": 12,
+        "degraded": 5,
+        "two_sided_sign_p": 0.143463134765625,
+        "paired_accuracy_bootstrap95": [
+          -0.016666666666666666,
+          0.25
+        ],
+        "one_sided_accuracy_lower95": 0.0,
+        "total_token_ratio": 0.6929965743482552,
+        "token_ratio_bootstrap95": [
+          0.6659178202632401,
+          0.7202917723726985
+        ],
+        "observed_operational_target_met": true,
+        "interpretation": "observed screening result; bootstrap/significance alone does not establish general quality guarantee",
+        "reference_correct": 28,
+        "candidate_correct": 35,
+        "reference_tokens": 430575,
+        "candidate_tokens": 298387,
+        "interval_scope": "descriptive paired question bootstrap; exposed development val; no noninferiority claim"
+      }
+    },
+    "0.7_vs_vanilla_mas": {
+      "excluded_question_ids": [],
+      "paired": {
+        "pairs": 60,
+        "accuracy_difference": 0.11666666666666667,
+        "improved": 10,
+        "degraded": 3,
+        "two_sided_sign_p": 0.09228515625,
+        "paired_accuracy_bootstrap95": [
+          0.0,
+          0.23333333333333334
+        ],
+        "one_sided_accuracy_lower95": 0.016666666666666666,
+        "total_token_ratio": 0.7928128279728455,
+        "token_ratio_bootstrap95": [
+          0.7639937895893801,
+          0.8219102759397215
+        ],
+        "observed_operational_target_met": true,
+        "interpretation": "observed screening result; bootstrap/significance alone does not establish general quality guarantee",
+        "reference_correct": 28,
+        "candidate_correct": 35,
+        "reference_tokens": 376365,
+        "candidate_tokens": 298387,
+        "interval_scope": "descriptive paired question bootstrap; exposed development val; no noninferiority claim"
+      }
+    },
+    "0.7_vs_adaptive_sampling": {
+      "excluded_question_ids": [],
+      "paired": {
+        "pairs": 60,
+        "accuracy_difference": 0.11666666666666667,
+        "improved": 14,
+        "degraded": 7,
+        "two_sided_sign_p": 0.18924713134765625,
+        "paired_accuracy_bootstrap95": [
+          -0.03333333333333333,
+          0.26666666666666666
+        ],
+        "one_sided_accuracy_lower95": 0.0,
+        "total_token_ratio": 1.1395950136726807,
+        "token_ratio_bootstrap95": [
+          1.1131105043959792,
+          1.1673827241013113
+        ],
+        "observed_operational_target_met": false,
+        "interpretation": "observed screening result; bootstrap/significance alone does not establish general quality guarantee",
+        "reference_correct": 28,
+        "candidate_correct": 35,
+        "reference_tokens": 261836,
+        "candidate_tokens": 298387,
+        "interval_scope": "descriptive paired question bootstrap; exposed development val; no noninferiority claim"
+      }
+    },
+    "0.7_vs_v2": {
+      "excluded_question_ids": [],
+      "paired": {
+        "pairs": 60,
+        "accuracy_difference": 0.15,
+        "improved": 14,
+        "degraded": 5,
+        "two_sided_sign_p": 0.063568115234375,
+        "paired_accuracy_bootstrap95": [
+          0.016666666666666666,
+          0.2833333333333333
+        ],
+        "one_sided_accuracy_lower95": 0.03333333333333333,
+        "total_token_ratio": 0.7263488184146211,
+        "token_ratio_bootstrap95": [
+          0.7024121390028047,
+          0.7515246947672426
+        ],
+        "observed_operational_target_met": true,
+        "interpretation": "observed screening result; bootstrap/significance alone does not establish general quality guarantee",
+        "reference_correct": 26,
+        "candidate_correct": 35,
+        "reference_tokens": 410804,
+        "candidate_tokens": 298387,
+        "interval_scope": "descriptive paired question bootstrap; exposed development val; no noninferiority claim"
+      }
+    }
+  },
+  "invalid_val": [],
+  "inherited_baseline_output_limits": [
+    {
+      "question_id": "00afabe7a7e1c8e0a4dbe35464e21aca8d63e4d0b2e816971e293e6a8e3380d8",
+      "arm": "moc",
+      "density": 0.3,
+      "event_index": 10057,
+      "model": "gemma2:27b",
+      "eval_count": 2000
+    }
+  ],
+  "cost": {
+    "full_logical_inference_tokens": 600312,
+    "actual_new_val_tokens": 426810,
+    "warmup_tokens": 16,
+    "actual_new_tokens_including_warmup": 426826,
+    "actual_new_calls_including_warmup": 598,
+    "cache_hits": 363,
+    "unresolved_reserved_tokens": 0,
+    "new_v21_training_tokens": 0,
+    "inherited_v2_training_tokens": 888561,
+    "previous_v1_training_and_waste_tokens": 657528,
+    "moc_inference_tokens": 1132749,
+    "inference_ratio_vs_moc": 0.529960300119444,
+    "shared_training_plus_v21_inference_ratio_vs_moc": 1.3143891541727248,
+    "investment_scope": "v2 training reused once, not paid again; v1 historical costs listed separately; cached calls count fully in logical inference"
+  },
+  "interpretation": "exposed diagnostic val60; two densities share the same question groups; frozen model; no baseline rerun or test",
+  "causal_limit": "chosen actions/accuracy association does not establish causal usefulness; set-size cap and merger removal contribute to cost differences"
+}

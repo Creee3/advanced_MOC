@@ -1,5 +1,5 @@
 version: 1
-phase: val_running
+phase: completed_audited
 model: centered_compact22
 train_gate_passed: false
 user_authorized_diagnostic_val: true
@@ -20,7 +20,17 @@ model_service_pid: 1799002
 worker_pids: [1799575,1799576]
 main_service_count: 1
 gpu_index: 1
-last_checked_utc: 2026-10-14T13:31:16Z
-last_checked_conditions: 9
+last_checked_utc: 2026-10-14T14:04:52.296496Z
+last_checked_conditions: 120
 last_checked_invalid: 0
-full_result_analysis: pending
+full_result_analysis: complete
+
+completed_conditions: 120
+invalid_conditions: 0
+completed_utc: 2026-10-14T14:04:52.296496Z
+owned_cleanup_complete: true
+new_tokens_including_warmup: 426826
+logical_inference_tokens: 600312
+sparse_correct: 29
+dense_correct: 35
+accuracy_improvement_significant_vs_moc: false

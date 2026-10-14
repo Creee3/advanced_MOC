@@ -1,0 +1,9 @@
+{
+  "author_commit": "9c67c92507570704a7df73e452552a3f49e83897",
+  "git_status": "",
+  "remote_parser_sha256": "ae88d003a59f4ef339c4ac10d89aa24790f5ec220aba09bfd5f3448493fe85e3",
+  "local_parser_sha256": "974ef2bd107bdd6a0444b3f40991b80c00d8b5eb4c21ad4e4031743c93c48628",
+  "local_parser_lf_normalized_sha256": "ae88d003a59f4ef339c4ac10d89aa24790f5ec220aba09bfd5f3448493fe85e3",
+  "difference": "CRLF versus LF only; normalized complete source bytes match",
+  "scope": "read-only remote git and parser check after completed run"
+}
