@@ -1,0 +1,21 @@
+{
+  "scope": "descriptive input audit only; no refit or model changes",
+  "source": "experiments\\moc_v21_expected_set_offline_20261014\\derived_fit_features.jsonl",
+  "source_sha256": "4b9724aebece41216eca1224d94b5e248eaa2a0823577d0d6644cdb9db18495f",
+  "rows": 176,
+  "questions": 35,
+  "features": 22,
+  "centered_rank": 16,
+  "constant_columns": [],
+  "identical_columns_in_observed_fit": [
+    [
+      "group_pair_cosine_mean",
+      "group_pair_cosine_min"
+    ],
+    [
+      "group_incremental_cost_fraction",
+      "group_projected_cost_fraction"
+    ]
+  ],
+  "contains_full_sketch_coordinates": false
+}

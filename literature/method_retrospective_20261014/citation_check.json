@@ -1,0 +1,155 @@
+{
+  "file": "D:/liuxin_workspace/ICML2027/advanced_MOC/literature/method_retrospective_20261014/references.bib",
+  "checked_at": "2026-10-14T13:43:59Z",
+  "mode": "online",
+  "verdict": "PASS",
+  "verdict_line": "PASS: 9/9 verified, 0 errors, 1 warnings (0 checks skipped) \u2014 1 MISSING_DOI",
+  "skipped_checks": [],
+  "entries": [
+    {
+      "key": "moc2026",
+      "type": "misc",
+      "line": 1,
+      "status": "VERIFIED",
+      "resolved": {
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2606.02359",
+        "doi": null
+      },
+      "flags": []
+    },
+    {
+      "key": "ladies2019",
+      "type": "inproceedings",
+      "line": 6,
+      "status": "VERIFIED",
+      "resolved": {
+        "source": "Semantic Scholar",
+        "url": "",
+        "doi": null
+      },
+      "flags": [
+        {
+          "severity": "INFO",
+          "code": "RESOLVED_VIA_SEARCH",
+          "message": "matched by title in Semantic Scholar: "
+        }
+      ]
+    },
+    {
+      "key": "llmr2024",
+      "type": "inproceedings",
+      "line": 12,
+      "status": "VERIFIED",
+      "resolved": {
+        "source": "Crossref",
+        "url": "https://doi.org/10.18653/v1/2024.eacl-long.105",
+        "doi": "10.18653/v1/2024.eacl-long.105"
+      },
+      "flags": []
+    },
+    {
+      "key": "replug2024",
+      "type": "inproceedings",
+      "line": 18,
+      "status": "VERIFIED",
+      "resolved": {
+        "source": "Crossref",
+        "url": "https://doi.org/10.18653/v1/2024.naacl-long.463",
+        "doi": "10.18653/v1/2024.naacl-long.463"
+      },
+      "flags": []
+    },
+    {
+      "key": "dagger2011",
+      "type": "inproceedings",
+      "line": 24,
+      "status": "VERIFIED",
+      "resolved": {
+        "source": "Semantic Scholar",
+        "url": "",
+        "doi": null
+      },
+      "flags": [
+        {
+          "severity": "INFO",
+          "code": "RESOLVED_VIA_SEARCH",
+          "message": "matched by title in Semantic Scholar: "
+        }
+      ]
+    },
+    {
+      "key": "agentprune2025",
+      "type": "inproceedings",
+      "line": 30,
+      "status": "VERIFIED*",
+      "resolved": {
+        "source": "Semantic Scholar",
+        "url": "https://doi.org/10.48550/arXiv.2410.02506",
+        "doi": "10.48550/arXiv.2410.02506"
+      },
+      "flags": [
+        {
+          "severity": "INFO",
+          "code": "RESOLVED_VIA_SEARCH",
+          "message": "matched by title in Semantic Scholar: https://doi.org/10.48550/arXiv.2410.02506"
+        },
+        {
+          "severity": "WARN",
+          "code": "MISSING_DOI",
+          "message": "add doi = {10.48550/arXiv.2410.02506} so the entry is unambiguous"
+        }
+      ]
+    },
+    {
+      "key": "agp2025",
+      "type": "misc",
+      "line": 36,
+      "status": "VERIFIED",
+      "resolved": {
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2506.02951",
+        "doi": null
+      },
+      "flags": []
+    },
+    {
+      "key": "safesieve2026",
+      "type": "article",
+      "line": 41,
+      "status": "VERIFIED",
+      "resolved": {
+        "source": "Crossref",
+        "url": "https://doi.org/10.1609/aaai.v40i35.40236",
+        "doi": "10.1609/aaai.v40i35.40236"
+      },
+      "flags": []
+    },
+    {
+      "key": "skills2026",
+      "type": "misc",
+      "line": 47,
+      "status": "VERIFIED",
+      "resolved": {
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2609.00065",
+        "doi": null
+      },
+      "flags": []
+    }
+  ],
+  "summary": {
+    "total": 9,
+    "verified": 9,
+    "errors": 0,
+    "warnings_only": 1,
+    "warnings_by_flag": {
+      "MISSING_DOI": 1
+    },
+    "unresolved": 0,
+    "retracted": 0,
+    "canonical_instance": 0,
+    "low_relevance": 0,
+    "checks_skipped": 0
+  }
+}

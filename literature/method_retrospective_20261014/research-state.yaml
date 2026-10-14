@@ -1,0 +1,15 @@
+phase: retrospective_complete
+date: 2026-10-14
+scope: source_and_literature_alignment
+research_papers: 8
+tool_acknowledgments: 1
+official_code_files_read: 12
+new_llm_calls: 0
+new_model_fits: 0
+running_v21_mutated: false
+baseline_rerun: false
+test_run: false
+recommendation: receiver_utility_supervised_content_selection
+status_of_recommendation: hypothesis_not_implemented
+citation_identity_check: passed_with_one_warning_and_canonical_check_disabled
+default_citation_check: blocked_by_semantic_scholar_429

@@ -1,0 +1,102 @@
+{
+  "retrieved_utc": "2026-10-14T13:43:14.310954+00:00",
+  "files": [
+    {
+      "repo": "microsoft/LMOps",
+      "commit": "6f53ef41c951de0962bbf27fe3f5819eabc8ce0e",
+      "path": "llm_retriever/src/inference/gen_llm_scores.py",
+      "url": "https://raw.githubusercontent.com/microsoft/LMOps/6f53ef41c951de0962bbf27fe3f5819eabc8ce0e/llm_retriever/src/inference/gen_llm_scores.py",
+      "sha256": "8bfcb301f11460243203fdb336b85b1867981ba7d3edcba11173fded78efd8f7",
+      "bytes": 7474
+    },
+    {
+      "repo": "microsoft/LMOps",
+      "commit": "6f53ef41c951de0962bbf27fe3f5819eabc8ce0e",
+      "path": "llm_retriever/src/models/biencoder_model.py",
+      "url": "https://raw.githubusercontent.com/microsoft/LMOps/6f53ef41c951de0962bbf27fe3f5819eabc8ce0e/llm_retriever/src/models/biencoder_model.py",
+      "sha256": "ee63fa6929a5a35ea3093023525aa7638872f4950e0a1f5c1739e36ba8e10aeb",
+      "bytes": 5630
+    },
+    {
+      "repo": "microsoft/LMOps",
+      "commit": "6f53ef41c951de0962bbf27fe3f5819eabc8ce0e",
+      "path": "llm_retriever/src/models/cross_encoder_model.py",
+      "url": "https://raw.githubusercontent.com/microsoft/LMOps/6f53ef41c951de0962bbf27fe3f5819eabc8ce0e/llm_retriever/src/models/cross_encoder_model.py",
+      "sha256": "2ac437b849ec77c5e9e4134f213ee744974309ca33d4e023602a04fe907e5ec8",
+      "bytes": 1901
+    },
+    {
+      "repo": "microsoft/LMOps",
+      "commit": "6f53ef41c951de0962bbf27fe3f5819eabc8ce0e",
+      "path": "llm_retriever/src/llms/base_llm.py",
+      "url": "https://raw.githubusercontent.com/microsoft/LMOps/6f53ef41c951de0962bbf27fe3f5819eabc8ce0e/llm_retriever/src/llms/base_llm.py",
+      "sha256": "2f791497a0ec30b1953a8424cecd4d20aacf001279694ad587e479104997ea25",
+      "bytes": 970
+    },
+    {
+      "repo": "microsoft/LMOps",
+      "commit": "6f53ef41c951de0962bbf27fe3f5819eabc8ce0e",
+      "path": "llm_retriever/src/llms/llama.py",
+      "url": "https://raw.githubusercontent.com/microsoft/LMOps/6f53ef41c951de0962bbf27fe3f5819eabc8ce0e/llm_retriever/src/llms/llama.py",
+      "sha256": "0054a30b933fc5b40468b583151de48245cfabe2e57f50470e16d33822fa2c72",
+      "bytes": 281
+    },
+    {
+      "repo": "microsoft/LMOps",
+      "commit": "6f53ef41c951de0962bbf27fe3f5819eabc8ce0e",
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/microsoft/LMOps/6f53ef41c951de0962bbf27fe3f5819eabc8ce0e/LICENSE",
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "bytes": 1141
+    },
+    {
+      "repo": "csgen/SafeSieve",
+      "commit": "0af1b31474ae0107a4f6876b3dd6beb5dda6a9ac",
+      "path": "SafeSieve/graph/edge_matrix.py",
+      "url": "https://raw.githubusercontent.com/csgen/SafeSieve/0af1b31474ae0107a4f6876b3dd6beb5dda6a9ac/SafeSieve/graph/edge_matrix.py",
+      "sha256": "141258fc15795fb31418c56ca97a04530687b9f03606def3c2cd091be59cd9a0",
+      "bytes": 6362
+    },
+    {
+      "repo": "csgen/SafeSieve",
+      "commit": "0af1b31474ae0107a4f6876b3dd6beb5dda6a9ac",
+      "path": "SafeSieve/graph/pruning_algorithm.py",
+      "url": "https://raw.githubusercontent.com/csgen/SafeSieve/0af1b31474ae0107a4f6876b3dd6beb5dda6a9ac/SafeSieve/graph/pruning_algorithm.py",
+      "sha256": "e30eefabfde8e6fe3ca2d3530c9ed1344261cae87dca8de85de51795b2fcc2e5",
+      "bytes": 2587
+    },
+    {
+      "repo": "csgen/SafeSieve",
+      "commit": "0af1b31474ae0107a4f6876b3dd6beb5dda6a9ac",
+      "path": "experiments/run_svamp.py",
+      "url": "https://raw.githubusercontent.com/csgen/SafeSieve/0af1b31474ae0107a4f6876b3dd6beb5dda6a9ac/experiments/run_svamp.py",
+      "sha256": "dd0ddb3aad883be283733290e8ab05d8a8f53e15efd7386a8e034ec633864256",
+      "bytes": 26832
+    },
+    {
+      "repo": "yanweiyue/AgentPrune",
+      "commit": "c544dd6a1858c02c6d5d371d23c6e6ff55e0be21",
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/yanweiyue/AgentPrune/c544dd6a1858c02c6d5d371d23c6e6ff55e0be21/README.md",
+      "sha256": "c58929db27583c5d30c3f43e1c7492469396beca1617dc1f124b383d316a1ece",
+      "bytes": 3860
+    },
+    {
+      "repo": "yanweiyue/AgentPrune",
+      "commit": "c544dd6a1858c02c6d5d371d23c6e6ff55e0be21",
+      "path": "experiments/train_mmlu.py",
+      "url": "https://raw.githubusercontent.com/yanweiyue/AgentPrune/c544dd6a1858c02c6d5d371d23c6e6ff55e0be21/experiments/train_mmlu.py",
+      "sha256": "9990113d5edaebc8589e0067abb9728e79434322a7250c60a55bb1f9a042fae2",
+      "bytes": 3343
+    },
+    {
+      "repo": "yanweiyue/AgentPrune",
+      "commit": "c544dd6a1858c02c6d5d371d23c6e6ff55e0be21",
+      "path": "AgentPrune/graph/graph.py",
+      "url": "https://raw.githubusercontent.com/yanweiyue/AgentPrune/c544dd6a1858c02c6d5d371d23c6e6ff55e0be21/AgentPrune/graph/graph.py",
+      "sha256": "ed82324bc31dd7d375ebe12be9e193deeede5e63f1a37148123e2912bb17b3fb",
+      "bytes": 16424
+    }
+  ],
+  "scope": "read-only selected files; no import/training/installation; third-party snapshots LOCAL_ONLY"
+}
