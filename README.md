@@ -1,10 +1,16 @@
 # advanced_MOC
 
-MOC 接收方条件的多阶消息选择研究。当前版本为 **2026-10-14 完成验证的 v1**。
+MOC 接收方条件的多阶消息选择研究。此研究分支包含已完成的v1/v2及**2026-10-14的v2.1离线修订**；main保留v1。v2.1训练内验收未通过，未启动新GPU/val/test。
 
 目标：在作者多智能体图中，按接收方任务、角色、已选消息和 token 预算选择最多四跳的祖先材料，保持或提升质量并降低全流程模型 token。
 
 ## 当前方法
+
+`expected_set.py`在最多四跳的单条/连接双条候选和空集中一次选择，比较预测总收益减通信成本。`expected_utility.py`修正题/episode/动作等权及加权岭回归截距；bootstrap仅报告稳定性。原有MiniLM、1024-token预算与0.02成本系数保留。它预测固定材料、原Vanilla下游的代理效用，不提供完整图效用保证，也没有验证逐步自适应hop轨迹。
+
+原train35的5折问题隔离检查：完整77特征MSE0.370540、固定22特征0.350914，均差于恒零0.304762和训练先验0.303869；受限动作的平均净收益均为负。旧collector误把pair.path附给singleton的特征错误已作派生修复，原件不改。新增模型token=0，既有基准不重复生成。
+
+完整过程：[v2.1离线修订与结果](experiments/moc_v21_expected_set_offline_20261014/v2.1离线修订与结果_20261014.md)；原v2全图结果：[v2完成结果与方法分析](experiments/moc_v2_evidence_bundles_train_20261014/v2完成结果与方法分析_20261014.md)。下列条目和结果表保留v1的历史方法与证据。
 
 - 作者 MOC 的 DAG、角色、提示词、执行及 FinalRefer 汇总由固定版本的 Git submodule 提供。
 - MiniLM 生成消息 sketch；LADIES 的层条件支持质量提供拓扑特征。
@@ -41,7 +47,11 @@ experiments/moc_stateful_sampling_val_20261014/
 research_ideation_20261013/moc_adaptive_neighborhood_sampling_mainline/
                                       方法设计及来源记录
 SNAPSHOT_MANIFEST.json                本次逐文件哈希与本地 raw 归档指针
-docs/next_direction.md                v2 候选思路，尚未实现或验证
+experiments/moc_v2_evidence_bundles_train_20261014/
+                                      已完成v2 train/cal/val及冻结结果
+experiments/moc_v21_expected_set_offline_20261014/
+                                      v2.1离线协议、修订与未通过的验收
+docs/next_direction.md                历史v2候选思路，后续以实验报告为准
 ```
 
 已完成且条件匹配的基准直接复用，不反复生成。只有模型、题目、图、角色、提示词、解码及执行协议匹配时才可配对比较。当前 val 已用于诊断，不能再次包装为 v2 的独立验证集。

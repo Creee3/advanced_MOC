@@ -1,5 +1,9 @@
 # MOC 接收方条件的多阶邻域采样：代码原型
 
+2026-10-14 v2.1离线修订：`expected_set.py`在最多四跳的单条/连接双条候选中一次选择总期望净收益最大的证据集，空集为0；`expected_utility.py`按题/episode/动作等权、正确加权中心化拟合帮助/损害两头。bootstrap仅作稳定性诊断，不用于置信停止。`initial_features.py`为旧训练singleton继承pair.path的错误生成可审计派生修复。原train35问题隔离五折验收仍失败，新cal/val/GPU未启动；所有原基准复用。代码修复不等于方法有效，结果在 `experiments/moc_v21_expected_set_offline_20261014/`。
+
+v2完整train/cal/val已经完成，其宽单次结果预测区间导致近全读/零组读取；冻结原件及费用保留在 `experiments/moc_v2_evidence_bundles_train_20261014/`。本文后续的数据流与公式描述历史v0，不代表当前v2.1策略。
+
 2026-10-14 v1：新增 `stateful.py`。原 `LayerDependentSampler` 保留为v0；v1使用固定材料配对的本地接收答案增量训练轻量ridge模型，随已选sketch重算语义残差/互补特征，执行read/expand/stop。最多四跳可达；不设固定正文fanout名额。实测与协议在 `experiments/moc_stateful_sampling_val_20261014/`，训练48题、val60、原文baseline及w/o Phi归因消融。模型预测是局部效用代理，不是最终图准确率保证；下面公式与数据流描述v0。
 
 这是本轮讨论主线的实际代码接入，允许最大3–4跳，逐接收节点选择有限的原始祖先材料。主内核迁移自 LADIES 官方实现；AS-GCN proposal 另有显式权重的数学移植，但本轮运行路径不使用未经训练的权重。完整映射在 [SOURCES.md](SOURCES.md)，原文基准线在 [PAPER_BASELINES.md](PAPER_BASELINES.md)。作者 checkout 不修改。

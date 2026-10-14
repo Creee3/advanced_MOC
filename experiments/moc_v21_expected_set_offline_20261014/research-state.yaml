@@ -1,5 +1,5 @@
 version: 1
-phase: offline_protocol
+phase: offline_complete_negative
 goal: expected_net_group_utility_without_v2_forced_exploration
 fit_questions: 35
 calibration_questions: 12
@@ -10,3 +10,13 @@ gpu_launch: false
 new_llm_tokens: 0
 baseline_reuse: true
 reflection: after_one_locked_offline_comparison
+schema_repair_rows: 106
+initial_state_labels: 176
+initial_attempt_preserved: attempt00_stored_features
+schema_reruns: 1
+training_gate_passed: false
+deployment_candidate: null
+offline_audit: passed
+new_tests_passed: 19
+historical_regression_checks_passed: 18
+next_bottleneck: utility_supervision_and_evidence_representation

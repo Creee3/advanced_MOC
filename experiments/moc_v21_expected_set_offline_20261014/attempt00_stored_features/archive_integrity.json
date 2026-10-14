@@ -1,0 +1,54 @@
+{
+  "status": "schema_mismatch_not_final",
+  "sources_verified": [
+    {
+      "path": "experiments/moc_v21_expected_set_offline_20261014/evaluate_offline.py",
+      "sha256": "70265ffb013ecf88e61b2cf8b99069ca366c308aff842014108df5ef00a0f7d8",
+      "match": true
+    },
+    {
+      "path": "experiments/moc_v21_expected_set_offline_20261014/protocol.md",
+      "sha256": "2d00fc640065ecc923620d0a0c1c40e7ede58097256bd0ff499fbaccb76feb32",
+      "match": true
+    },
+    {
+      "path": "coding_base/moc_adaptive_sampling/expected_utility.py",
+      "sha256": "bb7c39879c65972aa7514266746731c37f6c4748180c9c463d740142dec449ab",
+      "match": true
+    },
+    {
+      "path": "coding_base/moc_adaptive_sampling/uncertainty.py",
+      "sha256": "8f524f3b01ab2afb7fd6334cd146462195f8d697aa7d4671672fdc2d8d1cca59",
+      "match": true
+    },
+    {
+      "path": "coding_base/moc_adaptive_sampling/bundles.py",
+      "sha256": "da549ccd64ae1fb6576832b2619aa5389776970cb25c812461413d75f730bed9",
+      "match": true
+    },
+    {
+      "path": "coding_base/moc_adaptive_sampling/stateful.py",
+      "sha256": "5e571dc151078aa4548460b7c6401da84f0d32832f6ff34f8ce0d6f64d074cdb",
+      "match": true
+    }
+  ],
+  "note": "Original numeric outputs preserved. Exact originally executed source hashes verified; original protocol recovered from219aa66. No calibration or val inspected.",
+  "preserved_output_hashes": {
+    "oof_report.json": "cbb3351adfac3a05d61e23c4bc7ab21c67dae533fbaed6ec9d143a2b1e3fd41f",
+    "oof_predictions.jsonl": "952550c7ed4d510e775651aa2c86ab650c4fad344be2425aa1720ddcd0150415"
+  },
+  "checkpoints": {
+    "frozen_v2_mean": {
+      "sha256": "6256571220ab0b4b4f8daa053f2c7966d10ca77bdf486a5204f6265b2fb17b4d",
+      "matches_original_report": true
+    },
+    "centered_full": {
+      "sha256": "3713ff4f4a28e2138f03268816494f1d9b03fbffa7770cbe4357e9b83549e14e",
+      "matches_original_report": true
+    },
+    "centered_compact": {
+      "sha256": "838d9f8df4e7996ca1844479b478488c9f22a1d276858a247c4ed610e0bdc456",
+      "matches_original_report": true
+    }
+  }
+}

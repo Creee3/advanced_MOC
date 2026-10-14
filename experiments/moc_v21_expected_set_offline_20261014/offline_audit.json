@@ -1,0 +1,87 @@
+{
+  "schema": "moc_v21_offline_audit_v1",
+  "passed": true,
+  "oof_report_sha256": "38a39e3fa8a7d87c193fa6f2b911cf7050e062942208c870281dc517aa40b681",
+  "oof_predictions_sha256": "8edb9e296b7f0c79b088aad9d592d6c7196b15aabe71aa633a957c67dad74399",
+  "source_data_hashes_checked": [
+    {
+      "path": "experiments/moc_v21_expected_set_offline_20261014/evaluate_offline.py",
+      "sha256": "c71bf4b7a1c1e493341212913cf4615086ee34a2554c9f638280b2703211da34"
+    },
+    {
+      "path": "experiments/moc_v21_expected_set_offline_20261014/protocol.md",
+      "sha256": "9607bd62b625ad1accbc5957573295348bd6e01259be7b78b783014f5d255182"
+    },
+    {
+      "path": "coding_base/moc_adaptive_sampling/expected_utility.py",
+      "sha256": "bb7c39879c65972aa7514266746731c37f6c4748180c9c463d740142dec449ab"
+    },
+    {
+      "path": "coding_base/moc_adaptive_sampling/expected_set.py",
+      "sha256": "d47258a672d51bac7f519c7467baedaf20349020c44d2d021e02b5b55d7d5544"
+    },
+    {
+      "path": "coding_base/moc_adaptive_sampling/initial_features.py",
+      "sha256": "7d19ef9afdce5a29142aa702bf4228a91b17bcc02aad1bc6211f785cb5d094d2"
+    },
+    {
+      "path": "coding_base/moc_adaptive_sampling/uncertainty.py",
+      "sha256": "8f524f3b01ab2afb7fd6334cd146462195f8d697aa7d4671672fdc2d8d1cca59"
+    },
+    {
+      "path": "coding_base/moc_adaptive_sampling/bundles.py",
+      "sha256": "da549ccd64ae1fb6576832b2619aa5389776970cb25c812461413d75f730bed9"
+    },
+    {
+      "path": "coding_base/moc_adaptive_sampling/stateful.py",
+      "sha256": "5e571dc151078aa4548460b7c6401da84f0d32832f6ff34f8ce0d6f64d074cdb"
+    },
+    {
+      "path": "experiments/moc_v2_evidence_bundles_train_20261014/remote_snapshot/training/shard0/questions.jsonl",
+      "sha256": "15078146c5676ce2f37aa18859a333919048e67bf55e7f1c8a26862c7fb9ad59"
+    },
+    {
+      "path": "experiments/moc_v2_evidence_bundles_train_20261014/remote_snapshot/training/shard1/questions.jsonl",
+      "sha256": "8de33c7e8ead1aad642b7b57932d96b44589e1cb3e3f3054b84c924f4157b714"
+    },
+    {
+      "path": "experiments/moc_v21_expected_set_offline_20261014/derived_fit_features.jsonl",
+      "sha256": "4b9724aebece41216eca1224d94b5e248eaa2a0823577d0d6644cdb9db18495f"
+    },
+    {
+      "path": "experiments/moc_v21_expected_set_offline_20261014/data_schema_repairs.json",
+      "sha256": "9781c82ba2003cf710458ea8369629236408432421d9f4c0e06e2de337e7a387"
+    }
+  ],
+  "fit_questions": 35,
+  "initial_state_rows": 176,
+  "schema_repaired_rows": 106,
+  "folds_question_disjoint_and_complete": true,
+  "schema_rewards_costs_other_fields_unchanged": true,
+  "null_prior_and_model_hierarchical_arithmetic_verified": true,
+  "models": {
+    "frozen_v2_mean": {
+      "mse_arithmetic": true,
+      "action_and_cost_arithmetic": true,
+      "checkpoint_sha256": "5b6d0db536806d442c95d6226cd63c319f7e429f3964c00d1880ecf42fac5370",
+      "positive_net_cost_tie_episodes": 0
+    },
+    "centered_full": {
+      "mse_arithmetic": true,
+      "action_and_cost_arithmetic": true,
+      "checkpoint_sha256": "d2264b709b0285676ce9edd8266c2f61c7034669a8678754eecc786715bcc9f8",
+      "positive_net_cost_tie_episodes": 0
+    },
+    "centered_compact": {
+      "mse_arithmetic": true,
+      "action_and_cost_arithmetic": true,
+      "checkpoint_sha256": "e2ce9cd7f69d3b4e6c2e6be7af1df0a852d44b972396989e5b02428a655fd210",
+      "positive_net_cost_tie_episodes": 0
+    }
+  },
+  "new_llm_calls": 0,
+  "new_model_tokens": 0,
+  "calibration_outcomes_inspected": false,
+  "val_or_test_used": false,
+  "scope": "artifact integrity and arithmetic only; no statistical or deployment success claim"
+}
