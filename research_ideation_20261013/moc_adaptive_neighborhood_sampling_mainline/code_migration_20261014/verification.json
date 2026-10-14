@@ -1,0 +1,14 @@
+{
+  "scope": "offline source-path integration, not model accuracy reproduction",
+  "tests_run": 16,
+  "failures": 0,
+  "errors": 0,
+  "status": "passed",
+  "python": "3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]",
+  "model_calls": 0,
+  "gpu_experiments": 0,
+  "cloud_jobs_resumed": 0,
+  "upstream_assets": 27,
+  "author_source_files": 45,
+  "author_checkout": "clean"
+}

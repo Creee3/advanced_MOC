@@ -1,0 +1,30 @@
+{
+  "status": "implementation defaults only; not calibrated or locked for evaluation",
+  "config": {
+    "max_hops": 4,
+    "communication_tokens": 2048,
+    "frontier_fanouts": [4, 3, 2, 1],
+    "hop_token_caps": null,
+    "semantic_temperature": 1.0,
+    "redundancy_weight": 0.5,
+    "min_proxy_gain_per_token": 0.0,
+    "local_state_weight": 0.25,
+    "seed": 42
+  },
+  "representation": "MOC all-MiniLM-L6-v2; encoder/model installation remains caller-owned",
+  "baseline_recipe": {
+    "domain": "aqua",
+    "llm_name": "gemma2:27b",
+    "num_agents": 7,
+    "edge_density": 0.5,
+    "random_dag_seed": 42,
+    "use_cot": false,
+    "neighbor_hops": 2,
+    "ism_r": 1.0,
+    "ism_epsilon": 0.1,
+    "ism_kppa": 45
+  },
+  "tokenizer_relative_to_workspace": "experiments/moc_index_pull_20261013/tokenizer/tokenizer.json",
+  "tokenizer_sha256": "3f289bc05132635a8bc7aca7aa21255efd5e18f3710f43e3cdb96bcd41be4922",
+  "do_not_resume_old_cloud_runs": true
+}

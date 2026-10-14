@@ -1,0 +1,78 @@
+{
+  "checked_utc": "2026-10-14T06:27:21.414646+00:00",
+  "phase": "complete",
+  "completed_conditions": 540,
+  "recorded_pid_existence": [
+    {
+      "pid": 1502607,
+      "exists": false
+    },
+    {
+      "pid": 1503157,
+      "exists": false
+    },
+    {
+      "pid": 1504088,
+      "exists": false
+    },
+    {
+      "pid": 1504844,
+      "exists": false
+    },
+    {
+      "pid": 1513739,
+      "exists": false
+    },
+    {
+      "pid": 1513740,
+      "exists": false
+    }
+  ],
+  "current_project_or_private_service_processes": [
+    {
+      "pid": 311689,
+      "parent": 311641,
+      "state": "S",
+      "cwd": "/home/liuxin/ICML2027/experiments/moc_index_pull_20261013",
+      "command": "/bin/bash --init-file /home/liuxin/.vscode-server/cli/servers/Stable-4fe60c8b1cdac1c4c174f2fb180d0d758272d713/server/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh ",
+      "private_service": false
+    },
+    {
+      "pid": 874483,
+      "parent": 311641,
+      "state": "S",
+      "cwd": "/home/liuxin/ICML2027",
+      "command": "/bin/bash --init-file /home/liuxin/.vscode-server/cli/servers/Stable-4fe60c8b1cdac1c4c174f2fb180d0d758272d713/server/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh ",
+      "private_service": false
+    }
+  ],
+  "private_ports": [
+    {
+      "port": 11448,
+      "accepting": false
+    },
+    {
+      "port": 11449,
+      "accepting": false
+    },
+    {
+      "port": 11450,
+      "accepting": false
+    }
+  ],
+  "gpu_processes": {
+    "exit_code": 0,
+    "output": "1624623, [Not Found], 2844 MiB\n49146, [Not Found], 674 MiB\n28912, [Not Found], 674 MiB\n499740, [Not Found], 15364 MiB\n2827951, [Not Found], 23512 MiB\n2827951, [Not Found], 23510 MiB",
+    "error": ""
+  },
+  "gpu_now": {
+    "exit_code": 0,
+    "output": "0, 2855 MiB, 0 %\n1, 685 MiB, 0 %\n2, 683 MiB, 0 %\n3, 14649 MiB, 94 %\n4, 3 MiB, 0 %\n5, 23529 MiB, 99 %\n6, 23527 MiB, 100 %\n7, 3 MiB, 0 %",
+    "error": ""
+  },
+  "listeners": {
+    "exit_code": 0,
+    "output": "State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess                                      \nLISTEN 0      4096   127.0.0.53%lo:53         0.0.0.0:*                                                \nLISTEN 0      128        127.0.0.1:43251      0.0.0.0:*    users:((\"code-4fe60c8b1c\",pid=311336,fd=10))\nLISTEN 0      4096      127.0.0.54:53         0.0.0.0:*                                                \nLISTEN 0      128        127.0.0.1:36073      0.0.0.0:*    users:((\"code-4fe60c8b1c\",pid=785055,fd=9)) \nLISTEN 0      511        127.0.0.1:38227      0.0.0.0:*    users:((\"MainThread\",pid=874523,fd=36))     \nLISTEN 0      10      127.0.0.1%lo:53         0.0.0.0:*                                                \nLISTEN 0      4096         0.0.0.0:22         0.0.0.0:*                                                \nLISTEN 0      10          [::1]%lo:53            [::]:*                                                \nLISTEN 0      4096            [::]:22            [::]:*",
+    "error": ""
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "status": "training_labels",
+  "snapshot_sha256": "5e5a05feda9372f24e22c807b242420174d91ac96c976ffff183cfe7f0d80113",
+  "labels_completed": 37,
+  "training_progress": [
+    {
+      "shard": 0,
+      "completed_questions": 2,
+      "total_questions": 24,
+      "last_question": "0000b43dec7f5ac9be510d958fca1441fb44c46cbbc879a7e20d2e483a95bbc1"
+    },
+    {
+      "shard": 1,
+      "completed_questions": 2,
+      "total_questions": 24,
+      "last_question": "00013cc13f02a4eeec74417c762f58d08eaabe6581599b55cf8a6dda22762acb"
+    }
+  ],
+  "val_conditions": 0,
+  "all_three_warmups_full_vram": true,
+  "start_utc": "2026-10-14T02:26:42.185951+00:00"
+}

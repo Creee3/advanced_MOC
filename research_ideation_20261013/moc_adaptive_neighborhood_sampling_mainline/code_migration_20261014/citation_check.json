@@ -1,0 +1,70 @@
+{
+  "file": "research_ideation_20261013\\moc_adaptive_neighborhood_sampling_mainline\\code_migration_20261014\\references.bib",
+  "checked_at": "2026-10-13T16:34:27Z",
+  "mode": "online",
+  "verdict": "PASS",
+  "verdict_line": "PASS: 4/4 verified, 0 errors, 0 warnings (0 checks skipped)",
+  "skipped_checks": [],
+  "entries": [
+    {
+      "key": "graphsage",
+      "type": "misc",
+      "line": 1,
+      "status": "VERIFIED",
+      "resolved": {
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1706.02216",
+        "doi": null
+      },
+      "flags": []
+    },
+    {
+      "key": "fastgcn",
+      "type": "misc",
+      "line": 10,
+      "status": "VERIFIED",
+      "resolved": {
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1801.10247",
+        "doi": null
+      },
+      "flags": []
+    },
+    {
+      "key": "as_gcn",
+      "type": "misc",
+      "line": 19,
+      "status": "VERIFIED",
+      "resolved": {
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1809.05343",
+        "doi": null
+      },
+      "flags": []
+    },
+    {
+      "key": "ladies",
+      "type": "misc",
+      "line": 28,
+      "status": "VERIFIED",
+      "resolved": {
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1911.07323",
+        "doi": null
+      },
+      "flags": []
+    }
+  ],
+  "summary": {
+    "total": 4,
+    "verified": 4,
+    "errors": 0,
+    "warnings_only": 0,
+    "warnings_by_flag": {},
+    "unresolved": 0,
+    "retracted": 0,
+    "canonical_instance": 0,
+    "low_relevance": 0,
+    "checks_skipped": 0
+  }
+}

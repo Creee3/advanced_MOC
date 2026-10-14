@@ -1,0 +1,44 @@
+{
+  "frozen_before_validation": true,
+  "utility_model_sha256": "9c7c5e0095a092c1949969fabdc87e0c425b7d455550c587bece76decbeec99e",
+  "config_sha256": "4a5d5162d234a7b02f4e8df7f5e5eb7f2d24e03e9b8f0280361ef0d0ebb667a3",
+  "val_inputs_sha256": "c8f2a48c31ed7452c05d5861944be0c9907feaac8c99a12cf331efa783bde168",
+  "train_labels_sha256": {
+    "training/shard0/labels.jsonl": "28230de7d6ebb482164ed0d7d168abdaca061b07b47e7992396a50229feca607",
+    "training/shard1/labels.jsonl": "12095c9018fcb06ce940e8a887a3e5cadfcc7d2ff17187a3fd9516be9a8ce2e4"
+  },
+  "candidate": {
+    "max_hops": 4,
+    "communication_tokens": 1024,
+    "frontier_fanouts": [
+      4,
+      3,
+      2,
+      1
+    ],
+    "hop_token_caps": null,
+    "semantic_temperature": 1.0,
+    "redundancy_weight": 0.5,
+    "min_proxy_gain_per_token": 0,
+    "local_state_weight": 0.0,
+    "seed": 42,
+    "cost_penalty": 0.02,
+    "projection_ridge": 0.1
+  },
+  "val_gold_on_server": false,
+  "execution_source_sha256": {
+    "run_experiment.py": "6174e7772999b7a17dc89a230e6d92e89e590b2a4ec136d3e9bdd23d0bda2e0f",
+    "runtime_controls.py": "ef307a6bf25bf18731eccbfcb473f47c8e068d455e02d2ac62fa995befa522da",
+    "trace_hooks.py": "cee48fe3bb04efd640ae09865f900f38c116e94a810f119e811c02f91172bb18",
+    "collect_training.py": "89f9cfb44af7835e05a5999f7e5a1952a9137b0d0d463ddc09dcfa3526c11b83",
+    "fit_utility.py": "6461dd6a48e7e37d5adbdb38465d5fb11b463942c7fd98566960d6fc1dff6273",
+    "training_integrity.py": "efdb90b0ff24c805ac170b9653434e235bc00e1c531dc1f67fc72f6ea2d9da66",
+    "coding_base/moc_adaptive_sampling/features.py": "49ebda3ce17eae334699216a0f8a068c8c83494daa1d0830069ee161e7c82b48",
+    "coding_base/moc_adaptive_sampling/sampler.py": "de1e9400858af4636a9f513adaa173de1689bad71d615ac8a1ef37e2e451d04a",
+    "coding_base/moc_adaptive_sampling/__init__.py": "119c32f35e789c8a428d7960519526cb046572afdf9cfa770f04184f7e31b889",
+    "coding_base/moc_adaptive_sampling/stateful.py": "5e571dc151078aa4548460b7c6401da84f0d32832f6ff34f8ce0d6f64d074cdb",
+    "coding_base/moc_adaptive_sampling/adapter.py": "037b23338f41e81c6a8bb51002f9211d326efb2cd85527c67994922023670e89",
+    "coding_base/moc_adaptive_sampling/kernels.py": "f8ff498f3bf7359771c0725c42b244d4b02c30da0185a59706eebedac2260024",
+    "coding_base/moc_adaptive_sampling/paper_baselines.py": "bc304cb45f3aa8abcd2042539cc0116012192b5a6918ed558f8cec9c0ff9b885"
+  }
+}

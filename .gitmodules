@@ -1,0 +1,3 @@
+[submodule "coding_base/MOC-official"]
+	path = coding_base/MOC-official
+	url = https://github.com/yao-guan/MOC.git

@@ -1,0 +1,88 @@
+{
+  "schema": "v1_training_report",
+  "paired_labels": 376,
+  "fit_pairs": 280,
+  "planned_training_questions": 48,
+  "valid_training_questions": 47,
+  "excluded_questions": [
+    {
+      "question_id": "0018499500339c7151389822cc3ab08caacff791e11bc2e040541caf546ed0b1",
+      "question_index": 32,
+      "status": "invalid_output_limit",
+      "reason": "recovered failed question; all paired labels excluded",
+      "main_calls": 18,
+      "prompt_tokens": 13430,
+      "completion_tokens": 7519
+    }
+  ],
+  "fit_question_groups": 35,
+  "calibration_question_groups": 12,
+  "calibration_pairs": 96,
+  "fit_label_histogram": {
+    "-1": 41,
+    "0": 213,
+    "1": 26
+  },
+  "calibration_label_histogram": {
+    "-1": 14,
+    "0": 61,
+    "1": 21
+  },
+  "regularization_candidates": [
+    {
+      "regularization": 10.0,
+      "calibration_mse": 0.3855373406723146
+    },
+    {
+      "regularization": 100.0,
+      "calibration_mse": 0.37931483757316203
+    },
+    {
+      "regularization": 1000.0,
+      "calibration_mse": 0.37558202495238285
+    }
+  ],
+  "selected_regularization": 1000.0,
+  "calibration_predictions_range": [
+    -0.11420781045576991,
+    0.08714833997173999
+  ],
+  "calibration_positive_predictions": 4,
+  "constant_zero_calibration_mse": 0.3645833333333333,
+  "underpowered_training_flag": false,
+  "validation_used": false,
+  "feature_names": [
+    "base_similarity",
+    "residual_similarity",
+    "maximum_selected_similarity",
+    "mean_selected_similarity",
+    "selected_count",
+    "remaining_budget_fraction",
+    "incremental_cost_fraction",
+    "body_cost_fraction",
+    "ladies_mass",
+    "local_similarity",
+    "selected_relevance_mean",
+    "residual_norm",
+    "is_first_read",
+    "hop1",
+    "hop2",
+    "hop3",
+    "hop4",
+    "receiver_solver",
+    "receiver_analyst",
+    "receiver_programmer",
+    "receiver_inspector",
+    "sender_solver",
+    "sender_analyst",
+    "sender_programmer",
+    "sender_inspector",
+    "relevance_x_redundancy",
+    "relevance_x_selected_count",
+    "relevance_x_cost",
+    "residual_x_cost",
+    "same_role",
+    "proposal_x_relevance",
+    "remaining_x_cost"
+  ]
+}

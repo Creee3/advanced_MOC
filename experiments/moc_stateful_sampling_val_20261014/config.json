@@ -1,0 +1,81 @@
+{
+  "author_directory": "/home/liuxin/ICML2027/experiments/moc_stateful_sampling_val_20261014/author_source",
+  "author_commit": "9c67c92507570704a7df73e452552a3f49e83897",
+  "extension_directory": "/home/liuxin/ICML2027/experiments/moc_stateful_sampling_val_20261014/coding_base",
+  "python_executable": "/home/liuxin/.conda/envs/moc/bin/python",
+  "ollama_executable": "/home/liuxin/.local/bin/ollama",
+  "model_directory": "/home/liuxin/.ollama/models",
+  "main_model": "gemma2:27b",
+  "main_digest": "53261bc9c192c1cb5fcc898dd3aa15da093f5ab6f08e17e48cf838bb1c58abfe",
+  "merger_model": "gemma2:9b",
+  "merger_digest": "ff02c3702f322b9e075e9568332d96c0a7028002f1a5a056e0a6784320a4db0b",
+  "tokenizer_path": "/home/liuxin/ICML2027/experiments/moc_index_pull_20261013/tokenizer/tokenizer.json",
+  "tokenizer_sha256": "3f289bc05132635a8bc7aca7aa21255efd5e18f3710f43e3cdb96bcd41be4922",
+  "num_agents": 7,
+  "densities": [
+    0.3,
+    0.7
+  ],
+  "arms": [
+    "single_llm",
+    "vanilla_mas",
+    "moc",
+    "moc_without_phi",
+    "adaptive_sampling"
+  ],
+  "num_rounds": 1,
+  "use_cot": false,
+  "seed": 42,
+  "num_ctx": 8192,
+  "main_num_predict": 2000,
+  "main_temperature": 0,
+  "merger_temperature": 0.1,
+  "code_timeout_seconds": 5,
+  "ism_r": 1.0,
+  "ism_epsilon": 0.1,
+  "ism_kppa": 45,
+  "candidate": {
+    "max_hops": 4,
+    "communication_tokens": 1024,
+    "frontier_fanouts": [
+      4,
+      3,
+      2,
+      1
+    ],
+    "hop_token_caps": null,
+    "semantic_temperature": 1.0,
+    "redundancy_weight": 0.5,
+    "min_proxy_gain_per_token": 0,
+    "local_state_weight": 0.0,
+    "seed": 42,
+    "cost_penalty": 0.02,
+    "projection_ridge": 0.1
+  },
+  "main_ports": [
+    11448,
+    11449
+  ],
+  "merger_port": 11450,
+  "workers": 2,
+  "conditions_total": 540,
+  "gpu_policy": {
+    "max_utilization_percent": 15,
+    "main_min_free_mib": 21000,
+    "merger_min_free_mib": 10000,
+    "stable_polls": 2,
+    "poll_seconds": 10,
+    "max_wait_seconds": 180,
+    "max_wall_seconds": 19841,
+    "quiet_timeout_seconds": 600,
+    "cpu_offload_allowed": false
+  },
+  "training_questions": 48,
+  "training_receivers": [
+    1,
+    3,
+    4,
+    5
+  ],
+  "utility_checkpoint": "/home/liuxin/ICML2027/experiments/moc_stateful_sampling_val_20261014/utility_model.json"
+}

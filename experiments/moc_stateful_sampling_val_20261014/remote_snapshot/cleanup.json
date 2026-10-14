@@ -1,0 +1,56 @@
+{
+  "ports_closed": true,
+  "remaining_ports": [],
+  "owned_processes_remaining": [],
+  "owned_children_remaining": [],
+  "gpu_snapshot_after": [
+    {
+      "index": 0,
+      "uuid": "GPU-0a075077-3745-799a-aff3-f0d34a17b6ac",
+      "utilization": 0,
+      "free_mib": 21227
+    },
+    {
+      "index": 1,
+      "uuid": "GPU-d7d04192-bf97-dfdb-3276-75ff261a9f51",
+      "utilization": 0,
+      "free_mib": 24076
+    },
+    {
+      "index": 2,
+      "uuid": "GPU-2121fa39-275f-d7eb-3c84-c7292ed702bc",
+      "utilization": 0,
+      "free_mib": 24078
+    },
+    {
+      "index": 3,
+      "uuid": "GPU-dcb52b28-8342-ab3b-cd6f-74719b63586f",
+      "utilization": 98,
+      "free_mib": 7565
+    },
+    {
+      "index": 4,
+      "uuid": "GPU-89523765-dcd4-46ea-1f2d-4ff7d509138c",
+      "utilization": 0,
+      "free_mib": 24078
+    },
+    {
+      "index": 5,
+      "uuid": "GPU-8b952bd3-5cdf-11d4-561a-bc9ef3717773",
+      "utilization": 99,
+      "free_mib": 553
+    },
+    {
+      "index": 6,
+      "uuid": "GPU-0179fbe0-2ace-59a4-7794-fa483dda1e46",
+      "utilization": 99,
+      "free_mib": 555
+    },
+    {
+      "index": 7,
+      "uuid": "GPU-e230f5a4-ad5d-341f-2840-4f737f3c0c26",
+      "utilization": 0,
+      "free_mib": 24078
+    }
+  ]
+}

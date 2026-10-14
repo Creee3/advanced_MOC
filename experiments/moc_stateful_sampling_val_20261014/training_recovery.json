@@ -1,0 +1,43 @@
+{
+  "previous_failure": "fixed train output limit",
+  "valid_completed_questions": 35,
+  "valid_labels": 280,
+  "invalid_questions": [
+    {
+      "question_id": "0018499500339c7151389822cc3ab08caacff791e11bc2e040541caf546ed0b1",
+      "question_index": 32,
+      "status": "invalid_output_limit",
+      "reason": "recovered failed question; all paired labels excluded",
+      "main_calls": 18,
+      "prompt_tokens": 13430,
+      "completion_tokens": 7519
+    }
+  ],
+  "abandoned_calls": {
+    "main_calls": 15,
+    "prompt_tokens": 7271,
+    "completion_tokens": 2325
+  },
+  "prior_gpu_wall_seconds": 1758.878152,
+  "remaining_gpu_wall_seconds": 19841,
+  "algorithm_parameters_unchanged": true,
+  "no_val_inference_yet": true,
+  "shards": [
+    {
+      "shard": 0,
+      "valid_questions": 16,
+      "valid_labels": 128,
+      "removed_uncommitted_labels": 6,
+      "pending_rerun_question_ids": []
+    },
+    {
+      "shard": 1,
+      "valid_questions": 19,
+      "valid_labels": 152,
+      "removed_uncommitted_labels": 4,
+      "pending_rerun_question_ids": [
+        "001b96257f563a3c1859882432803d9ed9a2ce37a7dcef3da57aa97cad448d14"
+      ]
+    }
+  ]
+}

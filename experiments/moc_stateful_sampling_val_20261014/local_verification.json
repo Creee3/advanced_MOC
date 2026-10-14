@@ -1,0 +1,7 @@
+{
+  "tests_run": 22,
+  "failures": 0,
+  "errors": 0,
+  "scope": "real author AST path, real tokenizer and service/feature doubles; no accuracy claim",
+  "scripts_parsed": 12
+}

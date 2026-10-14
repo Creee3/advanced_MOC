@@ -1,0 +1,41 @@
+{
+  "dev": 30,
+  "val": 60,
+  "test": 254,
+  "training": 48,
+  "sources": [
+    {
+      "split": "dev",
+      "url": "https://raw.githubusercontent.com/google-deepmind/AQuA/master/dev.json",
+      "sha256": "4a52301d8a49ae0b286f8e697f9c5da1b109b247b825b47b4c6de34312dceec5",
+      "records": 254
+    },
+    {
+      "split": "train",
+      "url": "https://raw.githubusercontent.com/google-deepmind/AQuA/master/train.json",
+      "sha256": "35b70c7cb1660c34d302bb932dfd3656ce3d05e8c982c797767fec31d7d1e0ba",
+      "records": 97467
+    }
+  ],
+  "val_rule": "sort by SHA256(seed|question_id); first30 exploration, next60 validation; no outcome-based selection",
+  "original_seed": "moc-verification-pilot-v1-seed42",
+  "original_manifest_sha256": "27df1f80a0524d6fafea94f65e503ad9712f1fc3fa5c159a026bf48cb3ed43cd",
+  "train_rule": "first 48 unique content hashes of official train excluding all official dev/test",
+  "training_fit_questions": 36,
+  "training_calibration_questions": 12,
+  "train_gold_upload": true,
+  "val_gold_upload": false,
+  "test_run": false,
+  "cross_split_overlap": 0,
+  "files": {
+    "dev_evaluation_only_LOCAL_ONLY.jsonl": "16df4f18ac51d7480313c41b4996a415dcb27e9d19e5989cbe03656ebbd3ad37",
+    "dev_inputs.jsonl": "c9c4c9c44c13f3589fd2476e3d00033b4336b810474737cba0ae27149ac60d84",
+    "official_dev_LOCAL_ONLY.jsonl": "4a52301d8a49ae0b286f8e697f9c5da1b109b247b825b47b4c6de34312dceec5",
+    "official_train_LOCAL_ONLY.jsonl": "35b70c7cb1660c34d302bb932dfd3656ce3d05e8c982c797767fec31d7d1e0ba",
+    "train_evaluation_only_LOCAL_ONLY.jsonl": "11bc5c2fb2d9d14aeb5061638694418fbd73c93ed36da16da100e9fe870c63fd",
+    "train_inputs.jsonl": "f820b80124513218e3054714a6d98443d37a934fa3a7947514e117c2e8efb251",
+    "train_labels.jsonl": "11bc5c2fb2d9d14aeb5061638694418fbd73c93ed36da16da100e9fe870c63fd",
+    "val_evaluation_only_LOCAL_ONLY.jsonl": "f94cdbef12516b9579cebcccc550dc505140cf989a84b14b945653f7ae6585ae",
+    "val_inputs.jsonl": "c8f2a48c31ed7452c05d5861944be0c9907feaac8c99a12cf331efa783bde168"
+  }
+}

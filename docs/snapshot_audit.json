@@ -1,0 +1,15 @@
+{
+  "snapshot_bytes_verified": 109,
+  "frozen_source_hashes_verified": 13,
+  "conditions": 540,
+  "unique_keys": 540,
+  "questions": 60,
+  "credential_pattern_hits": [],
+  "email_containing_files": [],
+  "v1_unit_tests": {
+    "run": 6,
+    "passed": 6,
+    "model_calls": 0
+  },
+  "upstream_commit": "9c67c92507570704a7df73e452552a3f49e83897"
+}

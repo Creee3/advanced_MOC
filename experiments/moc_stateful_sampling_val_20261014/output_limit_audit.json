@@ -1,0 +1,23 @@
+{
+  "length_calls": [
+    {
+      "condition": [
+        "00afabe7a7e1c8e0a4dbe35464e21aca8d63e4d0b2e816971e293e6a8e3380d8",
+        "moc",
+        0.3
+      ],
+      "event_index": 10057,
+      "model": "gemma2:27b",
+      "eval_count": 2000,
+      "options": {
+        "num_predict": 2000,
+        "temperature": 0,
+        "seed": 42,
+        "num_ctx": 8192,
+        "num_gpu": 999
+      }
+    }
+  ],
+  "count": 1,
+  "trace_errors": 0
+}

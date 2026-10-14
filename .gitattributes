@@ -1,0 +1,2 @@
+# Preserve the bytes of frozen artifacts; their SHA256 values are evidence.
+* -text

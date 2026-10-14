@@ -1,0 +1,45 @@
+{
+  "status": "passed_with_output_limit_exception",
+  "record_and_cost_consistency": "passed",
+  "output_completeness": "failed",
+  "all_conditions_valid": false,
+  "output_limit_calls": [
+    {
+      "question_id": "00afabe7a7e1c8e0a4dbe35464e21aca8d63e4d0b2e816971e293e6a8e3380d8",
+      "arm": "moc",
+      "density": 0.3,
+      "event_index": 10057,
+      "model": "gemma2:27b",
+      "eval_count": 2000
+    }
+  ],
+  "untruncated_conditions": 539,
+  "val_conditions": 540,
+  "val_questions": 60,
+  "planned_training_questions": 48,
+  "valid_training_questions": 47,
+  "excluded_training_questions": 1,
+  "call_totals": {
+    "main_calls": 3900,
+    "merger_calls": 935,
+    "total_model_tokens": 3164615,
+    "training_pairs": 376,
+    "valid_training_questions": 47,
+    "excluded_training_questions": 1
+  },
+  "roles": [
+    "Math Solver",
+    "Mathematical Analyst",
+    "Programming Expert",
+    "Inspector",
+    "Math Solver",
+    "Mathematical Analyst",
+    "Programming Expert"
+  ],
+  "raw_usage_matches_saved": true,
+  "paired_train_labels_recomputed": true,
+  "policy_frozen_before_val": true,
+  "all_services_full_vram": true,
+  "owned_cleanup_confirmed": true,
+  "scope": "record consistency audit; not an independent replication or performance guarantee"
+}

@@ -1,0 +1,227 @@
+{
+  "fetched_utc": "2026-10-13T16:11:24.918295+00:00",
+  "repositories": [
+    {
+      "name": "graphsage",
+      "repo": "williamleif/GraphSAGE",
+      "commit": "a0fdef95dca7b456dab01cb35034717c8b6dd017",
+      "stars_at_fetch": 3729,
+      "license_metadata": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "snapshot_scope": [
+        "README.md",
+        "LICENSE.txt",
+        "graphsage/neigh_samplers.py",
+        "graphsage/models.py"
+      ]
+    },
+    {
+      "name": "as_gcn",
+      "repo": "huangwb/AS-GCN",
+      "commit": "4aa6e7d51c9b4082032f10e1af116d77c885dd95",
+      "stars_at_fetch": 89,
+      "license_metadata": null,
+      "snapshot_scope": [
+        "README.md",
+        "sampler.py",
+        "layers.py",
+        "models.py",
+        "train.py"
+      ]
+    },
+    {
+      "name": "ladies",
+      "repo": "acbull/LADIES",
+      "commit": "020c8e91f4124612a24f142ec33aed8162905f51",
+      "stars_at_fetch": 75,
+      "license_metadata": null,
+      "snapshot_scope": [
+        "README.md",
+        "pytorch_ladies.py",
+        "utils.py"
+      ]
+    },
+    {
+      "name": "fastgcn",
+      "repo": "matenure/FastGCN",
+      "commit": "b8e6e6412d8cb696e0adb7910832ed1ae7243ac9",
+      "stars_at_fetch": 529,
+      "license_metadata": null,
+      "snapshot_scope": [
+        "README.md",
+        "train_batch_multiRank_inductive_reddit_Mixlayers_sampleA.py",
+        "layers.py"
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "url": "https://api.github.com/repos/williamleif/GraphSAGE",
+      "path": "sources/graphsage_repo.json",
+      "sha256": "6b90b3202e07d9889e3134e511a8a5ea4a7a971aaa6fb660921dfc3750a24312",
+      "bytes": 5382
+    },
+    {
+      "url": "https://raw.githubusercontent.com/williamleif/GraphSAGE/a0fdef95dca7b456dab01cb35034717c8b6dd017/README.md",
+      "path": "upstream/graphsage/README.md",
+      "sha256": "dbd59cd1ee4454103e3cd5911ac39b6dfebcde557dd1ff70cc52b482f9c5a536",
+      "bytes": 7906
+    },
+    {
+      "url": "https://raw.githubusercontent.com/williamleif/GraphSAGE/a0fdef95dca7b456dab01cb35034717c8b6dd017/LICENSE.txt",
+      "path": "upstream/graphsage/LICENSE.txt",
+      "sha256": "e7b56d979cbc061584023360914ab1753f84366eb72f802f4b3ce2af0c4af187",
+      "bytes": 2270
+    },
+    {
+      "url": "https://raw.githubusercontent.com/williamleif/GraphSAGE/a0fdef95dca7b456dab01cb35034717c8b6dd017/graphsage/neigh_samplers.py",
+      "path": "upstream/graphsage/graphsage/neigh_samplers.py",
+      "sha256": "7b7ccf73c8d4b6cf44aed7d836138d897517089ddaf041bf44ca45e9a80d7af8",
+      "bytes": 818
+    },
+    {
+      "url": "https://raw.githubusercontent.com/williamleif/GraphSAGE/a0fdef95dca7b456dab01cb35034717c8b6dd017/graphsage/models.py",
+      "path": "upstream/graphsage/graphsage/models.py",
+      "sha256": "866c742c8747cfb1f9d7f5ea050590dd6cbf5c3c8a2138fa7454101821ee5fd0",
+      "bytes": 20806
+    },
+    {
+      "url": "https://api.github.com/repos/huangwb/AS-GCN",
+      "path": "sources/as_gcn_repo.json",
+      "sha256": "fd41bb01ff335e3debeeffd9265aa0e640cb53bf724acfd36c584206c049578f",
+      "bytes": 4872
+    },
+    {
+      "url": "https://raw.githubusercontent.com/huangwb/AS-GCN/4aa6e7d51c9b4082032f10e1af116d77c885dd95/README.md",
+      "path": "upstream/as_gcn/README.md",
+      "sha256": "3cfa6cf793d5b6ed2b105e58372bbd58978b8674491c3785625283513b19a4be",
+      "bytes": 1389
+    },
+    {
+      "url": "https://raw.githubusercontent.com/huangwb/AS-GCN/4aa6e7d51c9b4082032f10e1af116d77c885dd95/sampler.py",
+      "path": "upstream/as_gcn/sampler.py",
+      "sha256": "aae8274d91f36034f716b5062f8df81a0fe2d37c75a710911c4998cda64c30d0",
+      "bytes": 3194
+    },
+    {
+      "url": "https://raw.githubusercontent.com/huangwb/AS-GCN/4aa6e7d51c9b4082032f10e1af116d77c885dd95/layers.py",
+      "path": "upstream/as_gcn/layers.py",
+      "sha256": "e1c493630f30bffc5baeebff366d71a67e62930b11524c00750087aa51543477",
+      "bytes": 12137
+    },
+    {
+      "url": "https://raw.githubusercontent.com/huangwb/AS-GCN/4aa6e7d51c9b4082032f10e1af116d77c885dd95/models.py",
+      "path": "upstream/as_gcn/models.py",
+      "sha256": "7a2b4b448c7eabd336b349729a37c87d4830dccd78bdbb9b1b9d216a58f40b94",
+      "bytes": 13144
+    },
+    {
+      "url": "https://raw.githubusercontent.com/huangwb/AS-GCN/4aa6e7d51c9b4082032f10e1af116d77c885dd95/train.py",
+      "path": "upstream/as_gcn/train.py",
+      "sha256": "737a1cc8035baa917bfeef13198fa07497f9265c3f13a4ae7a782805dadf7eda",
+      "bytes": 4511
+    },
+    {
+      "url": "https://api.github.com/repos/acbull/LADIES",
+      "path": "sources/ladies_repo.json",
+      "sha256": "95b091a770749994422d8a955bba4a965e59a89a15c7f69d33ca41a5f6d34b6d",
+      "bytes": 4990
+    },
+    {
+      "url": "https://raw.githubusercontent.com/acbull/LADIES/020c8e91f4124612a24f142ec33aed8162905f51/README.md",
+      "path": "upstream/ladies/README.md",
+      "sha256": "9290784ce87d31b50a2c87e896786a4560341d434b166990d3bc06f672047555",
+      "bytes": 2492
+    },
+    {
+      "url": "https://raw.githubusercontent.com/acbull/LADIES/020c8e91f4124612a24f142ec33aed8162905f51/pytorch_ladies.py",
+      "path": "upstream/ladies/pytorch_ladies.py",
+      "sha256": "044e2836200fd8d9c10bdbb24c8c1eca342cbacdb25142fe6e115e72049e7bec",
+      "bytes": 13366
+    },
+    {
+      "url": "https://raw.githubusercontent.com/acbull/LADIES/020c8e91f4124612a24f142ec33aed8162905f51/utils.py",
+      "path": "upstream/ladies/utils.py",
+      "sha256": "bf02f49dedc419fb8b988219ff13d576a6e1eb7120fae84402f2170bf962538c",
+      "bytes": 9034
+    },
+    {
+      "url": "https://api.github.com/repos/matenure/FastGCN",
+      "path": "sources/fastgcn_repo.json",
+      "sha256": "9de8ce40ea34050060ce42d224b9f7d8c332ab1a59cbf9a85f547ec9e5673bce",
+      "bytes": 5148
+    },
+    {
+      "url": "https://raw.githubusercontent.com/matenure/FastGCN/b8e6e6412d8cb696e0adb7910832ed1ae7243ac9/README.md",
+      "path": "upstream/fastgcn/README.md",
+      "sha256": "081bfd740a0c9de25855afeb463ca5eed86c9baefbac8982d1e6d8581af7097e",
+      "bytes": 1647
+    },
+    {
+      "url": "https://raw.githubusercontent.com/matenure/FastGCN/b8e6e6412d8cb696e0adb7910832ed1ae7243ac9/train_batch_multiRank_inductive_reddit_Mixlayers_sampleA.py",
+      "path": "upstream/fastgcn/train_batch_multiRank_inductive_reddit_Mixlayers_sampleA.py",
+      "sha256": "4130ba32bec86e8cb8f1745983beab8a1d5ff1e216b656951c25ff7ea2fed584",
+      "bytes": 14623
+    },
+    {
+      "url": "https://raw.githubusercontent.com/matenure/FastGCN/b8e6e6412d8cb696e0adb7910832ed1ae7243ac9/layers.py",
+      "path": "upstream/fastgcn/layers.py",
+      "sha256": "55bdcc8036d3688b930b04a0bbd78945b59f13e58e8b0cce2aef90ed6e772f27",
+      "bytes": 8958
+    },
+    {
+      "url": "https://arxiv.org/abs/1706.02216",
+      "path": "sources/graphsage_arxiv.html",
+      "sha256": "f3c29168c413d63f7e6ed090f28e4351519afd2a383097699b598e15575c285e",
+      "bytes": 42608
+    },
+    {
+      "url": "https://arxiv.org/pdf/1706.02216",
+      "path": "papers/graphsage.pdf",
+      "sha256": "e1f354eb12011cde24af1eb500d72463fc971b09d26b55688c7f918a86e31ce8",
+      "bytes": 1086007
+    },
+    {
+      "url": "https://arxiv.org/abs/1801.10247",
+      "path": "sources/fastgcn_arxiv.html",
+      "sha256": "8caa1ac790df659dfe312c2609cb0b36fada330f8156a0bbdbbbc01aa8de381f",
+      "bytes": 42577
+    },
+    {
+      "url": "https://arxiv.org/pdf/1801.10247",
+      "path": "papers/fastgcn.pdf",
+      "sha256": "6a7be6759c129e88da0609548c1cf27a8d83b737773ee12aa19404a0d63cbc33",
+      "bytes": 366947
+    },
+    {
+      "url": "https://arxiv.org/abs/1809.05343",
+      "path": "sources/as_gcn_arxiv.html",
+      "sha256": "546fbbb54821781538e7e641feefea72b6137f45b406fe737edb25bd51dcc401",
+      "bytes": 42038
+    },
+    {
+      "url": "https://arxiv.org/pdf/1809.05343",
+      "path": "papers/as_gcn.pdf",
+      "sha256": "f13cae72aa4782ecb2120850873653f9bc8a34bbc5b6da37ba8cd97a51a52886",
+      "bytes": 593872
+    },
+    {
+      "url": "https://arxiv.org/abs/1911.07323",
+      "path": "sources/ladies_arxiv.html",
+      "sha256": "dbaf6bcc5087592242d496fd55c1212c07c8d28b34134cb51a52e9747e49390e",
+      "bytes": 45234
+    },
+    {
+      "url": "https://arxiv.org/pdf/1911.07323",
+      "path": "papers/ladies.pdf",
+      "sha256": "cd86dea4dd6195ed258b7e8ca74d773e186c39327aa6b7c3e84ab6653ad53148",
+      "bytes": 2300594
+    }
+  ],
+  "errors": []
+}

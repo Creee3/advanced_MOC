@@ -1,0 +1,567 @@
+{
+  "snapshot_date": "2026-10-14",
+  "version": "stateful-sampling-v1-completed",
+  "upstream_moc_commit": "9c67c92507570704a7df73e452552a3f49e83897",
+  "files": [
+    {
+      "path": "coding_base/moc_adaptive_sampling/PAPER_BASELINES.md",
+      "sha256": "f23850aef6770b6caedd2ee1f82ca15da0bf68dc4ab6f7d0f85dda72a6603e15",
+      "bytes": 3507
+    },
+    {
+      "path": "coding_base/moc_adaptive_sampling/README.md",
+      "sha256": "0e78a4cf6f4b7abef64c2e2106d80aafe6a4530ba2f605c866f4d661ace3aa49",
+      "bytes": 6319
+    },
+    {
+      "path": "coding_base/moc_adaptive_sampling/SOURCES.md",
+      "sha256": "000a4820dace5f57b64747d722919f0d5e6cb46cd5c05839145fb8a702a57275",
+      "bytes": 4409
+    },
+    {
+      "path": "coding_base/moc_adaptive_sampling/__init__.py",
+      "sha256": "119c32f35e789c8a428d7960519526cb046572afdf9cfa770f04184f7e31b889",
+      "bytes": 302
+    },
+    {
+      "path": "coding_base/moc_adaptive_sampling/adapter.py",
+      "sha256": "037b23338f41e81c6a8bb51002f9211d326efb2cd85527c67994922023670e89",
+      "bytes": 11456
+    },
+    {
+      "path": "coding_base/moc_adaptive_sampling/audit_assets.py",
+      "sha256": "733dbc0df7f03480255fb8def58a60a79ec4a7b66b43d57fc02467999b28621d",
+      "bytes": 2831
+    },
+    {
+      "path": "coding_base/moc_adaptive_sampling/configs/prototype.json",
+      "sha256": "fab78304feeadca6414609791e151c38a2484287a27aca3a725debf46aa878c0",
+      "bytes": 957
+    },
+    {
+      "path": "coding_base/moc_adaptive_sampling/features.py",
+      "sha256": "49ebda3ce17eae334699216a0f8a068c8c83494daa1d0830069ee161e7c82b48",
+      "bytes": 2682
+    },
+    {
+      "path": "coding_base/moc_adaptive_sampling/kernels.py",
+      "sha256": "f8ff498f3bf7359771c0725c42b244d4b02c30da0185a59706eebedac2260024",
+      "bytes": 2997
+    },
+    {
+      "path": "coding_base/moc_adaptive_sampling/paper_baselines.py",
+      "sha256": "bc304cb45f3aa8abcd2042539cc0116012192b5a6918ed558f8cec9c0ff9b885",
+      "bytes": 6093
+    },
+    {
+      "path": "coding_base/moc_adaptive_sampling/requirements.txt",
+      "sha256": "dc5ffe7bf939bb43a52a2824f2fe37164e57996762e36c11582f2ea586f956a1",
+      "bytes": 113
+    },
+    {
+      "path": "coding_base/moc_adaptive_sampling/sampler.py",
+      "sha256": "de1e9400858af4636a9f513adaa173de1689bad71d615ac8a1ef37e2e451d04a",
+      "bytes": 9182
+    },
+    {
+      "path": "coding_base/moc_adaptive_sampling/stateful.py",
+      "sha256": "5e571dc151078aa4548460b7c6401da84f0d32832f6ff34f8ce0d6f64d074cdb",
+      "bytes": 12563
+    },
+    {
+      "path": "coding_base/moc_adaptive_sampling/tests/source_harness.py",
+      "sha256": "f2ec317b73ef7318965c893d44f7fdcc966e8522c6ece15693402c8c2c5135e7",
+      "bytes": 5540
+    },
+    {
+      "path": "coding_base/moc_adaptive_sampling/tests/test_sampling.py",
+      "sha256": "91c614a08ad0921267b3eeecb38121b7b18a9430ce97030e5489e5302af9d72b",
+      "bytes": 14518
+    },
+    {
+      "path": "coding_base/moc_adaptive_sampling/tests/test_stateful.py",
+      "sha256": "1886e5150ba62b441c1566f236e172df5032cc5acad085622965b3d1677d2e3a",
+      "bytes": 4033
+    },
+    {
+      "path": "coding_base/moc_adaptive_sampling/verify_local.py",
+      "sha256": "db745682772e53db37dfa6dbbace3526f793e9ba69af9638e9cfd35e109a42d8",
+      "bytes": 3156
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/analysis.json",
+      "sha256": "0315983e5f8081e9a30703ccb42bae5215cf254c41c533422156e0abcebca8dd",
+      "bytes": 17608
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/analyze_local.py",
+      "sha256": "a0e122f03f5636f9efd81124303ea3b95b96dce1403e04e65d4615ab591044b9",
+      "bytes": 9343
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/archive_completed.py",
+      "sha256": "0040de06958f312fd2505384b45d81bbce137e104fbcddd51b5cb807e01298dd",
+      "bytes": 1799
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/audit_completed.py",
+      "sha256": "f7b2a9b48afc833f47a46f8efad41e4e52cc8c58c585484cd36c4a10c1e56b90",
+      "bytes": 7853
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/check_cloud_residuals.py",
+      "sha256": "d5f68a657d98a99e702598bf8c59ff5fde6c9c42dc1557a779c8c23cfbf0e390",
+      "bytes": 2438
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/check_remote_ready.py",
+      "sha256": "a35320819408fa17d0b22e8cf921ec2e68745079660b01cca5ca10970fd8fa1d",
+      "bytes": 3355
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/cloud_residual_check_20261014.json",
+      "sha256": "78f7d66abc5e377e3a1a7dc25c6351c810123d19839c8fd203ce648e3336fe12",
+      "bytes": 3139
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/coding_base/moc_adaptive_sampling/PAPER_BASELINES.md",
+      "sha256": "f23850aef6770b6caedd2ee1f82ca15da0bf68dc4ab6f7d0f85dda72a6603e15",
+      "bytes": 3507
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/coding_base/moc_adaptive_sampling/README.md",
+      "sha256": "0e78a4cf6f4b7abef64c2e2106d80aafe6a4530ba2f605c866f4d661ace3aa49",
+      "bytes": 6319
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/coding_base/moc_adaptive_sampling/SOURCES.md",
+      "sha256": "000a4820dace5f57b64747d722919f0d5e6cb46cd5c05839145fb8a702a57275",
+      "bytes": 4409
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/coding_base/moc_adaptive_sampling/__init__.py",
+      "sha256": "119c32f35e789c8a428d7960519526cb046572afdf9cfa770f04184f7e31b889",
+      "bytes": 302
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/coding_base/moc_adaptive_sampling/adapter.py",
+      "sha256": "037b23338f41e81c6a8bb51002f9211d326efb2cd85527c67994922023670e89",
+      "bytes": 11456
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/coding_base/moc_adaptive_sampling/configs/prototype.json",
+      "sha256": "fab78304feeadca6414609791e151c38a2484287a27aca3a725debf46aa878c0",
+      "bytes": 957
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/coding_base/moc_adaptive_sampling/features.py",
+      "sha256": "49ebda3ce17eae334699216a0f8a068c8c83494daa1d0830069ee161e7c82b48",
+      "bytes": 2682
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/coding_base/moc_adaptive_sampling/kernels.py",
+      "sha256": "f8ff498f3bf7359771c0725c42b244d4b02c30da0185a59706eebedac2260024",
+      "bytes": 2997
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/coding_base/moc_adaptive_sampling/paper_baselines.py",
+      "sha256": "bc304cb45f3aa8abcd2042539cc0116012192b5a6918ed558f8cec9c0ff9b885",
+      "bytes": 6093
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/coding_base/moc_adaptive_sampling/requirements.txt",
+      "sha256": "dc5ffe7bf939bb43a52a2824f2fe37164e57996762e36c11582f2ea586f956a1",
+      "bytes": 113
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/coding_base/moc_adaptive_sampling/sampler.py",
+      "sha256": "de1e9400858af4636a9f513adaa173de1689bad71d615ac8a1ef37e2e451d04a",
+      "bytes": 9182
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/coding_base/moc_adaptive_sampling/stateful.py",
+      "sha256": "5e571dc151078aa4548460b7c6401da84f0d32832f6ff34f8ce0d6f64d074cdb",
+      "bytes": 12563
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/collect_training.py",
+      "sha256": "89f9cfb44af7835e05a5999f7e5a1952a9137b0d0d463ddc09dcfa3526c11b83",
+      "bytes": 12514
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/completion_audit.json",
+      "sha256": "5ca9fbe5c7a8bc6a4dfa95ee7cba5a320af511ed4a73168afd113949ecb0855e",
+      "bytes": 1318
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/config.json",
+      "sha256": "4a5d5162d234a7b02f4e8df7f5e5eb7f2d24e03e9b8f0280361ef0d0ebb667a3",
+      "bytes": 2276
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/data/manifest.json",
+      "sha256": "1fa732d6729360c7149555fab495326995d33dafeeb230238ee7e7593901face",
+      "bytes": 2070
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/deployment_hashes.json",
+      "sha256": "6823de2afc2c4f4fc5e1d803f4aeee66778de0ae4fdbdc482213160252aada50",
+      "bytes": 3751
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/findings.md",
+      "sha256": "ea5f083244fb1521a2c6fdfd360f419b7a2e1638edd0d5185b516d9c157b3bcd",
+      "bytes": 1881
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/fit_utility.py",
+      "sha256": "6461dd6a48e7e37d5adbdb38465d5fb11b463942c7fd98566960d6fc1dff6273",
+      "bytes": 5008
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/frozen_topologies.json",
+      "sha256": "1ffff9b6c8cf5d89f9f11c1aad77b3564fd0df4508d67a1ef545228d39cf4386",
+      "bytes": 3263
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/inspect_run.py",
+      "sha256": "d62345c1a811093e961473b527c740376165932673a0dc15b3a36150128b787c",
+      "bytes": 1985
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/launch.py",
+      "sha256": "9201134765f2a1a31d980ee8a3f0cd6130e334d1d2846b6ffa495d4e077509c6",
+      "bytes": 1413
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/local_verification.json",
+      "sha256": "9fb01820529b964a13db5ef1b96af76dcdae8fdf98d9e80d16c2e20c0286c6b4",
+      "bytes": 183
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/output_limit_audit.json",
+      "sha256": "f983632a395c75a9d9105d3b2e2a44b496e6b0fee4cc57180ddd3e7fcede08f1",
+      "bytes": 464
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/package_local.py",
+      "sha256": "b97c6e763937e5c8f48c92fa92d9e7800475a19c3a47fb67d3132797978a630a",
+      "bytes": 1398
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/prepare_local.py",
+      "sha256": "2041932bf4ff2efa0f128429d095d35b26d556b35df46cc604cecfe20912ebe2",
+      "bytes": 5985
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/preserve_failed_start.py",
+      "sha256": "d794bccd9624a68b8065596623f0eece9eb97db5b95f93a0b1daf4a808671637",
+      "bytes": 851
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/preserve_training_failure.py",
+      "sha256": "77fd82028c7d2ffd4ad717e7f6861a5eaa41cd6132e605820a8869adc8d04aca",
+      "bytes": 5914
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/probe_gpu_runtime.py",
+      "sha256": "8aa1377f4147bb0c2d5d3a973c235c17bdcd92edd40915f5353d220082d6b62e",
+      "bytes": 1870
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/progress.md",
+      "sha256": "cf86e3f871c75f9a55cfb336dcd9054b2572498b96dfbab2a22e590c41ffae25",
+      "bytes": 11802
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/protocol.md",
+      "sha256": "cc9556ce846bae45c7337d0f9711ee34207905b369640a7c9d16bdf00c152406",
+      "bytes": 6939
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/remote_snapshot/cleanup.json",
+      "sha256": "8f62a1309ff82183b9d8544de3ca376b2a9807333a22ae2679a6ad76be8299cc",
+      "bytes": 1245
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/remote_snapshot/coding_base/moc_adaptive_sampling/__init__.py",
+      "sha256": "119c32f35e789c8a428d7960519526cb046572afdf9cfa770f04184f7e31b889",
+      "bytes": 302
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/remote_snapshot/coding_base/moc_adaptive_sampling/adapter.py",
+      "sha256": "037b23338f41e81c6a8bb51002f9211d326efb2cd85527c67994922023670e89",
+      "bytes": 11456
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/remote_snapshot/coding_base/moc_adaptive_sampling/features.py",
+      "sha256": "49ebda3ce17eae334699216a0f8a068c8c83494daa1d0830069ee161e7c82b48",
+      "bytes": 2682
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/remote_snapshot/coding_base/moc_adaptive_sampling/kernels.py",
+      "sha256": "f8ff498f3bf7359771c0725c42b244d4b02c30da0185a59706eebedac2260024",
+      "bytes": 2997
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/remote_snapshot/coding_base/moc_adaptive_sampling/paper_baselines.py",
+      "sha256": "bc304cb45f3aa8abcd2042539cc0116012192b5a6918ed558f8cec9c0ff9b885",
+      "bytes": 6093
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/remote_snapshot/coding_base/moc_adaptive_sampling/sampler.py",
+      "sha256": "de1e9400858af4636a9f513adaa173de1689bad71d615ac8a1ef37e2e451d04a",
+      "bytes": 9182
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/remote_snapshot/coding_base/moc_adaptive_sampling/stateful.py",
+      "sha256": "5e571dc151078aa4548460b7c6401da84f0d32832f6ff34f8ce0d6f64d074cdb",
+      "bytes": 12563
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/remote_snapshot/collect_training.py",
+      "sha256": "89f9cfb44af7835e05a5999f7e5a1952a9137b0d0d463ddc09dcfa3526c11b83",
+      "bytes": 12514
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/remote_snapshot/final_archive_manifest.json",
+      "sha256": "54abe44bc760c4723bfae40c9aca9472b58a492bf6d4db08f0c19af95aa4edd4",
+      "bytes": 17142
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/remote_snapshot/fit_utility.py",
+      "sha256": "6461dd6a48e7e37d5adbdb38465d5fb11b463942c7fd98566960d6fc1dff6273",
+      "bytes": 5008
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/remote_snapshot/gpu_smoke_gate.json",
+      "sha256": "fa48249f38a20d8bd936885b5d2c365f0cfd10200ebf46771f69b1e663d36773",
+      "bytes": 131
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/remote_snapshot/policy_lock.json",
+      "sha256": "1aaeda651d438b33074ebe29599641a26746320d42bf6cf7d85158da77a1bc7d",
+      "bytes": 2397
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/remote_snapshot/run_experiment.py",
+      "sha256": "6174e7772999b7a17dc89a230e6d92e89e590b2a4ec136d3e9bdd23d0bda2e0f",
+      "bytes": 11952
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/remote_snapshot/runs/shard0/metadata.json",
+      "sha256": "01b4cf9f19dbe77eaaeb73b5e2cbfd4e3b51ce02a6873f5e64ff9971136dcf59",
+      "bytes": 2821
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/remote_snapshot/runs/shard0/progress.json",
+      "sha256": "219be99022122d8436254351deb02c7a393aae5cda23e923b593a8e38ed5769d",
+      "bytes": 201
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/remote_snapshot/runs/shard0/results.jsonl",
+      "sha256": "ec6f5a7a74d4db20c06e215fc5227bab6dd1fdb0eb8036da2c4fcbb9edc3f7f7",
+      "bytes": 1239505
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/remote_snapshot/runs/shard0/stage_finished.json",
+      "sha256": "9f4f5fa8890a7bc9c1631f4bcbe809498818709dec88f161d354149e2fbe0775",
+      "bytes": 145
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/remote_snapshot/runs/shard1/metadata.json",
+      "sha256": "f1c346071359e568364ce087a859a0236125d1dfc29ac0607cc0406b9aeb4a99",
+      "bytes": 2821
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/remote_snapshot/runs/shard1/progress.json",
+      "sha256": "e077dc7677ddf73bacbcf6c653d21574d29e61d26cab65302ee100ae437d908f",
+      "bytes": 207
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/remote_snapshot/runs/shard1/results.jsonl",
+      "sha256": "58d6a020344970cf74046d413a29a39cdf35a16771910baba70ea1ffc28c330d",
+      "bytes": 1252822
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/remote_snapshot/runs/shard1/stage_finished.json",
+      "sha256": "9f4f5fa8890a7bc9c1631f4bcbe809498818709dec88f161d354149e2fbe0775",
+      "bytes": 145
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/remote_snapshot/runtime_controls.py",
+      "sha256": "ef307a6bf25bf18731eccbfcb473f47c8e068d455e02d2ac62fa995befa522da",
+      "bytes": 6266
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/remote_snapshot/trace_hooks.py",
+      "sha256": "cee48fe3bb04efd640ae09865f900f38c116e94a810f119e811c02f91172bb18",
+      "bytes": 10815
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/remote_snapshot/training/shard0/labels.jsonl",
+      "sha256": "28230de7d6ebb482164ed0d7d168abdaca061b07b47e7992396a50229feca607",
+      "bytes": 445021
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/remote_snapshot/training/shard0/progress.json",
+      "sha256": "db34c0e25a4056df5601668bc184aac1bfa61cbd54feefedda5b37aef7184583",
+      "bytes": 200
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/remote_snapshot/training/shard1/labels.jsonl",
+      "sha256": "12095c9018fcb06ce940e8a887a3e5cadfcc7d2ff17187a3fd9516be9a8ce2e4",
+      "bytes": 456628
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/remote_snapshot/training/shard1/progress.json",
+      "sha256": "beb38bede9580c5a25633aafa08e8b5464dddd1869303f58079be285429206ba",
+      "bytes": 200
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/remote_snapshot/training_integrity.py",
+      "sha256": "efdb90b0ff24c805ac170b9653434e235bc00e1c531dc1f67fc72f6ea2d9da66",
+      "bytes": 835
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/remote_snapshot/training_report.json",
+      "sha256": "a5324bf550e6aeffcd8c9e23e04c6550c8854cea36542625728bc93e7e45e357",
+      "bytes": 2141
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/remote_snapshot/utility_model.json",
+      "sha256": "9c7c5e0095a092c1949969fabdc87e0c425b7d455550c587bece76decbeec99e",
+      "bytes": 3470
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/run_experiment.py",
+      "sha256": "6174e7772999b7a17dc89a230e6d92e89e590b2a4ec136d3e9bdd23d0bda2e0f",
+      "bytes": 11952
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/runtime_controls.py",
+      "sha256": "ef307a6bf25bf18731eccbfcb473f47c8e068d455e02d2ac62fa995befa522da",
+      "bytes": 6266
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/snapshot.py",
+      "sha256": "f4ce1da83b7ee0c134dca973c04d0a63627bd93fe5c7895018fc8b945923123a",
+      "bytes": 1554
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/startup_verified.json",
+      "sha256": "abb390b0c50d50508fdb2d3c4d80deea9a479e4c1faa6ae3b85d00d7911392b9",
+      "bytes": 677
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/supervise.py",
+      "sha256": "7e27aabe35af405e1864ebecfcd5731e09292bbace76f136ec2e7b7762a975be",
+      "bytes": 16636
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/task_plan.md",
+      "sha256": "003935fa70fe985fdc1f624bd546f7c91fa3272d97d4ba6c5b69544f316974c2",
+      "bytes": 3320
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/test_training_integrity.py",
+      "sha256": "1cc1fd7aec9cca9bca8e5e7dc9d19f6e36f10ffb21ff87c1cdb990fd274c17bb",
+      "bytes": 1241
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/trace_hooks.py",
+      "sha256": "cee48fe3bb04efd640ae09865f900f38c116e94a810f119e811c02f91172bb18",
+      "bytes": 10815
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/training_integrity.py",
+      "sha256": "efdb90b0ff24c805ac170b9653434e235bc00e1c531dc1f67fc72f6ea2d9da66",
+      "bytes": 835
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/training_recovery.json",
+      "sha256": "cb6836ea78d237521fb770da8c17094ac450614b10b425520395eac9a39ab730",
+      "bytes": 1160
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/完成结果与首次分析_20261014.md",
+      "sha256": "59282f0c7c64b61e8686fa10a31a4a47ef326ab9a3d4c0c99da1313f7e7cac98",
+      "bytes": 6625
+    },
+    {
+      "path": "experiments/moc_stateful_sampling_val_20261014/运行说明.md",
+      "sha256": "7c2a889d4cf1ec085739fdf84ff5fc6314a6f6893df215bc5c0853328a14b36f",
+      "bytes": 3153
+    },
+    {
+      "path": "research_ideation_20261013/moc_adaptive_neighborhood_sampling_mainline/README.md",
+      "sha256": "af7af943c7d6fdebde809433db1a389f05a1145912c04906421ce12d1bd28015",
+      "bytes": 4490
+    },
+    {
+      "path": "research_ideation_20261013/moc_adaptive_neighborhood_sampling_mainline/code_migration_20261014/asset_audit.json",
+      "sha256": "d83410fe1e7e2b14d1168afec5af7130848d84128d3c6c8f3dfb25ccec69880c",
+      "bytes": 7176
+    },
+    {
+      "path": "research_ideation_20261013/moc_adaptive_neighborhood_sampling_mainline/code_migration_20261014/citation_check.json",
+      "sha256": "650f98c9d76eb13520078cc4eb8278503217623bc3ee7997707fbc8b3e83cda7",
+      "bytes": 1643
+    },
+    {
+      "path": "research_ideation_20261013/moc_adaptive_neighborhood_sampling_mainline/code_migration_20261014/source_manifest.json",
+      "sha256": "dc53d54ff739b4241cd160634169c77f584cc1cf6a08c964216c4a5d8441f95a",
+      "bytes": 8708
+    },
+    {
+      "path": "research_ideation_20261013/moc_adaptive_neighborhood_sampling_mainline/code_migration_20261014/verification.json",
+      "sha256": "717c9580bc1ba1c92be15587acd89a296ee289ed7575c0e0f8b0661493a4e25c",
+      "bytes": 420
+    },
+    {
+      "path": "research_ideation_20261013/moc_adaptive_neighborhood_sampling_mainline/findings.md",
+      "sha256": "8540b7a7c02cf2e91541cc5536aafa3d67bbf7d5e2e08fcfe6ad18ea60199e1b",
+      "bytes": 4766
+    },
+    {
+      "path": "research_ideation_20261013/moc_adaptive_neighborhood_sampling_mainline/method_card.md",
+      "sha256": "2941f8f73c7f9af0155fb269b489b19d5269772db4a87cab6efd2ea8aee20ff3",
+      "bytes": 4795
+    },
+    {
+      "path": "research_ideation_20261013/moc_adaptive_neighborhood_sampling_mainline/progress.md",
+      "sha256": "adb200202a2ecd9622757b9aae671e3fc3173bd4c40ef5a96218b17e4f87c9aa",
+      "bytes": 4396
+    },
+    {
+      "path": "research_ideation_20261013/moc_adaptive_neighborhood_sampling_mainline/task_plan.md",
+      "sha256": "33a44d6b7e1096231105cc959796d875b5728a7bcc57e3dc011899f441480bc4",
+      "bytes": 4899
+    },
+    {
+      "path": "research_ideation_20261013/moc_adaptive_neighborhood_sampling_mainline/v1方法实现与验证_20261014.md",
+      "sha256": "81a4f42dc595b8a57833a06cead23b991bed799313500ddf3fe11862fef3e063",
+      "bytes": 3337
+    },
+    {
+      "path": "research_ideation_20261013/moc_adaptive_neighborhood_sampling_mainline/建模与迁移路线_20261014.md",
+      "sha256": "08b2844f65e629335694e6926fcd19156233627608d5081fed0f0da1be2beb6f",
+      "bytes": 6991
+    }
+  ],
+  "full_raw_archive": {
+    "relative_local_path": "experiments/moc_stateful_sampling_val_20261014/remote_snapshot/final_raw_records.tar.gz",
+    "sha256": "869146b31a36282a3241fb5bb9deb1ace578e3da012e547219bd4f9d2c587f37",
+    "bytes": 13543587,
+    "included_in_git": false
+  },
+  "excluded": [
+    "model weights",
+    "full datasets",
+    "LOCAL_ONLY data",
+    "large raw traces and runtime logs",
+    "unrelated historical experiments",
+    "unlicensed third-party code snapshots",
+    "Python caches"
+  ]
+}

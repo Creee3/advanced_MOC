@@ -1,0 +1,5 @@
+{
+  "status": "passed",
+  "completed_conditions": 18,
+  "quality_scope": "val conditions reused; no tuning or duplicate replays"
+}
