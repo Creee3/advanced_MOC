@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "true_author_dags_verified": 2,
+  "frozen_materials": 47,
+  "baseline_prompt_matches": 363,
+  "excluded_ambiguous_requests": 13,
+  "cache_admission": {
+    "historical_requests": 888,
+    "reusable_requests": 875,
+    "conflicting_requests": 13
+  },
+  "model_calls": 0,
+  "gpu_allocations": 0
+}

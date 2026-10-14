@@ -1,0 +1,473 @@
+{
+  "selection": "first 12 completed original fit question groups, outcome-blind role/pair choice",
+  "question_groups": 12,
+  "episodes": [
+    {
+      "episode_id": "pilot00",
+      "question_id": "000056cda8681c4ea4b25ac6d950da4e46cbbfe96361d487ea6d64bf1101dac1",
+      "question_index": 0,
+      "status": "planned",
+      "density": 0.3,
+      "receiver_id": "0005",
+      "receiver_role": "Inspector",
+      "group_sources": [
+        "0003"
+      ],
+      "path": [
+        "0003"
+      ],
+      "variants": {
+        "empty": [],
+        "a": [
+          "0003"
+        ]
+      },
+      "candidate_hops": {
+        "0003": 1
+      },
+      "communication_tokens": {
+        "empty": 0,
+        "a": 400
+      }
+    },
+    {
+      "episode_id": "pilot01",
+      "question_id": "00006f44def9dca9d832918eeebdc34d961291b777cfab828507dbcc5d61f7b5",
+      "question_index": 1,
+      "status": "planned",
+      "density": 0.7,
+      "receiver_id": "0005",
+      "receiver_role": "Inspector",
+      "group_sources": [
+        "0003"
+      ],
+      "path": [
+        "0003"
+      ],
+      "variants": {
+        "empty": [],
+        "a": [
+          "0003"
+        ]
+      },
+      "candidate_hops": {
+        "0003": 1
+      },
+      "communication_tokens": {
+        "empty": 0,
+        "a": 152
+      }
+    },
+    {
+      "episode_id": "pilot02",
+      "question_id": "0000b43dec7f5ac9be510d958fca1441fb44c46cbbc879a7e20d2e483a95bbc1",
+      "question_index": 2,
+      "status": "planned",
+      "density": 0.3,
+      "receiver_id": "0002",
+      "receiver_role": "Math Solver",
+      "group_sources": [
+        "0005",
+        "0006"
+      ],
+      "path": [
+        "0005",
+        "0006"
+      ],
+      "variants": {
+        "empty": [],
+        "a": [
+          "0005"
+        ],
+        "b": [
+          "0006"
+        ],
+        "ab": [
+          "0005",
+          "0006"
+        ]
+      },
+      "candidate_hops": {
+        "0005": 4,
+        "0006": 3,
+        "0004": 2,
+        "0008": 1
+      },
+      "communication_tokens": {
+        "empty": 0,
+        "a": 317,
+        "b": 169,
+        "ab": 467
+      }
+    },
+    {
+      "episode_id": "pilot03",
+      "question_id": "00013cc13f02a4eeec74417c762f58d08eaabe6581599b55cf8a6dda22762acb",
+      "question_index": 3,
+      "status": "planned",
+      "density": 0.7,
+      "receiver_id": "0002",
+      "receiver_role": "Math Solver",
+      "group_sources": [
+        "0004",
+        "0006"
+      ],
+      "path": [
+        "0006",
+        "0004"
+      ],
+      "variants": {
+        "empty": [],
+        "a": [
+          "0004"
+        ],
+        "b": [
+          "0006"
+        ],
+        "ab": [
+          "0004",
+          "0006"
+        ]
+      },
+      "candidate_hops": {
+        "0004": 2,
+        "0003": 1,
+        "0005": 1,
+        "0006": 1,
+        "0008": 1
+      },
+      "communication_tokens": {
+        "empty": 0,
+        "a": 85,
+        "b": 398,
+        "ab": 464
+      }
+    },
+    {
+      "episode_id": "pilot04",
+      "question_id": "00018fe95c63031e878bdec31415bd442dbce53c01727c41811c87f69f3d5817",
+      "question_index": 4,
+      "status": "planned",
+      "density": 0.3,
+      "receiver_id": "0008",
+      "receiver_role": "Programming Expert",
+      "group_sources": [
+        "0003",
+        "0005"
+      ],
+      "path": [
+        "0003",
+        "0005"
+      ],
+      "variants": {
+        "empty": [],
+        "a": [
+          "0003"
+        ],
+        "b": [
+          "0005"
+        ],
+        "ab": [
+          "0003",
+          "0005"
+        ]
+      },
+      "candidate_hops": {
+        "0003": 4,
+        "0005": 3,
+        "0006": 2,
+        "0004": 1
+      },
+      "communication_tokens": {
+        "empty": 0,
+        "a": 332,
+        "b": 83,
+        "ab": 396
+      }
+    },
+    {
+      "episode_id": "pilot05",
+      "question_id": "0003aa99e11196c046a82dfe0e50032584a86d9200781ac2baed8985a501244c",
+      "question_index": 5,
+      "status": "planned",
+      "density": 0.7,
+      "receiver_id": "0008",
+      "receiver_role": "Programming Expert",
+      "group_sources": [
+        "0005",
+        "0006"
+      ],
+      "path": [
+        "0005",
+        "0006"
+      ],
+      "variants": {
+        "empty": [],
+        "a": [
+          "0005"
+        ],
+        "b": [
+          "0006"
+        ],
+        "ab": [
+          "0005",
+          "0006"
+        ]
+      },
+      "candidate_hops": {
+        "0005": 2,
+        "0006": 2,
+        "0003": 1,
+        "0004": 1
+      },
+      "communication_tokens": {
+        "empty": 0,
+        "a": 268,
+        "b": 108,
+        "ab": 357
+      }
+    },
+    {
+      "episode_id": "pilot06",
+      "question_id": "00043b3028a350f3ccdef0e27ccc673af1c5534c7038053288a767ee65c98bed",
+      "question_index": 6,
+      "status": "planned",
+      "density": 0.3,
+      "receiver_id": "0007",
+      "receiver_role": "Mathematical Analyst",
+      "group_sources": [
+        "0005",
+        "0006"
+      ],
+      "path": [
+        "0005",
+        "0006"
+      ],
+      "variants": {
+        "empty": [],
+        "a": [
+          "0005"
+        ],
+        "b": [
+          "0006"
+        ],
+        "ab": [
+          "0005",
+          "0006"
+        ]
+      },
+      "candidate_hops": {
+        "0005": 4,
+        "0006": 3,
+        "0004": 2,
+        "0002": 1,
+        "0008": 1
+      },
+      "communication_tokens": {
+        "empty": 0,
+        "a": 187,
+        "b": 132,
+        "ab": 300
+      }
+    },
+    {
+      "episode_id": "pilot07",
+      "question_id": "0006048d9f63ddb99dca7df93cbdb3e8c8885ec3aa04b5c62cdc0017f7a06122",
+      "question_index": 7,
+      "status": "planned",
+      "density": 0.7,
+      "receiver_id": "0007",
+      "receiver_role": "Mathematical Analyst",
+      "group_sources": [
+        "0003",
+        "0004"
+      ],
+      "path": [
+        "0003",
+        "0004"
+      ],
+      "variants": {
+        "empty": [],
+        "a": [
+          "0003"
+        ],
+        "b": [
+          "0004"
+        ],
+        "ab": [
+          "0003",
+          "0004"
+        ]
+      },
+      "candidate_hops": {
+        "0003": 2,
+        "0005": 2,
+        "0004": 2,
+        "0002": 1,
+        "0006": 1,
+        "0008": 1
+      },
+      "communication_tokens": {
+        "empty": 0,
+        "a": 416,
+        "b": 63,
+        "ab": 460
+      }
+    },
+    {
+      "episode_id": "pilot08",
+      "question_id": "0006957102872dcf71d38c310b303ff0f71156c3397850b11eb68e152ee8bad9",
+      "question_index": 8,
+      "status": "planned",
+      "density": 0.3,
+      "receiver_id": "0005",
+      "receiver_role": "Inspector",
+      "group_sources": [
+        "0003"
+      ],
+      "path": [
+        "0003"
+      ],
+      "variants": {
+        "empty": [],
+        "a": [
+          "0003"
+        ]
+      },
+      "candidate_hops": {
+        "0003": 1
+      },
+      "communication_tokens": {
+        "empty": 0,
+        "a": 271
+      }
+    },
+    {
+      "episode_id": "pilot09",
+      "question_id": "000714560109a7601978967e75150a20ebd68700ef80b121866f90397c461a61",
+      "question_index": 9,
+      "status": "planned",
+      "density": 0.7,
+      "receiver_id": "0005",
+      "receiver_role": "Inspector",
+      "group_sources": [
+        "0003"
+      ],
+      "path": [
+        "0003"
+      ],
+      "variants": {
+        "empty": [],
+        "a": [
+          "0003"
+        ]
+      },
+      "candidate_hops": {
+        "0003": 1
+      },
+      "communication_tokens": {
+        "empty": 0,
+        "a": 336
+      }
+    },
+    {
+      "episode_id": "pilot10",
+      "question_id": "00087c873373fec05fc54d8ee00354d43c6a740ddd4d7d374089a23ff4794c6b",
+      "question_index": 10,
+      "status": "planned",
+      "density": 0.3,
+      "receiver_id": "0002",
+      "receiver_role": "Math Solver",
+      "group_sources": [
+        "0005",
+        "0006"
+      ],
+      "path": [
+        "0005",
+        "0006"
+      ],
+      "variants": {
+        "empty": [],
+        "a": [
+          "0005"
+        ],
+        "b": [
+          "0006"
+        ],
+        "ab": [
+          "0005",
+          "0006"
+        ]
+      },
+      "candidate_hops": {
+        "0005": 4,
+        "0006": 3,
+        "0004": 2,
+        "0008": 1
+      },
+      "communication_tokens": {
+        "empty": 0,
+        "a": 270,
+        "b": 253,
+        "ab": 504
+      }
+    },
+    {
+      "episode_id": "pilot11",
+      "question_id": "0008bb18cf4fb473bf5c5f826c7de7dc7f95d13c5909fedfb5b739b8c28433f6",
+      "question_index": 11,
+      "status": "planned",
+      "density": 0.7,
+      "receiver_id": "0002",
+      "receiver_role": "Math Solver",
+      "group_sources": [
+        "0004",
+        "0005"
+      ],
+      "path": [
+        "0005",
+        "0004"
+      ],
+      "variants": {
+        "empty": [],
+        "a": [
+          "0004"
+        ],
+        "b": [
+          "0005"
+        ],
+        "ab": [
+          "0004",
+          "0005"
+        ]
+      },
+      "candidate_hops": {
+        "0004": 2,
+        "0003": 1,
+        "0005": 1,
+        "0006": 1,
+        "0008": 1
+      },
+      "communication_tokens": {
+        "empty": 0,
+        "a": 65,
+        "b": 177,
+        "ab": 223
+      }
+    }
+  ],
+  "historical_sources": {
+    "shard0": {
+      "sha256": "1e50d1c845e3b4c48a25b4ed8558b4589247862f9f8fc35a26b91b724c970f01",
+      "relative_old_path": "remote_snapshot/training/shard0/trace.jsonl"
+    },
+    "shard1": {
+      "sha256": "ede46f417d5c14ee83de9bb42a3d88f46704df7ec0f5aea8cf8d7933b4939ec1",
+      "relative_old_path": "remote_snapshot/training/shard1/trace.jsonl"
+    }
+  },
+  "historical_calls": 240,
+  "train_only": true,
+  "val_used": false,
+  "test_used": false
+}

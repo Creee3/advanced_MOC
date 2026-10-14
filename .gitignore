@@ -12,6 +12,11 @@ venv/
 *.bundle
 *LOCAL_ONLY*
 **/trace.jsonl
+**/calls_raw.jsonl
+**/conditions_raw.jsonl
+**/budget.json
+**/budget.lock
+**/run_start.json
 **/attempts/
 **/STOP
 **/status.json

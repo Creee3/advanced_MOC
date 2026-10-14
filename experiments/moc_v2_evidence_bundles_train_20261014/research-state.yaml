@@ -1,0 +1,18 @@
+version: 1
+phase: intake
+question: "Can receiver-conditioned evidence bundles and downstream supervision avoid unreliable single-message stopping?"
+evidence:
+  frozen_v1_commit: c0213541b6881b53d58ac5300a49df3ada456ac2
+  current_validation: diagnostic_only
+hypotheses:
+  - id: H1
+    statement: "Some useful ancestor pairs have effects missed by their separate local labels."
+    status: untested
+  - id: H2
+    statement: "Local receiver correctness and downstream final correctness disagree for a material subset."
+    status: untested
+constraints:
+  train_only: true
+  baseline_reuse: true
+  test: false
+reflection: "After evidence/caching audit and after one bounded discriminator batch."
