@@ -1,0 +1,8 @@
+{
+  "protocol_commit": "c42af01",
+  "method_commit": "bfc2204",
+  "branch": "research/v2-evidence-bundles",
+  "deployment_sha256": "0843b5357a9db380f3c843a27af41282c5d315f84d0e028f563eace77d937c2b",
+  "frozen_before_val": true,
+  "raw_gpu_model_offload_check_required": true
+}

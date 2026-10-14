@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "model_schema": "one_shot_expected_group_utility_v2_1",
+  "fit_questions": 35,
+  "train_gate_passed": false,
+  "user_authorized_diagnostic_val": true,
+  "graphs": [
+    {
+      "density": 0.3,
+      "nodes": 7,
+      "edges": 7
+    },
+    {
+      "density": 0.7,
+      "nodes": 7,
+      "edges": 15
+    }
+  ],
+  "validation_conditions": 120,
+  "cache_admission": {
+    "historical_requests": 5224,
+    "reusable_requests": 4899,
+    "conflicting_requests": 325
+  },
+  "main_model_calls": 0,
+  "gpu_allocations": 0,
+  "val_gold_present": false,
+  "test": false
+}

@@ -1,0 +1,63 @@
+{
+  "checked_utc": "2026-10-14T13:31:16Z",
+  "phase": "val",
+  "committed_conditions": 9,
+  "valid_conditions": 9,
+  "invalid_conditions": 0,
+  "target": 120,
+  "supervisor_pid": 1798930,
+  "worker_pids": [
+    1799575,
+    1799576
+  ],
+  "service_pid": 1799002,
+  "gpu": {
+    "index": 1,
+    "uuid": "GPU-d7d04192-bf97-dfdb-3276-75ff261a9f51",
+    "utilization": 0,
+    "free_mib": 24076
+  },
+  "private_port": 11448,
+  "loaded": {
+    "name": "gemma2:27b",
+    "model": "gemma2:27b",
+    "size": 16757418884,
+    "digest": "53261bc9c192c1cb5fcc898dd3aa15da093f5ab6f08e17e48cf838bb1c58abfe",
+    "details": {
+      "parent_model": "",
+      "format": "gguf",
+      "family": "gemma2",
+      "families": [
+        "gemma2"
+      ],
+      "parameter_size": "27.2B",
+      "quantization_level": "Q4_0"
+    },
+    "expires_at": "2026-10-14T13:32:31.060146373Z",
+    "size_vram": 16757418884,
+    "context_length": 8192,
+    "runner": "llamacpp"
+  },
+  "gpu_resident": true,
+  "cuda_allocation_probe": "{\"phase\": \"started\", \"visible\": \"GPU-d7d04192-bf97-dfdb-3276-75ff261a9f51\"}\ncuInit 0\ncuDeviceGet 0 0\ncuCtxCreate 0\ncuMemAlloc 0\ncuMemFree 0\ncuCtxDestroy 0\n",
+  "budget": {
+    "new_calls": 56,
+    "actual_tokens": 39002,
+    "reserved_tokens": 20384
+  },
+  "raw_age_seconds": {
+    "shard0": 1.89,
+    "shard1": 0.21
+  },
+  "process_cmdlines": {
+    "1798930": "/home/liuxin/.conda/envs/moc/bin/python -u /home/liuxin/ICML2027/experiments/moc_v21_expected_set_val_20261014/supervise.py ",
+    "1799575": "/home/liuxin/.conda/envs/moc/bin/python -u /home/liuxin/ICML2027/experiments/moc_v21_expected_set_val_20261014/run_val.py --shard 0 --main-host http://127.0.0.1:11448 ",
+    "1799576": "/home/liuxin/.conda/envs/moc/bin/python -u /home/liuxin/ICML2027/experiments/moc_v21_expected_set_val_20261014/run_val.py --shard 1 --main-host http://127.0.0.1:11448 ",
+    "1799002": "/home/liuxin/.local/bin/ollama serve "
+  },
+  "error": null,
+  "main_services": 1,
+  "baseline_rerun": false,
+  "test": false,
+  "protocol_commit": "c42af01"
+}

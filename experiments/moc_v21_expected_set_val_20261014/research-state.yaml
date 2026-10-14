@@ -1,5 +1,5 @@
 version: 1
-phase: preparing_val_only
+phase: val_running
 model: centered_compact22
 train_gate_passed: false
 user_authorized_diagnostic_val: true
@@ -14,3 +14,13 @@ max_wall_seconds: 7200
 max_new_calls: 1200
 max_new_tokens: 1500000
 automation_created_or_resumed: false
+protocol_commit: c42af01
+supervisor_pid: 1798930
+model_service_pid: 1799002
+worker_pids: [1799575,1799576]
+main_service_count: 1
+gpu_index: 1
+last_checked_utc: 2026-10-14T13:31:16Z
+last_checked_conditions: 9
+last_checked_invalid: 0
+full_result_analysis: pending
