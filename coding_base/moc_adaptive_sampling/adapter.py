@@ -39,17 +39,22 @@ class MOCSamplingAdapter:
     Default supports one-round MathSolver graphs and FinalRefer. HumanEval
     explicitly opts in to CodeWriting / FinalWriteCode, preserving native
     public-example tests on selected messages. The caller must install the
-    audited isolated execution bridge. Wiki/AnalyzeAgent remains unsupported.
+    audited isolated execution bridge. AnalyzeAgent is supported explicitly for MMLU-Pro; Wiki Searcher retrieval is intentionally unsupported.
     """
 
     def __init__(self, graph, sampler: LayerDependentSampler, encode, *,
                  feature_space="MOC:all-MiniLM-L6-v2", counter_name="injected-text-counter",
-                 code_writing=False):
+                 code_writing=False, analyze_agent=False):
         if getattr(graph, "_moc_sampling_adapter", None) is not None:
             raise ValueError("this graph already has a sampling adapter")
-        ordinary, final_name = ("CodeWriting", "FinalWriteCode") if code_writing else ("MathSolver", "FinalRefer")
+        if code_writing and analyze_agent:
+            raise ValueError("select only one native agent family")
+        ordinary, final_name = (("CodeWriting", "FinalWriteCode") if code_writing else
+                                ("AnalyzeAgent", "FinalRefer") if analyze_agent else ("MathSolver", "FinalRefer"))
+        if analyze_agent and any(getattr(n, "role", None) == "Wiki Searcher" for n in graph.nodes.values()):
+            raise NotImplementedError("Wiki Searcher retrieval requires separate selected-source adaptation")
         if any(getattr(node, "agent_name", None) != ordinary for node in graph.nodes.values()):
-            raise NotImplementedError("v0 supports MathSolver; CodeWriting/AnalyzeAgent tool paths are not adapted")
+            raise NotImplementedError("graph agent family differs from explicit adapter mode")
         if getattr(graph.decision_node, "agent_name", None) != final_name:
             raise NotImplementedError("v0 preserves the author's FinalRefer aggregation")
         if getattr(graph, "optimized_spatial", False) or getattr(graph, "optimized_temporal", False):

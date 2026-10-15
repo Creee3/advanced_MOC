@@ -1,0 +1,6 @@
+{
+  "domain": "gsm8k",
+  "method": "SequenceMatcher normalized task text; screening only, not semantic duplicate proof",
+  "threshold": 0.9,
+  "pairs": []
+}

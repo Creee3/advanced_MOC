@@ -28,7 +28,7 @@ class PaperRecipe:
     ism_kppa: int = 45
 
     def __post_init__(self):
-        if self.domain not in ("aqua", "gsm8k", "svamp", "humaneval"):
+        if self.domain not in ("aqua", "gsm8k", "svamp", "humaneval", "mmlu", "mmlu_pro"):
             raise NotImplementedError("supported domains are MathSolver tasks and opt-in HumanEval")
         if self.num_agents != 7 or self.edge_density not in (0.3, 0.5, 0.7, 1.0):
             raise ValueError("main-table recipe uses 7 agents and paper density values")
@@ -83,7 +83,8 @@ def make_graph(api, recipe, arm, *, roles=None):
             raise ValueError("role snapshot has the wrong node count")
         topology["node_kwargs"] = [{"role": role} for role in roles]
     graph = api.Graph(domain=recipe.domain, llm_name=recipe.llm_name,
-                      agent_names=["CodeWriting" if recipe.domain == "humaneval" else "MathSolver"] * recipe.num_agents,
+                      agent_names=["CodeWriting" if recipe.domain == "humaneval" else
+                                   "AnalyzeAgent" if recipe.domain in ("mmlu", "mmlu_pro") else "MathSolver"] * recipe.num_agents,
                       decision_method="FinalWriteCode" if recipe.domain == "humaneval" else "FinalRefer",
                       use_neighbor_summary=arm != "vanilla_mas",
                       neighbor_hops=recipe.neighbor_hops if arm != "vanilla_mas" else 1,

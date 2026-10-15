@@ -1,0 +1,9 @@
+{
+  "status": "no_matching_MOC_artifact_found_in_current_repository",
+  "searched": [
+    "current repo experiments: AQuA and HumanEval only",
+    "workspace historical MOC experiments inventoried; different task/protocol"
+  ],
+  "reusable_conditions": [],
+  "rule": "question/prompt/roles/DAG/model/decoding/merger/parser must match; fill missing only"
+}

@@ -1,0 +1,50 @@
+{
+  "source_hashes": {
+    "coding_base/moc_adaptive_sampling/__init__.py": "119c32f35e789c8a428d7960519526cb046572afdf9cfa770f04184f7e31b889",
+    "coding_base/moc_adaptive_sampling/adapter.py": "396ee583ebe989e1aeca1618c5bb310859011b8f5dd6a3dc1ca47ac0154d429d",
+    "coding_base/moc_adaptive_sampling/audit_assets.py": "733dbc0df7f03480255fb8def58a60a79ec4a7b66b43d57fc02467999b28621d",
+    "coding_base/moc_adaptive_sampling/bundles.py": "da549ccd64ae1fb6576832b2619aa5389776970cb25c812461413d75f730bed9",
+    "coding_base/moc_adaptive_sampling/counterfactual.py": "1d0ad215ed9b8647c29e8c4cdecf181174d7e4b30232096717880fcddf087efc",
+    "coding_base/moc_adaptive_sampling/expected_set.py": "d47258a672d51bac7f519c7467baedaf20349020c44d2d021e02b5b55d7d5544",
+    "coding_base/moc_adaptive_sampling/expected_utility.py": "bb7c39879c65972aa7514266746731c37f6c4748180c9c463d740142dec449ab",
+    "coding_base/moc_adaptive_sampling/features.py": "49ebda3ce17eae334699216a0f8a068c8c83494daa1d0830069ee161e7c82b48",
+    "coding_base/moc_adaptive_sampling/initial_features.py": "7d19ef9afdce5a29142aa702bf4228a91b17bcc02aad1bc6211f785cb5d094d2",
+    "coding_base/moc_adaptive_sampling/kernels.py": "f8ff498f3bf7359771c0725c42b244d4b02c30da0185a59706eebedac2260024",
+    "coding_base/moc_adaptive_sampling/paper_baselines.py": "d8e0fb4b50a1ed1f265f982fbbd7e0fcc4ee3069854e76896f4c5d90850303b8",
+    "coding_base/moc_adaptive_sampling/sampler.py": "de1e9400858af4636a9f513adaa173de1689bad71d615ac8a1ef37e2e451d04a",
+    "coding_base/moc_adaptive_sampling/stateful.py": "5e571dc151078aa4548460b7c6401da84f0d32832f6ff34f8ce0d6f64d074cdb",
+    "coding_base/moc_adaptive_sampling/uncertainty.py": "8f524f3b01ab2afb7fd6334cd146462195f8d697aa7d4671672fdc2d8d1cca59",
+    "coding_base/moc_adaptive_sampling/verify_local.py": "db745682772e53db37dfa6dbbace3526f793e9ba69af9638e9cfd35e109a42d8",
+    "common.py": "638e742c048555bab5e3ceb252e8f08d075ac2cedc55e2b0c071a16f465e22af",
+    "config.json": "fc196fa55f59cf94f7cd33ec6fe6cacce004a5323097279a253e26e4229fb42d",
+    "domain_runtime.py": "6e4e79331edb6a1de20e7fd6d505b4c8db57775074d7c196c025b79c54e11f18",
+    "gpu_runtime.py": "709cddd83e7b1367e853c1cbf7d60096ac2cd3b4a02944defde7248b1d826631",
+    "inspect_run.py": "b7f95c89c9e68e9305a74a0c0c4cc094c3c3e29a4f64abb8019faa27e6d30533",
+    "merger_backend.py": "90b8593ded385bdd4f4a4c93115c82b3db62c94d9d03ec4bec929a34414ad008",
+    "preflight.py": "79b6f407b6e0b98fad7a4ec23cf5af9509460a619a940a708bf2433dec4afd38",
+    "probe_gpu_runtime.py": "8aa1377f4147bb0c2d5d3a973c235c17bdcd92edd40915f5353d220082d6b62e",
+    "resume_cache.py": "adcaa64963b092ebaadcc4a25cb11edb1180c9a7a5251b9798cc0390d0282d27",
+    "runner.py": "6348559cba0f5db1216132856fbc71dc9bda7220f529cda7d87fc595b72d091b",
+    "runtime_controls.py": "ef307a6bf25bf18731eccbfcb473f47c8e068d455e02d2ac62fa995befa522da",
+    "sandbox.py": "1ab811099230c37cbce939dedb6079a692b204c393f2fa7e615121f5eb259d72",
+    "sandbox_child.py": "9ed046a7c7e65fc7a334b62e0b3e18ba1eac06c5802e19f4ba99934960249183",
+    "supervise.py": "14c31adaa7ab2f1adfe12f1d219da40a4869c6e190e52ee21ffa628559384888",
+    "trace_hooks.py": "cee48fe3bb04efd640ae09865f900f38c116e94a810f119e811c02f91172bb18"
+  },
+  "data_hashes": {
+    "baseline_reuse.json": "2aee2079e3e5aa44647e1b47901f41925764c7105beffcef8ecfda4ac61a788c",
+    "data/test_inputs.jsonl": "f1db1b1629acce9d194fe3360a3cc4ef231379d41a332b502aae223907096189",
+    "data/train_gold_LOCAL_ONLY.jsonl": "cbafa260995fcdf37e85599f6be51729f6486e57041f3ff4870b010471858e11",
+    "data/train_inputs.jsonl": "24b4f405fcc9aa3e3ea763a8e602e25ce93776faa7ea34e4ed6922f014f8e336",
+    "data/val_inputs.jsonl": "d15ddc687f4b706df5242491cbeece621d37da0925bcb49ec79b59b669f0728b",
+    "frozen_aqua_model.json": "e2ce9cd7f69d3b4e6c2e6be7af1df0a852d44b972396989e5b02428a655fd210",
+    "split_manifest.json": "5c9af09b183dc82b3f981975dfd75f208da765b837dcb72a249e6b607044007f"
+  },
+  "local_gold_sha256": {
+    "train": "cbafa260995fcdf37e85599f6be51729f6486e57041f3ff4870b010471858e11",
+    "val": "4770df17c57b56290184140114303b5c91bc23356ad9aaa33bcd575102944463",
+    "test": "6ce49fbbae9ffc2a75d95097271d5be0ee9004cd8f72a072ea6cc4b0f7f06eb6"
+  },
+  "author_commit": "9c67c92507570704a7df73e452552a3f49e83897",
+  "author_test_sha256": "ac3fe3cef1c4c95329d35a1cced1a0839e95e070f6709576114d6a0717db54de"
+}
