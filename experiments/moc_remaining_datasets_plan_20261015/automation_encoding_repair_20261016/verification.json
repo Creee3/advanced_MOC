@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "cause": "Previous update read Python stdout in GBK; non-ASCII JSON was misdecoded and saved with replacement characters",
+  "name": "继续",
+  "prompt_chars": 5371,
+  "replacement_chars": 0,
+  "prefix": "每10分钟检查本聊天已授权的五批MOC实验，",
+  "prompt_sha256": "a0770e03193a7a3b155b93c51061a2cc1a5bcb3e79e8189d8a324b0b98685293",
+  "schedule_preserved": true,
+  "thread_preserved": true,
+  "status_preserved": true,
+  "experiments_modified": false,
+  "protected_runs": 5,
+  "normalization": "automation tool trims one trailing newline; all remaining characters match UTF-8 source exactly"
+}
