@@ -1,0 +1,46 @@
+{
+  "checked_utc": "2026-10-15T04:11:29.452360+00:00",
+  "phase": "test",
+  "completed": 738,
+  "invalid": 7,
+  "error": null,
+  "process_cmdlines": {
+    "2239983": "/home/liuxin/.conda/envs/moc/bin/python -u /home/liuxin/ICML2027/experiments/moc_v21_official_test_20261014/supervise.py --resume ",
+    "2241202": "/home/liuxin/.conda/envs/moc/bin/python -u /home/liuxin/ICML2027/experiments/moc_v21_official_test_20261014/run_test.py --shard 0 --main-host http://127.0.0.1:11448 --merger-host http://127.0.0.1:11450 ",
+    "2241203": "/home/liuxin/.conda/envs/moc/bin/python -u /home/liuxin/ICML2027/experiments/moc_v21_official_test_20261014/run_test.py --shard 1 --main-host http://127.0.0.1:11448 --merger-host http://127.0.0.1:11450 ",
+    "2240120": "/home/liuxin/.local/bin/ollama serve ",
+    "2240742": "/home/liuxin/.local/bin/ollama serve "
+  },
+  "services": [
+    {
+      "kind": "main0",
+      "gpu": 0,
+      "pid": 2240120,
+      "size": 16757418884,
+      "size_vram": 16757418884,
+      "cuda": "{\"phase\": \"started\", \"visible\": \"GPU-0a075077-3745-799a-aff3-f0d34a17b6ac\"}\ncuInit 0\ncuDeviceGet 0 0\ncuCtxCreate 0\ncuMemAlloc 0\ncuMemFree 0\ncuCtxDestroy 0\n",
+      "warmup_eval_count": 3
+    },
+    {
+      "kind": "merger",
+      "gpu": 1,
+      "pid": 2240742,
+      "size": 6567493631,
+      "size_vram": 6567493631,
+      "cuda": "{\"phase\": \"started\", \"visible\": \"GPU-d7d04192-bf97-dfdb-3276-75ff261a9f51\"}\ncuInit 0\ncuDeviceGet 0 0\ncuCtxCreate 0\ncuMemAlloc 0\ncuMemFree 0\ncuCtxDestroy 0\n",
+      "warmup_eval_count": 3
+    }
+  ],
+  "budget": {
+    "new_calls": 6124,
+    "actual_tokens": 4151997,
+    "reserved_tokens": 20384,
+    "unknown_cost_upper_bound_tokens": 59344,
+    "unknown_call_count": 4
+  },
+  "raw_age_seconds": {
+    "test/shard0/calls_raw.jsonl": 6.4,
+    "test/shard1/calls_raw.jsonl": 3.3
+  },
+  "deadline_unix": 1792050474.4160016
+}

@@ -16,15 +16,15 @@ max_new_calls: 30000
 max_new_tokens: 12000000
 automation_created: true
 protocol_commit: dc7fc11ca7522e8a8f7aaa135a53efd37146f941
-supervisor_pid: 2160566
-main_pid: 2160750
-merger_pid: 2161279
-worker_pids: [2161731, 2161732]
+supervisor_pid: 2239983
+main_pid: 2240120
+merger_pid: 2240742
+worker_pids: [2241202, 2241203]
 main_gpu: 0
 merger_gpu: 1
-last_checked_utc: 2026-10-15T01:40:19.051435+00:00
-last_checked_conditions: 326
-last_checked_invalid: 1
+last_checked_utc: 2026-10-15T04:11:29.452360+00:00
+last_checked_conditions: 738
+last_checked_invalid: 7
 analysis: pending
 
 terminal_failure_beijing: 2026-10-15T01:29:15+08:00
@@ -37,9 +37,9 @@ automation_id: moc
 automation_status: ACTIVE
 automation_interval_minutes: 10
 recovery_review: recovery_review_20261015.json
-known_new_actual_tokens: 1774668
-unknown_call_count: 1
-unknown_call_token_upper_bound: 10192
+known_new_actual_tokens: 4151997
+unknown_call_count: 4
+unknown_call_token_upper_bound: 59344
 
 resume_started_beijing: 2026-10-15T09:39:09+08:00
 approved_deadline_beijing: 2026-10-15T15:47:54+08:00
@@ -47,3 +47,9 @@ approved_remaining_window_seconds: 22125
 prior_active_wall_seconds: 6674.112595081329
 recovery_commit: 36f657d
 runtime_amendment_sha256: 534fc657a7d62c8c64eed31db021f99fef19d64ddb4c05ff2e546253c3da7e8a
+
+repeat_limit_recovery_attempts: 1
+repeat_limit_recovery: repeat_error_recovery_20261015.json
+
+latest_failure_beijing: 2026-10-15T11:58:35+08:00
+latest_resume_beijing: 2026-10-15T12:10:36+08:00

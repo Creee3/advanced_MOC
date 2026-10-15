@@ -38,3 +38,13 @@
 09:40:19核验实际test进度326/1016，325有效+1个旧代码超时补记invalid；新完成1条件，未重做原324。supervisor2160566、workers2161731/2161732，main2160750/GPU0和merger2161279/GPU1的cmdline真实在运行，主raw年龄24.8/0.4秒，两服务CUDA分配通过、实际短生成各3输出token，size_vram=size。原费用加warmup和新响应累计已知1790034 token，2691次账本调用，20384为两worker正常在途，另10192为旧未知费用保守上界；后二者独立保留，不混成实际费用。
 
 已授权的新截止为今天15:47:54北京时间，累计原6674.112595秒+剩余22125秒；不重置原30000调用/12000000 token上限。10分钟heartbeat继续ACTIVE且已更新本次批准/真实进程/修复锁与新截止，正常时安静。完成后仍需完整覆盖和配对分析/费用/清理审计，未据部分test答案调参。
+
+## 2026-10-15 12:08发现新中断并恢复
+
+11:58:35北京时间监督器在737/1016终态时失败并完成全部自有进程/端口清理。此次是新的已核实根因：shard0原MOC密度0.7、题67969c...ccb6da83的9B合并候选两次触发Ollama token repeat limit（HTTP500），没有完整usage；worker自己的费用未知保护正确停止。其他worker一个merger请求被监督器终止，合计新未结算49152（3x16384）token上界。
+
+先唯一归档80文件，归档fcf6e51d3a88b765aeb2f14434d16ba5e586031d46c9772024eeefcc05e2cd3a，下载并逐文件SHA全部核对。原已知实际4148592 token/6109已知调用与账本6113调用吻合（含旧1+新3未知调用）。将三笔预留保守分账，累计unknown_cost_upper_bound_tokens=59344、unknown_call_count=4；actual_tokens仍4148592，调用不重置，冻结reserve已对上界计入原12M cap。原始请求/错误/费用和trace均保留，给三reservation追加reconciled_unknown审计事件。不能把缺usage的调用当零或猜精确usage。
+
+同一失败MOC条件从原8条main回复与所有已知merger记录补记invalid，不采信作者fallback最终答案，也不重新生成；原737终态不动。另worker只是被停的未提交工作，从兼容精确缓存续跑。一次性状态恢复脚本recover_repeat_error_20261015.py已审查/语法检查，核验所有源码/模型/数据锁无变化和STOP/清理/费用/原deadline后启动；未修改任何冻结可执行文件/算法/模型/输出上限。
+
+12:10:36 launch --resume，监督器2239983。现738终态（补记1 invalid），待准入/新CUDA验证后继续；绝对截止15:47:54不变，未补回停机时间。新重复token根因恢复尝试1，后续同根因按协议至多2次、不能无限重启。恢复明细repeat_error_recovery_20261015.json，原状态见repeat_error_snapshot_20261015/manifest.json。

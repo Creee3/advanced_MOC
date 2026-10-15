@@ -1,0 +1,82 @@
+{
+  "stage": "launched",
+  "root_cause": "merger_token_repeat_limit_500",
+  "recovery_attempt": 1,
+  "checked_utc": "2026-10-15T04:10:36.763477+00:00",
+  "archive": "attempts/preserved_repeat_error_20261015T040854_718704Z",
+  "archive_sha256": "fcf6e51d3a88b765aeb2f14434d16ba5e586031d46c9772024eeefcc05e2cd3a",
+  "original_conditions": 737,
+  "old_budget": {
+    "new_calls": 6113,
+    "actual_tokens": 4148592,
+    "reserved_tokens": 49152,
+    "unknown_cost_upper_bound_tokens": 10192,
+    "unknown_call_count": 1
+  },
+  "deadline_unix": 1792050474.4160016,
+  "deadline_changed": false,
+  "source_hashes_changed": false,
+  "pending_requests": {
+    "merger-1792036662713673806": {
+      "event_index": 7769,
+      "event_type": "backend_request_started",
+      "time_unix": 1792036662.7136846,
+      "stage": "test",
+      "question_id": "67969c897d8d2ac6ef5dea3b67076e88065fb224d0ec0a997311d893ccb6da83",
+      "arm": "moc",
+      "density": 0.7,
+      "reservation_id": "merger-1792036662713673806",
+      "reserved_tokens": 16384,
+      "shard": "shard0",
+      "request_sha256": "c5afcc797206e15689582ce65133be4651521d8337aeeaac3cc2e5004e8e48c8"
+    },
+    "merger-1792036678712704403": {
+      "event_index": 7784,
+      "event_type": "backend_request_started",
+      "time_unix": 1792036678.7127166,
+      "stage": "test",
+      "question_id": "67969c897d8d2ac6ef5dea3b67076e88065fb224d0ec0a997311d893ccb6da83",
+      "arm": "moc",
+      "density": 0.7,
+      "reservation_id": "merger-1792036678712704403",
+      "reserved_tokens": 16384,
+      "shard": "shard0",
+      "request_sha256": "c5afcc797206e15689582ce65133be4651521d8337aeeaac3cc2e5004e8e48c8"
+    },
+    "merger-1792036710356809412": {
+      "event_index": 7752,
+      "event_type": "backend_request_started",
+      "time_unix": 1792036710.356816,
+      "stage": "test",
+      "question_id": "eb5a993ec83914416dc074e7821b457904abbc3cac43fee5d4a43ccf57610e58",
+      "arm": "moc",
+      "density": 0.7,
+      "reservation_id": "merger-1792036710356809412",
+      "reserved_tokens": 16384,
+      "shard": "shard1",
+      "request_sha256": "20ae138546067f41bbc8734227e65564d5b9178371458f44e4c38091d8725d0c"
+    }
+  },
+  "known_actual_tokens": 4148592,
+  "known_calls": 6109,
+  "previous_unknown_cost_upper_bound": 10192,
+  "new_unknown_cost_upper_bound": 49152,
+  "total_unknown_cost_upper_bound": 59344,
+  "total_unknown_call_count": 4,
+  "new_budget": {
+    "new_calls": 6113,
+    "actual_tokens": 4148592,
+    "reserved_tokens": 0,
+    "unknown_cost_upper_bound_tokens": 59344,
+    "unknown_call_count": 4
+  },
+  "recovered_invalid_conditions": 1,
+  "launcher": {
+    "pid": 2239983,
+    "started_utc": "2026-10-15T04:10:36.813833+00:00",
+    "scope": "v21 frozen compact checkpoint, official test254x2 arms x2 densities",
+    "resume": true,
+    "train": false,
+    "test": true
+  }
+}
