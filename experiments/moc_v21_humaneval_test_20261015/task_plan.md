@@ -7,9 +7,9 @@ Scope: author's 164 HumanEval records, frozen v2.1 checkpoint, original CodeWrit
 ## Phases
 1. [complete] Audit author code-generation execution, dataset, routing compatibility and evaluation isolation.
 2. [complete] Implement CodeWriting-specific adapter and hardened execution bridge; no-model regression preflight.
-3. [in progress] Freeze protocol, configuration, input/checkpoint/source hashes and commit; deploy and verify cloud files.
-4. [pending] Two resource checks, CUDA/full-VRAM verification, bounded launch and live progress confirmation.
-5. [pending] Quiet ten-minute monitor; on completion download raw records, audit and paired pass@1 / full-token analysis.
+3. [complete] Freeze protocol, configuration, input/checkpoint/source hashes and commit; deploy and verify cloud files. Frozen source commit 1238b67.
+4. [complete] Two resource checks, CUDA/full-VRAM verification, bounded launch and live progress confirmation. Started 14:13:07 Beijing, GPU1 main / GPU3 merger, real response records and valid terminal conditions confirmed.
+5. [in progress] Quiet ten-minute monitor `moc` ACTIVE; on completion download raw records, audit and paired pass@1 / full-token analysis.
 
 ## Constraints
 - Keep v2.1 expected-utility predictor and its observed-role support unchanged. Unknown roles abstain; report coverage and any empty-selection degeneration explicitly. Do not invent code-role labels or train on test.
@@ -23,3 +23,4 @@ Scope: author's 164 HumanEval records, frozen v2.1 checkpoint, original CodeWrit
 | --- | --- |
 | bwrap nested network namespace setup denied | No change to host/container permissions; use Landlock and seccomp instead. |
 | bwrap nested UID map denied | Stop namespace attempts; fail-closed isolation bridge passes all restriction probes. |
+| Local regression invocation lacked package / asset paths and tokenizers runtime | Use the existing cloud conda environment and original asset paths; all 53 existing tests pass, no installs. |

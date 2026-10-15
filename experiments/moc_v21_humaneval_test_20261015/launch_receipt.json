@@ -1,0 +1,90 @@
+{
+  "recorded_local_date": "2026-10-15",
+  "frozen_source_commit": "1238b67b5147abb3678ce191ee032fa4f8d030e2",
+  "phase": "test",
+  "supervisor_pid": 2305749,
+  "worker_pids": [
+    2306842,
+    2306843
+  ],
+  "completed_test_conditions": 4,
+  "error": null,
+  "cleanup_complete": false,
+  "updated_utc": "2026-10-15T06:15:25.283210+00:00",
+  "budget": {
+    "new_calls": 32,
+    "actual_tokens": 23982,
+    "reserved_tokens": 20384
+  },
+  "actual_processes": [
+    {
+      "pid": 2305749,
+      "exists": true,
+      "cmdline": "/home/liuxin/.conda/envs/moc/bin/python -u /home/liuxin/ICML2027/experiments/moc_v21_humaneval_test_20261015/supervise.py "
+    },
+    {
+      "pid": 2306842,
+      "exists": true,
+      "cmdline": "/home/liuxin/.conda/envs/moc/bin/python -u /home/liuxin/ICML2027/experiments/moc_v21_humaneval_test_20261015/run_test.py --shard 0 --main-host http://127.0.0.1:11448 --merger-host http://127.0.0.1:11450 "
+    },
+    {
+      "pid": 2306843,
+      "exists": true,
+      "cmdline": "/home/liuxin/.conda/envs/moc/bin/python -u /home/liuxin/ICML2027/experiments/moc_v21_humaneval_test_20261015/run_test.py --shard 1 --main-host http://127.0.0.1:11448 --merger-host http://127.0.0.1:11450 "
+    },
+    {
+      "pid": 2305865,
+      "exists": true,
+      "cmdline": "/home/liuxin/.local/bin/ollama serve "
+    },
+    {
+      "pid": 2306392,
+      "exists": true,
+      "cmdline": "/home/liuxin/.local/bin/ollama serve "
+    }
+  ],
+  "training": [],
+  "test": [
+    {
+      "shard": "shard0",
+      "raw_age_seconds": 7.7,
+      "committed_questions": 0,
+      "excluded_questions": 0,
+      "validation_results": 2
+    },
+    {
+      "shard": "shard1",
+      "raw_age_seconds": 4,
+      "committed_questions": 0,
+      "excluded_questions": 0,
+      "validation_results": 2
+    }
+  ],
+  "terminal_conditions": 4,
+  "target": 656,
+  "valid": 4,
+  "invalid": 0,
+  "questions_started": 2,
+  "questions_all_four_terminal": 0,
+  "run_start": {
+    "deadline_unix": 1792073587.8144922,
+    "started_utc": "2026-10-15T06:13:07.814514+00:00"
+  },
+  "remaining_wall_seconds": 28653,
+  "gpu_now": [
+    "0, 3091 MiB, 0 %",
+    "1, 17933 MiB, 91 %",
+    "2, 2061 MiB, 0 %",
+    "3, 10116 MiB, 0 %",
+    "4, 2061 MiB, 0 %",
+    "5, 2063 MiB, 0 %",
+    "6, 3 MiB, 0 %",
+    "7, 2061 MiB, 14 %"
+  ],
+  "monitor": {
+    "automation_id": "moc",
+    "status": "ACTIVE",
+    "interval_minutes": 10,
+    "notify": "meaningful stage / recovery / failure / completion only"
+  }
+}
