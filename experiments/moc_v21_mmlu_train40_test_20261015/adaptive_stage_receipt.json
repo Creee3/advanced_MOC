@@ -1,0 +1,18 @@
+{
+  "status": "adaptive_stage_passed",
+  "conditions": 570,
+  "question_ids": 285,
+  "invalid": 0,
+  "duplicates": 0,
+  "budget": {
+    "new_calls": 5339,
+    "actual_tokens": 3426041,
+    "reserved_tokens": 0,
+    "unknown_cost_upper_bound_tokens": 0
+  },
+  "raw_actual_and_calls_match": true,
+  "policy_sha256": "71dcd90b4f216475cebd5312e844ff1d258ddb2befac48787ab0b793bb92ef7f",
+  "cleanup_complete_at_transition": true,
+  "no_gold_scoring": true,
+  "coverage_snapshot": "healthcheck_20261016_041958.json"
+}

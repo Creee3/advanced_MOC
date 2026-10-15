@@ -1,0 +1,93 @@
+{
+  "services": [
+    {
+      "kind": "main0",
+      "gpu": {
+        "index": 0,
+        "uuid": "GPU-0a075077-3745-799a-aff3-f0d34a17b6ac",
+        "utilization": 0,
+        "free_mib": 24081
+      },
+      "pid": 2819766,
+      "port": 11453,
+      "time_utc": "2026-10-15T20:21:48.064993+00:00",
+      "cuda_allocation_probe": "{\"phase\": \"started\", \"visible\": \"GPU-0a075077-3745-799a-aff3-f0d34a17b6ac\"}\ncuInit 0\ncuDeviceGet 0 0\ncuCtxCreate 0\ncuMemAlloc 0\ncuMemFree 0\ncuCtxDestroy 0\n"
+    },
+    {
+      "kind": "merger",
+      "gpu": {
+        "index": 1,
+        "uuid": "GPU-d7d04192-bf97-dfdb-3276-75ff261a9f51",
+        "utilization": 0,
+        "free_mib": 24081
+      },
+      "pid": 2820949,
+      "port": 11455,
+      "time_utc": "2026-10-15T20:22:46.322480+00:00",
+      "cuda_allocation_probe": "{\"phase\": \"started\", \"visible\": \"GPU-d7d04192-bf97-dfdb-3276-75ff261a9f51\"}\ncuInit 0\ncuDeviceGet 0 0\ncuCtxCreate 0\ncuMemAlloc 0\ncuMemFree 0\ncuCtxDestroy 0\n"
+    }
+  ],
+  "run_start": {
+    "deadline_unix": 1792110615.056002,
+    "started_utc": "2026-10-15T16:30:15.056016+00:00"
+  },
+  "launcher": {
+    "pid": 2818908,
+    "mode": "baseline",
+    "started_utc": "2026-10-15T20:20:30.722728+00:00"
+  },
+  "status": "baseline_launch_verified",
+  "snapshot": "healthcheck_20261016_042301.json",
+  "previous_adapted_conditions": 570,
+  "original_deadline_unchanged": true,
+  "no_gold_scoring": true,
+  "latest_snapshot": "healthcheck_20261016_042326.json",
+  "processes": [
+    {
+      "pid": 2818908,
+      "cmdline": "/home/liuxin/.conda/envs/moc/bin/python -u /home/liuxin/ICML2027/experiments/moc_v21_mmlu_train40_test_20261015/supervise.py --mode baseline --resume "
+    },
+    {
+      "pid": 2821833,
+      "cmdline": "/home/liuxin/.conda/envs/moc/bin/python -u /home/liuxin/ICML2027/experiments/moc_v21_mmlu_train40_test_20261015/runner.py --phase test --shard 0 --arm moc --main-host http://127.0.0.1:11453 --merger-host http://127.0.0.1:11455 "
+    },
+    {
+      "pid": 2821834,
+      "cmdline": "/home/liuxin/.conda/envs/moc/bin/python -u /home/liuxin/ICML2027/experiments/moc_v21_mmlu_train40_test_20261015/runner.py --phase test --shard 1 --arm moc --main-host http://127.0.0.1:11453 --merger-host http://127.0.0.1:11455 "
+    },
+    {
+      "pid": 2819766,
+      "cmdline": "/home/liuxin/.local/bin/ollama serve "
+    },
+    {
+      "pid": 2820949,
+      "cmdline": "/home/liuxin/.local/bin/ollama serve "
+    }
+  ],
+  "loaded": {
+    "11453": [
+      {
+        "name": "gemma2:27b",
+        "digest": "53261bc9c192c1cb5fcc898dd3aa15da093f5ab6f08e17e48cf838bb1c58abfe",
+        "size": 17121820016,
+        "size_vram": 17121820016
+      }
+    ],
+    "11455": [
+      {
+        "name": "gemma2:9b",
+        "digest": "ff02c3702f322b9e075e9568332d96c0a7028002f1a5a056e0a6784320a4db0b",
+        "size": 6567493631,
+        "size_vram": 6567493631
+      }
+    ]
+  },
+  "raw_continues": true,
+  "budget": {
+    "new_calls": 5354,
+    "actual_tokens": 3433289,
+    "reserved_tokens": 20384,
+    "unknown_cost_upper_bound_tokens": 0
+  },
+  "status_cleanup_complete": false
+}
