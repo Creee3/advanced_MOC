@@ -36,22 +36,26 @@ class _MeteredLLM:
 class MOCSamplingAdapter:
     """Install on one author Graph; call its original arun, Node, and MathSolver.
 
-    v0 supports one-round MathSolver graphs and FinalRefer. CodeWriting and
-    Wiki/tool-dependent AnalyzeAgent require their own audited adapters; refuse
-    them here rather than silently change early-return or tool semantics.
+    Default supports one-round MathSolver graphs and FinalRefer. HumanEval
+    explicitly opts in to CodeWriting / FinalWriteCode, preserving native
+    public-example tests on selected messages. The caller must install the
+    audited isolated execution bridge. Wiki/AnalyzeAgent remains unsupported.
     """
 
     def __init__(self, graph, sampler: LayerDependentSampler, encode, *,
-                 feature_space="MOC:all-MiniLM-L6-v2", counter_name="injected-text-counter"):
+                 feature_space="MOC:all-MiniLM-L6-v2", counter_name="injected-text-counter",
+                 code_writing=False):
         if getattr(graph, "_moc_sampling_adapter", None) is not None:
             raise ValueError("this graph already has a sampling adapter")
-        if any(getattr(node, "agent_name", None) != "MathSolver" for node in graph.nodes.values()):
+        ordinary, final_name = ("CodeWriting", "FinalWriteCode") if code_writing else ("MathSolver", "FinalRefer")
+        if any(getattr(node, "agent_name", None) != ordinary for node in graph.nodes.values()):
             raise NotImplementedError("v0 supports MathSolver; CodeWriting/AnalyzeAgent tool paths are not adapted")
-        if getattr(graph.decision_node, "agent_name", None) != "FinalRefer":
+        if getattr(graph.decision_node, "agent_name", None) != final_name:
             raise NotImplementedError("v0 preserves the author's FinalRefer aggregation")
         if getattr(graph, "optimized_spatial", False) or getattr(graph, "optimized_temporal", False):
             raise NotImplementedError("v0 uses the author's fixed DAG topology")
         self.graph, self.sampler, self.encode = graph, sampler, encode
+        self.code_writing = code_writing
         self.feature_space, self.counter_name = feature_space, counter_name
         self._saved = []
         self._running = False
@@ -136,8 +140,14 @@ class MOCSamplingAdapter:
                     result = adapter._selections.get(node_id)
                     if adapter._failures or result is None or result.context != neighbor_summary:
                         raise RuntimeError("selection failed; raw-message fallback is forbidden")
-                    # An empty selection remains empty in the original MathSolver.
-                    return await original(input, {}, {}, result.context, **kwargs)
+                    # CodeWriting's native prompt-example tests/early return may
+                    # inspect only the selected messages, including far ancestors.
+                    # Never expose discarded direct neighbors through that path.
+                    selected = ({source: {"role": graph.nodes[source].role,
+                                          "output": adapter._artifacts[source][0]}
+                                 for source in result.source_ids}
+                                if adapter.code_writing else {})
+                    return await original(input, selected, {}, result.context, **kwargs)
                 return inner
 
             def make_outer(original, node_id):

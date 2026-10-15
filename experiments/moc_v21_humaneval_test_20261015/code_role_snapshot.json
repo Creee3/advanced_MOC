@@ -1,0 +1,12 @@
+{
+  "roles": [
+    "Project Manager",
+    "Algorithm Designer",
+    "Programming Expert",
+    "Test Analyst",
+    "Bug Fixer",
+    "Project Manager",
+    "Algorithm Designer"
+  ],
+  "origin": "first seven roles from original HumanEvalPromptSet role cycle"
+}

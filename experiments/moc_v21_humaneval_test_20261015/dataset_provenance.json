@@ -1,0 +1,8 @@
+{
+  "author_commit": "9c67c92507570704a7df73e452552a3f49e83897",
+  "source": "coding_base\\MOC-official\\datasets\\test\\humaneval_test_n164.jsonl",
+  "source_sha256": "fc3c9e79caec6eb3a548a936005f44c5820528837153dc1db8b839cbe1a49b21",
+  "records": 164,
+  "variant": "MOC-supplied MultiPL-E transformed Python HumanEval; reworded terminology / transformed doctests",
+  "inputs": "public prompts only; final test bodies remain local until all generation finishes"
+}

@@ -1,0 +1,115 @@
+{
+  "status": "passed",
+  "test_questions": 164,
+  "test_conditions": 656,
+  "fake_native_graph_checks": [
+    {
+      "public_example_passes": true,
+      "density": 0.3,
+      "arm": "moc",
+      "main_calls": 2,
+      "early_returns": 6,
+      "merger_calls": 0
+    },
+    {
+      "public_example_passes": true,
+      "density": 0.3,
+      "arm": "adaptive_sampling",
+      "main_calls": 8,
+      "early_returns": 0,
+      "merger_calls": 0
+    },
+    {
+      "public_example_passes": true,
+      "density": 0.7,
+      "arm": "moc",
+      "main_calls": 2,
+      "early_returns": 6,
+      "merger_calls": 25
+    },
+    {
+      "public_example_passes": true,
+      "density": 0.7,
+      "arm": "adaptive_sampling",
+      "main_calls": 8,
+      "early_returns": 0,
+      "merger_calls": 0
+    },
+    {
+      "public_example_passes": false,
+      "density": 0.3,
+      "arm": "moc",
+      "main_calls": 8,
+      "early_returns": 0,
+      "merger_calls": 0
+    },
+    {
+      "public_example_passes": false,
+      "density": 0.3,
+      "arm": "adaptive_sampling",
+      "main_calls": 8,
+      "early_returns": 0,
+      "merger_calls": 0
+    },
+    {
+      "public_example_passes": false,
+      "density": 0.7,
+      "arm": "moc",
+      "main_calls": 8,
+      "early_returns": 0,
+      "merger_calls": 25
+    },
+    {
+      "public_example_passes": false,
+      "density": 0.7,
+      "arm": "adaptive_sampling",
+      "main_calls": 8,
+      "early_returns": 0,
+      "merger_calls": 0
+    },
+    {
+      "scope": "synthetic selected-source-only early return",
+      "passed": true,
+      "main_calls": 2
+    }
+  ],
+  "isolation_checks": {
+    "positive_test": true,
+    "negative_test": true,
+    "restrictions": [
+      {
+        "facility": "home_read",
+        "error_type": "PermissionError"
+      },
+      {
+        "facility": "network",
+        "error_type": "PermissionError"
+      },
+      {
+        "facility": "subprocess",
+        "error_type": "PermissionError"
+      },
+      {
+        "facility": "write",
+        "error_type": "PermissionError"
+      }
+    ],
+    "timeout_bounded": true
+  },
+  "real_model_calls": 0,
+  "gpu_allocations": 0,
+  "gold_present": false,
+  "checkpoint_unchanged": true,
+  "covered_receiver_roles": [
+    "Inspector",
+    "Math Solver",
+    "Mathematical Analyst",
+    "Programming Expert"
+  ],
+  "unseen_code_roles": [
+    "Algorithm Designer",
+    "Bug Fixer",
+    "Project Manager",
+    "Test Analyst"
+  ]
+}

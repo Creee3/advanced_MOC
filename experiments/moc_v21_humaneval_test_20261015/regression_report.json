@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "tests_run": 53,
+  "errors": 0,
+  "failures": 0,
+  "real_model_calls": 0,
+  "assets": {
+    "regression/tests/source_harness.py": "f2ec317b73ef7318965c893d44f7fdcc966e8522c6ece15693402c8c2c5135e7",
+    "regression/tests/test_bundles.py": "78c410d7cdc726b65e39df0c327fb6a79caa627d7aab007625db7067635c7dbb",
+    "regression/tests/test_expected_set.py": "70da4c253f3fdfaa8bc7e82c80cd379a901618706176817a45026b89a837d846",
+    "regression/tests/test_expected_utility.py": "daf8df94f53396a280e4ba24d48a6503339836381cd80e1ad887e749f83d610a",
+    "regression/tests/test_initial_features.py": "19fa9da98a1ce9bdd087a1c9f4c07845760eaa7c0e5223971fb56b6afc48ced1",
+    "regression/tests/test_sampling.py": "91c614a08ad0921267b3eeecb38121b7b18a9430ce97030e5489e5302af9d72b",
+    "regression/tests/test_stateful.py": "1886e5150ba62b441c1566f236e172df5032cc5acad085622965b3d1677d2e3a",
+    "regression/upstream/ladies/pytorch_ladies.py": "044e2836200fd8d9c10bdbb24c8c1eca342cbacdb25142fe6e115e72049e7bec"
+  }
+}
