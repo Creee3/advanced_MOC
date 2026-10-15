@@ -1,5 +1,5 @@
 {
-  "status": "prepared_waiting_for_extension_approval",
+  "status": "approved_preparing",
   "original_terminal_conditions": 324,
   "matched_pairs_by_density": {
     "0.3": 81,
@@ -16,7 +16,7 @@
   "runtime_only_patch": {
     "common.py": {
       "before_sha256": "edcde3c18a910c067022cc3537edbdf0b1dc0e0e38cc076c688a0c7647682161",
-      "after_sha256": "f1ed7dd46b32863025663ffaa5e66e89cad4dd7033fde488ddb468eac848d3c1"
+      "after_sha256": "d89f30b61fba8e882d3e8cd7040f57c93d7348f3a6ab0f0d1a027f57d430dc6f"
     },
     "merger_backend.py": {
       "before_sha256": "861c9715242ac9d4f60961fdb016b2b9f684038bb9d182ac3e39b8fdf75eef00",
@@ -25,10 +25,18 @@
     "run_test.py": {
       "before_sha256": "8eaca231d1487788829edcc4305b0023c971540fb31f717f1f58f3864b532e15",
       "after_sha256": "32be31e9502499a986e2413bdb176c961c06760dd29c1f14b2671c617178a77e"
+    },
+    "supervise.py": {
+      "before_sha256": "78dc2fa2851b8990cbc3b1e58489cfc003cac1c180d09d1f9e59efb7175d6122",
+      "after_sha256": "2b69cf75d851a18a864ebbcfb99c1ac4aa31809a1e669644ec56672b6323ca34"
+    },
+    "resume_cache.py": {
+      "before_sha256": "03f282744cc2bb1e50a95ae3f7c60b44838efd1ce2e0d4cc4c28c4be7d103871",
+      "after_sha256": "adcaa64963b092ebaadcc4a25cb11edb1180c9a7a5251b9798cc0390d0282d27"
     }
   },
   "checkpoint_unchanged": true,
-  "regression_checks": "3 passed",
+  "regression_checks": "5 local checks pending rerun; native Graph preflight required before GPU",
   "cloud_sources_modified": false,
   "services_running": false,
   "archive_sha256": "263ca7e026fee328ce87a206ca977b2a70a2624a859ef94a38fc2360b42f63df",
@@ -39,5 +47,15 @@
     "Use original two shards and skip every committed terminal condition",
     "Give at most remaining22125seconds new active window, retaining total12000000tokens and30000calls including prior spend",
     "Run native graph fake integration again against final runtime amendment before GPU restart"
-  ]
+  ],
+  "approval": {
+    "user_message": "继续跑呗",
+    "recorded_utc": "2026-10-15T01:37:50.273042+00:00",
+    "remaining_seconds": 22125,
+    "original_total_wall_cap_seconds": 28800,
+    "original_token_cap": 12000000,
+    "original_call_cap": 30000,
+    "prior_active_seconds": 6674.112595081329,
+    "no_completed_conditions_repeated": true
+  }
 }

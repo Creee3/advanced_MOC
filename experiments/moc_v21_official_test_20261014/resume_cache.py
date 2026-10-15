@@ -4,6 +4,13 @@ from moc_adaptive_sampling.counterfactual import ExactCallCache,check_response,r
 from hashlib import sha256
 def sha(path):return sha256(path.read_bytes()).hexdigest()
 
+def timed_out_tool_keys(trace):
+    """A timeout is an invalid tool execution, never a reusable tool result."""
+    return {current['request_key'] for previous,current in zip(trace,trace[1:])
+            if previous.get('event_type')=='code_execution_finished' and previous.get('timed_out')
+            and current.get('event_type')=='new_tool_result'
+            and previous.get('question_id')==current.get('question_id')}
+
 def restore_main_cache(backend, out):
     """Admit old and own raw jointly, excluding every conflicting key.
 
@@ -44,8 +51,11 @@ def restore_main_cache(backend, out):
     backend.cache.entries.clear()
     backend.cache.historical_conflicts.clear()
     report = backend.cache.load_historical(historical + own_records)
+    failed_tool_keys=timed_out_tool_keys(prior_trace)
+    for key in failed_tool_keys:
+        backend.cache.entries.pop(key,None)
     backend.cache.events = list(prior_raw)
     save(out/'resume_cache_admission.json', dict(
         report, conflicts=backend.cache.historical_conflicts,
         rejected_prior_raw=rejected, previous_raw_events=len(prior_raw),
-        source_raw_sha256=source_sha))
+        source_raw_sha256=source_sha, timed_out_tool_keys_excluded=sorted(failed_tool_keys)))

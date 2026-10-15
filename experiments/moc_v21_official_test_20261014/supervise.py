@@ -133,7 +133,7 @@ def main():
         if old.get('phase') in ('complete','stopped') or not old.get('cleanup_complete'):
             raise RuntimeError('recovery requires failed state and verified cleanup')
         budget=json.loads((ROOT/'budget.json').read_text())
-        if budget['reserved_tokens'] or budget['new_calls']>=CONFIG['max_new_calls'] or budget['actual_tokens']>=CONFIG['max_new_model_tokens']:
+        if budget['reserved_tokens'] or budget['new_calls']>=CONFIG['max_new_calls'] or budget['actual_tokens']+budget.get('unknown_cost_upper_bound_tokens',0)>=CONFIG['max_new_model_tokens']:
             raise RuntimeError('unresolved/cumulative cost limit forbids recovery')
         deadline=json.loads((ROOT/'run_start.json').read_text())['deadline_unix']
         if time.time()>=deadline:

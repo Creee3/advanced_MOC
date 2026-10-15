@@ -51,7 +51,7 @@ def budget_lock():
 def reserve(tokens):
     with budget_lock():
         ledger=json.loads((ROOT/'budget.json').read_text())
-        if ledger['new_calls']>=CONFIG['max_new_calls'] or ledger['actual_tokens']+ledger['reserved_tokens']+tokens>CONFIG['max_new_model_tokens']:
+        if ledger['new_calls']>=CONFIG['max_new_calls'] or ledger['actual_tokens']+ledger.get('unknown_cost_upper_bound_tokens',0)+ledger['reserved_tokens']+tokens>CONFIG['max_new_model_tokens']:
             raise BudgetExceeded('new-call/token budget reached; no sample expansion')
         ledger['new_calls']+=1; ledger['reserved_tokens']+=tokens
         save(ROOT/'budget.json',ledger)
@@ -142,10 +142,10 @@ class Backend:
                     return entry['tool_result']
                 result=observed(code)
                 # f-string suffix only uses its string representation.
-                entry['tool_result']=str(result)
                 self.recorder.write('new_tool_result',request_key=self.last_key,result=str(result),**self.context)
                 if any(e['event_type']=='code_execution_finished' and e.get('timed_out') for e in self.recorder.records[-2:]):
                     raise InvalidUnit('code timeout; unit excluded')
+                entry['tool_result']=str(result)
                 return result
             math_module.execute_code_get_return=execute
             try:
