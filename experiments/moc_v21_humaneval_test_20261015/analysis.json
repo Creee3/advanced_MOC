@@ -1,0 +1,221 @@
+{
+  "dataset": "MOC-supplied MultiPL-E transformed Python HumanEval164",
+  "evaluation": "one frozen generated completion per task/method/density; author postprocessing and hidden tests",
+  "checkpoint_training": "AQuA train35, 176 initial-state labels; no HumanEval fitting or code-role mapping",
+  "comparisons": {
+    "0.3": {
+      "question_pairs": 164,
+      "moc_passed": 123,
+      "v21_passed": 130,
+      "moc_pass_at_1": 0.75,
+      "v21_pass_at_1": 0.7926829268292683,
+      "accuracy_difference": 0.042682926829268296,
+      "accuracy_difference_bootstrap95": [
+        -0.012195121951219513,
+        0.0975609756097561
+      ],
+      "improved": 14,
+      "degraded": 7,
+      "tied": 143,
+      "exact_mcnemar_two_sided_p": 0.18924713134765625,
+      "moc_full_inference_tokens": 690485,
+      "v21_full_inference_tokens": 622276,
+      "token_change_fraction": -0.09878418792587818,
+      "token_ratio_bootstrap95": [
+        0.8668178083405,
+        0.9362393241462302
+      ],
+      "observed_target_met": true,
+      "inference_scope": "all ordinary/final/merger prompt+completion tokens, including exact-cache logical reuse"
+    },
+    "0.7": {
+      "question_pairs": 164,
+      "moc_passed": 129,
+      "v21_passed": 127,
+      "moc_pass_at_1": 0.7865853658536586,
+      "v21_pass_at_1": 0.774390243902439,
+      "accuracy_difference": -0.012195121951219513,
+      "accuracy_difference_bootstrap95": [
+        -0.06097560975609756,
+        0.036585365853658534
+      ],
+      "improved": 8,
+      "degraded": 10,
+      "tied": 146,
+      "exact_mcnemar_two_sided_p": 0.8145294189453125,
+      "moc_full_inference_tokens": 2423899,
+      "v21_full_inference_tokens": 622845,
+      "token_change_fraction": -0.743040035909087,
+      "token_ratio_bootstrap95": [
+        0.24972424423171038,
+        0.26504491297110827
+      ],
+      "observed_target_met": false,
+      "inference_scope": "all ordinary/final/merger prompt+completion tokens, including exact-cache logical reuse"
+    }
+  },
+  "metrics": {
+    "moc@0.3": {
+      "questions": 164,
+      "passed": 123,
+      "full_inference_tokens": 690485,
+      "main_model_tokens": 690485,
+      "merger_model_tokens": 0,
+      "logical_calls": 819,
+      "main_calls": 819,
+      "merger_calls": 0,
+      "early_returns": 493,
+      "final_test_failure_types": {
+        "AssertionError": 37,
+        "TypeError": 1,
+        "NameError": 1,
+        "ValueError": 1,
+        "RecursionError": 1
+      }
+    },
+    "v21_expected_set@0.3": {
+      "questions": 164,
+      "passed": 130,
+      "full_inference_tokens": 622276,
+      "main_model_tokens": 622276,
+      "merger_model_tokens": 0,
+      "logical_calls": 1255,
+      "main_calls": 1255,
+      "merger_calls": 0,
+      "early_returns": 57,
+      "final_test_failure_types": {
+        "AssertionError": 32,
+        "RecursionError": 1,
+        "ValueError": 1
+      }
+    },
+    "moc@0.7": {
+      "questions": 164,
+      "passed": 129,
+      "full_inference_tokens": 2423899,
+      "main_model_tokens": 709721,
+      "merger_model_tokens": 1714178,
+      "logical_calls": 3350,
+      "main_calls": 825,
+      "merger_calls": 2525,
+      "early_returns": 487,
+      "final_test_failure_types": {
+        "AssertionError": 31,
+        "TypeError": 2,
+        "ValueError": 1,
+        "RecursionError": 1
+      }
+    },
+    "v21_expected_set@0.7": {
+      "questions": 164,
+      "passed": 127,
+      "full_inference_tokens": 622845,
+      "main_model_tokens": 622845,
+      "merger_model_tokens": 0,
+      "logical_calls": 1312,
+      "main_calls": 1312,
+      "merger_calls": 0,
+      "early_returns": 0,
+      "final_test_failure_types": {
+        "AssertionError": 35,
+        "IndexError": 1,
+        "ValueError": 1
+      }
+    }
+  },
+  "routing": {
+    "0.3": {
+      "ordinary_receivers": 1148,
+      "nonroot_receivers": 984,
+      "selected_set_sizes": {
+        "0": 821,
+        "2": 69,
+        "1": 94
+      },
+      "stop_reasons": {
+        "no_supported_expected_action": 820,
+        "one_evidence_set_selected": 163,
+        "expected_net_utility_nonpositive": 1
+      },
+      "read_messages_by_hop": {
+        "2": 73,
+        "1": 69,
+        "3": 90
+      },
+      "available_messages_by_hop": {
+        "1": 1148,
+        "2": 820,
+        "3": 656,
+        "4": 492
+      },
+      "read_messages": 232,
+      "available_messages": 3116,
+      "communication_text_tokens": 24837,
+      "encoding_seconds": 66.1231874844816,
+      "routing_seconds": 6.624004872981459,
+      "encoding_input_tokens": 277121,
+      "encoding_calls": {
+        "sender": 1148,
+        "receiver": 1148
+      },
+      "sketch_bytes_generated": 3526656,
+      "routing_sketch_bytes_read": 6549504,
+      "timing_scope": "observed cumulative component seconds; not a controlled end-to-end latency comparison"
+    },
+    "0.7": {
+      "ordinary_receivers": 1148,
+      "nonroot_receivers": 984,
+      "selected_set_sizes": {
+        "0": 984
+      },
+      "stop_reasons": {
+        "no_supported_expected_action": 984
+      },
+      "read_messages_by_hop": {},
+      "available_messages_by_hop": {
+        "1": 2460,
+        "2": 984
+      },
+      "read_messages": 0,
+      "available_messages": 3444,
+      "communication_text_tokens": 0,
+      "encoding_seconds": 61.08091153515852,
+      "routing_seconds": 10.150467353319982,
+      "encoding_input_tokens": 272544,
+      "encoding_calls": {
+        "sender": 1148,
+        "receiver": 1148
+      },
+      "sketch_bytes_generated": 3526656,
+      "routing_sketch_bytes_read": 7053312,
+      "timing_scope": "observed cumulative component seconds; not a controlled end-to-end latency comparison"
+    }
+  },
+  "common_valid_sensitivity": {
+    "excluded_question_ids": [],
+    "identical_to_primary": true
+  },
+  "costs": {
+    "moc_inference_tokens_both_densities": 3114384,
+    "v21_inference_tokens_both_densities": 1245121,
+    "inference_token_change_fraction": -0.6002031220299102,
+    "reused_training_tokens_charged_once": 888561,
+    "v21_with_reused_training_charged_once": 2133682,
+    "token_change_with_training_charged_once": -0.3148943739757204,
+    "current_experiment_actual_new_tokens": 3099570,
+    "current_experiment_new_calls": 4264,
+    "warmup_tokens": 32,
+    "unknown_cost_upper_bound_tokens": 0,
+    "discarded_new_calls": 0
+  },
+  "audit_status": "record_and_cost_consistency_passed",
+  "statistical_scope": "paired question bootstrap seed42, 20000 replicates per density; no noninferiority claim",
+  "limitations": [
+    "zero-training cross-domain transfer, most code roles unsupported",
+    "single decoding seed and two fixed graph topologies",
+    "hard two-message cap and removal of Phi confound attribution to learned grouping",
+    "final all-output aggregation remains; empty ordinary-node communication does not imply globally no communication",
+    "observed routing/encoding time is not GPU or end-to-end speedup",
+    "not byte-identical to original OpenAI HumanEval prompts; no paper-number equivalence claim"
+  ]
+}

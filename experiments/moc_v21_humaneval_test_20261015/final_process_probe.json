@@ -1,0 +1,19 @@
+{
+  "checked_utc": "2026-10-15T08:37:49.635675+00:00",
+  "owned_pids_exist": {
+    "2305749": false,
+    "2306842": false,
+    "2306843": false,
+    "2305865": false,
+    "2306392": false,
+    "2392136": false,
+    "2392137": false
+  },
+  "private_ports": {
+    "11448": "closed",
+    "11450": "closed"
+  },
+  "generation_status": "complete",
+  "scoring_status": "complete",
+  "all_owned_clean": true
+}

@@ -1,0 +1,15 @@
+{
+  "status": "complete",
+  "files": {
+    "analysis.json": "002a345ed6a111f21123ac96976ccf07c92051f6630db95ace8f6c56457a7b56",
+    "completion_audit.json": "a2c6bd25571f7c2e29b01621902f2c7ad517a1b74dcc79632f6b620bab284d8e",
+    "HumanEval测试结果与首次分析_20261015.md": "d243542f140f163e9f67794f1c5413140b0d029f27aa670c781bac31631aae7d",
+    "analysis/per_condition_metrics.csv": "264f389df6b83f83aadaf55d55e495f9235fb90753e052beda66fc9f58ffcf13",
+    "analysis/audit_local.py": "340279f681dbae95cdce228d24c9552bad7b9be019e4c2d8489c4bab045099a8",
+    "analysis/analyze_local.py": "79ebde115544ec305eeab598d34a47b47542e2972260bec8e2479424d2263f36",
+    "final_process_probe.json": "eb6f8321877284198fce6ef45377df979f13cce45758d0cf602127b67588b747",
+    "remote_snapshot/manifest.json": "d473f8e2b7a98d022c870c4554e83dab061b8a5e52a1b131b4da8c4bce7a8bf1",
+    "experiment_lock.json": "69781b35aba022ecf03e2ace133ac2d86310ec0cbf924bbbb9d68e128adda389",
+    "policy_lock.json": "45c7cf82f154385642c91c6cd92150f2c1cd07a9fe7b8c9487c6c23cc05c1594"
+  }
+}

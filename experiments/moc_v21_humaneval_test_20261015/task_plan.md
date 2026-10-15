@@ -9,7 +9,7 @@ Scope: author's 164 HumanEval records, frozen v2.1 checkpoint, original CodeWrit
 2. [complete] Implement CodeWriting-specific adapter and hardened execution bridge; no-model regression preflight.
 3. [complete] Freeze protocol, configuration, input/checkpoint/source hashes and commit; deploy and verify cloud files. Frozen source commit 1238b67.
 4. [complete] Two resource checks, CUDA/full-VRAM verification, bounded launch and live progress confirmation. Started 14:13:07 Beijing, GPU1 main / GPU3 merger, real response records and valid terminal conditions confirmed.
-5. [in progress] Quiet ten-minute monitor `moc` ACTIVE; on completion download raw records, audit and paired pass@1 / full-token analysis.
+5. [complete] All656 generation conditions and final scores complete. Raw101-file archive SHA verified; frozen-source/parser/cache/cost/argmax audit passes. Both densities analyzed; report HumanEval测试结果与首次分析_20261015.md. GPU/worker/supervisor and CPU scorer seven PIDs gone, private ports closed. Ten-minute monitor `moc` is PAUSED after completion audit.
 
 ## Constraints
 - Keep v2.1 expected-utility predictor and its observed-role support unchanged. Unknown roles abstain; report coverage and any empty-selection degeneration explicitly. Do not invent code-role labels or train on test.

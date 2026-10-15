@@ -29,3 +29,5 @@ models/
 *.gguf
 *.pt
 *.pth
+/experiments/moc_v21_humaneval_test_20261015/remote_snapshot/*
+!/experiments/moc_v21_humaneval_test_20261015/remote_snapshot/manifest.json
