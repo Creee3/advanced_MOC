@@ -1,0 +1,22 @@
+{
+  "status": "generation_complete_archived",
+  "created_utc": "2026-10-15T23:01:18.057153+00:00",
+  "remote_directory": "/home/liuxin/ICML2027/experiments/moc_remaining_datasets_plan_20261015/completed_archives/moc_v21_mmlu_train40_test_20261015",
+  "archive_sha256": "98b5cb78eb26766a812963aa5411253f1870e35671eeaf65dfe68b789969f4b4",
+  "archive_bytes": 18410118,
+  "members": 115,
+  "member_manifest_sha256": "4f6993778ac4e50e5ced0dac69275a0252eba97f070618467d1ad479b0cd1e1c",
+  "budget": {
+    "new_calls": 12846,
+    "actual_tokens": 7870810,
+    "reserved_tokens": 0,
+    "unknown_cost_upper_bound_tokens": 0
+  },
+  "conditions": 1140,
+  "invalid": 0,
+  "source_data_policy_verified": true,
+  "raw_cost_exact": true,
+  "unsettled_reservations": 0,
+  "cleanup_verified": true,
+  "no_gold_scoring": true
+}
