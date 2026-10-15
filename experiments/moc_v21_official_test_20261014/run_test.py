@@ -21,6 +21,17 @@ ARMS = ('v21_expected_set', 'moc')
 DENSITIES = (.3, .7)
 
 
+def assert_own_cost_settled(backend, merger):
+    """A different worker's live reservation cannot invalidate this condition.
+
+    The shared ledger is still enforced by reserve/charge. Only unresolved
+    requests actually owned by this worker require halting its error handler.
+    """
+    pending = {**backend.pending_requests, **merger.pending_requests}
+    if pending:
+        raise RuntimeError('this worker has unresolved backend cost: '+str(pending))
+
+
 def totals(main, merger, mstart, gstart):
     a, b = main.cache.totals(mstart), merger.cache.totals(gstart)
     result = {key: a[key]+b[key] for key in a}
@@ -112,9 +123,7 @@ async def run(args):
                         except BudgetExceeded:
                             raise
                         except Exception as error:
-                            ledger = json.loads((ROOT/'budget.json').read_text())
-                            if ledger['reserved_tokens']:
-                                raise RuntimeError('backend usage unknown; preserve reservation before recovery') from error
+                            assert_own_cost_settled(backend, merger)
                             reasons = [str(error), *(adapter.ledger.get('failures', []) if adapter else [])]
                             if any('BudgetExceeded' in reason for reason in reasons):
                                 raise BudgetExceeded('limit inside author graph') from error

@@ -1,4 +1,4 @@
-phase: test_running
+phase: failed_waiting_for_extension_approval
 test_questions: 254
 test_conditions: 1016
 arms: [v21_expected_set, moc]
@@ -14,7 +14,7 @@ preflight: passed
 max_wall_seconds: 28800
 max_new_calls: 30000
 max_new_tokens: 12000000
-automation_created: false
+automation_created: true
 protocol_commit: dc7fc11ca7522e8a8f7aaa135a53efd37146f941
 supervisor_pid: 1863666
 main_pid: 1863790
@@ -23,6 +23,20 @@ worker_pids: [1864717, 1864718]
 main_gpu: 0
 merger_gpu: 1
 last_checked_utc: 2026-10-14T15:39:59.436830Z
-last_checked_conditions: 2
+last_checked_conditions: 324
 last_checked_invalid: 0
 analysis: pending
+
+terminal_failure_beijing: 2026-10-15T01:29:15+08:00
+owned_services_cleaned: true
+listed_pids_historical_only: true
+original_deadline_beijing: 2026-10-15T07:38:01+08:00
+extension_approved: false
+runtime_fix: local_only_three_regressions_passed
+automation_id: moc
+automation_status: ACTIVE
+automation_interval_minutes: 10
+recovery_review: recovery_review_20261015.json
+known_new_actual_tokens: 1774668
+unknown_call_count: 1
+unknown_call_token_upper_bound: 10192

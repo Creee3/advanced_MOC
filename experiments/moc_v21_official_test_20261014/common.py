@@ -75,6 +75,7 @@ class Backend:
         self.recorder=Recorder(directory)
         self.stage, self.last_key=stage,None
         self.context={}
+        self.pending_requests={}
         self.cache=ExactCallCache(CONFIG['main_digest'],self.generate,Path(directory)/'calls_raw.jsonl')
         files=[ROOT/'data/historical_calls_LOCAL_ONLY.jsonl']
         if stage in ('val','test') and (ROOT/'data/val_historical_calls_LOCAL_ONLY.jsonl').exists():
@@ -99,6 +100,10 @@ class Backend:
             raise InvalidUnit('prompt would exceed safe context envelope')
         reservation=CONFIG['num_ctx']+CONFIG['main_num_predict']
         reserve(reservation)
+        reservation_id='main-'+str(time.time_ns())
+        self.pending_requests[reservation_id]=reservation
+        self.recorder.write('backend_request_started',stage=self.stage,request=request,**self.context,
+                            reservation_id=reservation_id,reserved_tokens=reservation)
         try:
             response=plain(await asyncio.to_thread(self.client.chat,**request))
         except BaseException as error:
@@ -110,6 +115,9 @@ class Backend:
                                 reserved_cost_unknown=reservation)
             raise RuntimeError('main usage missing; keep unresolved reservation')
         charge(reservation,response)
+        self.pending_requests.pop(reservation_id)
+        self.recorder.write('backend_request_settled',stage=self.stage,**self.context,
+                            reservation_id=reservation_id,actual_tokens=response['prompt_eval_count']+response['eval_count'])
         return response
 
     def llm(self,original):

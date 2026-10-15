@@ -1,0 +1,731 @@
+{
+  "created_utc": "2026-10-15T01:23:11.447506+00:00",
+  "archive_sha256": "263ca7e026fee328ce87a206ca977b2a70a2624a859ef94a38fc2360b42f63df",
+  "archive_bytes": 8574583,
+  "files": [
+    {
+      "path": "budget.json",
+      "bytes": 80,
+      "mtime_ns": 1791998947751125516,
+      "sha256": "98f8e15a664be48e1c313ee8ad31dc81105afe6e25d3cb6447c992bb62d8b302"
+    },
+    {
+      "path": "budget.lock",
+      "bytes": 0,
+      "mtime_ns": 1791992295341578049,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "cleanup.json",
+      "bytes": 125,
+      "mtime_ns": 1791998955899072746,
+      "sha256": "bf070587ab304f0315f4e696356d2f6795fc349c8e7b6d0eec466403511ecc91"
+    },
+    {
+      "path": "coding_base/moc_adaptive_sampling/__init__.py",
+      "bytes": 302,
+      "mtime_ns": 1791959627926104545,
+      "sha256": "119c32f35e789c8a428d7960519526cb046572afdf9cfa770f04184f7e31b889"
+    },
+    {
+      "path": "coding_base/moc_adaptive_sampling/adapter.py",
+      "bytes": 11456,
+      "mtime_ns": 1791959627851335525,
+      "sha256": "037b23338f41e81c6a8bb51002f9211d326efb2cd85527c67994922023670e89"
+    },
+    {
+      "path": "coding_base/moc_adaptive_sampling/bundles.py",
+      "bytes": 9750,
+      "mtime_ns": 1791961757398551225,
+      "sha256": "da549ccd64ae1fb6576832b2619aa5389776970cb25c812461413d75f730bed9"
+    },
+    {
+      "path": "coding_base/moc_adaptive_sampling/counterfactual.py",
+      "bytes": 8735,
+      "mtime_ns": 1791963027757614850,
+      "sha256": "1d0ad215ed9b8647c29e8c4cdecf181174d7e4b30232096717880fcddf087efc"
+    },
+    {
+      "path": "coding_base/moc_adaptive_sampling/expected_set.py",
+      "bytes": 5027,
+      "mtime_ns": 1791980270344975233,
+      "sha256": "d47258a672d51bac7f519c7467baedaf20349020c44d2d021e02b5b55d7d5544"
+    },
+    {
+      "path": "coding_base/moc_adaptive_sampling/expected_utility.py",
+      "bytes": 15253,
+      "mtime_ns": 1791979947708291530,
+      "sha256": "bb7c39879c65972aa7514266746731c37f6c4748180c9c463d740142dec449ab"
+    },
+    {
+      "path": "coding_base/moc_adaptive_sampling/features.py",
+      "bytes": 2682,
+      "mtime_ns": 1791959627868336915,
+      "sha256": "49ebda3ce17eae334699216a0f8a068c8c83494daa1d0830069ee161e7c82b48"
+    },
+    {
+      "path": "coding_base/moc_adaptive_sampling/initial_features.py",
+      "bytes": 2281,
+      "mtime_ns": 1791980232589006423,
+      "sha256": "7d19ef9afdce5a29142aa702bf4228a91b17bcc02aad1bc6211f785cb5d094d2"
+    },
+    {
+      "path": "coding_base/moc_adaptive_sampling/kernels.py",
+      "bytes": 2997,
+      "mtime_ns": 1791959627870337009,
+      "sha256": "f8ff498f3bf7359771c0725c42b244d4b02c30da0185a59706eebedac2260024"
+    },
+    {
+      "path": "coding_base/moc_adaptive_sampling/paper_baselines.py",
+      "bytes": 6093,
+      "mtime_ns": 1791959627876343011,
+      "sha256": "bc304cb45f3aa8abcd2042539cc0116012192b5a6918ed558f8cec9c0ff9b885"
+    },
+    {
+      "path": "coding_base/moc_adaptive_sampling/sampler.py",
+      "bytes": 9182,
+      "mtime_ns": 1791959627888916015,
+      "sha256": "de1e9400858af4636a9f513adaa173de1689bad71d615ac8a1ef37e2e451d04a"
+    },
+    {
+      "path": "coding_base/moc_adaptive_sampling/stateful.py",
+      "bytes": 12563,
+      "mtime_ns": 1791959627909534692,
+      "sha256": "5e571dc151078aa4548460b7c6401da84f0d32832f6ff34f8ce0d6f64d074cdb"
+    },
+    {
+      "path": "coding_base/moc_adaptive_sampling/uncertainty.py",
+      "bytes": 6997,
+      "mtime_ns": 1791961757399553537,
+      "sha256": "8f524f3b01ab2afb7fd6334cd146462195f8d697aa7d4671672fdc2d8d1cca59"
+    },
+    {
+      "path": "common.py",
+      "bytes": 10614,
+      "mtime_ns": 1791992108700464963,
+      "sha256": "edcde3c18a910c067022cc3537edbdf0b1dc0e0e38cc076c688a0c7647682161"
+    },
+    {
+      "path": "config.json",
+      "bytes": 2102,
+      "mtime_ns": 1791991560063644886,
+      "sha256": "ad8dd709578c580968ac64ee0c57941dbf81037093d385830bbe0637ba24e593"
+    },
+    {
+      "path": "data/historical_calls_LOCAL_ONLY.jsonl",
+      "bytes": 41989194,
+      "mtime_ns": 1791991764090630531,
+      "sha256": "e903edae52dc4613ea9878628e7f2160fc879b079808a1f889ac7a24cad6fc9d"
+    },
+    {
+      "path": "data/merger_historical_calls_LOCAL_ONLY.jsonl",
+      "bytes": 0,
+      "mtime_ns": 1791991764103628635,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "data/test_inputs.jsonl",
+      "bytes": 91335,
+      "mtime_ns": 1791991758477764844,
+      "sha256": "d9f67723fce94a32f6bc1324119b17d2eee7ec87b614a8df1eb0d096e720312e"
+    },
+    {
+      "path": "data/val_historical_calls_LOCAL_ONLY.jsonl",
+      "bytes": 0,
+      "mtime_ns": 1791991764101630449,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "data_preparation.json",
+      "bytes": 653611,
+      "mtime_ns": 1791991764809671640,
+      "sha256": "e561161d7daf9d126573813b5216188f6968b9933df1c0c0168d3a4d494009ba"
+    },
+    {
+      "path": "deployment.tar.gz",
+      "bytes": 2549464,
+      "mtime_ns": 1791992255471050196,
+      "sha256": "654ff8b9b4ca3aa6537554c52440a817bba9144ef519892cb5c0f9412a26c6d0"
+    },
+    {
+      "path": "expected_dags.json",
+      "bytes": 823,
+      "mtime_ns": 1791991560062639474,
+      "sha256": "2a59cc1c71b8d3713a45cd0d7680476144e791e7a809aef70aba1317bd46ef76"
+    },
+    {
+      "path": "experiment_lock.json",
+      "bytes": 4182,
+      "mtime_ns": 1791992109376924514,
+      "sha256": "62d2f7bcba19f19a9ca649f6e7cceed7288739b5477bcb8132a4051bd0a3912e"
+    },
+    {
+      "path": "git_proof.json",
+      "bytes": 186,
+      "mtime_ns": 1791992255949032124,
+      "sha256": "9e203ec58e69117a82f7b33b053bfaaedbb8970038f6b1a50d09beb84c2c1534"
+    },
+    {
+      "path": "gpu_runtime.py",
+      "bytes": 17439,
+      "mtime_ns": 1791991560058399200,
+      "sha256": "709cddd83e7b1367e853c1cbf7d60096ac2cd3b4a02944defde7248b1d826631"
+    },
+    {
+      "path": "group_utility_model.json",
+      "bytes": 68298,
+      "mtime_ns": 1791991560062112331,
+      "sha256": "e2ce9cd7f69d3b4e6c2e6be7af1df0a852d44b972396989e5b02428a655fd210"
+    },
+    {
+      "path": "inspect_run.py",
+      "bytes": 1508,
+      "mtime_ns": 1791991977463305234,
+      "sha256": "fce9e68ffd140d94a826c8633d8f927181fb9e1bf1f0ec402c017b1ccd1c7ee1"
+    },
+    {
+      "path": "launch.py",
+      "bytes": 2321,
+      "mtime_ns": 1791991560084050893,
+      "sha256": "e2bcb3c7f6b665d802fd363eab6e9a01f8990bacb55ed7a6f4dce2c6bf2ff1c7"
+    },
+    {
+      "path": "launcher.json",
+      "bytes": 209,
+      "mtime_ns": 1791992281627076587,
+      "sha256": "ec81f9262dce8c2d4287e92b21667352914b27e7dada9fb9f34e6d47d6c09fcd"
+    },
+    {
+      "path": "main0_ollama.log",
+      "bytes": 12097271,
+      "mtime_ns": 1791998953230090087,
+      "sha256": "d1481930850508e450983b9ea67f2dd7b4494018d84655aa8554068317f010a0"
+    },
+    {
+      "path": "merger_backend.py",
+      "bytes": 3897,
+      "mtime_ns": 1791992108699866294,
+      "sha256": "861c9715242ac9d4f60961fdb016b2b9f684038bb9d182ac3e39b8fdf75eef00"
+    },
+    {
+      "path": "merger_ollama.log",
+      "bytes": 6862382,
+      "mtime_ns": 1791998952361095722,
+      "sha256": "0126f51e535557366e43ef8ef7f3639877b226c95cbc7ec22e45e9e4afd83bb0"
+    },
+    {
+      "path": "package_local.py",
+      "bytes": 2641,
+      "mtime_ns": 1791991757601159095,
+      "sha256": "2da4f161d8ed8251faf6d7840d5c240698e48ea5c47ca7e1dcbdf5690a309b77"
+    },
+    {
+      "path": "policy_lock.json",
+      "bytes": 4029,
+      "mtime_ns": 1791992109386771202,
+      "sha256": "7851c5c57b527ffd40ac0b74314791f2108eb136581d1ad9837c3ba5930381d1"
+    },
+    {
+      "path": "preflight.py",
+      "bytes": 7448,
+      "mtime_ns": 1791992017662698268,
+      "sha256": "cc6bd605038a69c373e8df87f08793c71563e2cb7ba3e20e7deac0e99d5da851"
+    },
+    {
+      "path": "preflight_report.json",
+      "bytes": 944,
+      "mtime_ns": 1791992279749145482,
+      "sha256": "b3d3a79bccb439826f87457c071ce143c5013a10668a3721561cf9ac875bf8fd"
+    },
+    {
+      "path": "prepare_local.py",
+      "bytes": 6224,
+      "mtime_ns": 1791991757600159168,
+      "sha256": "9a9e2fc23b35de5bc71eed26c4b1c8f47c2e7fce6903ff8a1b926b1189e91ea1"
+    },
+    {
+      "path": "probe_gpu_runtime.py",
+      "bytes": 1870,
+      "mtime_ns": 1791991560061556339,
+      "sha256": "8aa1377f4147bb0c2d5d3a973c235c17bdcd92edd40915f5353d220082d6b62e"
+    },
+    {
+      "path": "protocol.md",
+      "bytes": 4529,
+      "mtime_ns": 1791991559492244005,
+      "sha256": "9ec009656d09df624a9c6e6223f7d3cb6a5570b72542547ccb4ed4a7206d2223"
+    },
+    {
+      "path": "resume_cache.py",
+      "bytes": 2846,
+      "mtime_ns": 1791991662504307985,
+      "sha256": "03f282744cc2bb1e50a95ae3f7c60b44838efd1ce2e0d4cc4c28c4be7d103871"
+    },
+    {
+      "path": "run_start.json",
+      "bytes": 95,
+      "mtime_ns": 1791992281787070723,
+      "sha256": "d11b69896b9e3aa63f86834cf1a57e1f8502009551b43511fefe207fd66e890a"
+    },
+    {
+      "path": "run_test.py",
+      "bytes": 9187,
+      "mtime_ns": 1791992108700973272,
+      "sha256": "8eaca231d1487788829edcc4305b0023c971540fb31f717f1f58f3864b532e15"
+    },
+    {
+      "path": "runtime_controls.py",
+      "bytes": 6266,
+      "mtime_ns": 1791991560061031103,
+      "sha256": "ef307a6bf25bf18731eccbfcb473f47c8e068d455e02d2ac62fa995befa522da"
+    },
+    {
+      "path": "service_leases.jsonl",
+      "bytes": 3781,
+      "mtime_ns": 1791992309068087025,
+      "sha256": "0b9aca27b66826aaa4396d17c74bd3a26c1701e6be6372bcfb7ac026149d140a"
+    },
+    {
+      "path": "startup_calls_raw.jsonl",
+      "bytes": 1354,
+      "mtime_ns": 1791992309066087096,
+      "sha256": "42689474d16ecd276c220615c731b2b569cc77ccc674c71ad36ea9df3ea28ddd"
+    },
+    {
+      "path": "status.json",
+      "bytes": 8103,
+      "mtime_ns": 1791998955992072141,
+      "sha256": "a7cbe205f21573ec226e44d80acab93c46608ee80b1e9fd36f9fb832c9ee898c"
+    },
+    {
+      "path": "supervise.py",
+      "bytes": 9994,
+      "mtime_ns": 1791991977462305307,
+      "sha256": "78dc2fa2851b8990cbc3b1e58489cfc003cac1c180d09d1f9e59efb7175d6122"
+    },
+    {
+      "path": "supervisor.lock",
+      "bytes": 0,
+      "mtime_ns": 1791992281697074022,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "supervisor.log",
+      "bytes": 547,
+      "mtime_ns": 1791998955993072134,
+      "sha256": "bda9db7c6afd7b165a64514b94a1f77ffbd64ffb343dfac87ce7aa6a51e9d68f"
+    },
+    {
+      "path": "test/shard0/cache_admission.json",
+      "bytes": 637278,
+      "mtime_ns": 1791992312503965342,
+      "sha256": "e2e1b3382c3f42ecb6fe9d1299073e227ee728c501b1def528117215af1f998d"
+    },
+    {
+      "path": "test/shard0/calls_raw.jsonl",
+      "bytes": 4187031,
+      "mtime_ns": 1791998947751125516,
+      "sha256": "a1ce680e8cc80dc9f20a1b2296280607a7d568db086b4ff2dd14c456735442f7"
+    },
+    {
+      "path": "test/shard0/merger_cache_admission.json",
+      "bytes": 161,
+      "mtime_ns": 1791992319486719519,
+      "sha256": "fd6fcc2417629f64417f6e3c15f79df4294f51c97e0563d96611619b200ee493"
+    },
+    {
+      "path": "test/shard0/merger_calls_raw.jsonl",
+      "bytes": 1392960,
+      "mtime_ns": 1791998794662011757,
+      "sha256": "859569a7d28a94e355cefd69ed66f7de0860a8d5ddff1f1866f49f97aa527bd1"
+    },
+    {
+      "path": "test/shard0/progress.json",
+      "bytes": 448,
+      "mtime_ns": 1791998893617462667,
+      "sha256": "a57c8a247ea1633aef9c133703b83cafec3d89f78eede4ead6f3f9eaa373723e"
+    },
+    {
+      "path": "test/shard0/results.jsonl",
+      "bytes": 3843861,
+      "mtime_ns": 1791998893609462715,
+      "sha256": "37a6cb4d59e7df73eb0c4b3c356ad56d9b0878267fa6a077e1349f6fbbe05081"
+    },
+    {
+      "path": "test/shard0/resume_cache_admission.json",
+      "bytes": 637363,
+      "mtime_ns": 1791992319461720396,
+      "sha256": "14439a6fa4af71dfedbc9b16ed2a62261fb02d02fcabbfc1323ad13d6bc2936b"
+    },
+    {
+      "path": "test/shard0/trace.jsonl",
+      "bytes": 2132292,
+      "mtime_ns": 1791998942202161161,
+      "sha256": "b85c55e4ecaa7eabb58478c943a398fa40d4ea57b7d75a51476281d48e3f27e5"
+    },
+    {
+      "path": "test/shard1/cache_admission.json",
+      "bytes": 637278,
+      "mtime_ns": 1791992312171977077,
+      "sha256": "e2e1b3382c3f42ecb6fe9d1299073e227ee728c501b1def528117215af1f998d"
+    },
+    {
+      "path": "test/shard1/calls_raw.jsonl",
+      "bytes": 4242763,
+      "mtime_ns": 1791998935687202702,
+      "sha256": "c49038bfaf004c234ac2ea033799273eddce471bdb10752c89778e5490971a40"
+    },
+    {
+      "path": "test/shard1/merger_cache_admission.json",
+      "bytes": 161,
+      "mtime_ns": 1791992319278726812,
+      "sha256": "fd6fcc2417629f64417f6e3c15f79df4294f51c97e0563d96611619b200ee493"
+    },
+    {
+      "path": "test/shard1/merger_calls_raw.jsonl",
+      "bytes": 1342111,
+      "mtime_ns": 1791998947211128995,
+      "sha256": "e380d6cf14c2c95fafbd460525a3298d48905a81dd1556bc0714333d55b71bfe"
+    },
+    {
+      "path": "test/shard1/progress.json",
+      "bytes": 448,
+      "mtime_ns": 1791998921486292082,
+      "sha256": "1d3c41900fb052834535fff50d495d8673e9565abf558b05f9fb0d2611d03e42"
+    },
+    {
+      "path": "test/shard1/results.jsonl",
+      "bytes": 3907419,
+      "mtime_ns": 1791998921480292119,
+      "sha256": "bdbb178c9163fd36bb44d9f1fa33401a2b89b04c4854da67a591a02cbede7dc2"
+    },
+    {
+      "path": "test/shard1/resume_cache_admission.json",
+      "bytes": 637363,
+      "mtime_ns": 1791992319220728846,
+      "sha256": "14439a6fa4af71dfedbc9b16ed2a62261fb02d02fcabbfc1323ad13d6bc2936b"
+    },
+    {
+      "path": "test/shard1/trace.jsonl",
+      "bytes": 2168505,
+      "mtime_ns": 1791998947424127623,
+      "sha256": "255adbe0c5214fde884ed8fd73fba3ef589cdbd73fd0e2da463e84296721e9e9"
+    },
+    {
+      "path": "test_worker0.log",
+      "bytes": 3337961,
+      "mtime_ns": 1791998947756125484,
+      "sha256": "eb35c94b89e4d81faf749f4fe2445af08e62e8f758154bbb28c93ef742cf9636"
+    },
+    {
+      "path": "test_worker1.log",
+      "bytes": 3381452,
+      "mtime_ns": 1791998947422127636,
+      "sha256": "f5f260239b30c4c72b13887f415f19006d6caf1cf26f85e39e812baf946cd4a6"
+    },
+    {
+      "path": "trace_hooks.py",
+      "bytes": 10815,
+      "mtime_ns": 1791991560060507535,
+      "sha256": "cee48fe3bb04efd640ae09865f900f38c116e94a810f119e811c02f91172bb18"
+    },
+    {
+      "path": "val_role_snapshot.json",
+      "bytes": 335,
+      "mtime_ns": 1791991560063644886,
+      "sha256": "886f89c026ac1e1e019ca33aed67cfe0944e216ee63021002135ddd849c192b4"
+    }
+  ],
+  "status": {
+    "phase": "failed",
+    "supervisor_pid": 1863666,
+    "cleanup_complete": true,
+    "train_gate_passed": false,
+    "user_authorized_test": true,
+    "updated_utc": "2026-10-14T17:29:15.900366+00:00",
+    "test_progress": [
+      {
+        "processed_conditions": 161,
+        "completed_conditions": 161,
+        "invalid_conditions": 0,
+        "target_conditions": 508,
+        "last_question": "3b61294603818b9c9476250d101c0d7e6078ca0611a71a400b354e18c2651f60",
+        "logical_calls": 1933,
+        "new_calls": 1329,
+        "cache_hits": 604,
+        "logical_model_tokens": 1142802,
+        "new_model_tokens": 874541,
+        "main_calls": 1288,
+        "merger_calls": 645,
+        "main_model_tokens": 880901,
+        "merger_model_tokens": 261901
+      },
+      {
+        "processed_conditions": 163,
+        "completed_conditions": 163,
+        "invalid_conditions": 0,
+        "target_conditions": 508,
+        "last_question": "1e1c06e3ce72d2d8a629a73e0c10145bda70e7642d4a2596293af130cfe84318",
+        "logical_calls": 1919,
+        "new_calls": 1315,
+        "cache_hits": 604,
+        "logical_model_tokens": 1148647,
+        "new_model_tokens": 886252,
+        "main_calls": 1304,
+        "merger_calls": 615,
+        "main_model_tokens": 900121,
+        "merger_model_tokens": 248526
+      }
+    ],
+    "completed_test_conditions": 324,
+    "budget": {
+      "new_calls": 2666,
+      "actual_tokens": 1774668,
+      "reserved_tokens": 10192
+    },
+    "gpu_snapshot": [
+      {
+        "index": 0,
+        "uuid": "GPU-0a075077-3745-799a-aff3-f0d34a17b6ac",
+        "utilization": 0,
+        "free_mib": 24081
+      },
+      {
+        "index": 1,
+        "uuid": "GPU-d7d04192-bf97-dfdb-3276-75ff261a9f51",
+        "utilization": 0,
+        "free_mib": 24081
+      },
+      {
+        "index": 2,
+        "uuid": "GPU-2121fa39-275f-d7eb-3c84-c7292ed702bc",
+        "utilization": 0,
+        "free_mib": 18686
+      },
+      {
+        "index": 3,
+        "uuid": "GPU-dcb52b28-8342-ab3b-cd6f-74719b63586f",
+        "utilization": 0,
+        "free_mib": 18686
+      },
+      {
+        "index": 4,
+        "uuid": "GPU-89523765-dcd4-46ea-1f2d-4ff7d509138c",
+        "utilization": 20,
+        "free_mib": 18686
+      },
+      {
+        "index": 5,
+        "uuid": "GPU-8b952bd3-5cdf-11d4-561a-bc9ef3717773",
+        "utilization": 0,
+        "free_mib": 18684
+      },
+      {
+        "index": 6,
+        "uuid": "GPU-0179fbe0-2ace-59a4-7794-fa483dda1e46",
+        "utilization": 56,
+        "free_mib": 19809
+      },
+      {
+        "index": 7,
+        "uuid": "GPU-e230f5a4-ad5d-341f-2840-4f737f3c0c26",
+        "utilization": 16,
+        "free_mib": 18686
+      }
+    ],
+    "services": [
+      {
+        "kind": "main0",
+        "gpu": {
+          "index": 0,
+          "uuid": "GPU-0a075077-3745-799a-aff3-f0d34a17b6ac",
+          "utilization": 0,
+          "free_mib": 24081
+        },
+        "pid": 1863790,
+        "port": 11448,
+        "host": "http://127.0.0.1:11448",
+        "version": {
+          "version": "0.40.2"
+        },
+        "model": {
+          "name": "gemma2:27b",
+          "model": "gemma2:27b",
+          "modified_at": "2026-10-09T08:36:43.817866393Z",
+          "size": 15628387458,
+          "digest": "53261bc9c192c1cb5fcc898dd3aa15da093f5ab6f08e17e48cf838bb1c58abfe",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "gemma2",
+            "families": [
+              "gemma2"
+            ],
+            "parameter_size": "27.2B",
+            "quantization_level": "Q4_0",
+            "context_length": 8192,
+            "embedding_length": 4608,
+            "runner": "ggml"
+          },
+          "capabilities": [
+            "completion"
+          ]
+        },
+        "loaded": {
+          "name": "gemma2:27b",
+          "model": "gemma2:27b",
+          "size": 16757418884,
+          "digest": "53261bc9c192c1cb5fcc898dd3aa15da093f5ab6f08e17e48cf838bb1c58abfe",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "gemma2",
+            "families": [
+              "gemma2"
+            ],
+            "parameter_size": "27.2B",
+            "quantization_level": "Q4_0"
+          },
+          "expires_at": "2026-10-14T15:43:21.93588668Z",
+          "size_vram": 16757418884,
+          "context_length": 8192,
+          "runner": "llamacpp"
+        },
+        "warmup": {
+          "model": "gemma2:27b",
+          "created_at": "2026-10-14T15:38:21.934776528Z",
+          "response": "OK.",
+          "done": true,
+          "done_reason": "stop",
+          "context": [
+            106,
+            1645,
+            108,
+            1946,
+            675,
+            11530,
+            235265,
+            107,
+            108,
+            106,
+            2516,
+            108,
+            4083,
+            235265
+          ],
+          "total_duration": 6588423964,
+          "load_duration": 6438552189,
+          "prompt_eval_count": 13,
+          "prompt_eval_cached_count": 0,
+          "prompt_eval_duration": 90026000,
+          "eval_count": 3,
+          "eval_duration": 55486000
+        },
+        "time_utc": "2026-10-14T15:38:21.944266+00:00",
+        "cuda_allocation_probe": "{\"phase\": \"started\", \"visible\": \"GPU-0a075077-3745-799a-aff3-f0d34a17b6ac\"}\ncuInit 0\ncuDeviceGet 0 0\ncuCtxCreate 0\ncuMemAlloc 0\ncuMemFree 0\ncuCtxDestroy 0\n",
+        "explicit_existing_cuda_library": "/home/liuxin/.local/opt/ollama/0.40.2/lib/ollama/cuda_v13/libggml-cuda.so"
+      },
+      {
+        "kind": "merger",
+        "gpu": {
+          "index": 1,
+          "uuid": "GPU-d7d04192-bf97-dfdb-3276-75ff261a9f51",
+          "utilization": 0,
+          "free_mib": 24081
+        },
+        "pid": 1864318,
+        "port": 11450,
+        "host": "http://127.0.0.1:11450",
+        "version": {
+          "version": "0.40.2"
+        },
+        "model": {
+          "name": "gemma2:9b",
+          "model": "gemma2:9b",
+          "modified_at": "2026-10-09T07:12:44.77248478Z",
+          "size": 5443152417,
+          "digest": "ff02c3702f322b9e075e9568332d96c0a7028002f1a5a056e0a6784320a4db0b",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "gemma2",
+            "families": [
+              "gemma2"
+            ],
+            "parameter_size": "9.2B",
+            "quantization_level": "Q4_0",
+            "context_length": 8192,
+            "embedding_length": 3584,
+            "runner": "ggml"
+          },
+          "capabilities": [
+            "completion"
+          ]
+        },
+        "loaded": {
+          "name": "gemma2:9b",
+          "model": "gemma2:9b",
+          "size": 6567493631,
+          "digest": "ff02c3702f322b9e075e9568332d96c0a7028002f1a5a056e0a6784320a4db0b",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "gemma2",
+            "families": [
+              "gemma2"
+            ],
+            "parameter_size": "9.2B",
+            "quantization_level": "Q4_0"
+          },
+          "expires_at": "2026-10-14T15:43:29.066530544Z",
+          "size_vram": 6567493631,
+          "context_length": 8192,
+          "runner": "llamacpp"
+        },
+        "warmup": {
+          "model": "gemma2:9b",
+          "created_at": "2026-10-14T15:38:29.064610191Z",
+          "response": "OK.",
+          "done": true,
+          "done_reason": "stop",
+          "context": [
+            106,
+            1645,
+            108,
+            1946,
+            675,
+            11530,
+            235265,
+            107,
+            108,
+            106,
+            2516,
+            108,
+            4083,
+            235265
+          ],
+          "total_duration": 4264871550,
+          "load_duration": 4159825582,
+          "prompt_eval_count": 13,
+          "prompt_eval_cached_count": 0,
+          "prompt_eval_duration": 60412000,
+          "eval_count": 3,
+          "eval_duration": 40398000
+        },
+        "time_utc": "2026-10-14T15:38:29.068521+00:00",
+        "cuda_allocation_probe": "{\"phase\": \"started\", \"visible\": \"GPU-d7d04192-bf97-dfdb-3276-75ff261a9f51\"}\ncuInit 0\ncuDeviceGet 0 0\ncuCtxCreate 0\ncuMemAlloc 0\ncuMemFree 0\ncuCtxDestroy 0\n",
+        "explicit_existing_cuda_library": "/home/liuxin/.local/opt/ollama/0.40.2/lib/ollama/cuda_v13/libggml-cuda.so"
+      }
+    ],
+    "worker_pids": [
+      1864717,
+      1864718
+    ],
+    "error_type": "RuntimeError",
+    "error": "val worker0 exited 1; preserve raw/logs",
+    "remaining_ports": [],
+    "owned_children_remaining": [],
+    "owned_processes_remaining": []
+  },
+  "scope": "immutable pre-repair snapshot; original paid records and unresolved reserve retained"
+}

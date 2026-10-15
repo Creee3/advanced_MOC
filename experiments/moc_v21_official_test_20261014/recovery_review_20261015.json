@@ -1,0 +1,43 @@
+{
+  "status": "prepared_waiting_for_extension_approval",
+  "original_terminal_conditions": 324,
+  "matched_pairs_by_density": {
+    "0.3": 81,
+    "0.7": 80
+  },
+  "known_actual_tokens": 1774668,
+  "unknown_call_count": 1,
+  "unknown_usage_upper_bound_tokens": 10192,
+  "old_absolute_deadline_beijing": "2026-10-15 07:38:01",
+  "elapsed_until_failure_seconds": 6674.112595081329,
+  "proposed_remaining_active_window_seconds": 22125,
+  "deadline_extended": false,
+  "budget_reset": false,
+  "runtime_only_patch": {
+    "common.py": {
+      "before_sha256": "edcde3c18a910c067022cc3537edbdf0b1dc0e0e38cc076c688a0c7647682161",
+      "after_sha256": "f1ed7dd46b32863025663ffaa5e66e89cad4dd7033fde488ddb468eac848d3c1"
+    },
+    "merger_backend.py": {
+      "before_sha256": "861c9715242ac9d4f60961fdb016b2b9f684038bb9d182ac3e39b8fdf75eef00",
+      "after_sha256": "61caeef727632bef1c99cebc442b3fc3cc446090da4f6c7a421bdb7a89a01de7"
+    },
+    "run_test.py": {
+      "before_sha256": "8eaca231d1487788829edcc4305b0023c971540fb31f717f1f58f3864b532e15",
+      "after_sha256": "32be31e9502499a986e2413bdb176c961c06760dd29c1f14b2671c617178a77e"
+    }
+  },
+  "checkpoint_unchanged": true,
+  "regression_checks": "3 passed",
+  "cloud_sources_modified": false,
+  "services_running": false,
+  "archive_sha256": "263ca7e026fee328ce87a206ca977b2a70a2624a859ef94a38fc2360b42f63df",
+  "next_steps_after_approval": [
+    "Archive terminal state uniquely and reconcile one unknown request conservatively, separate from measured actual tokens",
+    "Commit the proven code-timeout MOC condition as invalid from archived raw without regeneration",
+    "Amend runtime-only source hashes retaining original lock and unchanged algorithm/model/data",
+    "Use original two shards and skip every committed terminal condition",
+    "Give at most remaining22125seconds new active window, retaining total12000000tokens and30000calls including prior spend",
+    "Run native graph fake integration again against final runtime amendment before GPU restart"
+  ]
+}

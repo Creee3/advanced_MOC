@@ -16,6 +16,7 @@ class MergerBackend:
         self.client = ollama.AsyncClient(host=host, timeout=300)
         self.owner = context_backend
         self.failures = []
+        self.pending_requests = {}
         self.cache = ExactCallCache(CONFIG['merger_digest'], self.generate, Path(directory)/'merger_calls_raw.jsonl')
         history = ROOT/'data/merger_historical_calls_LOCAL_ONLY.jsonl'
         previous = self.cache.journal
@@ -39,6 +40,10 @@ class MergerBackend:
             raise InvalidUnit('prompt would exceed safe context envelope')
         reservation = 2*CONFIG['num_ctx']
         reserve(reservation)
+        reservation_id = 'merger-'+str(time.time_ns())
+        self.pending_requests[reservation_id] = reservation
+        self.owner.recorder.write('backend_request_started', stage='test', request=request, **self.owner.context,
+                                  reservation_id=reservation_id, reserved_tokens=reservation)
         try:
             response = plain(await self.original_chat(self.client, **request))
         except BaseException as error:
@@ -48,6 +53,9 @@ class MergerBackend:
         if not all(isinstance(response.get(k), int) and response[k]>=0 for k in ('prompt_eval_count','eval_count')):
             raise RuntimeError('merger usage missing; keep unresolved reservation')
         charge(reservation, response)
+        self.pending_requests.pop(reservation_id)
+        self.owner.recorder.write('backend_request_settled',stage='test',**self.owner.context,
+            reservation_id=reservation_id,actual_tokens=response['prompt_eval_count']+response['eval_count'])
         return response
 
     @contextmanager
