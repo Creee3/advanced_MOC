@@ -39,6 +39,8 @@ MOC 接收方条件的多阶消息选择研究。此研究分支包含已完成�
 
 ## 目录与复用
 
+补充研究讨论：[侧边AI对话存档索引](docs/conversation_records/README.md)，包含2026-10-15的v2.1完整方法讲解与22维特征说明原文。
+
 ```text
 coding_base/MOC-official/              作者源码 submodule，固定 commit
 coding_base/moc_adaptive_sampling/     当前扩展、测试及迁移说明
