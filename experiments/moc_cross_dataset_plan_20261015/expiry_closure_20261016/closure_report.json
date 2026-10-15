@@ -1,0 +1,118 @@
+{
+  "status": "expired_incomplete_preserved",
+  "cause": "original eight-hour deadline; worker BudgetExceeded then supervisor nonzero; no infrastructure recovery",
+  "created_utc": "2026-10-15T17:52:02.462697+00:00",
+  "attempt": "/home/liuxin/ICML2027/experiments/moc_cross_dataset_plan_20261015/attempts/deadline_closure_20261015T175149_065033Z",
+  "archive_sha256": "655af57509630c51a4e6ee2b09c6f3160919f52260f601d707c922137291fc08",
+  "archive_bytes": 34996380,
+  "member_manifest_sha256": "c2d34f88502143fe68d41d3d31bd90274cb7dda1589890ca5fa8c0d6c5a7a9a1",
+  "members": 261,
+  "runs": {
+    "moc_v21_gsm8k_fewshot_20261015": {
+      "run_start": {
+        "deadline_unix": 1792086556.3871992,
+        "started_utc": "2026-10-15T09:49:16.387211+00:00"
+      },
+      "budget": {
+        "new_calls": 11386,
+        "actual_tokens": 7736331,
+        "reserved_tokens": 0,
+        "unknown_cost_upper_bound_tokens": 0
+      },
+      "known_raw_tokens": 7736331,
+      "new_raw_calls": 11383,
+      "warmup_calls": 3,
+      "raw_cache_hits": 6660,
+      "trace_reservations": 11383,
+      "unsettled_reservations": 0,
+      "test_coverage": {
+        "adapted|0.3|ok": 300,
+        "adapted|0.7|ok": 300,
+        "moc|0.3|ok": 253,
+        "moc|0.7|ok": 251
+      },
+      "duplicates": 0,
+      "all_committed_valid": true,
+      "cleanup_complete": true,
+      "locked_hashes_match": true,
+      "worker_error_tails": {
+        "test_moc_worker1.log": [
+          "    else:asyncio.run(collect(a) if a.phase=='training' else evaluate(a))",
+          "  File \"/home/liuxin/.conda/envs/moc/lib/python3.10/asyncio/runners.py\", line 44, in run",
+          "    return loop.run_until_complete(main)",
+          "  File \"/home/liuxin/.conda/envs/moc/lib/python3.10/asyncio/base_events.py\", line 649, in run_until_complete",
+          "    return future.result()",
+          "  File \"/home/liuxin/ICML2027/experiments/moc_v21_gsm8k_fewshot_20261015/runner.py\", line 171, in evaluate",
+          "    result=await g.arun({'task':row['task']},num_rounds=1,max_tries=1,max_time=300)",
+          "  File \"/home/liuxin/ICML2027/experiments/moc_stateful_sampling_val_20261014/author_source/src/graph/graph.py\", line 364, in arun",
+          "    await self.decision_node.async_execute(input)",
+          "  File \"/home/liuxin/ICML2027/experiments/moc_stateful_sampling_val_20261014/author_source/src/graph/node.py\", line 174, in async_execute",
+          "    results = await asyncio.gather(*tasks, return_exceptions=False)",
+          "  File \"/home/liuxin/ICML2027/experiments/moc_stateful_sampling_val_20261014/author_source/src/agents/final_decision.py\", line 111, in _async_execute",
+          "    response = await self.llm.agen(message)",
+          "  File \"/home/liuxin/ICML2027/experiments/moc_v21_gsm8k_fewshot_20261015/common.py\", line 133, in agen",
+          "    response=await owner.cache.call(request,stage=owner.stage,**owner.context)",
+          "  File \"/home/liuxin/ICML2027/experiments/moc_v21_gsm8k_fewshot_20261015/coding_base/moc_adaptive_sampling/counterfactual.py\", line 101, in call",
+          "    response = await self.generate(canonical_request(request))",
+          "  File \"/home/liuxin/ICML2027/experiments/moc_v21_gsm8k_fewshot_20261015/common.py\", line 98, in generate",
+          "    raise BudgetExceeded('STOP or GPU wall deadline')",
+          "common.BudgetExceeded: STOP or GPU wall deadline"
+        ],
+        "test_moc_worker0.log": [
+          "    else:asyncio.run(collect(a) if a.phase=='training' else evaluate(a))",
+          "  File \"/home/liuxin/.conda/envs/moc/lib/python3.10/asyncio/runners.py\", line 44, in run",
+          "    return loop.run_until_complete(main)",
+          "  File \"/home/liuxin/.conda/envs/moc/lib/python3.10/asyncio/base_events.py\", line 649, in run_until_complete",
+          "    return future.result()",
+          "  File \"/home/liuxin/ICML2027/experiments/moc_v21_gsm8k_fewshot_20261015/runner.py\", line 171, in evaluate",
+          "    result=await g.arun({'task':row['task']},num_rounds=1,max_tries=1,max_time=300)",
+          "  File \"/home/liuxin/ICML2027/experiments/moc_stateful_sampling_val_20261014/author_source/src/graph/graph.py\", line 364, in arun",
+          "    await self.decision_node.async_execute(input)",
+          "  File \"/home/liuxin/ICML2027/experiments/moc_stateful_sampling_val_20261014/author_source/src/graph/node.py\", line 174, in async_execute",
+          "    results = await asyncio.gather(*tasks, return_exceptions=False)",
+          "  File \"/home/liuxin/ICML2027/experiments/moc_stateful_sampling_val_20261014/author_source/src/agents/final_decision.py\", line 111, in _async_execute",
+          "    response = await self.llm.agen(message)",
+          "  File \"/home/liuxin/ICML2027/experiments/moc_v21_gsm8k_fewshot_20261015/common.py\", line 133, in agen",
+          "    response=await owner.cache.call(request,stage=owner.stage,**owner.context)",
+          "  File \"/home/liuxin/ICML2027/experiments/moc_v21_gsm8k_fewshot_20261015/coding_base/moc_adaptive_sampling/counterfactual.py\", line 101, in call",
+          "    response = await self.generate(canonical_request(request))",
+          "  File \"/home/liuxin/ICML2027/experiments/moc_v21_gsm8k_fewshot_20261015/common.py\", line 98, in generate",
+          "    raise BudgetExceeded('STOP or GPU wall deadline')",
+          "common.BudgetExceeded: STOP or GPU wall deadline"
+        ]
+      }
+    },
+    "moc_v21_mmlu_pro_fewshot_20261015": {
+      "run_start": {
+        "deadline_unix": 1792086576.4089835,
+        "started_utc": "2026-10-15T09:49:36.408996+00:00"
+      },
+      "budget": {
+        "new_calls": 5134,
+        "actual_tokens": 4127233,
+        "reserved_tokens": 0,
+        "unknown_cost_upper_bound_tokens": 0
+      },
+      "known_raw_tokens": 4127233,
+      "new_raw_calls": 5133,
+      "warmup_calls": 1,
+      "raw_cache_hits": 1697,
+      "trace_reservations": 5133,
+      "unsettled_reservations": 0,
+      "test_coverage": {
+        "adapted|0.3|ok": 280,
+        "adapted|0.7|ok": 280
+      },
+      "duplicates": 0,
+      "all_committed_valid": true,
+      "cleanup_complete": true,
+      "locked_hashes_match": true,
+      "worker_error_tails": {}
+    }
+  },
+  "no_budget_or_deadline_mutation": true,
+  "no_launch_or_restart": true,
+  "no_test_gold_scoring": true,
+  "new_cohort_unmodified": true,
+  "note": "GSM originalMOC incomplete; Pro originalMOC never launched. Existing adapted results preserved. Resume requires fresh explicit human authorization, never infer an extension."
+}

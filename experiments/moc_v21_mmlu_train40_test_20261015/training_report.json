@@ -1,0 +1,261 @@
+{
+  "planned_questions": 40,
+  "effective_questions": 40,
+  "excluded": [],
+  "labels": 214,
+  "coverage": [
+    [
+      "Doctor",
+      1,
+      1,
+      0
+    ],
+    [
+      "Doctor",
+      2,
+      1,
+      0
+    ],
+    [
+      "Doctor",
+      2,
+      2,
+      0
+    ],
+    [
+      "Doctor",
+      3,
+      1,
+      0
+    ],
+    [
+      "Doctor",
+      4,
+      1,
+      0
+    ],
+    [
+      "Doctor",
+      4,
+      2,
+      0
+    ],
+    [
+      "Historian",
+      1,
+      1,
+      0
+    ],
+    [
+      "Historian",
+      1,
+      2,
+      0
+    ],
+    [
+      "Historian",
+      2,
+      1,
+      0
+    ],
+    [
+      "Historian",
+      2,
+      2,
+      0
+    ],
+    [
+      "Knowlegable Expert",
+      1,
+      1,
+      0
+    ],
+    [
+      "Knowlegable Expert",
+      2,
+      1,
+      0
+    ],
+    [
+      "Knowlegable Expert",
+      2,
+      2,
+      0
+    ],
+    [
+      "Knowlegable Expert",
+      3,
+      1,
+      0
+    ],
+    [
+      "Knowlegable Expert",
+      4,
+      1,
+      0
+    ],
+    [
+      "Knowlegable Expert",
+      4,
+      2,
+      0
+    ],
+    [
+      "Lawyer",
+      1,
+      1,
+      0
+    ],
+    [
+      "Lawyer",
+      2,
+      1,
+      0
+    ],
+    [
+      "Lawyer",
+      2,
+      2,
+      0
+    ],
+    [
+      "Lawyer",
+      3,
+      1,
+      0
+    ],
+    [
+      "Lawyer",
+      4,
+      1,
+      0
+    ],
+    [
+      "Lawyer",
+      4,
+      2,
+      0
+    ],
+    [
+      "Mathematician",
+      1,
+      1,
+      0
+    ],
+    [
+      "Mathematician",
+      1,
+      2,
+      0
+    ],
+    [
+      "Mathematician",
+      2,
+      1,
+      0
+    ],
+    [
+      "Mathematician",
+      3,
+      1,
+      0
+    ],
+    [
+      "Mathematician",
+      3,
+      2,
+      0
+    ],
+    [
+      "Psychologist",
+      1,
+      1,
+      0
+    ]
+  ],
+  "metadata": {
+    "fit_questions": [
+      "mmlu:official_dev:abstract_algebra:9e14abf403cd0d0dd1fcfc98ed9963ca63f60a18e2a1f0b6f2935fd8b4a0dad0",
+      "mmlu:official_dev:anatomy:9f53d9af5e3ff2e47682d042fc32350dfcd82e0e878e1f14af5af64d53561590",
+      "mmlu:official_dev:astronomy:c2c49c48ece1f939d576d0af1b588a54617ce54bf2d492666566eed5f9be6d0a",
+      "mmlu:official_dev:clinical_knowledge:7acbc056ae58a7c76a0c7035f716b1d079b9770808c6c6a36a71d42a5c19ac43",
+      "mmlu:official_dev:college_chemistry:ea9da9d292976fcb24d088d9233c88cab1c3944aba9fc96a6be388671892661f",
+      "mmlu:official_dev:college_computer_science:4c53da7097810c7d53798ea77fedb01c26737055494dab54517878a71aae47cb",
+      "mmlu:official_dev:college_mathematics:be48cb0218ee8685801c0b7a38807efde4dabaf8f26a252acc2457638dcc3de3",
+      "mmlu:official_dev:college_medicine:f0a398ec21487a9e8993571683f0c1c261009123f5273eac969a47ae7290d9aa",
+      "mmlu:official_dev:conceptual_physics:915e1bdd8b65da69e479c41cd8e75b8f9ba6b2777669aa77ce6feca3ce0d6369",
+      "mmlu:official_dev:electrical_engineering:4c350103c03cc6d1e96bd12b7a05119319a93017f0eadbe866520f6cc5323fce",
+      "mmlu:official_dev:global_facts:f617c90e54ee6baad2a8705e18724284cdbbe37e9e5d0fc44940a3a8b90bdc22",
+      "mmlu:official_dev:high_school_biology:aec81a67a3fffb1b6c12d886415083216be4854731b333bb63be3c66c01271b7",
+      "mmlu:official_dev:high_school_chemistry:87f4b808984ff552ed5ef250e52d6bbfeb1fe9f61ddf6228bf988aad9b8e0206",
+      "mmlu:official_dev:high_school_european_history:b3ff66583b1c8c90e8f5bb592118945ecf9c5780c91436bab156619d9ab6f806",
+      "mmlu:official_dev:high_school_geography:f41ceaa3f771fe9585e994b85925afaf6266918875fdf613c0ee28244d5d57c7",
+      "mmlu:official_dev:high_school_government_and_politics:23242efb80613d2566d337fcefba58e6bf6f351faf7c50ebfae164eee372bb84",
+      "mmlu:official_dev:high_school_macroeconomics:a23d6887c3b1e245519bbd3f4c087f749f8214825f399a013d0a71e55eca3b87",
+      "mmlu:official_dev:high_school_mathematics:674c139586d80bc36be99b522f19fbafdcc70272bd5c2abc957bf4c312329749",
+      "mmlu:official_dev:high_school_microeconomics:c21796f7838252b6f97393e8a231f823fb4714a8cea2c07fee0546e5fb889fa3",
+      "mmlu:official_dev:high_school_physics:c564571031fce9eabb10748fb4731cfd8303a138af55d182a1e3f4df892cf1bc",
+      "mmlu:official_dev:high_school_statistics:e32c4ba55c08c3e684657531b8c63973a9185eba7e0c0e1c71599f5af07ddabc",
+      "mmlu:official_dev:high_school_us_history:7eeae5a17eea096bb7b4a93b38c0ba2afd42288d20808d7b016a91e0dff87774",
+      "mmlu:official_dev:high_school_world_history:160c3d60e8115c3c7e5fd4151f44641b62e439ed0a3d9a77dd633b41d4693451",
+      "mmlu:official_dev:jurisprudence:98265eb235f60127f5ed7b98d47df12303d481996072c96fb3153a7808f6eeb8",
+      "mmlu:official_dev:logical_fallacies:96b7d3dfebb813e97c680fe825448b91e25631f654346eee2c962201d0b30a1e",
+      "mmlu:official_dev:machine_learning:a5346c53ccc1a4cfb2f0648e98359df01ba06662a843fa5c642d0836defbccd2",
+      "mmlu:official_dev:management:fb96df37eec9e31ba0c4e4511dc549d1d08904e725fc37b360f45b9aed779234",
+      "mmlu:official_dev:marketing:6d3a627462a22a059a8fbb5aa7c0e5186e7ca74d4391a9f32d43a1ea34653816",
+      "mmlu:official_dev:medical_genetics:46ba2b6a780bac33bd8017c6600df41e2cf5189930d4321e5ae623dad0e1cf1e",
+      "mmlu:official_dev:miscellaneous:7735db4bb1770099c0f3289bd781466b4f7084ee20c3f369df9f4ed7d22422a4",
+      "mmlu:official_dev:moral_disputes:871e24bbfc6b4f340536ff4539eef7a8f430c7a62013a6e4cd407a0b34639fa3",
+      "mmlu:official_dev:nutrition:90adccf38cf00791ad9324bb3245c19c28fba97774c4b334f923b641c19573f9",
+      "mmlu:official_dev:prehistory:8c8b060cf7a4a16a87ef6112b23b87c0016443322895a8ddee4069b558b84ac6",
+      "mmlu:official_dev:professional_accounting:f5051ccfaeb9bfc49a034d42fc46e5b6055ef1e87850d706e9ed958d02c239bf",
+      "mmlu:official_dev:professional_medicine:beba4fe72481e4080be7534dda0eb53260e3e79dd80834b36942b88942027a4e",
+      "mmlu:official_dev:professional_psychology:819b65ce1016132f9a64a3cd8bbf2fc7f65d72621201cbc3f0a5e41508e20c21",
+      "mmlu:official_dev:security_studies:f2da062b84b0ce6b24c527b7bde04c19e14b1e956350321ea5489d22f5f03533",
+      "mmlu:official_dev:sociology:6339328f29430bb748c7ebe7e143c111526d0f6b17fdc92b392f6644dc3f8173",
+      "mmlu:official_dev:us_foreign_policy:41e64b96636351713cf73eb91f8b6357065f97a174d72c1524b5e7fdee282229",
+      "mmlu:official_dev:virology:a168c708c091504f2b46164fd23b0fd2ad2a88f2f15af5a1c388fb198e801e18"
+    ],
+    "fit_question_count": 40,
+    "fit_rows": 214,
+    "fit_episode_count": 80,
+    "target": "expected fixed-material downstream correctness change",
+    "weight_scheme": "equal question mass; equal episode mass within question; equal action mass within episode; sum=n_rows",
+    "sample_weight_sum": 214.00000000000006,
+    "regularization": 10.0,
+    "seed": 42,
+    "bootstrap_unit": "question",
+    "bootstrap_replicates": 32,
+    "bootstrap_scope": "descriptive question-bootstrap model variation; not a confidence or prediction interval",
+    "primary_prediction": "deterministic all-fit weighted ridge; clip/renormalize help and harm",
+    "standardization_scope": "weighted current fit partition only; reused by bootstrap replicates",
+    "calibration_as_confidence_interval": false,
+    "support_scope": "observed role/hop/group-size metadata with selected_count=0; abstain otherwise",
+    "feature_mode": "compact",
+    "feature_selection": [
+      "added_group_size",
+      "group_pair_cosine_mean",
+      "group_pair_cosine_min",
+      "group_min_hop",
+      "group_max_hop",
+      "group_hop_span",
+      "group_is_connected_path",
+      "group_incremental_cost_fraction",
+      "group_projected_cost_fraction",
+      "group_solver_fraction",
+      "group_analyst_fraction",
+      "group_programmer_fraction",
+      "group_inspector_fraction",
+      "member_mean_base_similarity",
+      "member_mean_ladies_mass",
+      "member_mean_same_role",
+      "member_mean_receiver_solver",
+      "member_mean_receiver_analyst",
+      "member_mean_receiver_programmer",
+      "member_mean_receiver_inspector",
+      "member_max_base_similarity",
+      "member_max_ladies_mass"
+    ],
+    "limitations": "single noisy outcomes and dependent actions; no adaptive or full-MAS coverage guarantee"
+  }
+}

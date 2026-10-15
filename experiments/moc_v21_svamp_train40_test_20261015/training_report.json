@@ -1,0 +1,153 @@
+{
+  "planned_questions": 40,
+  "effective_questions": 40,
+  "excluded": [],
+  "labels": 200,
+  "coverage": [
+    [
+      "Inspector",
+      1,
+      1,
+      0
+    ],
+    [
+      "Math Solver",
+      3,
+      1,
+      0
+    ],
+    [
+      "Math Solver",
+      4,
+      1,
+      0
+    ],
+    [
+      "Math Solver",
+      4,
+      2,
+      0
+    ],
+    [
+      "Mathematical Analyst",
+      1,
+      1,
+      0
+    ],
+    [
+      "Mathematical Analyst",
+      2,
+      1,
+      0
+    ],
+    [
+      "Mathematical Analyst",
+      2,
+      2,
+      0
+    ],
+    [
+      "Programming Expert",
+      3,
+      1,
+      0
+    ],
+    [
+      "Programming Expert",
+      4,
+      1,
+      0
+    ],
+    [
+      "Programming Expert",
+      4,
+      2,
+      0
+    ]
+  ],
+  "metadata": {
+    "fit_questions": [
+      "svamp:official_full:chal-14",
+      "svamp:official_full:chal-155",
+      "svamp:official_full:chal-171",
+      "svamp:official_full:chal-173",
+      "svamp:official_full:chal-191",
+      "svamp:official_full:chal-23",
+      "svamp:official_full:chal-317",
+      "svamp:official_full:chal-358",
+      "svamp:official_full:chal-379",
+      "svamp:official_full:chal-410",
+      "svamp:official_full:chal-427",
+      "svamp:official_full:chal-46",
+      "svamp:official_full:chal-464",
+      "svamp:official_full:chal-508",
+      "svamp:official_full:chal-519",
+      "svamp:official_full:chal-528",
+      "svamp:official_full:chal-579",
+      "svamp:official_full:chal-608",
+      "svamp:official_full:chal-610",
+      "svamp:official_full:chal-629",
+      "svamp:official_full:chal-64",
+      "svamp:official_full:chal-741",
+      "svamp:official_full:chal-77",
+      "svamp:official_full:chal-770",
+      "svamp:official_full:chal-775",
+      "svamp:official_full:chal-784",
+      "svamp:official_full:chal-80",
+      "svamp:official_full:chal-800",
+      "svamp:official_full:chal-821",
+      "svamp:official_full:chal-837",
+      "svamp:official_full:chal-85",
+      "svamp:official_full:chal-857",
+      "svamp:official_full:chal-887",
+      "svamp:official_full:chal-889",
+      "svamp:official_full:chal-901",
+      "svamp:official_full:chal-906",
+      "svamp:official_full:chal-911",
+      "svamp:official_full:chal-941",
+      "svamp:official_full:chal-952",
+      "svamp:official_full:chal-989"
+    ],
+    "fit_question_count": 40,
+    "fit_rows": 200,
+    "fit_episode_count": 80,
+    "target": "expected fixed-material downstream correctness change",
+    "weight_scheme": "equal question mass; equal episode mass within question; equal action mass within episode; sum=n_rows",
+    "sample_weight_sum": 200.0,
+    "regularization": 10.0,
+    "seed": 42,
+    "bootstrap_unit": "question",
+    "bootstrap_replicates": 32,
+    "bootstrap_scope": "descriptive question-bootstrap model variation; not a confidence or prediction interval",
+    "primary_prediction": "deterministic all-fit weighted ridge; clip/renormalize help and harm",
+    "standardization_scope": "weighted current fit partition only; reused by bootstrap replicates",
+    "calibration_as_confidence_interval": false,
+    "support_scope": "observed role/hop/group-size metadata with selected_count=0; abstain otherwise",
+    "feature_mode": "compact",
+    "feature_selection": [
+      "added_group_size",
+      "group_pair_cosine_mean",
+      "group_pair_cosine_min",
+      "group_min_hop",
+      "group_max_hop",
+      "group_hop_span",
+      "group_is_connected_path",
+      "group_incremental_cost_fraction",
+      "group_projected_cost_fraction",
+      "group_solver_fraction",
+      "group_analyst_fraction",
+      "group_programmer_fraction",
+      "group_inspector_fraction",
+      "member_mean_base_similarity",
+      "member_mean_ladies_mass",
+      "member_mean_same_role",
+      "member_mean_receiver_solver",
+      "member_mean_receiver_analyst",
+      "member_mean_receiver_programmer",
+      "member_mean_receiver_inspector",
+      "member_max_base_similarity",
+      "member_max_ladies_mass"
+    ],
+    "limitations": "single noisy outcomes and dependent actions; no adaptive or full-MAS coverage guarantee"
+  }
+}

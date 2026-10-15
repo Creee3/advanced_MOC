@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "archive_sha256": "655af57509630c51a4e6ee2b09c6f3160919f52260f601d707c922137291fc08",
+  "members_verified": 261,
+  "raw_cost_ledgers_reconciled": true,
+  "unknown_tokens": 0,
+  "pending_tokens": 0,
+  "cleanup_complete": true,
+  "no_restart": true,
+  "no_deadline_or_budget_change": true,
+  "no_partial_test_scoring": true
+}

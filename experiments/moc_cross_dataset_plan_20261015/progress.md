@@ -75,3 +75,30 @@
 23:02 heartbeat：GSM原MOC46/600（.3:24，.7:22）有效，总test646；真实协调器/监督器/worker正常，raw5.2/12.5秒前更新，source/data锁和两模型digest/全显存驻留匹配，无invalid/重复/STOP/error。累计actual4111981tokens、pending32768/unknown0，原窗口剩9983秒。Pro适配阶段仍560/560已完成且清理，pending/unknown0、原窗口剩10001秒，按原序等待MOC；已完成val补测不恢复。证据healthcheck_20261015_230256.json。无阶段变化/可行动异常，不重复launch、不评分部分test、不延长原截止。
 
 23:10用户要求下午至今全部实验汇总：核对AQuA/HumanEval完成报告、analysis与audit的receipt哈希；现场GSM原MOC70/600仍健康（适配600保留），Pro适配560且清理、原MOC尚待串行。补做已完成GSM val的本地CPU评分，下载12文件SHA/冻结与gold/原解析器核对，适配116/120与115/120、冻结迁移113/120与112/120，无新生成或test评分/调参。含5批/4数据集的汇总、所有口径限制和整批累计费用在../daily_summary_20261015/实验汇总_20261015下午至晚间.md。现场证据healthcheck_20261015_231036.json；账单是各批自启动累计，不伪称严格12:00后的消费。
+
+23:28 heartbeat：GSM原MOC122/600（.3:62，.7:60）有效，总test722；真实协调器/监督器/worker和两模型正常、raw3.9/5.5秒前更新，冻结锁匹配，无invalid/重复/STOP/error。累计actual4700369tokens、pending20384/unknown0，原窗口剩8421秒；Pro仍adaptive_complete560且清理，待原序MOC，pending/unknown0，窗口剩8439秒。val补测已完成，绝不恢复。证据healthcheck_20261015_232858.json。阶段未变，无重复launch/测试评分/截止延长，保持安静。
+
+23:39 heartbeat：GSM原MOC153/600（.3:77，.7:76），总test753均有效无重复；协调器/监督器/worker真实存活，raw3.8/6.3秒前更新，source/data锁及两模型digest/全显存驻留正常，无STOP/error。累计actual4939772tokens、pending20384/unknown0，原窗口剩7817秒；Pro仍适配完成560、已清理、等待原序MOC，pending/unknown0，窗口剩7835秒。已审计val补测不恢复。证据healthcheck_20261015_233902.json。无阶段变化、无可行动故障，不重复launch、不评分test、不延长原截止，保持安静。
+
+
+23:50 heartbeat：GSM原MOC185/600（.3:93，.7:92），含适配共785个test终态，全部有效无重复；协调器、监督器、两个test/moc worker和两服务真实cmdline存活，raw2.7/0.6秒前更新，source/data锁与模型digest/全显存驻留正常，无STOP/error。累计actual5184792tokens/7448新调用、pending20384/unknown0，原窗口剩7158秒。当前status.cleanup_complete=false，旧cleanup.json为上阶段记录，未误判。Pro仍适配完成560/560且已清理，actual4127233、pending/unknown0，窗口剩7176秒，按原序等待原MOC；已审计val补测保持complete且不恢复。证据healthcheck_20261015_235001.json。主协调器目录没有单独protocol.md，现有task_plan/progress及三批各自protocol/config/lock已读取核查。阶段未变、不重复launch、不评分test、不延长原截止，按约定不额外通知。
+
+2026-10-16 00:20 heartbeat：GSM原MOC275/600（.3:138/.7:137），适配600终态保留，总test875全有效无重复；真实协调器/监督器/worker正常，raw2.0/3.1秒前更新，两服务digest/全显存驻留与source/data锁正常，无STOP/error。累计actual5880441tokens/8539新调用，pending20384/unknown0，原截止剩5361秒；当前status cleanup未完成，旧cleanup记录不作为活动阶段清理结论。Pro仍适配560/560已清理、待原序MOC，actual4127233/pending0/unknown0，原窗口剩5379秒。val补测已完成不恢复。证据healthcheck_20261016_001958.json。无阶段变化、不重启、不读test gold或评分、不延长截止。
+
+2026-10-16 00:30 heartbeat：GSM原MOC304/600（.3:153/.7:151），适配600保留，总test904均有效无重复；真实协调器/监督器/worker存活，raw8.5/12.7秒前更新，冻结source/data锁与两模型digest/全显存驻留匹配，无STOP/error。actual6096653tokens/8892新调用、pending32768/unknown0，原窗口剩4760秒。Pro适配560已完成清理，pending/unknown0，原窗口剩4778秒，按原序待MOC；已审计val补测不恢复。证据healthcheck_20261016_002959.json。无阶段变化/可行动故障，不重复launch，不读test gold/评分，不延长原截止。
+
+2026-10-16 00:40 heartbeat：GSM原MOC332/600（.3:167/.7:165），总test932全有效无重复；真实协调器/监督器/worker正常，raw9.9/12.3秒前更新，source/data锁及27B/9B digest/全显存驻留匹配，无STOP/error。actual6328588tokens/9253新调用、pending26576/unknown0，原窗口剩4161秒。Pro适配560已完成且清理，pending/unknown0，窗口剩4179秒，依原序等待原MOC。已完成val补测不恢复。证据healthcheck_20261016_003959.json。旧两批无阶段变化或故障，不重复launch、不评分test、不延长截止。
+
+2026-10-16 00:50 heartbeat：GSM原MOC356/600（.3:179/.7:177），适配600保留，总test956均有效无重复；真实协调器/监督器/worker正常，raw4.9/7.4秒前更新，source/data锁及两服务digest/全显存驻留匹配，无STOP/error。actual6520337tokens/9543新调用、pending32768/unknown0，原截止剩3558秒。Pro适配560已清理、待原序MOC，actual4127233/pending0/unknown0，原截止剩3576秒；已审计val补测不恢复。证据healthcheck_20261016_005002.json。无阶段变化/故障，不重复launch，不读test gold/评分，不延长原截止。
+
+2026-10-16 01:00 heartbeat：GSM原MOC382/600（两密度各191），适配600保留，总test982均有效无重复；真实协调器/监督器/worker健康，raw2.9/0.5秒前更新，source/data锁及两服务digest/全显存驻留正常，无STOP/error。actual6728634tokens/9871新调用、pending20384/unknown0，原截止剩2960秒。Pro适配560已清理、待原序MOC，pending/unknown0，原截止剩2978秒；已审计val补测不恢复。证据healthcheck_20261016_005959.json。阶段未变、不重启、不读test gold/评分、不延长原截止。
+
+2026-10-16 01:10 heartbeat：GSM原MOC409/600（.3:205/.7:204），含适配总test1009均有效无重复；真实协调器/监督器/worker健康，raw8.4/0.3秒前更新，source/data锁及两模型digest/全显存驻留正常，无STOP/error。actual6947185tokens/10219新调用、pending20384/unknown0，原窗口剩2360秒。Pro适配560已清理、原MOC仍待原序，actual4127233/pending0/unknown0，原窗口剩2378秒；已审计val补测不恢复。证据healthcheck_20261016_011000.json。无阶段变化或可行动故障，不重复launch、不读取test gold/评分、不延长原截止。
+
+2026-10-16 01:20 heartbeat：GSM原MOC433/600（.3:217/.7:216），总test1033全部有效无重复；真实协调器/监督器/worker健康，raw2.3/7.2秒前更新，source/data锁及两模型digest/全显存驻留匹配，无STOP/error。actual7150147tokens/10501新调用、pending20384/unknown0，原截止剩1760秒。Pro适配560已清理、待原序MOC，pending/unknown0，原截止剩1778秒；已审计val补测不恢复。证据healthcheck_20261016_011959.json。无阶段变化或可行动故障，不重复launch、不读test gold/评分、不延长原截止。
+
+2026-10-16 01:30 heartbeat：GSM原MOC458/600（.3:230/.7:228），总test1058全有效无重复；实际协调器/监督器/worker、raw5.9/11.9秒前更新、source/data锁及两服务全显存驻留正常，无STOP/error。actual7349963tokens/10819新调用，pending32768/unknown0，原窗口剩1158秒。Pro适配560已清理、待原序MOC，pending/unknown0，原窗口剩1176秒；已完成val补测不恢复。证据healthcheck_20261016_013001.json。旧两批阶段未变，不重复launch、不评分test、不延长原截止。
+
+2026-10-16 01:40 heartbeat：GSM原MOC481/600（.3:241/.7:240），总test1081全有效无重复；真实协调器/监督器/worker健康，raw14.0/0.8秒前更新，source/data锁及两模型digest/全显存驻留正常，无STOP/error。actual7542179tokens/11089新调用、pending26576/unknown0，原窗口剩557秒。Pro适配560已清理、待原序MOC，actual4127233/pending0/unknown0，原窗口剩575秒。已完成val补测不恢复。证据healthcheck_20261016_014002.json。阶段未变，维持原deadline；到期必须停并清理，不能为补齐对照延长或重置。不重复launch、不读test gold/评分。
+
+2026-10-16 01:50到期收口：GSM原MOC504/600（253/251），适配600保留；Pro适配560保留、原MOC尚未启动。原run_start截止已过，worker根因BudgetExceeded: STOP or GPU wall deadline，协调器保护退出；真实PID/自有子进程/端口11448/49/50全部清理。GSM实际7736331tokens/11386calls，Pro4127233/5134；非缓存raw+热身与账本逐项一致，trace reservation全部settled，pending/unknown0。唯一archive261成员本地SHA全核对，SHA655af57509630c51a4e6ee2b09c6f3160919f52260f601d707c922137291fc08，文件在expiry_closure_20261016/；未更改预算/deadline/终态，未读取test gold或评分，不续跑、不延长。窗口到期收口不等于完整对照完成；之后只检查保留状态，不反复通知同一到期等待条件。新两批继续，总监控ACTIVE。

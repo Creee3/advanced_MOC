@@ -1,3 +1,7 @@
 Prepared; no model calls or GPU launch. Await CPU preflight and idle resources.
 
 2026-10-16 00:07: uploaded44 files verified, native CPU preflight passed; admission8 and method regressions53 passed. Core algorithm byte-identical to existing frozen cohort. Ready, waiting idle GPU; no supervisor/run_start/model calls yet. Ten-minute monitor admits first launch only after stable resource checks; never blindly retries failed jobs.
+
+2026-10-16 00:30首次启动：准入两次10秒检查GPU4 UUID89523765...空闲24081MiB/util0，通过后dispatch于00:30:14启动MMLU adaptive监督器2677784；run_start00:30:15，绝对截止08:30:15（deadline_unix1792110615.056002），不重置延长。00:30:54核验两个worker、监督器与11453的27B真实cmdline存活，CUDA分配/短生成/正确digest/size_vram=size通过，training raw2.0/3.3秒前更新，actual1857tokens/8新调用、pending20384/unknown0。40题开始标签生成，尚0题提交，不伪称训练完成。source/data锁匹配，无STOP/error。SVAMP仍未启动且费用0，等下一次空闲卡准入；当前总共原两卡+新一卡=3张。完整证据healthcheck_20261016_003054.json，run_start/lease/launcher本地已取回。无恢复或旧批变更。
+
+2026-10-16 01:50阶段变化：MMLU40/40训练有效，无excluded；80个receiver episode、214条label，已fit并冻结policy SHA71dcd90b4f216475cebd5312e844ff1d258ddb2befac48787ab0b793bb92ef7f。远端模型/训练提交SHA及no_val_or_test_fitting核对通过，policy/report/model已取回本地。适配作者test24/570（两个密度各12）全有效无重复，raw1.2/4.8秒前更新；actual1262838tokens/1723新调用、pending20384/unknown0，原窗口剩24008秒。SVAMP适配test248/600（各124）全有效，actual1016123tokens/1731新调用、pending20384/unknown0，raw1.8/0.4秒，窗口剩24609秒。两新批真实进程/服务、source/data锁与全显存驻留正常，无STOP/error，继续原两张GPU，无dispatch、不评分部分test或调参。证据healthcheck_20261016_015008.json。旧GSM/Pro到期停止不影响两新批窗口。

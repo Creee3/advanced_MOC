@@ -1,0 +1,12 @@
+{
+  "frozen_before_val_and_test": true,
+  "model_sha256": "728a99c19645a2ff230132ddd220ec243a7ea644bc11776e261ae193e4d4633e",
+  "training_commits_sha256": {
+    "training/shard0/questions.jsonl": "78bdcbc068a70a40e842091e1f75b5966f67d9b199d4886c5d5529d16b7a196f",
+    "training/shard1/questions.jsonl": "3532cf423386d4c51aadfe6f11d81ddc17ac80704fb02cc8d4c084cc3e06d1d3"
+  },
+  "no_val_or_test_fitting": true,
+  "cost_penalty": 0.02,
+  "communication_tokens": 1024,
+  "max_group_size": 2
+}
