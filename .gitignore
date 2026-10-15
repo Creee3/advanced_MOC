@@ -34,3 +34,4 @@ models/
 /experiments/moc_mmlu_pro_val_baseline_20261015/remote_snapshot/*
 !/experiments/moc_mmlu_pro_val_baseline_20261015/remote_snapshot/manifest.json
 /experiments/moc_v21_mmlu_pro_fewshot_20261015/val_review_20261015/records/
+/experiments/moc_v21_gsm8k_fewshot_20261015/val_review_20261015/records/

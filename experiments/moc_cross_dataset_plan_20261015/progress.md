@@ -69,3 +69,9 @@
 22:46:51协调器2612991恢复，保留两批原budget/run_start字节及全部终态，按原序GSM原MOC→Pro原MOC串行，各自仍最多27B+9B两张，绝不延长原窗口。恢复评审/launch记录及patchSHA39edfa90df4e1b6b8fa50d14cad153b911994d4e95d11198067d376057366a19已保存。等待真实GPU/worker核验后再报告启动。
 
 22:47:34恢复后现场确认：协调器处于serial_moc_baseline/GSM，GSM监督器和两个test/moc worker的真实cmdline活着，11448的27B、11450的9B均正确digest、CUDA短生成与全显存驻留通过；原始raw已持续写入（5.2/4.6秒），首批MOC条件处理中，全部600个适配终态保留。实际费用3760398tokens（新增热身32已计入），pending20384/unknown0，原绝对窗口仍剩余10905秒。Pro仍adaptive_complete560/560、pending0，等待串行下一阶段，不重跑。数据集source/data锁均通过；旧cleanup.json是前阶段已归档记录，当前活动status.cleanup_complete=false，不能误读为新阶段清理完成。完整证据healthcheck_20261015_224734.json。
+
+22:52 heartbeat：GSM原MOC test16/600（.3:9，.7:7）有效，适配600终态保留，总test616；真实协调器/监督器/两个worker和两模型正常，raw5.3/0.7秒前更新，冻结锁匹配，无invalid/重复/STOP/error。累计actual3888581tokens、pending32768、unknown0，原窗口剩余10584秒；Pro仍adaptive_complete且清理、actual4127233、pending/unknown0、剩10602秒，依原序等待MOC。独立val补测仍已完成，不恢复。证据healthcheck_20261015_225255.json。阶段无变化，无重复launch或test评分，保持安静。
+
+23:02 heartbeat：GSM原MOC46/600（.3:24，.7:22）有效，总test646；真实协调器/监督器/worker正常，raw5.2/12.5秒前更新，source/data锁和两模型digest/全显存驻留匹配，无invalid/重复/STOP/error。累计actual4111981tokens、pending32768/unknown0，原窗口剩9983秒。Pro适配阶段仍560/560已完成且清理，pending/unknown0、原窗口剩10001秒，按原序等待MOC；已完成val补测不恢复。证据healthcheck_20261015_230256.json。无阶段变化/可行动异常，不重复launch、不评分部分test、不延长原截止。
+
+23:10用户要求下午至今全部实验汇总：核对AQuA/HumanEval完成报告、analysis与audit的receipt哈希；现场GSM原MOC70/600仍健康（适配600保留），Pro适配560且清理、原MOC尚待串行。补做已完成GSM val的本地CPU评分，下载12文件SHA/冻结与gold/原解析器核对，适配116/120与115/120、冻结迁移113/120与112/120，无新生成或test评分/调参。含5批/4数据集的汇总、所有口径限制和整批累计费用在../daily_summary_20261015/实验汇总_20261015下午至晚间.md。现场证据healthcheck_20261015_231036.json；账单是各批自启动累计，不伪称严格12:00后的消费。
