@@ -13,14 +13,34 @@ RUNS=[BASE/'moc_v21_gsm8k_fewshot_20261015',BASE/'moc_v21_mmlu_pro_fewshot_20261
 def read(p):return json.loads(p.read_text()) if p.exists() else {}
 def save(v):
     t=ROOT/'coordinator_status.tmp';t.write_text(json.dumps(dict(v,updated_utc=datetime.now(timezone.utc).isoformat()),indent=2));t.replace(ROOT/'coordinator_status.json')
+def process_active(pid,proc_root=Path('/proc')):
+    if not pid:return False
+    try:
+        root=proc_root/str(pid)
+        cmdline=(root/'cmdline').read_bytes()
+        state=(root/'stat').read_text().rsplit(') ',1)[1].split()[0]
+    except (FileNotFoundError,ProcessLookupError):
+        return False
+    return bool(cmdline) and state not in ('Z','X')
+
 def start(folder,mode):
+    if (ROOT/'STOP').exists() or (folder/'STOP').exists():raise RuntimeError('STOP; do not launch')
     s=read(folder/'status.json')
     if s:
         if mode=='adaptive' and s.get('phase') in ('adaptive_complete','complete'):return
         if mode=='baseline' and s.get('phase')=='complete':return
-        pid=s.get('supervisor_pid')
-        if pid and Path('/proc',str(pid),'cmdline').exists():raise RuntimeError('existing live supervisor; do not duplicate')
         if s.get('phase')!='adaptive_complete' or mode!='baseline':raise RuntimeError('failure requires diagnostic recovery, not coordinator blind restart')
+        if not s.get('cleanup_complete') or read(folder/'budget.json').get('reserved_tokens',0):
+            raise RuntimeError('previous phase cleanup/accounting incomplete; inspect before launch')
+        # Final cleanup is published just before supervisor exit. Wait for exit
+        # without treating an empty cmdline or zombie as a live supervisor.
+        wait_until=time.monotonic()+30
+        while process_active(s.get('supervisor_pid')):
+            if (ROOT/'STOP').exists() or (folder/'STOP').exists():raise RuntimeError('STOP during phase transition')
+            if time.monotonic()>=wait_until:raise RuntimeError('previous supervisor still live after bounded exit wait; do not duplicate')
+            time.sleep(.5)
+        if time.time()>=read(folder/'run_start.json')['deadline_unix']:
+            raise RuntimeError('original dataset deadline exhausted; do not launch or extend')
     cmd=[read(folder/'config.json')['python_executable'],'-u',str(folder/'supervise.py'),'--mode',mode]
     if s:cmd+=['--resume']
     with (folder/'supervisor.log').open('a') as log:
