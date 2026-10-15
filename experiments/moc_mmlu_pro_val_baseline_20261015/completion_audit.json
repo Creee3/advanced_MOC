@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "n_conditions": 112,
+  "downloaded_files": 77,
+  "all_hashes_verified": true,
+  "source_locks_verified": true,
+  "parent_val_identical": true,
+  "original_parser_rechecked": true,
+  "invalid": 0,
+  "budget": {
+    "new_calls": 1400,
+    "actual_tokens": 802056,
+    "reserved_tokens": 0,
+    "unknown_cost_upper_bound_tokens": 0
+  },
+  "logical_model_tokens": 994632,
+  "startup_tokens": 32,
+  "logical_calls": 1791,
+  "cached_calls": 393,
+  "unsettled_reservations": 0,
+  "cleanup": {
+    "remaining_ports": [],
+    "owned_children_remaining": [],
+    "owned_processes_remaining": [],
+    "cleanup_complete": true
+  },
+  "output_cap_responses": [],
+  "trace_event_counts": {
+    "communication_consumed": 896,
+    "backend_request_started": 1398,
+    "backend_request_settled": 1398
+  }
+}

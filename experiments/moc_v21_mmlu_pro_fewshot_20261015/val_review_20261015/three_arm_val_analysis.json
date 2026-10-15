@@ -1,0 +1,167 @@
+{
+  "scope": "Completed val only; no tuning; three arms on identical56 questions",
+  "n_questions": 56,
+  "n_conditions": 336,
+  "arms": {
+    "moc|0.3": {
+      "n": 56,
+      "correct": 29,
+      "accuracy": 0.5178571428571429,
+      "invalid": 0,
+      "logical_model_tokens": 338909,
+      "main_model_tokens": 338909,
+      "merger_model_tokens": 0,
+      "new_model_tokens": 338909,
+      "merger_calls": 0
+    },
+    "frozen_transfer|0.3": {
+      "n": 56,
+      "correct": 32,
+      "accuracy": 0.5714285714285714,
+      "invalid": 0,
+      "logical_model_tokens": 308575,
+      "main_model_tokens": 308575,
+      "merger_model_tokens": 0,
+      "new_model_tokens": 308575,
+      "merger_calls": 0
+    },
+    "adapted|0.3": {
+      "n": 56,
+      "correct": 30,
+      "accuracy": 0.5357142857142857,
+      "invalid": 0,
+      "logical_model_tokens": 304120,
+      "main_model_tokens": 304120,
+      "merger_model_tokens": 0,
+      "new_model_tokens": 266964,
+      "merger_calls": 0
+    },
+    "moc|0.7": {
+      "n": 56,
+      "correct": 28,
+      "accuracy": 0.5,
+      "invalid": 0,
+      "logical_model_tokens": 655723,
+      "main_model_tokens": 386476,
+      "merger_model_tokens": 269247,
+      "new_model_tokens": 463115,
+      "merger_calls": 895
+    },
+    "frozen_transfer|0.7": {
+      "n": 56,
+      "correct": 32,
+      "accuracy": 0.5714285714285714,
+      "invalid": 0,
+      "logical_model_tokens": 308575,
+      "main_model_tokens": 308575,
+      "merger_model_tokens": 0,
+      "new_model_tokens": 0,
+      "merger_calls": 0
+    },
+    "adapted|0.7": {
+      "n": 56,
+      "correct": 27,
+      "accuracy": 0.48214285714285715,
+      "invalid": 0,
+      "logical_model_tokens": 308611,
+      "main_model_tokens": 308611,
+      "merger_model_tokens": 0,
+      "new_model_tokens": 174079,
+      "merger_calls": 0
+    }
+  },
+  "paired_vs_moc": {
+    "frozen_transfer|0.3": {
+      "gain_questions": 6,
+      "loss_questions": 3,
+      "accuracy_difference": 0.05357142857142857,
+      "bootstrap95_percentile": [
+        -0.05357142857142857,
+        0.16071428571428573
+      ],
+      "bootstrap_replicates": 20000,
+      "seed": 42,
+      "mcnemar_exact_two_sided": 0.5078125,
+      "logical_token_change": -0.08950485233499261
+    },
+    "adapted|0.3": {
+      "gain_questions": 2,
+      "loss_questions": 1,
+      "accuracy_difference": 0.017857142857142856,
+      "bootstrap95_percentile": [
+        -0.03571428571428571,
+        0.08928571428571429
+      ],
+      "bootstrap_replicates": 20000,
+      "seed": 42,
+      "mcnemar_exact_two_sided": 1,
+      "logical_token_change": -0.10264997388679553
+    },
+    "frozen_transfer|0.7": {
+      "gain_questions": 7,
+      "loss_questions": 3,
+      "accuracy_difference": 0.07142857142857142,
+      "bootstrap95_percentile": [
+        -0.03571428571428571,
+        0.17857142857142858
+      ],
+      "bootstrap_replicates": 20000,
+      "seed": 42,
+      "mcnemar_exact_two_sided": 0.34375,
+      "logical_token_change": -0.5294125720769288
+    },
+    "adapted|0.7": {
+      "gain_questions": 0,
+      "loss_questions": 1,
+      "accuracy_difference": -0.017857142857142856,
+      "bootstrap95_percentile": [
+        -0.05357142857142857,
+        0.0
+      ],
+      "bootstrap_replicates": 20000,
+      "seed": 42,
+      "mcnemar_exact_two_sided": 1,
+      "logical_token_change": -0.5293576708457688
+    }
+  },
+  "original_moc_completion_audit": {
+    "status": "passed",
+    "n_conditions": 112,
+    "downloaded_files": 77,
+    "all_hashes_verified": true,
+    "source_locks_verified": true,
+    "parent_val_identical": true,
+    "original_parser_rechecked": true,
+    "invalid": 0,
+    "budget": {
+      "new_calls": 1400,
+      "actual_tokens": 802056,
+      "reserved_tokens": 0,
+      "unknown_cost_upper_bound_tokens": 0
+    },
+    "logical_model_tokens": 994632,
+    "startup_tokens": 32,
+    "logical_calls": 1791,
+    "cached_calls": 393,
+    "unsettled_reservations": 0,
+    "cleanup": {
+      "remaining_ports": [],
+      "owned_children_remaining": [],
+      "owned_processes_remaining": [],
+      "cleanup_complete": true
+    },
+    "output_cap_responses": [],
+    "trace_event_counts": {
+      "communication_consumed": 896,
+      "backend_request_started": 1398,
+      "backend_request_settled": 1398
+    }
+  },
+  "training": {
+    "planned_questions": 14,
+    "effective_questions": 14,
+    "labels": 74,
+    "excluded": []
+  },
+  "caveat": "AQuA transfer abstains all nonroot messages; no-target-training costs are not comparable to task training without separating one-time training expense."
+}

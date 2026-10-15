@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-15",
+  "user_request": "补测同一MMLU-Pro val的原MOC；允许新增两张空闲GPU立即独立运行",
+  "scope": "56 locked val questions x densities0.3/0.7 x original MOC only",
+  "max_new_gpus": 2,
+  "max_total_chat_gpus_during_overlap": 4,
+  "parent_experiment": "moc_v21_mmlu_pro_fewshot_20261015",
+  "parent_experiment_lock_sha256": "473e75101a736db4c28ec9aabbaafab7505962dcc054afa7c7fbd101eb675503",
+  "no_training_or_test": true,
+  "no_policy_changes": true,
+  "max_wall_seconds": 7200,
+  "max_new_calls": 6000,
+  "max_new_model_tokens": 4000000
+}
