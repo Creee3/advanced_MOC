@@ -1,0 +1,36 @@
+{
+  "mmlu": {
+    "adapter.py": true,
+    "audit_assets.py": true,
+    "bundles.py": true,
+    "counterfactual.py": true,
+    "expected_set.py": true,
+    "expected_utility.py": true,
+    "features.py": true,
+    "initial_features.py": true,
+    "kernels.py": true,
+    "paper_baselines.py": true,
+    "sampler.py": true,
+    "stateful.py": true,
+    "uncertainty.py": true,
+    "verify_local.py": true,
+    "__init__.py": true
+  },
+  "svamp": {
+    "adapter.py": true,
+    "audit_assets.py": true,
+    "bundles.py": true,
+    "counterfactual.py": true,
+    "expected_set.py": true,
+    "expected_utility.py": true,
+    "features.py": true,
+    "initial_features.py": true,
+    "kernels.py": true,
+    "paper_baselines.py": true,
+    "sampler.py": true,
+    "stateful.py": true,
+    "uncertainty.py": true,
+    "verify_local.py": true,
+    "__init__.py": true
+  }
+}

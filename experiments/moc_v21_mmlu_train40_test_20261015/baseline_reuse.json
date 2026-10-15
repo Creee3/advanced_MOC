@@ -1,0 +1,9 @@
+{
+  "status": "no_exact_matching_artifact_found",
+  "searched": [
+    "current repository completed AQuA/HumanEval and active GSM8K/MMLU-Pro",
+    "historical other-method MMLU artifacts do not match this author MOC configuration"
+  ],
+  "reusable_conditions": [],
+  "rule": "exact input/roles/DAG/prompt/model/decoder/merger/parser only"
+}

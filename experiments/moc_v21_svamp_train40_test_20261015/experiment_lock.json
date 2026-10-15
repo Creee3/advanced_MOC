@@ -1,0 +1,50 @@
+{
+  "source_hashes": {
+    "coding_base/moc_adaptive_sampling/__init__.py": "119c32f35e789c8a428d7960519526cb046572afdf9cfa770f04184f7e31b889",
+    "coding_base/moc_adaptive_sampling/adapter.py": "396ee583ebe989e1aeca1618c5bb310859011b8f5dd6a3dc1ca47ac0154d429d",
+    "coding_base/moc_adaptive_sampling/audit_assets.py": "733dbc0df7f03480255fb8def58a60a79ec4a7b66b43d57fc02467999b28621d",
+    "coding_base/moc_adaptive_sampling/bundles.py": "da549ccd64ae1fb6576832b2619aa5389776970cb25c812461413d75f730bed9",
+    "coding_base/moc_adaptive_sampling/counterfactual.py": "1d0ad215ed9b8647c29e8c4cdecf181174d7e4b30232096717880fcddf087efc",
+    "coding_base/moc_adaptive_sampling/expected_set.py": "d47258a672d51bac7f519c7467baedaf20349020c44d2d021e02b5b55d7d5544",
+    "coding_base/moc_adaptive_sampling/expected_utility.py": "bb7c39879c65972aa7514266746731c37f6c4748180c9c463d740142dec449ab",
+    "coding_base/moc_adaptive_sampling/features.py": "49ebda3ce17eae334699216a0f8a068c8c83494daa1d0830069ee161e7c82b48",
+    "coding_base/moc_adaptive_sampling/initial_features.py": "7d19ef9afdce5a29142aa702bf4228a91b17bcc02aad1bc6211f785cb5d094d2",
+    "coding_base/moc_adaptive_sampling/kernels.py": "f8ff498f3bf7359771c0725c42b244d4b02c30da0185a59706eebedac2260024",
+    "coding_base/moc_adaptive_sampling/paper_baselines.py": "d8e0fb4b50a1ed1f265f982fbbd7e0fcc4ee3069854e76896f4c5d90850303b8",
+    "coding_base/moc_adaptive_sampling/sampler.py": "de1e9400858af4636a9f513adaa173de1689bad71d615ac8a1ef37e2e451d04a",
+    "coding_base/moc_adaptive_sampling/stateful.py": "5e571dc151078aa4548460b7c6401da84f0d32832f6ff34f8ce0d6f64d074cdb",
+    "coding_base/moc_adaptive_sampling/uncertainty.py": "8f524f3b01ab2afb7fd6334cd146462195f8d697aa7d4671672fdc2d8d1cca59",
+    "coding_base/moc_adaptive_sampling/verify_local.py": "db745682772e53db37dfa6dbbace3526f793e9ba69af9638e9cfd35e109a42d8",
+    "common.py": "d0aac948616f2a5987dd79736408e7b14f670961615bc78926e50d23fbbe2878",
+    "config.json": "24cfaaae512f1b78deb3f5e4e4c2c2c0a5aebb325060685c6263e44e06f24324",
+    "domain_runtime.py": "b04d6daa9e24b1e96efbbe8871d24b8e98c0918f42909f4d8d11a8ca7963c239",
+    "gpu_runtime.py": "709cddd83e7b1367e853c1cbf7d60096ac2cd3b4a02944defde7248b1d826631",
+    "inspect_run.py": "b7f95c89c9e68e9305a74a0c0c4cc094c3c3e29a4f64abb8019faa27e6d30533",
+    "merger_backend.py": "90b8593ded385bdd4f4a4c93115c82b3db62c94d9d03ec4bec929a34414ad008",
+    "preflight.py": "c2550e1abdc0bc6107f5c1754dd9a48154cee1f69bed09c0fe2b8ecd5e55db43",
+    "probe_gpu_runtime.py": "8aa1377f4147bb0c2d5d3a973c235c17bdcd92edd40915f5353d220082d6b62e",
+    "resume_cache.py": "adcaa64963b092ebaadcc4a25cb11edb1180c9a7a5251b9798cc0390d0282d27",
+    "runner.py": "ef9200956a33f53eb76a002a2d70ab56984676a1898b7aa7f613b88404771681",
+    "runtime_controls.py": "ef307a6bf25bf18731eccbfcb473f47c8e068d455e02d2ac62fa995befa522da",
+    "sandbox.py": "1ab811099230c37cbce939dedb6079a692b204c393f2fa7e615121f5eb259d72",
+    "sandbox_child.py": "9ed046a7c7e65fc7a334b62e0b3e18ba1eac06c5802e19f4ba99934960249183",
+    "supervise.py": "2fd4428e4977f5082cb44ec2ec2e685c4bc7f616f2f031cf4d4be7e39c4beff9",
+    "trace_hooks.py": "cee48fe3bb04efd640ae09865f900f38c116e94a810f119e811c02f91172bb18"
+  },
+  "data_hashes": {
+    "baseline_reuse.json": "595640a88b608b81089dfa4cd8338e2333e34b60c7960b484f55b1b508e2e8d4",
+    "data/test_inputs.jsonl": "6a00b2edfc31f37b6bb0de124c1498be554c8b870679efbce35dd8ef85a32e8f",
+    "data/train_gold_LOCAL_ONLY.jsonl": "247484dd7e2838d40411bded93156267345435177820c7b1b2c7cf6f3587c2cd",
+    "data/train_inputs.jsonl": "a711194e2f0ead47ef920547b52300ad5a1982c6dc46308bf44d52470374c125",
+    "data/val_inputs.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "frozen_aqua_model.json": "e2ce9cd7f69d3b4e6c2e6be7af1df0a852d44b972396989e5b02428a655fd210",
+    "split_manifest.json": "f8dbfce0a79fb71970e0836d5bb663a4663092f581db37639b7204455232f09d"
+  },
+  "author_commit": "9c67c92507570704a7df73e452552a3f49e83897",
+  "local_gold_sha256": {
+    "train": "247484dd7e2838d40411bded93156267345435177820c7b1b2c7cf6f3587c2cd",
+    "val": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "test": "e4abdcd6cc03e7077b5d579a54ebaa46151108f202faf5e95bb458ce89a42bfc"
+  },
+  "author_test_sha256": "0f68984ce4f5385cacd49d80338ed3d771cc5701dc552682d3cad4261b07bac6"
+}

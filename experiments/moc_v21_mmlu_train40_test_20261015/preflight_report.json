@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "native_graph_checks": [
+    {
+      "density": 0.3,
+      "arm": "vanilla_mas",
+      "main_calls": 8
+    },
+    {
+      "density": 0.3,
+      "arm": "adaptive_sampling",
+      "main_calls": 8
+    },
+    {
+      "density": 0.3,
+      "arm": "moc",
+      "main_calls": 8
+    },
+    {
+      "density": 0.7,
+      "arm": "vanilla_mas",
+      "main_calls": 8
+    },
+    {
+      "density": 0.7,
+      "arm": "adaptive_sampling",
+      "main_calls": 8
+    },
+    {
+      "density": 0.7,
+      "arm": "moc",
+      "main_calls": 8
+    }
+  ],
+  "math_separate_namespace_checks": 4,
+  "isolation_denials": [
+    "PermissionError",
+    "PermissionError",
+    "PermissionError",
+    "PermissionError"
+  ],
+  "timeout": true,
+  "model_calls": 0,
+  "time_unix": 1792080118.6559167
+}

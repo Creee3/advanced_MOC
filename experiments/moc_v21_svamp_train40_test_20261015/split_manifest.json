@@ -1,0 +1,3741 @@
+{
+  "domain": "svamp",
+  "seed": 42,
+  "train_count": 40,
+  "val_count": 0,
+  "test_count": 300,
+  "selection": "SHA256(42:question_id) first40 eligible; near-duplicate and numeric-template exclusions before selection",
+  "train_ids": [
+    "svamp:official_full:chal-173",
+    "svamp:official_full:chal-80",
+    "svamp:official_full:chal-889",
+    "svamp:official_full:chal-46",
+    "svamp:official_full:chal-887",
+    "svamp:official_full:chal-358",
+    "svamp:official_full:chal-629",
+    "svamp:official_full:chal-155",
+    "svamp:official_full:chal-906",
+    "svamp:official_full:chal-23",
+    "svamp:official_full:chal-857",
+    "svamp:official_full:chal-901",
+    "svamp:official_full:chal-64",
+    "svamp:official_full:chal-989",
+    "svamp:official_full:chal-770",
+    "svamp:official_full:chal-528",
+    "svamp:official_full:chal-911",
+    "svamp:official_full:chal-952",
+    "svamp:official_full:chal-519",
+    "svamp:official_full:chal-775",
+    "svamp:official_full:chal-317",
+    "svamp:official_full:chal-85",
+    "svamp:official_full:chal-410",
+    "svamp:official_full:chal-171",
+    "svamp:official_full:chal-379",
+    "svamp:official_full:chal-608",
+    "svamp:official_full:chal-579",
+    "svamp:official_full:chal-77",
+    "svamp:official_full:chal-821",
+    "svamp:official_full:chal-741",
+    "svamp:official_full:chal-508",
+    "svamp:official_full:chal-464",
+    "svamp:official_full:chal-941",
+    "svamp:official_full:chal-191",
+    "svamp:official_full:chal-800",
+    "svamp:official_full:chal-14",
+    "svamp:official_full:chal-610",
+    "svamp:official_full:chal-427",
+    "svamp:official_full:chal-837",
+    "svamp:official_full:chal-784"
+  ],
+  "train_categories": [
+    "Addition",
+    "Common-Division",
+    "Multiplication",
+    "Subtraction"
+  ],
+  "test_ids": [
+    "svamp:author_test:chal-736",
+    "svamp:author_test:chal-162",
+    "svamp:author_test:chal-349",
+    "svamp:author_test:chal-390",
+    "svamp:author_test:chal-781",
+    "svamp:author_test:chal-575",
+    "svamp:author_test:chal-599",
+    "svamp:author_test:chal-619",
+    "svamp:author_test:chal-229",
+    "svamp:author_test:chal-725",
+    "svamp:author_test:chal-239",
+    "svamp:author_test:chal-206",
+    "svamp:author_test:chal-955",
+    "svamp:author_test:chal-666",
+    "svamp:author_test:chal-868",
+    "svamp:author_test:chal-644",
+    "svamp:author_test:chal-792",
+    "svamp:author_test:chal-891",
+    "svamp:author_test:chal-655",
+    "svamp:author_test:chal-47",
+    "svamp:author_test:chal-430",
+    "svamp:author_test:chal-939",
+    "svamp:author_test:chal-66",
+    "svamp:author_test:chal-485",
+    "svamp:author_test:chal-697",
+    "svamp:author_test:chal-999",
+    "svamp:author_test:chal-974",
+    "svamp:author_test:chal-832",
+    "svamp:author_test:chal-1000",
+    "svamp:author_test:chal-883",
+    "svamp:author_test:chal-339",
+    "svamp:author_test:chal-598",
+    "svamp:author_test:chal-220",
+    "svamp:author_test:chal-835",
+    "svamp:author_test:chal-850",
+    "svamp:author_test:chal-22",
+    "svamp:author_test:chal-908",
+    "svamp:author_test:chal-142",
+    "svamp:author_test:chal-787",
+    "svamp:author_test:chal-68",
+    "svamp:author_test:chal-734",
+    "svamp:author_test:chal-411",
+    "svamp:author_test:chal-984",
+    "svamp:author_test:chal-147",
+    "svamp:author_test:chal-544",
+    "svamp:author_test:chal-90",
+    "svamp:author_test:chal-88",
+    "svamp:author_test:chal-855",
+    "svamp:author_test:chal-664",
+    "svamp:author_test:chal-480",
+    "svamp:author_test:chal-251",
+    "svamp:author_test:chal-218",
+    "svamp:author_test:chal-675",
+    "svamp:author_test:chal-993",
+    "svamp:author_test:chal-700",
+    "svamp:author_test:chal-374",
+    "svamp:author_test:chal-968",
+    "svamp:author_test:chal-94",
+    "svamp:author_test:chal-983",
+    "svamp:author_test:chal-33",
+    "svamp:author_test:chal-541",
+    "svamp:author_test:chal-914",
+    "svamp:author_test:chal-754",
+    "svamp:author_test:chal-285",
+    "svamp:author_test:chal-60",
+    "svamp:author_test:chal-876",
+    "svamp:author_test:chal-900",
+    "svamp:author_test:chal-522",
+    "svamp:author_test:chal-651",
+    "svamp:author_test:chal-4",
+    "svamp:author_test:chal-409",
+    "svamp:author_test:chal-270",
+    "svamp:author_test:chal-1",
+    "svamp:author_test:chal-353",
+    "svamp:author_test:chal-995",
+    "svamp:author_test:chal-333",
+    "svamp:author_test:chal-391",
+    "svamp:author_test:chal-755",
+    "svamp:author_test:chal-831",
+    "svamp:author_test:chal-446",
+    "svamp:author_test:chal-686",
+    "svamp:author_test:chal-434",
+    "svamp:author_test:chal-888",
+    "svamp:author_test:chal-768",
+    "svamp:author_test:chal-750",
+    "svamp:author_test:chal-553",
+    "svamp:author_test:chal-688",
+    "svamp:author_test:chal-487",
+    "svamp:author_test:chal-614",
+    "svamp:author_test:chal-603",
+    "svamp:author_test:chal-301",
+    "svamp:author_test:chal-731",
+    "svamp:author_test:chal-371",
+    "svamp:author_test:chal-530",
+    "svamp:author_test:chal-566",
+    "svamp:author_test:chal-167",
+    "svamp:author_test:chal-552",
+    "svamp:author_test:chal-105",
+    "svamp:author_test:chal-157",
+    "svamp:author_test:chal-748",
+    "svamp:author_test:chal-297",
+    "svamp:author_test:chal-324",
+    "svamp:author_test:chal-217",
+    "svamp:author_test:chal-657",
+    "svamp:author_test:chal-693",
+    "svamp:author_test:chal-132",
+    "svamp:author_test:chal-176",
+    "svamp:author_test:chal-470",
+    "svamp:author_test:chal-828",
+    "svamp:author_test:chal-678",
+    "svamp:author_test:chal-747",
+    "svamp:author_test:chal-518",
+    "svamp:author_test:chal-856",
+    "svamp:author_test:chal-136",
+    "svamp:author_test:chal-247",
+    "svamp:author_test:chal-604",
+    "svamp:author_test:chal-965",
+    "svamp:author_test:chal-277",
+    "svamp:author_test:chal-702",
+    "svamp:author_test:chal-70",
+    "svamp:author_test:chal-975",
+    "svamp:author_test:chal-166",
+    "svamp:author_test:chal-246",
+    "svamp:author_test:chal-389",
+    "svamp:author_test:chal-465",
+    "svamp:author_test:chal-96",
+    "svamp:author_test:chal-345",
+    "svamp:author_test:chal-395",
+    "svamp:author_test:chal-95",
+    "svamp:author_test:chal-323",
+    "svamp:author_test:chal-592",
+    "svamp:author_test:chal-987",
+    "svamp:author_test:chal-168",
+    "svamp:author_test:chal-759",
+    "svamp:author_test:chal-991",
+    "svamp:author_test:chal-959",
+    "svamp:author_test:chal-550",
+    "svamp:author_test:chal-567",
+    "svamp:author_test:chal-204",
+    "svamp:author_test:chal-611",
+    "svamp:author_test:chal-964",
+    "svamp:author_test:chal-282",
+    "svamp:author_test:chal-825",
+    "svamp:author_test:chal-74",
+    "svamp:author_test:chal-547",
+    "svamp:author_test:chal-20",
+    "svamp:author_test:chal-826",
+    "svamp:author_test:chal-895",
+    "svamp:author_test:chal-774",
+    "svamp:author_test:chal-710",
+    "svamp:author_test:chal-934",
+    "svamp:author_test:chal-559",
+    "svamp:author_test:chal-439",
+    "svamp:author_test:chal-7",
+    "svamp:author_test:chal-417",
+    "svamp:author_test:chal-442",
+    "svamp:author_test:chal-699",
+    "svamp:author_test:chal-760",
+    "svamp:author_test:chal-739",
+    "svamp:author_test:chal-932",
+    "svamp:author_test:chal-827",
+    "svamp:author_test:chal-520",
+    "svamp:author_test:chal-460",
+    "svamp:author_test:chal-719",
+    "svamp:author_test:chal-643",
+    "svamp:author_test:chal-571",
+    "svamp:author_test:chal-347",
+    "svamp:author_test:chal-164",
+    "svamp:author_test:chal-61",
+    "svamp:author_test:chal-109",
+    "svamp:author_test:chal-449",
+    "svamp:author_test:chal-799",
+    "svamp:author_test:chal-842",
+    "svamp:author_test:chal-332",
+    "svamp:author_test:chal-737",
+    "svamp:author_test:chal-622",
+    "svamp:author_test:chal-249",
+    "svamp:author_test:chal-183",
+    "svamp:author_test:chal-72",
+    "svamp:author_test:chal-591",
+    "svamp:author_test:chal-527",
+    "svamp:author_test:chal-506",
+    "svamp:author_test:chal-797",
+    "svamp:author_test:chal-286",
+    "svamp:author_test:chal-28",
+    "svamp:author_test:chal-812",
+    "svamp:author_test:chal-979",
+    "svamp:author_test:chal-735",
+    "svamp:author_test:chal-647",
+    "svamp:author_test:chal-26",
+    "svamp:author_test:chal-687",
+    "svamp:author_test:chal-8",
+    "svamp:author_test:chal-372",
+    "svamp:author_test:chal-715",
+    "svamp:author_test:chal-45",
+    "svamp:author_test:chal-873",
+    "svamp:author_test:chal-124",
+    "svamp:author_test:chal-778",
+    "svamp:author_test:chal-236",
+    "svamp:author_test:chal-947",
+    "svamp:author_test:chal-907",
+    "svamp:author_test:chal-170",
+    "svamp:author_test:chal-875",
+    "svamp:author_test:chal-585",
+    "svamp:author_test:chal-845",
+    "svamp:author_test:chal-195",
+    "svamp:author_test:chal-388",
+    "svamp:author_test:chal-272",
+    "svamp:author_test:chal-763",
+    "svamp:author_test:chal-676",
+    "svamp:author_test:chal-380",
+    "svamp:author_test:chal-315",
+    "svamp:author_test:chal-271",
+    "svamp:author_test:chal-795",
+    "svamp:author_test:chal-957",
+    "svamp:author_test:chal-235",
+    "svamp:author_test:chal-829",
+    "svamp:author_test:chal-364",
+    "svamp:author_test:chal-581",
+    "svamp:author_test:chal-274",
+    "svamp:author_test:chal-254",
+    "svamp:author_test:chal-672",
+    "svamp:author_test:chal-926",
+    "svamp:author_test:chal-463",
+    "svamp:author_test:chal-546",
+    "svamp:author_test:chal-705",
+    "svamp:author_test:chal-104",
+    "svamp:author_test:chal-740",
+    "svamp:author_test:chal-71",
+    "svamp:author_test:chal-128",
+    "svamp:author_test:chal-258",
+    "svamp:author_test:chal-58",
+    "svamp:author_test:chal-498",
+    "svamp:author_test:chal-129",
+    "svamp:author_test:chal-659",
+    "svamp:author_test:chal-160",
+    "svamp:author_test:chal-474",
+    "svamp:author_test:chal-882",
+    "svamp:author_test:chal-707",
+    "svamp:author_test:chal-785",
+    "svamp:author_test:chal-765",
+    "svamp:author_test:chal-909",
+    "svamp:author_test:chal-931",
+    "svamp:author_test:chal-971",
+    "svamp:author_test:chal-656",
+    "svamp:author_test:chal-81",
+    "svamp:author_test:chal-368",
+    "svamp:author_test:chal-809",
+    "svamp:author_test:chal-864",
+    "svamp:author_test:chal-729",
+    "svamp:author_test:chal-221",
+    "svamp:author_test:chal-197",
+    "svamp:author_test:chal-501",
+    "svamp:author_test:chal-605",
+    "svamp:author_test:chal-972",
+    "svamp:author_test:chal-513",
+    "svamp:author_test:chal-82",
+    "svamp:author_test:chal-363",
+    "svamp:author_test:chal-306",
+    "svamp:author_test:chal-49",
+    "svamp:author_test:chal-244",
+    "svamp:author_test:chal-641",
+    "svamp:author_test:chal-788",
+    "svamp:author_test:chal-866",
+    "svamp:author_test:chal-948",
+    "svamp:author_test:chal-937",
+    "svamp:author_test:chal-383",
+    "svamp:author_test:chal-12",
+    "svamp:author_test:chal-275",
+    "svamp:author_test:chal-225",
+    "svamp:author_test:chal-97",
+    "svamp:author_test:chal-320",
+    "svamp:author_test:chal-769",
+    "svamp:author_test:chal-234",
+    "svamp:author_test:chal-253",
+    "svamp:author_test:chal-867",
+    "svamp:author_test:chal-118",
+    "svamp:author_test:chal-224",
+    "svamp:author_test:chal-512",
+    "svamp:author_test:chal-226",
+    "svamp:author_test:chal-31",
+    "svamp:author_test:chal-624",
+    "svamp:author_test:chal-722",
+    "svamp:author_test:chal-113",
+    "svamp:author_test:chal-563",
+    "svamp:author_test:chal-231",
+    "svamp:author_test:chal-956",
+    "svamp:author_test:chal-617",
+    "svamp:author_test:chal-100",
+    "svamp:author_test:chal-782",
+    "svamp:author_test:chal-406",
+    "svamp:author_test:chal-433",
+    "svamp:author_test:chal-115",
+    "svamp:author_test:chal-215",
+    "svamp:author_test:chal-568",
+    "svamp:author_test:chal-143",
+    "svamp:author_test:chal-73",
+    "svamp:author_test:chal-471",
+    "svamp:author_test:chal-542",
+    "svamp:author_test:chal-634"
+  ],
+  "author_test_sha256": "0f68984ce4f5385cacd49d80338ed3d771cc5701dc552682d3cad4261b07bac6",
+  "source": {
+    "url": "https://raw.githubusercontent.com/arkilpatel/SVAMP/main/SVAMP.json",
+    "raw_sha256": "5be77703a6d891ae476d7c082787ad361392aa02453b132516cdd5f4e7934e3e",
+    "rows": 1000
+  },
+  "eligible_after_exclusions": 535,
+  "normalized_exact_train_test_overlap": 0,
+  "near_duplicate_threshold": 0.9,
+  "near_duplicate_method": "difflib.SequenceMatcher normalized question, autojunk=False",
+  "train_test_near_overlap": 0,
+  "exclusions": [
+    {
+      "question_id": "svamp:official_full:chal-1",
+      "test_ids": [
+        "svamp:author_test:chal-1"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-4",
+      "test_ids": [
+        "svamp:author_test:chal-4"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-5",
+      "test_ids": [
+        "svamp:author_test:chal-81"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-7",
+      "test_ids": [
+        "svamp:author_test:chal-7",
+        "svamp:author_test:chal-729"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-8",
+      "test_ids": [
+        "svamp:author_test:chal-8"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-12",
+      "test_ids": [
+        "svamp:author_test:chal-12"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-13",
+      "test_ids": [
+        "svamp:author_test:chal-372"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-15",
+      "test_ids": [
+        "svamp:author_test:chal-688"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-16",
+      "test_ids": [
+        "svamp:author_test:chal-349"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-17",
+      "test_ids": [
+        "svamp:author_test:chal-563"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-20",
+      "test_ids": [
+        "svamp:author_test:chal-20"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-22",
+      "test_ids": [
+        "svamp:author_test:chal-22"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-25",
+      "test_ids": [
+        "svamp:author_test:chal-729"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-26",
+      "test_ids": [
+        "svamp:author_test:chal-26"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-28",
+      "test_ids": [
+        "svamp:author_test:chal-28"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-31",
+      "test_ids": [
+        "svamp:author_test:chal-31"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-33",
+      "test_ids": [
+        "svamp:author_test:chal-33"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-40",
+      "test_ids": [
+        "svamp:author_test:chal-797"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-42",
+      "test_ids": [
+        "svamp:author_test:chal-26",
+        "svamp:author_test:chal-231"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-44",
+      "test_ids": [
+        "svamp:author_test:chal-323"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-45",
+      "test_ids": [
+        "svamp:author_test:chal-45"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-47",
+      "test_ids": [
+        "svamp:author_test:chal-47",
+        "svamp:author_test:chal-855"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-48",
+      "test_ids": [
+        "svamp:author_test:chal-729"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-49",
+      "test_ids": [
+        "svamp:author_test:chal-95",
+        "svamp:author_test:chal-49"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-50",
+      "test_ids": [
+        "svamp:author_test:chal-270",
+        "svamp:author_test:chal-926"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-57",
+      "test_ids": [
+        "svamp:author_test:chal-143"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-58",
+      "test_ids": [
+        "svamp:author_test:chal-58"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-59",
+      "test_ids": [
+        "svamp:author_test:chal-740"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-60",
+      "test_ids": [
+        "svamp:author_test:chal-90",
+        "svamp:author_test:chal-60"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-61",
+      "test_ids": [
+        "svamp:author_test:chal-61"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-66",
+      "test_ids": [
+        "svamp:author_test:chal-66"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-67",
+      "test_ids": [
+        "svamp:author_test:chal-239",
+        "svamp:author_test:chal-166"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-68",
+      "test_ids": [
+        "svamp:author_test:chal-68"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-70",
+      "test_ids": [
+        "svamp:author_test:chal-70"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-71",
+      "test_ids": [
+        "svamp:author_test:chal-71"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-72",
+      "test_ids": [
+        "svamp:author_test:chal-72"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-73",
+      "test_ids": [
+        "svamp:author_test:chal-73"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-74",
+      "test_ids": [
+        "svamp:author_test:chal-74"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-78",
+      "test_ids": [
+        "svamp:author_test:chal-850",
+        "svamp:author_test:chal-109"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-79",
+      "test_ids": [
+        "svamp:author_test:chal-371",
+        "svamp:author_test:chal-520"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-81",
+      "test_ids": [
+        "svamp:author_test:chal-81"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-82",
+      "test_ids": [
+        "svamp:author_test:chal-82"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-87",
+      "test_ids": [
+        "svamp:author_test:chal-934"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-88",
+      "test_ids": [
+        "svamp:author_test:chal-88"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-90",
+      "test_ids": [
+        "svamp:author_test:chal-90",
+        "svamp:author_test:chal-60",
+        "svamp:author_test:chal-506"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-91",
+      "test_ids": [
+        "svamp:author_test:chal-947"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-94",
+      "test_ids": [
+        "svamp:author_test:chal-94"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-95",
+      "test_ids": [
+        "svamp:author_test:chal-95",
+        "svamp:author_test:chal-49"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-96",
+      "test_ids": [
+        "svamp:author_test:chal-96"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-97",
+      "test_ids": [
+        "svamp:author_test:chal-873",
+        "svamp:author_test:chal-97"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-98",
+      "test_ids": [
+        "svamp:author_test:chal-782"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-100",
+      "test_ids": [
+        "svamp:author_test:chal-100"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-101",
+      "test_ids": [
+        "svamp:author_test:chal-109"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-103",
+      "test_ids": [
+        "svamp:author_test:chal-109"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-104",
+      "test_ids": [
+        "svamp:author_test:chal-104"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-105",
+      "test_ids": [
+        "svamp:author_test:chal-105",
+        "svamp:author_test:chal-170"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-106",
+      "test_ids": [
+        "svamp:author_test:chal-611"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-109",
+      "test_ids": [
+        "svamp:author_test:chal-109"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-112",
+      "test_ids": [
+        "svamp:author_test:chal-725"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-113",
+      "test_ids": [
+        "svamp:author_test:chal-113"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-114",
+      "test_ids": [
+        "svamp:author_test:chal-47",
+        "svamp:author_test:chal-855"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-115",
+      "test_ids": [
+        "svamp:author_test:chal-115"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-118",
+      "test_ids": [
+        "svamp:author_test:chal-118"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-120",
+      "test_ids": [
+        "svamp:author_test:chal-799"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-124",
+      "test_ids": [
+        "svamp:author_test:chal-124"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-125",
+      "test_ids": [
+        "svamp:author_test:chal-999",
+        "svamp:author_test:chal-968",
+        "svamp:author_test:chal-547"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-128",
+      "test_ids": [
+        "svamp:author_test:chal-128"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-129",
+      "test_ids": [
+        "svamp:author_test:chal-129"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-130",
+      "test_ids": [
+        "svamp:author_test:chal-999",
+        "svamp:author_test:chal-258"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-131",
+      "test_ids": [
+        "svamp:author_test:chal-740"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-132",
+      "test_ids": [
+        "svamp:author_test:chal-132"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-134",
+      "test_ids": [
+        "svamp:author_test:chal-797"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-136",
+      "test_ids": [
+        "svamp:author_test:chal-891",
+        "svamp:author_test:chal-136"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-138",
+      "test_ids": [
+        "svamp:author_test:chal-972"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-139",
+      "test_ids": [
+        "svamp:author_test:chal-28"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-141",
+      "test_ids": [
+        "svamp:author_test:chal-81"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-142",
+      "test_ids": [
+        "svamp:author_test:chal-142"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-143",
+      "test_ids": [
+        "svamp:author_test:chal-143"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-145",
+      "test_ids": [
+        "svamp:author_test:chal-368"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-147",
+      "test_ids": [
+        "svamp:author_test:chal-147"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-157",
+      "test_ids": [
+        "svamp:author_test:chal-157"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-158",
+      "test_ids": [
+        "svamp:author_test:chal-45"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-160",
+      "test_ids": [
+        "svamp:author_test:chal-160"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-162",
+      "test_ids": [
+        "svamp:author_test:chal-162",
+        "svamp:author_test:chal-364"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-164",
+      "test_ids": [
+        "svamp:author_test:chal-164"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-166",
+      "test_ids": [
+        "svamp:author_test:chal-239",
+        "svamp:author_test:chal-166"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-167",
+      "test_ids": [
+        "svamp:author_test:chal-167"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-168",
+      "test_ids": [
+        "svamp:author_test:chal-168"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-170",
+      "test_ids": [
+        "svamp:author_test:chal-105",
+        "svamp:author_test:chal-170"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-176",
+      "test_ids": [
+        "svamp:author_test:chal-176"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-177",
+      "test_ids": [
+        "svamp:author_test:chal-164"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-178",
+      "test_ids": [
+        "svamp:author_test:chal-687"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-179",
+      "test_ids": [
+        "svamp:author_test:chal-47",
+        "svamp:author_test:chal-855"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-180",
+      "test_ids": [
+        "svamp:author_test:chal-656"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-183",
+      "test_ids": [
+        "svamp:author_test:chal-183"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-185",
+      "test_ids": [
+        "svamp:author_test:chal-974"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-195",
+      "test_ids": [
+        "svamp:author_test:chal-460",
+        "svamp:author_test:chal-195"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-197",
+      "test_ids": [
+        "svamp:author_test:chal-197"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-199",
+      "test_ids": [
+        "svamp:author_test:chal-247"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-200",
+      "test_ids": [
+        "svamp:author_test:chal-390"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-204",
+      "test_ids": [
+        "svamp:author_test:chal-204"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-206",
+      "test_ids": [
+        "svamp:author_test:chal-206"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-209",
+      "test_ids": [
+        "svamp:author_test:chal-688"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-214",
+      "test_ids": [
+        "svamp:author_test:chal-113"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-215",
+      "test_ids": [
+        "svamp:author_test:chal-215"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-217",
+      "test_ids": [
+        "svamp:author_test:chal-217"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-218",
+      "test_ids": [
+        "svamp:author_test:chal-218"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-220",
+      "test_ids": [
+        "svamp:author_test:chal-220"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-221",
+      "test_ids": [
+        "svamp:author_test:chal-968",
+        "svamp:author_test:chal-221"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-222",
+      "test_ids": [
+        "svamp:author_test:chal-687"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-223",
+      "test_ids": [
+        "svamp:author_test:chal-345"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-224",
+      "test_ids": [
+        "svamp:author_test:chal-224"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-225",
+      "test_ids": [
+        "svamp:author_test:chal-225"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-226",
+      "test_ids": [
+        "svamp:author_test:chal-226"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-229",
+      "test_ids": [
+        "svamp:author_test:chal-229"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-231",
+      "test_ids": [
+        "svamp:author_test:chal-231"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-234",
+      "test_ids": [
+        "svamp:author_test:chal-234"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-235",
+      "test_ids": [
+        "svamp:author_test:chal-235"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-236",
+      "test_ids": [
+        "svamp:author_test:chal-236"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-239",
+      "test_ids": [
+        "svamp:author_test:chal-239",
+        "svamp:author_test:chal-166"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-240",
+      "test_ids": [
+        "svamp:author_test:chal-470"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-244",
+      "test_ids": [
+        "svamp:author_test:chal-244"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-245",
+      "test_ids": [
+        "svamp:author_test:chal-471"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-246",
+      "test_ids": [
+        "svamp:author_test:chal-246"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-247",
+      "test_ids": [
+        "svamp:author_test:chal-247"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-249",
+      "test_ids": [
+        "svamp:author_test:chal-249"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-250",
+      "test_ids": [
+        "svamp:author_test:chal-611"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-251",
+      "test_ids": [
+        "svamp:author_test:chal-251"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-252",
+      "test_ids": [
+        "svamp:author_test:chal-368"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-253",
+      "test_ids": [
+        "svamp:author_test:chal-253"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-254",
+      "test_ids": [
+        "svamp:author_test:chal-254"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-255",
+      "test_ids": [
+        "svamp:author_test:chal-563"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-258",
+      "test_ids": [
+        "svamp:author_test:chal-999",
+        "svamp:author_test:chal-258"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-270",
+      "test_ids": [
+        "svamp:author_test:chal-270"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-271",
+      "test_ids": [
+        "svamp:author_test:chal-271"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-272",
+      "test_ids": [
+        "svamp:author_test:chal-272"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-273",
+      "test_ids": [
+        "svamp:author_test:chal-972"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-274",
+      "test_ids": [
+        "svamp:author_test:chal-274"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-275",
+      "test_ids": [
+        "svamp:author_test:chal-275"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-276",
+      "test_ids": [
+        "svamp:author_test:chal-747",
+        "svamp:author_test:chal-547"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-277",
+      "test_ids": [
+        "svamp:author_test:chal-277"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-280",
+      "test_ids": [
+        "svamp:author_test:chal-225"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-282",
+      "test_ids": [
+        "svamp:author_test:chal-282"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-285",
+      "test_ids": [
+        "svamp:author_test:chal-285"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-286",
+      "test_ids": [
+        "svamp:author_test:chal-286"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-288",
+      "test_ids": [
+        "svamp:author_test:chal-47",
+        "svamp:author_test:chal-855"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-292",
+      "test_ids": [
+        "svamp:author_test:chal-465"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-297",
+      "test_ids": [
+        "svamp:author_test:chal-297"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-300",
+      "test_ids": [
+        "svamp:author_test:chal-959",
+        "svamp:author_test:chal-782"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-301",
+      "test_ids": [
+        "svamp:author_test:chal-301"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-302",
+      "test_ids": [
+        "svamp:author_test:chal-968",
+        "svamp:author_test:chal-747",
+        "svamp:author_test:chal-363"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-306",
+      "test_ids": [
+        "svamp:author_test:chal-306",
+        "svamp:author_test:chal-634"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-307",
+      "test_ids": [
+        "svamp:author_test:chal-797"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-315",
+      "test_ids": [
+        "svamp:author_test:chal-315"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-320",
+      "test_ids": [
+        "svamp:author_test:chal-320"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-323",
+      "test_ids": [
+        "svamp:author_test:chal-323",
+        "svamp:author_test:chal-659"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-324",
+      "test_ids": [
+        "svamp:author_test:chal-324"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-330",
+      "test_ids": [
+        "svamp:author_test:chal-827",
+        "svamp:author_test:chal-931"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-332",
+      "test_ids": [
+        "svamp:author_test:chal-332"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-333",
+      "test_ids": [
+        "svamp:author_test:chal-333"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-334",
+      "test_ids": [
+        "svamp:author_test:chal-463"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-336",
+      "test_ids": [
+        "svamp:author_test:chal-391"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-339",
+      "test_ids": [
+        "svamp:author_test:chal-339"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-343",
+      "test_ids": [
+        "svamp:author_test:chal-380"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-345",
+      "test_ids": [
+        "svamp:author_test:chal-345"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-347",
+      "test_ids": [
+        "svamp:author_test:chal-347"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-349",
+      "test_ids": [
+        "svamp:author_test:chal-349"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-353",
+      "test_ids": [
+        "svamp:author_test:chal-353"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-357",
+      "test_ids": [
+        "svamp:author_test:chal-349"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-359",
+      "test_ids": [
+        "svamp:author_test:chal-678"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-363",
+      "test_ids": [
+        "svamp:author_test:chal-968",
+        "svamp:author_test:chal-747",
+        "svamp:author_test:chal-547",
+        "svamp:author_test:chal-363"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-364",
+      "test_ids": [
+        "svamp:author_test:chal-162",
+        "svamp:author_test:chal-364"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-366",
+      "test_ids": [
+        "svamp:author_test:chal-914"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-368",
+      "test_ids": [
+        "svamp:author_test:chal-368"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-371",
+      "test_ids": [
+        "svamp:author_test:chal-411",
+        "svamp:author_test:chal-371",
+        "svamp:author_test:chal-520"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-372",
+      "test_ids": [
+        "svamp:author_test:chal-372"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-374",
+      "test_ids": [
+        "svamp:author_test:chal-374"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-380",
+      "test_ids": [
+        "svamp:author_test:chal-380"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-383",
+      "test_ids": [
+        "svamp:author_test:chal-383"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-385",
+      "test_ids": [
+        "svamp:author_test:chal-274"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-386",
+      "test_ids": [
+        "svamp:author_test:chal-747",
+        "svamp:author_test:chal-547",
+        "svamp:author_test:chal-363"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-388",
+      "test_ids": [
+        "svamp:author_test:chal-388"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-389",
+      "test_ids": [
+        "svamp:author_test:chal-389"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-390",
+      "test_ids": [
+        "svamp:author_test:chal-390",
+        "svamp:author_test:chal-864"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-391",
+      "test_ids": [
+        "svamp:author_test:chal-391",
+        "svamp:author_test:chal-567"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-393",
+      "test_ids": [
+        "svamp:author_test:chal-693"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-395",
+      "test_ids": [
+        "svamp:author_test:chal-395"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-406",
+      "test_ids": [
+        "svamp:author_test:chal-406"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-409",
+      "test_ids": [
+        "svamp:author_test:chal-409"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-411",
+      "test_ids": [
+        "svamp:author_test:chal-411",
+        "svamp:author_test:chal-371",
+        "svamp:author_test:chal-520"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-415",
+      "test_ids": [
+        "svamp:author_test:chal-26",
+        "svamp:author_test:chal-231"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-416",
+      "test_ids": [
+        "svamp:author_test:chal-66"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-417",
+      "test_ids": [
+        "svamp:author_test:chal-731",
+        "svamp:author_test:chal-417"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-418",
+      "test_ids": [
+        "svamp:author_test:chal-883"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-423",
+      "test_ids": [
+        "svamp:author_test:chal-971"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-424",
+      "test_ids": [
+        "svamp:author_test:chal-715"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-426",
+      "test_ids": [
+        "svamp:author_test:chal-934"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-430",
+      "test_ids": [
+        "svamp:author_test:chal-430",
+        "svamp:author_test:chal-908"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-433",
+      "test_ids": [
+        "svamp:author_test:chal-433"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-434",
+      "test_ids": [
+        "svamp:author_test:chal-434"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-437",
+      "test_ids": [
+        "svamp:author_test:chal-254"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-438",
+      "test_ids": [
+        "svamp:author_test:chal-73"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-439",
+      "test_ids": [
+        "svamp:author_test:chal-439"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-442",
+      "test_ids": [
+        "svamp:author_test:chal-442"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-444",
+      "test_ids": [
+        "svamp:author_test:chal-465"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-446",
+      "test_ids": [
+        "svamp:author_test:chal-446"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-449",
+      "test_ids": [
+        "svamp:author_test:chal-449"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-450",
+      "test_ids": [
+        "svamp:author_test:chal-434"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-452",
+      "test_ids": [
+        "svamp:author_test:chal-735"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-454",
+      "test_ids": [
+        "svamp:author_test:chal-197"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-456",
+      "test_ids": [
+        "svamp:author_test:chal-323",
+        "svamp:author_test:chal-659"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-460",
+      "test_ids": [
+        "svamp:author_test:chal-460",
+        "svamp:author_test:chal-195"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-461",
+      "test_ids": [
+        "svamp:author_test:chal-470"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-462",
+      "test_ids": [
+        "svamp:author_test:chal-968",
+        "svamp:author_test:chal-547",
+        "svamp:author_test:chal-221",
+        "svamp:author_test:chal-363"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-463",
+      "test_ids": [
+        "svamp:author_test:chal-845",
+        "svamp:author_test:chal-463"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-465",
+      "test_ids": [
+        "svamp:author_test:chal-465"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-470",
+      "test_ids": [
+        "svamp:author_test:chal-470"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-471",
+      "test_ids": [
+        "svamp:author_test:chal-471"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-474",
+      "test_ids": [
+        "svamp:author_test:chal-474"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-475",
+      "test_ids": [
+        "svamp:author_test:chal-676"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-479",
+      "test_ids": [
+        "svamp:author_test:chal-571"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-480",
+      "test_ids": [
+        "svamp:author_test:chal-480"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-485",
+      "test_ids": [
+        "svamp:author_test:chal-485"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-486",
+      "test_ids": [
+        "svamp:author_test:chal-571"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-487",
+      "test_ids": [
+        "svamp:author_test:chal-487"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-492",
+      "test_ids": [
+        "svamp:author_test:chal-465"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-493",
+      "test_ids": [
+        "svamp:author_test:chal-875"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-495",
+      "test_ids": [
+        "svamp:author_test:chal-769"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-496",
+      "test_ids": [
+        "svamp:author_test:chal-474"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-497",
+      "test_ids": [
+        "svamp:author_test:chal-231"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-498",
+      "test_ids": [
+        "svamp:author_test:chal-498"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-499",
+      "test_ids": [
+        "svamp:author_test:chal-81"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-500",
+      "test_ids": [
+        "svamp:author_test:chal-864"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-501",
+      "test_ids": [
+        "svamp:author_test:chal-501",
+        "svamp:author_test:chal-568"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-506",
+      "test_ids": [
+        "svamp:author_test:chal-90",
+        "svamp:author_test:chal-506"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-507",
+      "test_ids": [
+        "svamp:author_test:chal-474"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-509",
+      "test_ids": [
+        "svamp:author_test:chal-411",
+        "svamp:author_test:chal-371",
+        "svamp:author_test:chal-520"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-512",
+      "test_ids": [
+        "svamp:author_test:chal-512"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-513",
+      "test_ids": [
+        "svamp:author_test:chal-513"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-516",
+      "test_ids": [
+        "svamp:author_test:chal-115"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-517",
+      "test_ids": [
+        "svamp:author_test:chal-323",
+        "svamp:author_test:chal-934",
+        "svamp:author_test:chal-659"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-518",
+      "test_ids": [
+        "svamp:author_test:chal-518"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-520",
+      "test_ids": [
+        "svamp:author_test:chal-411",
+        "svamp:author_test:chal-371",
+        "svamp:author_test:chal-520"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-522",
+      "test_ids": [
+        "svamp:author_test:chal-522"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-527",
+      "test_ids": [
+        "svamp:author_test:chal-527"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-530",
+      "test_ids": [
+        "svamp:author_test:chal-530"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-533",
+      "test_ids": [
+        "svamp:author_test:chal-197"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-538",
+      "test_ids": [
+        "svamp:author_test:chal-164"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-541",
+      "test_ids": [
+        "svamp:author_test:chal-541"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-542",
+      "test_ids": [
+        "svamp:author_test:chal-542"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-544",
+      "test_ids": [
+        "svamp:author_test:chal-544"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-546",
+      "test_ids": [
+        "svamp:author_test:chal-546"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-547",
+      "test_ids": [
+        "svamp:author_test:chal-968",
+        "svamp:author_test:chal-747",
+        "svamp:author_test:chal-547",
+        "svamp:author_test:chal-363"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-550",
+      "test_ids": [
+        "svamp:author_test:chal-550"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-552",
+      "test_ids": [
+        "svamp:author_test:chal-552"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-553",
+      "test_ids": [
+        "svamp:author_test:chal-553"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-559",
+      "test_ids": [
+        "svamp:author_test:chal-559"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-563",
+      "test_ids": [
+        "svamp:author_test:chal-563"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-565",
+      "test_ids": [
+        "svamp:author_test:chal-433"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-566",
+      "test_ids": [
+        "svamp:author_test:chal-566"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-567",
+      "test_ids": [
+        "svamp:author_test:chal-391",
+        "svamp:author_test:chal-567"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-568",
+      "test_ids": [
+        "svamp:author_test:chal-501",
+        "svamp:author_test:chal-568"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-571",
+      "test_ids": [
+        "svamp:author_test:chal-571"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-573",
+      "test_ids": [
+        "svamp:author_test:chal-430"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-575",
+      "test_ids": [
+        "svamp:author_test:chal-575"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-577",
+      "test_ids": [
+        "svamp:author_test:chal-411",
+        "svamp:author_test:chal-520"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-581",
+      "test_ids": [
+        "svamp:author_test:chal-581"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-583",
+      "test_ids": [
+        "svamp:author_test:chal-254"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-585",
+      "test_ids": [
+        "svamp:author_test:chal-585"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-586",
+      "test_ids": [
+        "svamp:author_test:chal-411",
+        "svamp:author_test:chal-520"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-587",
+      "test_ids": [
+        "svamp:author_test:chal-81"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-590",
+      "test_ids": [
+        "svamp:author_test:chal-73"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-591",
+      "test_ids": [
+        "svamp:author_test:chal-828",
+        "svamp:author_test:chal-591"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-592",
+      "test_ids": [
+        "svamp:author_test:chal-592"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-595",
+      "test_ids": [
+        "svamp:author_test:chal-959",
+        "svamp:author_test:chal-782"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-597",
+      "test_ids": [
+        "svamp:author_test:chal-856"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-598",
+      "test_ids": [
+        "svamp:author_test:chal-598"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-599",
+      "test_ids": [
+        "svamp:author_test:chal-599",
+        "svamp:author_test:chal-873",
+        "svamp:author_test:chal-785"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-603",
+      "test_ids": [
+        "svamp:author_test:chal-603"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-604",
+      "test_ids": [
+        "svamp:author_test:chal-604"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-605",
+      "test_ids": [
+        "svamp:author_test:chal-605"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-607",
+      "test_ids": [
+        "svamp:author_test:chal-598"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-611",
+      "test_ids": [
+        "svamp:author_test:chal-611"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-613",
+      "test_ids": [
+        "svamp:author_test:chal-118"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-614",
+      "test_ids": [
+        "svamp:author_test:chal-614"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-616",
+      "test_ids": [
+        "svamp:author_test:chal-567"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-617",
+      "test_ids": [
+        "svamp:author_test:chal-617"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-619",
+      "test_ids": [
+        "svamp:author_test:chal-619"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-622",
+      "test_ids": [
+        "svamp:author_test:chal-622"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-624",
+      "test_ids": [
+        "svamp:author_test:chal-624"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-632",
+      "test_ids": [
+        "svamp:author_test:chal-170"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-634",
+      "test_ids": [
+        "svamp:author_test:chal-306",
+        "svamp:author_test:chal-634"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-639",
+      "test_ids": [
+        "svamp:author_test:chal-73"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-641",
+      "test_ids": [
+        "svamp:author_test:chal-641"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-643",
+      "test_ids": [
+        "svamp:author_test:chal-643"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-644",
+      "test_ids": [
+        "svamp:author_test:chal-644"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-647",
+      "test_ids": [
+        "svamp:author_test:chal-647"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-648",
+      "test_ids": [
+        "svamp:author_test:chal-90"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-651",
+      "test_ids": [
+        "svamp:author_test:chal-651"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-652",
+      "test_ids": [
+        "svamp:author_test:chal-747",
+        "svamp:author_test:chal-363"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-655",
+      "test_ids": [
+        "svamp:author_test:chal-655"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-656",
+      "test_ids": [
+        "svamp:author_test:chal-656"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-657",
+      "test_ids": [
+        "svamp:author_test:chal-657"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-659",
+      "test_ids": [
+        "svamp:author_test:chal-323",
+        "svamp:author_test:chal-659"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-660",
+      "test_ids": [
+        "svamp:author_test:chal-850",
+        "svamp:author_test:chal-109"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-663",
+      "test_ids": [
+        "svamp:author_test:chal-799"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-664",
+      "test_ids": [
+        "svamp:author_test:chal-664"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-665",
+      "test_ids": [
+        "svamp:author_test:chal-603",
+        "svamp:author_test:chal-347"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-666",
+      "test_ids": [
+        "svamp:author_test:chal-666"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-667",
+      "test_ids": [
+        "svamp:author_test:chal-567"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-670",
+      "test_ids": [
+        "svamp:author_test:chal-323",
+        "svamp:author_test:chal-659"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-672",
+      "test_ids": [
+        "svamp:author_test:chal-672"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-675",
+      "test_ids": [
+        "svamp:author_test:chal-675"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-676",
+      "test_ids": [
+        "svamp:author_test:chal-676"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-677",
+      "test_ids": [
+        "svamp:author_test:chal-959"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-678",
+      "test_ids": [
+        "svamp:author_test:chal-678"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-686",
+      "test_ids": [
+        "svamp:author_test:chal-686"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-687",
+      "test_ids": [
+        "svamp:author_test:chal-687"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-688",
+      "test_ids": [
+        "svamp:author_test:chal-688"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-691",
+      "test_ids": [
+        "svamp:author_test:chal-598"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-692",
+      "test_ids": [
+        "svamp:author_test:chal-603",
+        "svamp:author_test:chal-347"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-693",
+      "test_ids": [
+        "svamp:author_test:chal-693"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-694",
+      "test_ids": [
+        "svamp:author_test:chal-406"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-697",
+      "test_ids": [
+        "svamp:author_test:chal-697"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-699",
+      "test_ids": [
+        "svamp:author_test:chal-699"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-700",
+      "test_ids": [
+        "svamp:author_test:chal-700"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-702",
+      "test_ids": [
+        "svamp:author_test:chal-702"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-705",
+      "test_ids": [
+        "svamp:author_test:chal-705"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-707",
+      "test_ids": [
+        "svamp:author_test:chal-707"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-708",
+      "test_ids": [
+        "svamp:author_test:chal-7"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-710",
+      "test_ids": [
+        "svamp:author_test:chal-710"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-713",
+      "test_ids": [
+        "svamp:author_test:chal-544"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-715",
+      "test_ids": [
+        "svamp:author_test:chal-715"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-719",
+      "test_ids": [
+        "svamp:author_test:chal-719"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-722",
+      "test_ids": [
+        "svamp:author_test:chal-722"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-723",
+      "test_ids": [
+        "svamp:author_test:chal-66"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-725",
+      "test_ids": [
+        "svamp:author_test:chal-725"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-729",
+      "test_ids": [
+        "svamp:author_test:chal-7",
+        "svamp:author_test:chal-729"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-731",
+      "test_ids": [
+        "svamp:author_test:chal-731",
+        "svamp:author_test:chal-417"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-734",
+      "test_ids": [
+        "svamp:author_test:chal-734"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-735",
+      "test_ids": [
+        "svamp:author_test:chal-735"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-736",
+      "test_ids": [
+        "svamp:author_test:chal-736"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-737",
+      "test_ids": [
+        "svamp:author_test:chal-737"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-739",
+      "test_ids": [
+        "svamp:author_test:chal-739"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-740",
+      "test_ids": [
+        "svamp:author_test:chal-740"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-742",
+      "test_ids": [
+        "svamp:author_test:chal-598"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-747",
+      "test_ids": [
+        "svamp:author_test:chal-747",
+        "svamp:author_test:chal-547",
+        "svamp:author_test:chal-363"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-748",
+      "test_ids": [
+        "svamp:author_test:chal-748"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-750",
+      "test_ids": [
+        "svamp:author_test:chal-750"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-753",
+      "test_ids": [
+        "svamp:author_test:chal-270",
+        "svamp:author_test:chal-926"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-754",
+      "test_ids": [
+        "svamp:author_test:chal-754"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-755",
+      "test_ids": [
+        "svamp:author_test:chal-755"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-758",
+      "test_ids": [
+        "svamp:author_test:chal-827",
+        "svamp:author_test:chal-931"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-759",
+      "test_ids": [
+        "svamp:author_test:chal-759"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-760",
+      "test_ids": [
+        "svamp:author_test:chal-760"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-763",
+      "test_ids": [
+        "svamp:author_test:chal-763"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-765",
+      "test_ids": [
+        "svamp:author_test:chal-765"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-767",
+      "test_ids": [
+        "svamp:author_test:chal-979"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-768",
+      "test_ids": [
+        "svamp:author_test:chal-768"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-769",
+      "test_ids": [
+        "svamp:author_test:chal-769"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-771",
+      "test_ids": [
+        "svamp:author_test:chal-968",
+        "svamp:author_test:chal-747",
+        "svamp:author_test:chal-547"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-772",
+      "test_ids": [
+        "svamp:author_test:chal-571"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-774",
+      "test_ids": [
+        "svamp:author_test:chal-774"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-777",
+      "test_ids": [
+        "svamp:author_test:chal-778"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-778",
+      "test_ids": [
+        "svamp:author_test:chal-778"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-781",
+      "test_ids": [
+        "svamp:author_test:chal-781"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-782",
+      "test_ids": [
+        "svamp:author_test:chal-782"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-785",
+      "test_ids": [
+        "svamp:author_test:chal-599",
+        "svamp:author_test:chal-873",
+        "svamp:author_test:chal-785"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-787",
+      "test_ids": [
+        "svamp:author_test:chal-787"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-788",
+      "test_ids": [
+        "svamp:author_test:chal-788"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-790",
+      "test_ids": [
+        "svamp:author_test:chal-678"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-792",
+      "test_ids": [
+        "svamp:author_test:chal-792"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-795",
+      "test_ids": [
+        "svamp:author_test:chal-795"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-797",
+      "test_ids": [
+        "svamp:author_test:chal-797"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-799",
+      "test_ids": [
+        "svamp:author_test:chal-799"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-807",
+      "test_ids": [
+        "svamp:author_test:chal-374",
+        "svamp:author_test:chal-143"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-808",
+      "test_ids": [
+        "svamp:author_test:chal-28"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-809",
+      "test_ids": [
+        "svamp:author_test:chal-809"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-812",
+      "test_ids": [
+        "svamp:author_test:chal-812"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-813",
+      "test_ids": [
+        "svamp:author_test:chal-656"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-815",
+      "test_ids": [
+        "svamp:author_test:chal-442"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-819",
+      "test_ids": [
+        "svamp:author_test:chal-567"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-822",
+      "test_ids": [
+        "svamp:author_test:chal-129"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-825",
+      "test_ids": [
+        "svamp:author_test:chal-825"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-826",
+      "test_ids": [
+        "svamp:author_test:chal-826",
+        "svamp:author_test:chal-797"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-827",
+      "test_ids": [
+        "svamp:author_test:chal-827",
+        "svamp:author_test:chal-931"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-828",
+      "test_ids": [
+        "svamp:author_test:chal-828",
+        "svamp:author_test:chal-591"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-829",
+      "test_ids": [
+        "svamp:author_test:chal-829"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-830",
+      "test_ids": [
+        "svamp:author_test:chal-409"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-831",
+      "test_ids": [
+        "svamp:author_test:chal-831"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-832",
+      "test_ids": [
+        "svamp:author_test:chal-832"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-833",
+      "test_ids": [
+        "svamp:author_test:chal-323",
+        "svamp:author_test:chal-659"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-834",
+      "test_ids": [
+        "svamp:author_test:chal-826"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-835",
+      "test_ids": [
+        "svamp:author_test:chal-835"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-839",
+      "test_ids": [
+        "svamp:author_test:chal-678"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-842",
+      "test_ids": [
+        "svamp:author_test:chal-842"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-845",
+      "test_ids": [
+        "svamp:author_test:chal-845",
+        "svamp:author_test:chal-463"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-846",
+      "test_ids": [
+        "svamp:author_test:chal-109"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-847",
+      "test_ids": [
+        "svamp:author_test:chal-571"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-850",
+      "test_ids": [
+        "svamp:author_test:chal-850"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-854",
+      "test_ids": [
+        "svamp:author_test:chal-575"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-855",
+      "test_ids": [
+        "svamp:author_test:chal-47",
+        "svamp:author_test:chal-855"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-856",
+      "test_ids": [
+        "svamp:author_test:chal-856"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-859",
+      "test_ids": [
+        "svamp:author_test:chal-206"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-864",
+      "test_ids": [
+        "svamp:author_test:chal-390",
+        "svamp:author_test:chal-864"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-866",
+      "test_ids": [
+        "svamp:author_test:chal-866"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-867",
+      "test_ids": [
+        "svamp:author_test:chal-867"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-868",
+      "test_ids": [
+        "svamp:author_test:chal-868"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-871",
+      "test_ids": [
+        "svamp:author_test:chal-164"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-873",
+      "test_ids": [
+        "svamp:author_test:chal-599",
+        "svamp:author_test:chal-873",
+        "svamp:author_test:chal-785",
+        "svamp:author_test:chal-97"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-875",
+      "test_ids": [
+        "svamp:author_test:chal-875"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-876",
+      "test_ids": [
+        "svamp:author_test:chal-876"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-877",
+      "test_ids": [
+        "svamp:author_test:chal-225"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-879",
+      "test_ids": [
+        "svamp:author_test:chal-907"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-882",
+      "test_ids": [
+        "svamp:author_test:chal-882"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-883",
+      "test_ids": [
+        "svamp:author_test:chal-883"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-888",
+      "test_ids": [
+        "svamp:author_test:chal-888"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-891",
+      "test_ids": [
+        "svamp:author_test:chal-891",
+        "svamp:author_test:chal-136"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-892",
+      "test_ids": [
+        "svamp:author_test:chal-409"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-894",
+      "test_ids": [
+        "svamp:author_test:chal-113"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-895",
+      "test_ids": [
+        "svamp:author_test:chal-895"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-899",
+      "test_ids": [
+        "svamp:author_test:chal-47",
+        "svamp:author_test:chal-855"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-900",
+      "test_ids": [
+        "svamp:author_test:chal-900"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-905",
+      "test_ids": [
+        "svamp:author_test:chal-968"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-907",
+      "test_ids": [
+        "svamp:author_test:chal-907"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-908",
+      "test_ids": [
+        "svamp:author_test:chal-430",
+        "svamp:author_test:chal-908"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-909",
+      "test_ids": [
+        "svamp:author_test:chal-909"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-910",
+      "test_ids": [
+        "svamp:author_test:chal-959"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-914",
+      "test_ids": [
+        "svamp:author_test:chal-914"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-926",
+      "test_ids": [
+        "svamp:author_test:chal-926"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-928",
+      "test_ids": [
+        "svamp:author_test:chal-959"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-930",
+      "test_ids": [
+        "svamp:author_test:chal-506",
+        "svamp:author_test:chal-647"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-931",
+      "test_ids": [
+        "svamp:author_test:chal-827",
+        "svamp:author_test:chal-931"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-932",
+      "test_ids": [
+        "svamp:author_test:chal-932"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-934",
+      "test_ids": [
+        "svamp:author_test:chal-934"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-935",
+      "test_ids": [
+        "svamp:author_test:chal-206"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-937",
+      "test_ids": [
+        "svamp:author_test:chal-937"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-938",
+      "test_ids": [
+        "svamp:author_test:chal-974"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-939",
+      "test_ids": [
+        "svamp:author_test:chal-939"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-940",
+      "test_ids": [
+        "svamp:author_test:chal-740"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-947",
+      "test_ids": [
+        "svamp:author_test:chal-947"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-948",
+      "test_ids": [
+        "svamp:author_test:chal-948"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-951",
+      "test_ids": [
+        "svamp:author_test:chal-959",
+        "svamp:author_test:chal-782"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-955",
+      "test_ids": [
+        "svamp:author_test:chal-955"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-956",
+      "test_ids": [
+        "svamp:author_test:chal-956"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-957",
+      "test_ids": [
+        "svamp:author_test:chal-957"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-959",
+      "test_ids": [
+        "svamp:author_test:chal-959"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-964",
+      "test_ids": [
+        "svamp:author_test:chal-964"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-965",
+      "test_ids": [
+        "svamp:author_test:chal-965"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-968",
+      "test_ids": [
+        "svamp:author_test:chal-968",
+        "svamp:author_test:chal-547",
+        "svamp:author_test:chal-221",
+        "svamp:author_test:chal-363"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-971",
+      "test_ids": [
+        "svamp:author_test:chal-971"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-972",
+      "test_ids": [
+        "svamp:author_test:chal-972"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-973",
+      "test_ids": [
+        "svamp:author_test:chal-544"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-974",
+      "test_ids": [
+        "svamp:author_test:chal-974"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-975",
+      "test_ids": [
+        "svamp:author_test:chal-975"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-979",
+      "test_ids": [
+        "svamp:author_test:chal-979"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-983",
+      "test_ids": [
+        "svamp:author_test:chal-983"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-984",
+      "test_ids": [
+        "svamp:author_test:chal-984"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-987",
+      "test_ids": [
+        "svamp:author_test:chal-987"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-991",
+      "test_ids": [
+        "svamp:author_test:chal-991"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-992",
+      "test_ids": [
+        "svamp:author_test:chal-983"
+      ],
+      "exact": false
+    },
+    {
+      "question_id": "svamp:official_full:chal-993",
+      "test_ids": [
+        "svamp:author_test:chal-993"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-995",
+      "test_ids": [
+        "svamp:author_test:chal-995"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-999",
+      "test_ids": [
+        "svamp:author_test:chal-999",
+        "svamp:author_test:chal-258"
+      ],
+      "exact": true
+    },
+    {
+      "question_id": "svamp:official_full:chal-1000",
+      "test_ids": [
+        "svamp:author_test:chal-1000"
+      ],
+      "exact": true
+    }
+  ],
+  "source_pool_sha256": "acef8e6d65d3a0c5b3c4fb6d228eb0611bbbcdcfdfc86aee06f1ea5fcc749ba9",
+  "limitation": "SVAMP source-family identities unavailable; wording/number-template filters do not guarantee semantic-family isolation"
+}
