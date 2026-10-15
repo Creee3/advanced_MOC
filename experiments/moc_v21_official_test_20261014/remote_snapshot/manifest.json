@@ -1,0 +1,391 @@
+{
+  "created_utc": "2026-10-15T05:46:18.555282+00:00",
+  "files": {
+    "apply_recovery_20261015.py": "dbd96b67ccc8b589ba78735da6ed7268b1665857f53d6f15f55d7b574f5482c0",
+    "budget.json": "f4450a06e473b0ea1a42538e4ed8b729d257d8f694ab4fcffea1301235603c94",
+    "budget.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cleanup.json": "bf070587ab304f0315f4e696356d2f6795fc349c8e7b6d0eec466403511ecc91",
+    "coding_base/moc_adaptive_sampling/__init__.py": "119c32f35e789c8a428d7960519526cb046572afdf9cfa770f04184f7e31b889",
+    "coding_base/moc_adaptive_sampling/adapter.py": "037b23338f41e81c6a8bb51002f9211d326efb2cd85527c67994922023670e89",
+    "coding_base/moc_adaptive_sampling/bundles.py": "da549ccd64ae1fb6576832b2619aa5389776970cb25c812461413d75f730bed9",
+    "coding_base/moc_adaptive_sampling/counterfactual.py": "1d0ad215ed9b8647c29e8c4cdecf181174d7e4b30232096717880fcddf087efc",
+    "coding_base/moc_adaptive_sampling/expected_set.py": "d47258a672d51bac7f519c7467baedaf20349020c44d2d021e02b5b55d7d5544",
+    "coding_base/moc_adaptive_sampling/expected_utility.py": "bb7c39879c65972aa7514266746731c37f6c4748180c9c463d740142dec449ab",
+    "coding_base/moc_adaptive_sampling/features.py": "49ebda3ce17eae334699216a0f8a068c8c83494daa1d0830069ee161e7c82b48",
+    "coding_base/moc_adaptive_sampling/initial_features.py": "7d19ef9afdce5a29142aa702bf4228a91b17bcc02aad1bc6211f785cb5d094d2",
+    "coding_base/moc_adaptive_sampling/kernels.py": "f8ff498f3bf7359771c0725c42b244d4b02c30da0185a59706eebedac2260024",
+    "coding_base/moc_adaptive_sampling/paper_baselines.py": "bc304cb45f3aa8abcd2042539cc0116012192b5a6918ed558f8cec9c0ff9b885",
+    "coding_base/moc_adaptive_sampling/sampler.py": "de1e9400858af4636a9f513adaa173de1689bad71d615ac8a1ef37e2e451d04a",
+    "coding_base/moc_adaptive_sampling/stateful.py": "5e571dc151078aa4548460b7c6401da84f0d32832f6ff34f8ce0d6f64d074cdb",
+    "coding_base/moc_adaptive_sampling/uncertainty.py": "8f524f3b01ab2afb7fd6334cd146462195f8d697aa7d4671672fdc2d8d1cca59",
+    "common.py": "d89f30b61fba8e882d3e8cd7040f57c93d7348f3a6ab0f0d1a027f57d430dc6f",
+    "config.json": "ad8dd709578c580968ac64ee0c57941dbf81037093d385830bbe0637ba24e593",
+    "cost_reconciliation_20261015.json": "e3ad1482d66f0066b8964c892fa8fd5549835aaabcdc6a691c4802db8c86e9aa",
+    "data/historical_calls_LOCAL_ONLY.jsonl": "e903edae52dc4613ea9878628e7f2160fc879b079808a1f889ac7a24cad6fc9d",
+    "data/merger_historical_calls_LOCAL_ONLY.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "data/test_inputs.jsonl": "d9f67723fce94a32f6bc1324119b17d2eee7ec87b614a8df1eb0d096e720312e",
+    "data/val_historical_calls_LOCAL_ONLY.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "data_preparation.json": "e561161d7daf9d126573813b5216188f6968b9933df1c0c0168d3a4d494009ba",
+    "deployment.tar.gz": "654ff8b9b4ca3aa6537554c52440a817bba9144ef519892cb5c0f9412a26c6d0",
+    "expected_dags.json": "2a59cc1c71b8d3713a45cd0d7680476144e791e7a809aef70aba1317bd46ef76",
+    "experiment_lock.json": "fd29977636be7d609f6bf2192201198820b03e7bb1c449140edd198944fbe7d2",
+    "git_proof.json": "9e203ec58e69117a82f7b33b053bfaaedbb8970038f6b1a50d09beb84c2c1534",
+    "gpu_runtime.py": "709cddd83e7b1367e853c1cbf7d60096ac2cd3b4a02944defde7248b1d826631",
+    "group_utility_model.json": "e2ce9cd7f69d3b4e6c2e6be7af1df0a852d44b972396989e5b02428a655fd210",
+    "inspect_run.py": "fce9e68ffd140d94a826c8633d8f927181fb9e1bf1f0ec402c017b1ccd1c7ee1",
+    "launch.py": "e2bcb3c7f6b665d802fd363eab6e9a01f8990bacb55ed7a6f4dce2c6bf2ff1c7",
+    "launcher.json": "ec81f9262dce8c2d4287e92b21667352914b27e7dada9fb9f34e6d47d6c09fcd",
+    "launcher_resume_2160566.json": "cc397d6a0a980daf0bf0742480a5e1f770bd0178566a15bd38d14033d702aa91",
+    "launcher_resume_2239983.json": "05eaa0b39dd82a0463bdfa4679fafb98f44ce17380b1ef741354e40c6e072d6d",
+    "main0_ollama.log": "9df4eb05952ae198ecbe377ab053397d304122d8aa9a7f50bb9be46b8aa1af40",
+    "merger_backend.py": "61caeef727632bef1c99cebc442b3fc3cc446090da4f6c7a421bdb7a89a01de7",
+    "merger_ollama.log": "67e4ac65e4c57b843e4349e150fceab069656be294ad79ec3e6bfee416814336",
+    "package_local.py": "2da4f161d8ed8251faf6d7840d5c240698e48ea5c47ca7e1dcbdf5690a309b77",
+    "policy_lock.json": "6fdae9453608f9df097fd873d0c27a406add05237e98a7467b8223ad617c6923",
+    "preflight.py": "cc6bd605038a69c373e8df87f08793c71563e2cb7ba3e20e7deac0e99d5da851",
+    "preflight_report.json": "b3d3a79bccb439826f87457c071ce143c5013a10668a3721561cf9ac875bf8fd",
+    "prepare_local.py": "9a9e2fc23b35de5bc71eed26c4b1c8f47c2e7fce6903ff8a1b926b1189e91ea1",
+    "probe_gpu_runtime.py": "8aa1377f4147bb0c2d5d3a973c235c17bdcd92edd40915f5353d220082d6b62e",
+    "protocol.md": "9ec009656d09df624a9c6e6223f7d3cb6a5570b72542547ccb4ed4a7206d2223",
+    "recover_repeat_error_20261015.py": "3a165959010cca98a8b57fd94a05a2e868567bdf4837cc22868dae8074c36d5b",
+    "recovery_applied_20261015.json": "d0b2c27ed0eb47902853439e42ae00dcbaae1bb3f27b3593d37acf208227b2b2",
+    "recovery_checks_20261015.py": "1fdc0b470a9278c09e9c495f50bffebf0a5247ab17b9cd68ecede3e01e25fed1",
+    "recovery_live_verification_20261015.json": "fea7b2ce4b4ae846fae1d2130f110a97f52d4aa1dd48cf958e9a7164a46a9615",
+    "recovery_review_20261015.json": "05fa77d9aded713ed584f5ae98128e069c57f5ab921f822956a117794041d0d6",
+    "repeat_error_live_verification_20261015.json": "cd0b2db92054a16d86bea34ee2a66f12f38f2e6370305bf2cdf547f7ddc4599f",
+    "repeat_error_recovery_20261015.json": "5b05c9ff26bdcd4dd74de2e36e62bb58af4bd71ec813687db5eaead56952fc88",
+    "resume_cache.py": "adcaa64963b092ebaadcc4a25cb11edb1180c9a7a5251b9798cc0390d0282d27",
+    "run_start.json": "b334b88b6ffa2a10eaf0b6a34b9eaa0e539bcee96436de7582a255a194917104",
+    "run_test.py": "32be31e9502499a986e2413bdb176c961c06760dd29c1f14b2671c617178a77e",
+    "runtime_controls.py": "ef307a6bf25bf18731eccbfcb473f47c8e068d455e02d2ac62fa995befa522da",
+    "runtime_recovery_manifest_20261015.json": "534fc657a7d62c8c64eed31db021f99fef19d64ddb4c05ff2e546253c3da7e8a",
+    "service_leases.jsonl": "93a43b8e12c3c6b9870e6e10e7014bdf85cea63f69ec462df18ff1d04c984696",
+    "startup_calls_raw.jsonl": "a1a2bc022ff76ce1817ad2972c0772ef0a68f4798d155f638e21d36a8c24047e",
+    "status.json": "81807ababd351eef5edca4ff552772b6ef0cbebe505e9abe79aed224d95d0b0c",
+    "supervise.py": "2b69cf75d851a18a864ebbcfb99c1ac4aa31809a1e669644ec56672b6323ca34",
+    "supervisor.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "supervisor.log": "7e4db8a576bef61879c98feb01259281979b0b5c71cb23717a1e43d43bee6145",
+    "test/shard0/cache_admission.json": "e2e1b3382c3f42ecb6fe9d1299073e227ee728c501b1def528117215af1f998d",
+    "test/shard0/calls_raw.jsonl": "8493523d30dfd7f5c1a6d8a6288c6daec54f532e6833da1b8a85d7c1f9437936",
+    "test/shard0/finished.json": "5b9e49ba16abeefdcbf0e3c5f6987b31c15c57725c0d0eca2cab73ccfdfd6f59",
+    "test/shard0/merger_cache_admission.json": "958b787665dcb847b9cb5aa6b967fd2460d8cddfea69d99136986faff244e793",
+    "test/shard0/merger_calls_raw.jsonl": "8694587a3fd154a5b73a771b585f24e5d9b60cddda8644ae4e74197782126ebc",
+    "test/shard0/progress.json": "b2214dbe90409509cb0ab7c7cd9aa1f895975a416bf033154798c474528ad335",
+    "test/shard0/results.jsonl": "0a7e82dd8a2cec1348a4c6edf2e87ea88a584237ad4a0c57850015711122c893",
+    "test/shard0/resume_cache_admission.json": "bb2d64e60b12ee7c59312045d5baa2a72039898683516c373958f9e616d2cbc0",
+    "test/shard0/trace.jsonl": "723aa00147a44df5732900b8dbfb7a85ad352c4c69d4e10232f9dbccbfccc94c",
+    "test/shard1/cache_admission.json": "e2e1b3382c3f42ecb6fe9d1299073e227ee728c501b1def528117215af1f998d",
+    "test/shard1/calls_raw.jsonl": "e14ce5548234bbe79ad6cce03262d86937ad72347fc44c11bc6d4f34925eb315",
+    "test/shard1/finished.json": "adb5c22139c3a79563f48c4bcb57cb65796d926ffa2f74807580efb8640d3150",
+    "test/shard1/merger_cache_admission.json": "62689d6fee6f4dfcd355adf0a8f2ed3aef1056d8c2e35038e320cfc4a2f72d39",
+    "test/shard1/merger_calls_raw.jsonl": "d6dce516f356743e3ccdeae252941eafb849d6fbaac334b55a3046a83f0aa935",
+    "test/shard1/progress.json": "85f7c424c1c60690bc2dd196e1c58eab1344f687e93dc7c623064ca10278d030",
+    "test/shard1/results.jsonl": "a462a971dca2c6f31ad94d79eab12378ea98019209ca8f047825712d88a98e06",
+    "test/shard1/resume_cache_admission.json": "31dd8e7ca623d363aff7567e556480be85874bfe414e3a10d39a0c3006fa8fa7",
+    "test/shard1/trace.jsonl": "49b7d6eecc0be3bcb470c206cdf0e63fdd47769aa1dee9cf5a03a052af2b8968",
+    "test_worker0.log": "9e65c142aaabb9b39807f5542c5cf1df72828d1e95f0d72c75b61bacef534e97",
+    "test_worker1.log": "5ed1b5f74330290ede9fae4d041025fc4dc3617032f678078a69e4e778d002df",
+    "trace_hooks.py": "cee48fe3bb04efd640ae09865f900f38c116e94a810f119e811c02f91172bb18",
+    "val_role_snapshot.json": "886f89c026ac1e1e019ca33aed67cfe0944e216ee63021002135ddd849c192b4"
+  },
+  "terminal_status": {
+    "attempt_archive": "attempts/20261015T041036_978164Z",
+    "phase": "complete",
+    "supervisor_pid": 2239983,
+    "cleanup_complete": true,
+    "train_gate_passed": false,
+    "user_authorized_test": true,
+    "updated_utc": "2026-10-15T05:44:44.622531+00:00",
+    "test_progress": [
+      {
+        "processed_conditions": 508,
+        "completed_conditions": 502,
+        "invalid_conditions": 6,
+        "target_conditions": 508,
+        "last_question": "c9a2d29196f0adc7ce136239c9888c219ce4760db302ba58255903b051782b4a",
+        "logical_calls": 6104,
+        "new_calls": 4177,
+        "cache_hits": 1927,
+        "logical_model_tokens": 3679666,
+        "new_model_tokens": 2819127,
+        "main_calls": 4050,
+        "merger_calls": 2054,
+        "main_model_tokens": 2819206,
+        "merger_model_tokens": 860460
+      },
+      {
+        "processed_conditions": 508,
+        "completed_conditions": 505,
+        "invalid_conditions": 3,
+        "target_conditions": 508,
+        "last_question": "a3325df4f275448177921a38944755d08619fd7b1c0f9f224e02db6ae37bb229",
+        "logical_calls": 6136,
+        "new_calls": 4213,
+        "cache_hits": 1923,
+        "logical_model_tokens": 3745996,
+        "new_model_tokens": 2883601,
+        "main_calls": 4074,
+        "merger_calls": 2062,
+        "main_model_tokens": 2874387,
+        "merger_model_tokens": 871609
+      }
+    ],
+    "completed_test_conditions": 1016,
+    "budget": {
+      "new_calls": 8400,
+      "actual_tokens": 5702824,
+      "reserved_tokens": 0,
+      "unknown_cost_upper_bound_tokens": 59344,
+      "unknown_call_count": 4
+    },
+    "gpu_snapshot": [
+      {
+        "index": 0,
+        "uuid": "GPU-0a075077-3745-799a-aff3-f0d34a17b6ac",
+        "utilization": 0,
+        "free_mib": 24081
+      },
+      {
+        "index": 1,
+        "uuid": "GPU-d7d04192-bf97-dfdb-3276-75ff261a9f51",
+        "utilization": 0,
+        "free_mib": 24081
+      },
+      {
+        "index": 2,
+        "uuid": "GPU-2121fa39-275f-d7eb-3c84-c7292ed702bc",
+        "utilization": 0,
+        "free_mib": 22021
+      },
+      {
+        "index": 3,
+        "uuid": "GPU-dcb52b28-8342-ab3b-cd6f-74719b63586f",
+        "utilization": 0,
+        "free_mib": 22021
+      },
+      {
+        "index": 4,
+        "uuid": "GPU-89523765-dcd4-46ea-1f2d-4ff7d509138c",
+        "utilization": 0,
+        "free_mib": 22021
+      },
+      {
+        "index": 5,
+        "uuid": "GPU-8b952bd3-5cdf-11d4-561a-bc9ef3717773",
+        "utilization": 0,
+        "free_mib": 22019
+      },
+      {
+        "index": 6,
+        "uuid": "GPU-0179fbe0-2ace-59a4-7794-fa483dda1e46",
+        "utilization": 0,
+        "free_mib": 24081
+      },
+      {
+        "index": 7,
+        "uuid": "GPU-e230f5a4-ad5d-341f-2840-4f737f3c0c26",
+        "utilization": 0,
+        "free_mib": 22021
+      }
+    ],
+    "services": [
+      {
+        "kind": "main0",
+        "gpu": {
+          "index": 0,
+          "uuid": "GPU-0a075077-3745-799a-aff3-f0d34a17b6ac",
+          "utilization": 0,
+          "free_mib": 24081
+        },
+        "pid": 2240120,
+        "port": 11448,
+        "host": "http://127.0.0.1:11448",
+        "version": {
+          "version": "0.40.2"
+        },
+        "model": {
+          "name": "gemma2:27b",
+          "model": "gemma2:27b",
+          "modified_at": "2026-10-09T08:36:43.817866393Z",
+          "size": 15628387458,
+          "digest": "53261bc9c192c1cb5fcc898dd3aa15da093f5ab6f08e17e48cf838bb1c58abfe",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "gemma2",
+            "families": [
+              "gemma2"
+            ],
+            "parameter_size": "27.2B",
+            "quantization_level": "Q4_0",
+            "context_length": 8192,
+            "embedding_length": 4608,
+            "runner": "ggml"
+          },
+          "capabilities": [
+            "completion"
+          ]
+        },
+        "loaded": {
+          "name": "gemma2:27b",
+          "model": "gemma2:27b",
+          "size": 16757418884,
+          "digest": "53261bc9c192c1cb5fcc898dd3aa15da093f5ab6f08e17e48cf838bb1c58abfe",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "gemma2",
+            "families": [
+              "gemma2"
+            ],
+            "parameter_size": "27.2B",
+            "quantization_level": "Q4_0"
+          },
+          "expires_at": "2026-10-15T04:15:57.971035804Z",
+          "size_vram": 16757418884,
+          "context_length": 8192,
+          "runner": "llamacpp"
+        },
+        "warmup": {
+          "model": "gemma2:27b",
+          "created_at": "2026-10-15T04:10:57.968930496Z",
+          "response": "OK.",
+          "done": true,
+          "done_reason": "stop",
+          "context": [
+            106,
+            1645,
+            108,
+            1946,
+            675,
+            11530,
+            235265,
+            107,
+            108,
+            106,
+            2516,
+            108,
+            4083,
+            235265
+          ],
+          "total_duration": 6895978546,
+          "load_duration": 6745293599,
+          "prompt_eval_count": 13,
+          "prompt_eval_cached_count": 0,
+          "prompt_eval_duration": 88154000,
+          "eval_count": 3,
+          "eval_duration": 59207000
+        },
+        "time_utc": "2026-10-15T04:10:57.973415+00:00",
+        "cuda_allocation_probe": "{\"phase\": \"started\", \"visible\": \"GPU-0a075077-3745-799a-aff3-f0d34a17b6ac\"}\ncuInit 0\ncuDeviceGet 0 0\ncuCtxCreate 0\ncuMemAlloc 0\ncuMemFree 0\ncuCtxDestroy 0\n",
+        "explicit_existing_cuda_library": "/home/liuxin/.local/opt/ollama/0.40.2/lib/ollama/cuda_v13/libggml-cuda.so"
+      },
+      {
+        "kind": "merger",
+        "gpu": {
+          "index": 1,
+          "uuid": "GPU-d7d04192-bf97-dfdb-3276-75ff261a9f51",
+          "utilization": 0,
+          "free_mib": 24081
+        },
+        "pid": 2240742,
+        "port": 11450,
+        "host": "http://127.0.0.1:11450",
+        "version": {
+          "version": "0.40.2"
+        },
+        "model": {
+          "name": "gemma2:9b",
+          "model": "gemma2:9b",
+          "modified_at": "2026-10-09T07:12:44.77248478Z",
+          "size": 5443152417,
+          "digest": "ff02c3702f322b9e075e9568332d96c0a7028002f1a5a056e0a6784320a4db0b",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "gemma2",
+            "families": [
+              "gemma2"
+            ],
+            "parameter_size": "9.2B",
+            "quantization_level": "Q4_0",
+            "context_length": 8192,
+            "embedding_length": 3584,
+            "runner": "ggml"
+          },
+          "capabilities": [
+            "completion"
+          ]
+        },
+        "loaded": {
+          "name": "gemma2:9b",
+          "model": "gemma2:9b",
+          "size": 6567493631,
+          "digest": "ff02c3702f322b9e075e9568332d96c0a7028002f1a5a056e0a6784320a4db0b",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "gemma2",
+            "families": [
+              "gemma2"
+            ],
+            "parameter_size": "9.2B",
+            "quantization_level": "Q4_0"
+          },
+          "expires_at": "2026-10-15T04:16:05.545383902Z",
+          "size_vram": 6567493631,
+          "context_length": 8192,
+          "runner": "llamacpp"
+        },
+        "warmup": {
+          "model": "gemma2:9b",
+          "created_at": "2026-10-15T04:11:05.543762189Z",
+          "response": "OK.",
+          "done": true,
+          "done_reason": "stop",
+          "context": [
+            106,
+            1645,
+            108,
+            1946,
+            675,
+            11530,
+            235265,
+            107,
+            108,
+            106,
+            2516,
+            108,
+            4083,
+            235265
+          ],
+          "total_duration": 4385645100,
+          "load_duration": 4280244964,
+          "prompt_eval_count": 13,
+          "prompt_eval_cached_count": 0,
+          "prompt_eval_duration": 66437000,
+          "eval_count": 3,
+          "eval_duration": 32835000
+        },
+        "time_utc": "2026-10-15T04:11:05.548885+00:00",
+        "cuda_allocation_probe": "{\"phase\": \"started\", \"visible\": \"GPU-d7d04192-bf97-dfdb-3276-75ff261a9f51\"}\ncuInit 0\ncuDeviceGet 0 0\ncuCtxCreate 0\ncuMemAlloc 0\ncuMemFree 0\ncuCtxDestroy 0\n",
+        "explicit_existing_cuda_library": "/home/liuxin/.local/opt/ollama/0.40.2/lib/ollama/cuda_v13/libggml-cuda.so"
+      }
+    ],
+    "worker_pids": [
+      2241202,
+      2241203
+    ],
+    "remaining_ports": [],
+    "owned_children_remaining": [],
+    "owned_processes_remaining": []
+  },
+  "cleanup": {
+    "remaining_ports": [],
+    "owned_children_remaining": [],
+    "owned_processes_remaining": [],
+    "cleanup_complete": true
+  },
+  "archive_sha256": "4a1e1a9ded9ea26558e14cbbd4b0a29f015491a7911c882c87f93f1d258d57f1",
+  "archive_bytes": 16471187
+}

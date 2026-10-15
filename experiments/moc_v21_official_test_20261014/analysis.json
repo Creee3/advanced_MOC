@@ -1,0 +1,548 @@
+{
+  "questions": 254,
+  "terminal_conditions": 1016,
+  "valid_conditions": 1007,
+  "invalid_conditions": 9,
+  "metrics": {
+    "moc@0.3": {
+      "questions": 254,
+      "valid_conditions": 250,
+      "invalid_conditions": 4,
+      "correct": 123,
+      "accuracy": 0.484251968503937,
+      "known_inference_tokens": 1431499,
+      "main_model_tokens": 1431499,
+      "merger_model_tokens": 0,
+      "unknown_inference_token_upper_bound": 0,
+      "logical_known_calls": 2032,
+      "main_calls": 2032,
+      "merger_known_calls": 0,
+      "inference_failure_semantics": "invalid conditions scored as failed system attempts, not semantic model errors; partial-call costs retained"
+    },
+    "v21_expected_set@0.3": {
+      "questions": 254,
+      "valid_conditions": 253,
+      "invalid_conditions": 1,
+      "correct": 138,
+      "accuracy": 0.5433070866141733,
+      "known_inference_tokens": 1264751,
+      "main_model_tokens": 1264751,
+      "merger_model_tokens": 0,
+      "unknown_inference_token_upper_bound": 0,
+      "logical_known_calls": 2025,
+      "main_calls": 2025,
+      "merger_known_calls": 0,
+      "inference_failure_semantics": "invalid conditions scored as failed system attempts, not semantic model errors; partial-call costs retained"
+    },
+    "moc@0.7": {
+      "questions": 254,
+      "valid_conditions": 251,
+      "invalid_conditions": 3,
+      "correct": 119,
+      "accuracy": 0.468503937007874,
+      "known_inference_tokens": 3459468,
+      "main_model_tokens": 1733618,
+      "merger_model_tokens": 1725850,
+      "unknown_inference_token_upper_bound": 32768,
+      "logical_known_calls": 6131,
+      "main_calls": 2032,
+      "merger_known_calls": 4099,
+      "inference_failure_semantics": "invalid conditions scored as failed system attempts, not semantic model errors; partial-call costs retained"
+    },
+    "v21_expected_set@0.7": {
+      "questions": 254,
+      "valid_conditions": 253,
+      "invalid_conditions": 1,
+      "correct": 121,
+      "accuracy": 0.4763779527559055,
+      "known_inference_tokens": 1257868,
+      "main_model_tokens": 1257868,
+      "merger_model_tokens": 0,
+      "unknown_inference_token_upper_bound": 0,
+      "logical_known_calls": 2025,
+      "main_calls": 2025,
+      "merger_known_calls": 0,
+      "inference_failure_semantics": "invalid conditions scored as failed system attempts, not semantic model errors; partial-call costs retained"
+    }
+  },
+  "primary_full254": {
+    "0.3": {
+      "question_pairs": 254,
+      "reference_correct": 123,
+      "candidate_correct": 138,
+      "reference_accuracy": 0.484251968503937,
+      "candidate_accuracy": 0.5433070866141733,
+      "accuracy_difference": 0.05905511811023622,
+      "improved": 48,
+      "degraded": 33,
+      "tied": 173,
+      "two_sided_sign_p": 0.11927366831176445,
+      "paired_accuracy_difference_bootstrap95": [
+        -0.007874015748031496,
+        0.12992125984251968
+      ],
+      "reference_known_tokens": 1431499,
+      "candidate_known_tokens": 1264751,
+      "reference_unknown_token_upper_bound": 0,
+      "candidate_to_reference_known_token_ratio": 0.8835151124799947,
+      "token_ratio_with_reference_unknown_usage_bounds": [
+        0.8835151124799947,
+        0.8835151124799947
+      ],
+      "paired_token_ratio_bootstrap95": [
+        0.8652285422807265,
+        0.8999305169562261
+      ],
+      "observed_operational_target_met": true,
+      "interval_scope": "descriptive paired question bootstrap, seed42/20000; historically exposed test; no noninferiority guarantee"
+    },
+    "0.7": {
+      "question_pairs": 254,
+      "reference_correct": 119,
+      "candidate_correct": 121,
+      "reference_accuracy": 0.468503937007874,
+      "candidate_accuracy": 0.4763779527559055,
+      "accuracy_difference": 0.007874015748031496,
+      "improved": 42,
+      "degraded": 40,
+      "tied": 172,
+      "two_sided_sign_p": 0.9121566075526039,
+      "paired_accuracy_difference_bootstrap95": [
+        -0.05905511811023622,
+        0.07874015748031496
+      ],
+      "reference_known_tokens": 3459468,
+      "candidate_known_tokens": 1257868,
+      "reference_unknown_token_upper_bound": 32768,
+      "candidate_to_reference_known_token_ratio": 0.36360157110862135,
+      "token_ratio_with_reference_unknown_usage_bounds": [
+        0.3601898611663129,
+        0.36360157110862135
+      ],
+      "paired_token_ratio_bootstrap95": [
+        0.351123757169955,
+        0.37638382732469855
+      ],
+      "observed_operational_target_met": true,
+      "interval_scope": "descriptive paired question bootstrap, seed42/20000; historically exposed test; no noninferiority guarantee"
+    }
+  },
+  "common_valid_pairs_by_density": {
+    "0.3": {
+      "excluded_question_ids": [
+        "3b61294603818b9c9476250d101c0d7e6078ca0611a71a400b354e18c2651f60",
+        "844f1f583cb5cc99b30985323aefb08caf8c6f65e99ea6a30439912d3c2edb7c",
+        "9069700335a449dc0555cf991b6454b9db09b386585e18bf2891acc17d7f8fbd",
+        "b785ccd5785c72e98392274a3ebfc3e7a9d359d5c33ea3e41a73aa5a7601a5b9"
+      ],
+      "comparison": {
+        "question_pairs": 250,
+        "reference_correct": 123,
+        "candidate_correct": 136,
+        "reference_accuracy": 0.492,
+        "candidate_accuracy": 0.544,
+        "accuracy_difference": 0.052,
+        "improved": 46,
+        "degraded": 33,
+        "tied": 171,
+        "two_sided_sign_p": 0.17661055306016413,
+        "paired_accuracy_difference_bootstrap95": [
+          -0.016,
+          0.12
+        ],
+        "reference_known_tokens": 1402077,
+        "candidate_known_tokens": 1241748,
+        "reference_unknown_token_upper_bound": 0,
+        "candidate_to_reference_known_token_ratio": 0.8856489336890913,
+        "token_ratio_with_reference_unknown_usage_bounds": [
+          0.8856489336890913,
+          0.8856489336890913
+        ],
+        "paired_token_ratio_bootstrap95": [
+          0.867815128370873,
+          0.9012433784079625
+        ],
+        "observed_operational_target_met": true,
+        "interval_scope": "descriptive paired question bootstrap, seed42/20000; historically exposed test; no noninferiority guarantee"
+      }
+    },
+    "0.7": {
+      "excluded_question_ids": [
+        "67969c897d8d2ac6ef5dea3b67076e88065fb224d0ec0a997311d893ccb6da83",
+        "844f1f583cb5cc99b30985323aefb08caf8c6f65e99ea6a30439912d3c2edb7c",
+        "b785ccd5785c72e98392274a3ebfc3e7a9d359d5c33ea3e41a73aa5a7601a5b9"
+      ],
+      "comparison": {
+        "question_pairs": 251,
+        "reference_correct": 119,
+        "candidate_correct": 120,
+        "reference_accuracy": 0.47410358565737054,
+        "candidate_accuracy": 0.47808764940239046,
+        "accuracy_difference": 0.00398406374501992,
+        "improved": 41,
+        "degraded": 40,
+        "tied": 170,
+        "two_sided_sign_p": 1.0,
+        "paired_accuracy_difference_bootstrap95": [
+          -0.06772908366533864,
+          0.07569721115537849
+        ],
+        "reference_known_tokens": 3397463,
+        "candidate_known_tokens": 1243161,
+        "reference_unknown_token_upper_bound": 0,
+        "candidate_to_reference_known_token_ratio": 0.3659086206383999,
+        "token_ratio_with_reference_unknown_usage_bounds": [
+          0.3659086206383999,
+          0.3659086206383999
+        ],
+        "paired_token_ratio_bootstrap95": [
+          0.35427544023212976,
+          0.37828416556936934
+        ],
+        "observed_operational_target_met": true,
+        "interval_scope": "descriptive paired question bootstrap, seed42/20000; historically exposed test; no noninferiority guarantee"
+      }
+    }
+  },
+  "global_common_valid_question_sensitivity": {
+    "0.3": {
+      "excluded_question_ids": [
+        "3b61294603818b9c9476250d101c0d7e6078ca0611a71a400b354e18c2651f60",
+        "67969c897d8d2ac6ef5dea3b67076e88065fb224d0ec0a997311d893ccb6da83",
+        "844f1f583cb5cc99b30985323aefb08caf8c6f65e99ea6a30439912d3c2edb7c",
+        "9069700335a449dc0555cf991b6454b9db09b386585e18bf2891acc17d7f8fbd",
+        "b785ccd5785c72e98392274a3ebfc3e7a9d359d5c33ea3e41a73aa5a7601a5b9"
+      ],
+      "comparison": {
+        "question_pairs": 249,
+        "reference_correct": 123,
+        "candidate_correct": 136,
+        "reference_accuracy": 0.4939759036144578,
+        "candidate_accuracy": 0.5461847389558233,
+        "accuracy_difference": 0.05220883534136546,
+        "improved": 46,
+        "degraded": 33,
+        "tied": 170,
+        "two_sided_sign_p": 0.17661055306016413,
+        "paired_accuracy_difference_bootstrap95": [
+          -0.01606425702811245,
+          0.12048192771084337
+        ],
+        "reference_known_tokens": 1388814,
+        "candidate_known_tokens": 1237940,
+        "reference_unknown_token_upper_bound": 0,
+        "candidate_to_reference_known_token_ratio": 0.8913648623933802,
+        "token_ratio_with_reference_unknown_usage_bounds": [
+          0.8913648623933802,
+          0.8913648623933802
+        ],
+        "paired_token_ratio_bootstrap95": [
+          0.8789825341708848,
+          0.9038345441016905
+        ],
+        "observed_operational_target_met": true,
+        "interval_scope": "descriptive paired question bootstrap, seed42/20000; historically exposed test; no noninferiority guarantee"
+      }
+    },
+    "0.7": {
+      "excluded_question_ids": [
+        "3b61294603818b9c9476250d101c0d7e6078ca0611a71a400b354e18c2651f60",
+        "67969c897d8d2ac6ef5dea3b67076e88065fb224d0ec0a997311d893ccb6da83",
+        "844f1f583cb5cc99b30985323aefb08caf8c6f65e99ea6a30439912d3c2edb7c",
+        "9069700335a449dc0555cf991b6454b9db09b386585e18bf2891acc17d7f8fbd",
+        "b785ccd5785c72e98392274a3ebfc3e7a9d359d5c33ea3e41a73aa5a7601a5b9"
+      ],
+      "comparison": {
+        "question_pairs": 249,
+        "reference_correct": 118,
+        "candidate_correct": 120,
+        "reference_accuracy": 0.4738955823293173,
+        "candidate_accuracy": 0.4819277108433735,
+        "accuracy_difference": 0.008032128514056224,
+        "improved": 41,
+        "degraded": 39,
+        "tied": 169,
+        "two_sided_sign_p": 0.9110721212260928,
+        "paired_accuracy_difference_bootstrap95": [
+          -0.0642570281124498,
+          0.07630522088353414
+        ],
+        "reference_known_tokens": 3363893,
+        "candidate_known_tokens": 1231163,
+        "reference_unknown_token_upper_bound": 0,
+        "candidate_to_reference_known_token_ratio": 0.36599350811693476,
+        "token_ratio_with_reference_unknown_usage_bounds": [
+          0.36599350811693476,
+          0.36599350811693476
+        ],
+        "paired_token_ratio_bootstrap95": [
+          0.35424376874368535,
+          0.3782842873302255
+        ],
+        "observed_operational_target_met": true,
+        "interval_scope": "descriptive paired question bootstrap, seed42/20000; historically exposed test; no noninferiority guarantee"
+      }
+    }
+  },
+  "aggregate_cluster_analysis": {
+    "question_clusters": 254,
+    "density_conditions_per_arm": 508,
+    "accuracy_difference": 0.03346456692913386,
+    "paired_cluster_accuracy_difference_bootstrap95": [
+      -0.015748031496062992,
+      0.08267716535433071
+    ]
+  },
+  "routing": {
+    "0.3": {
+      "valid_graphs": 253,
+      "ordinary_receivers": 1771,
+      "nonroot_receivers": 1518,
+      "selected_set_sizes": {
+        "0": 372,
+        "1": 1122,
+        "2": 24
+      },
+      "read_messages_by_hop": {
+        "3": 368,
+        "4": 237,
+        "2": 432,
+        "1": 133
+      },
+      "available_messages_by_hop": {
+        "1": 1771,
+        "2": 1265,
+        "3": 1012,
+        "4": 759
+      },
+      "read_messages": 1170,
+      "available_messages": 4807,
+      "stop_reasons": {
+        "expected_net_utility_nonpositive": 372,
+        "one_evidence_set_selected": 1146
+      },
+      "communication_text_tokens": 242524,
+      "encoding_seconds": 109.33784936796292,
+      "routing_seconds": 13.924243222281802,
+      "sketch_bytes_generated": 5440512,
+      "routing_sketch_bytes_read": 10103808
+    },
+    "0.7": {
+      "valid_graphs": 253,
+      "ordinary_receivers": 1771,
+      "nonroot_receivers": 1518,
+      "selected_set_sizes": {
+        "0": 550,
+        "1": 724,
+        "2": 244
+      },
+      "read_messages_by_hop": {
+        "2": 694,
+        "1": 518
+      },
+      "available_messages_by_hop": {
+        "1": 3795,
+        "2": 1518
+      },
+      "read_messages": 1212,
+      "available_messages": 5313,
+      "stop_reasons": {
+        "expected_net_utility_nonpositive": 297,
+        "no_supported_expected_action": 253,
+        "one_evidence_set_selected": 968
+      },
+      "communication_text_tokens": 220910,
+      "encoding_seconds": 107.11925131990574,
+      "routing_seconds": 23.607445742731215,
+      "sketch_bytes_generated": 5440512,
+      "routing_sketch_bytes_read": 10881024
+    }
+  },
+  "cost": {
+    "candidate_known_inference_tokens": 2522619,
+    "moc_known_inference_tokens": 4890967,
+    "candidate_to_moc_known_inference_ratio": 0.5157710121536293,
+    "shared_training_tokens_once": 888561,
+    "candidate_training_plus_this_test_tokens": 3411180,
+    "training_plus_candidate_to_moc_ratio": 0.6974449019999521,
+    "earlier_v1_training_and_waste_separate": 657528,
+    "new_v21_training_tokens": 0,
+    "actual_new_test_tokens_known": 5702824,
+    "actual_new_test_unknown_usage_upper_bound": 59344,
+    "actual_new_test_usage_bounds": [
+      5702824,
+      5762168
+    ],
+    "actual_new_calls_including_unknown": 8400,
+    "unknown_calls": 4,
+    "warmup_tokens": 96,
+    "known_discarded_partial_execution_tokens": 9274,
+    "expense_scope": "both experimental arms, warmups and discarded work; not the deployment cost of v2.1 alone",
+    "logical_scope": "full prompt+completion for every ordinary/final/merger call in the terminal execution, cache hits charged fully; missing usage shown separately",
+    "training_scope": "shared v2 training counted once, not re-paid for v2.1; earlier val/development expenses not hidden inside inference savings"
+  },
+  "invalid_conditions_detail": [
+    {
+      "question_id": "3b61294603818b9c9476250d101c0d7e6078ca0611a71a400b354e18c2651f60",
+      "density": 0.3,
+      "arm": "moc",
+      "status": "invalid",
+      "reason": "code timeout; incomplete graph outputs; recovered from original raw without regeneration",
+      "logical_calls": 8,
+      "new_calls": 7,
+      "cache_hits": 1,
+      "logical_model_tokens": 9177,
+      "new_model_tokens": 8480,
+      "main_calls": 8,
+      "merger_calls": 0,
+      "main_model_tokens": 9177,
+      "merger_model_tokens": 0,
+      "recovery_evidence": {
+        "attempt": "attempts/approved_recovery_20261015T013857_482229Z",
+        "code_timeout_event_index": 1897,
+        "runtime_only_recovery": true
+      }
+    },
+    {
+      "question_id": "b785ccd5785c72e98392274a3ebfc3e7a9d359d5c33ea3e41a73aa5a7601a5b9",
+      "density": 0.3,
+      "arm": "v21_expected_set",
+      "status": "invalid",
+      "reason": "ordinary-node failure; final aggregation will not consume partial results",
+      "logical_calls": 1,
+      "new_calls": 1,
+      "cache_hits": 0,
+      "logical_model_tokens": 2162,
+      "new_model_tokens": 2162,
+      "main_calls": 1,
+      "merger_calls": 0,
+      "main_model_tokens": 2162,
+      "merger_model_tokens": 0
+    },
+    {
+      "question_id": "b785ccd5785c72e98392274a3ebfc3e7a9d359d5c33ea3e41a73aa5a7601a5b9",
+      "density": 0.3,
+      "arm": "moc",
+      "status": "invalid",
+      "reason": "incomplete graph outputs",
+      "logical_calls": 8,
+      "new_calls": 8,
+      "cache_hits": 0,
+      "logical_model_tokens": 6466,
+      "new_model_tokens": 6466,
+      "main_calls": 8,
+      "merger_calls": 0,
+      "main_model_tokens": 6466,
+      "merger_model_tokens": 0
+    },
+    {
+      "question_id": "b785ccd5785c72e98392274a3ebfc3e7a9d359d5c33ea3e41a73aa5a7601a5b9",
+      "density": 0.7,
+      "arm": "moc",
+      "status": "invalid",
+      "reason": "incomplete graph outputs",
+      "logical_calls": 23,
+      "new_calls": 16,
+      "cache_hits": 7,
+      "logical_model_tokens": 10856,
+      "new_model_tokens": 8848,
+      "main_calls": 8,
+      "merger_calls": 15,
+      "main_model_tokens": 6752,
+      "merger_model_tokens": 4104
+    },
+    {
+      "question_id": "b785ccd5785c72e98392274a3ebfc3e7a9d359d5c33ea3e41a73aa5a7601a5b9",
+      "density": 0.7,
+      "arm": "v21_expected_set",
+      "status": "invalid",
+      "reason": "ordinary-node failure; final aggregation will not consume partial results",
+      "logical_calls": 1,
+      "new_calls": 1,
+      "cache_hits": 0,
+      "logical_model_tokens": 2162,
+      "new_model_tokens": 2162,
+      "main_calls": 1,
+      "merger_calls": 0,
+      "main_model_tokens": 2162,
+      "merger_model_tokens": 0
+    },
+    {
+      "question_id": "67969c897d8d2ac6ef5dea3b67076e88065fb224d0ec0a997311d893ccb6da83",
+      "arm": "moc",
+      "density": 0.7,
+      "status": "invalid",
+      "reason": "original merger failed: token repeat limit reached (500); fallback excluded; recovered from raw without regeneration",
+      "logical_calls": 27,
+      "new_calls": 17,
+      "cache_hits": 10,
+      "logical_model_tokens": 31917,
+      "new_model_tokens": 22726,
+      "main_calls": 8,
+      "merger_calls": 19,
+      "main_model_tokens": 13827,
+      "merger_model_tokens": 18090,
+      "unknown_merger_calls": 2,
+      "unknown_model_tokens_upper_bound": 32768,
+      "recovery_evidence": {
+        "archive": "attempts/preserved_repeat_error_20261015T040854_718704Z",
+        "merger_error_event_indices": [
+          7770,
+          7785
+        ]
+      }
+    },
+    {
+      "question_id": "9069700335a449dc0555cf991b6454b9db09b386585e18bf2891acc17d7f8fbd",
+      "density": 0.3,
+      "arm": "moc",
+      "status": "invalid",
+      "reason": "incomplete graph outputs",
+      "logical_calls": 8,
+      "new_calls": 8,
+      "cache_hits": 0,
+      "logical_model_tokens": 5585,
+      "new_model_tokens": 5585,
+      "main_calls": 8,
+      "merger_calls": 0,
+      "main_model_tokens": 5585,
+      "merger_model_tokens": 0
+    },
+    {
+      "question_id": "844f1f583cb5cc99b30985323aefb08caf8c6f65e99ea6a30439912d3c2edb7c",
+      "density": 0.3,
+      "arm": "moc",
+      "status": "invalid",
+      "reason": "incomplete graph outputs",
+      "logical_calls": 8,
+      "new_calls": 8,
+      "cache_hits": 0,
+      "logical_model_tokens": 8194,
+      "new_model_tokens": 8194,
+      "main_calls": 8,
+      "merger_calls": 0,
+      "main_model_tokens": 8194,
+      "merger_model_tokens": 0
+    },
+    {
+      "question_id": "844f1f583cb5cc99b30985323aefb08caf8c6f65e99ea6a30439912d3c2edb7c",
+      "density": 0.7,
+      "arm": "moc",
+      "status": "invalid",
+      "reason": "incomplete graph outputs",
+      "logical_calls": 18,
+      "new_calls": 15,
+      "cache_hits": 3,
+      "logical_model_tokens": 19232,
+      "new_model_tokens": 16491,
+      "main_calls": 8,
+      "merger_calls": 10,
+      "main_model_tokens": 9541,
+      "merger_model_tokens": 9691
+    }
+  ],
+  "historical_test_exposure": true,
+  "policy_tuned_on_this_test": false,
+  "interpretation": "frozen v2.1 versus original MOC; official test historically exposed to older methods; observed comparison, not untouched independent confirmation",
+  "causal_limit": "two-message cap and removal of generative consolidation also contribute; results do not isolate learned selector quality or temporal communication"
+}

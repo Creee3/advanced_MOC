@@ -1,0 +1,156 @@
+{
+  "status": "record_and_cost_consistency_passed",
+  "independent_reproduction": false,
+  "snapshot_files_verified": 86,
+  "archive_sha256": "4a1e1a9ded9ea26558e14cbbd4b0a29f015491a7911c882c87f93f1d258d57f1",
+  "recovery_snapshots_verified": [
+    {
+      "directory": "interrupted_snapshot_20261015",
+      "files_verified": 72,
+      "archive_sha256": "263ca7e026fee328ce87a206ca977b2a70a2624a859ef94a38fc2360b42f63df"
+    },
+    {
+      "directory": "repeat_error_snapshot_20261015",
+      "files_verified": 80,
+      "archive_sha256": "fcf6e51d3a88b765aeb2f14434d16ba5e586031d46c9772024eeefcc05e2cd3a"
+    }
+  ],
+  "source_and_data_hashes_verified": 37,
+  "original_algorithm_model_data_unchanged": true,
+  "explicit_runtime_amendment": "runtime-only repair; sampling/model/data/tool timeout unchanged",
+  "terminal_conditions": 1016,
+  "valid_conditions": 1007,
+  "invalid_conditions": 9,
+  "author_parser_reparsed_answers": 1007,
+  "cache_proofs": {
+    "0_main": {
+      "cache_hits_verified": 1150,
+      "output_caps": 4,
+      "epochs": 3,
+      "boundaries": [
+        0,
+        1296,
+        2954,
+        4050
+      ]
+    },
+    "0_merger": {
+      "cache_hits_verified": 777,
+      "output_caps": 0,
+      "epochs": 3,
+      "boundaries": [
+        0,
+        645,
+        1524,
+        2054
+      ]
+    },
+    "1_main": {
+      "cache_hits_verified": 1141,
+      "output_caps": 0,
+      "epochs": 3,
+      "boundaries": [
+        0,
+        1309,
+        2946,
+        4074
+      ]
+    },
+    "1_merger": {
+      "cache_hits_verified": 782,
+      "output_caps": 0,
+      "epochs": 3,
+      "boundaries": [
+        0,
+        625,
+        1457,
+        2062
+      ]
+    }
+  },
+  "frozen_argmax_decisions_verified": 3036,
+  "output_cap_calls": [
+    {
+      "shard": 0,
+      "kind": "main",
+      "question_id": "b785ccd5785c72e98392274a3ebfc3e7a9d359d5c33ea3e41a73aa5a7601a5b9",
+      "arm": "v21_expected_set",
+      "density": 0.3,
+      "key": "b07e081e773ef78da0f2bf32566e30222fb20f27192c85cedfde0dcee82f19ec",
+      "tokens": 2162
+    },
+    {
+      "shard": 0,
+      "kind": "main",
+      "question_id": "b785ccd5785c72e98392274a3ebfc3e7a9d359d5c33ea3e41a73aa5a7601a5b9",
+      "arm": "moc",
+      "density": 0.3,
+      "key": "b07e081e773ef78da0f2bf32566e30222fb20f27192c85cedfde0dcee82f19ec",
+      "tokens": 2162
+    },
+    {
+      "shard": 0,
+      "kind": "main",
+      "question_id": "b785ccd5785c72e98392274a3ebfc3e7a9d359d5c33ea3e41a73aa5a7601a5b9",
+      "arm": "moc",
+      "density": 0.7,
+      "key": "b07e081e773ef78da0f2bf32566e30222fb20f27192c85cedfde0dcee82f19ec",
+      "tokens": 2162
+    },
+    {
+      "shard": 0,
+      "kind": "main",
+      "question_id": "b785ccd5785c72e98392274a3ebfc3e7a9d359d5c33ea3e41a73aa5a7601a5b9",
+      "arm": "v21_expected_set",
+      "density": 0.7,
+      "key": "b07e081e773ef78da0f2bf32566e30222fb20f27192c85cedfde0dcee82f19ec",
+      "tokens": 2162
+    }
+  ],
+  "code_timeouts": [
+    {
+      "shard": 0,
+      "question_id": "3b61294603818b9c9476250d101c0d7e6078ca0611a71a400b354e18c2651f60",
+      "arm": "moc",
+      "density": 0.3,
+      "event_index": 1897
+    },
+    {
+      "shard": 1,
+      "question_id": "9069700335a449dc0555cf991b6454b9db09b386585e18bf2891acc17d7f8fbd",
+      "arm": "moc",
+      "density": 0.3,
+      "event_index": 2629
+    },
+    {
+      "shard": 1,
+      "question_id": "844f1f583cb5cc99b30985323aefb08caf8c6f65e99ea6a30439912d3c2edb7c",
+      "arm": "moc",
+      "density": 0.3,
+      "event_index": 10979
+    },
+    {
+      "shard": 1,
+      "question_id": "844f1f583cb5cc99b30985323aefb08caf8c6f65e99ea6a30439912d3c2edb7c",
+      "arm": "moc",
+      "density": 0.7,
+      "event_index": 11046
+    }
+  ],
+  "all_conditions_output_complete": false,
+  "known_actual_new_tokens": 5702824,
+  "new_calls_including_unknown": 8400,
+  "startup_calls": 6,
+  "startup_tokens": 96,
+  "unknown_calls": 4,
+  "unknown_cost_upper_bound_tokens": 59344,
+  "unresolved_reservations": 0,
+  "known_discarded_partial_execution_calls": 21,
+  "known_discarded_partial_execution_tokens": 9274,
+  "discarded_scope": "new known calls before interrupted conditions were replayed; already included in actual expense",
+  "cumulative_window_wall_seconds": 21409.319118976593,
+  "owned_cleanup_verified": true,
+  "completed_beijing": "2026-10-15T13:44:44.622531+08:00",
+  "historical_test_exposure": true,
+  "scope": "consistency audit; invalid units and unknown usage remain explicitly disclosed"
+}

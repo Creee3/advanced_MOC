@@ -1,0 +1,12 @@
+{
+  "analysis_sources_and_outputs": {
+    "analysis/audit_local.py": "5cf73d82781dc71eab3161ad105cb4bcf4cf4f36befee1603db68214bb8bc046",
+    "analysis/analyze_local.py": "be024280c55b9140438fccc7394804eb6cba2ff7dbaf896797d687b7ed25ed95",
+    "analysis.json": "deffabb7ac1503dbf78c6a7c8712f813d444853ae3d6eeb08411a2ba909322a7",
+    "completion_audit.json": "566e8fa04b2085cb7e0abfbf203486989dd397c605ea10d3a0e69d3d3396535e",
+    "final_live_cleanup_proof.json": "a231351a05e0edefabbb53fd7f9d8597c0131e6a1615f069fb81fcfd150cf390",
+    "test\u5b8c\u6210\u7ed3\u679c\u4e0e\u9996\u6b21\u5206\u6790_20261015.md": "b972e339dc24a8884aa1135fed10296a18653eb2c2a2efeb8826cd291a245434"
+  },
+  "final_raw_sha256": "4a1e1a9ded9ea26558e14cbbd4b0a29f015491a7911c882c87f93f1d258d57f1",
+  "no_model_calls": true
+}

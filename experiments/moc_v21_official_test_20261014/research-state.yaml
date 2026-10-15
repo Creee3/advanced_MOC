@@ -1,4 +1,4 @@
-phase: test_running_resumed
+phase: complete_audited
 test_questions: 254
 test_conditions: 1016
 arms: [v21_expected_set, moc]
@@ -22,22 +22,22 @@ merger_pid: 2240742
 worker_pids: [2241202, 2241203]
 main_gpu: 0
 merger_gpu: 1
-last_checked_utc: 2026-10-15T04:11:29.452360+00:00
-last_checked_conditions: 738
-last_checked_invalid: 7
-analysis: pending
+last_checked_utc: 2026-10-15T05:48:06.353662+00:00
+last_checked_conditions: 1016
+last_checked_invalid: 9
+analysis: complete
 
 terminal_failure_beijing: 2026-10-15T01:29:15+08:00
-owned_services_cleaned: false
-listed_pids_historical_only: false
+owned_services_cleaned: true
+listed_pids_historical_only: true
 original_deadline_beijing: 2026-10-15T07:38:01+08:00
 extension_approved: true
 runtime_fix: deployed_five_regressions_and_four_native_graph_checks_passed
 automation_id: moc
-automation_status: ACTIVE
+automation_status: PAUSED
 automation_interval_minutes: 10
 recovery_review: recovery_review_20261015.json
-known_new_actual_tokens: 4151997
+known_new_actual_tokens: 5702824
 unknown_call_count: 4
 unknown_call_token_upper_bound: 59344
 
@@ -53,3 +53,9 @@ repeat_limit_recovery: repeat_error_recovery_20261015.json
 
 latest_failure_beijing: 2026-10-15T11:58:35+08:00
 latest_resume_beijing: 2026-10-15T12:10:36+08:00
+
+completed_beijing: 2026-10-15T13:44:44+08:00
+completion_audit: completion_audit.json
+analysis_file: analysis.json
+final_report: test完成结果与首次分析_20261015.md
+final_archive_sha256: 4a1e1a9ded9ea26558e14cbbd4b0a29f015491a7911c882c87f93f1d258d57f1
