@@ -4,19 +4,19 @@
   "config_sha256": "ad8dd709578c580968ac64ee0c57941dbf81037093d385830bbe0637ba24e593",
   "test_inputs_sha256": "d9f67723fce94a32f6bc1324119b17d2eee7ec87b614a8df1eb0d096e720312e",
   "source_hashes": {
-    "common.py": "edcde3c18a910c067022cc3537edbdf0b1dc0e0e38cc076c688a0c7647682161",
+    "common.py": "d89f30b61fba8e882d3e8cd7040f57c93d7348f3a6ab0f0d1a027f57d430dc6f",
     "gpu_runtime.py": "709cddd83e7b1367e853c1cbf7d60096ac2cd3b4a02944defde7248b1d826631",
     "inspect_run.py": "fce9e68ffd140d94a826c8633d8f927181fb9e1bf1f0ec402c017b1ccd1c7ee1",
     "launch.py": "e2bcb3c7f6b665d802fd363eab6e9a01f8990bacb55ed7a6f4dce2c6bf2ff1c7",
-    "merger_backend.py": "861c9715242ac9d4f60961fdb016b2b9f684038bb9d182ac3e39b8fdf75eef00",
+    "merger_backend.py": "61caeef727632bef1c99cebc442b3fc3cc446090da4f6c7a421bdb7a89a01de7",
     "package_local.py": "2da4f161d8ed8251faf6d7840d5c240698e48ea5c47ca7e1dcbdf5690a309b77",
     "preflight.py": "cc6bd605038a69c373e8df87f08793c71563e2cb7ba3e20e7deac0e99d5da851",
     "prepare_local.py": "9a9e2fc23b35de5bc71eed26c4b1c8f47c2e7fce6903ff8a1b926b1189e91ea1",
     "probe_gpu_runtime.py": "8aa1377f4147bb0c2d5d3a973c235c17bdcd92edd40915f5353d220082d6b62e",
-    "resume_cache.py": "03f282744cc2bb1e50a95ae3f7c60b44838efd1ce2e0d4cc4c28c4be7d103871",
+    "resume_cache.py": "adcaa64963b092ebaadcc4a25cb11edb1180c9a7a5251b9798cc0390d0282d27",
     "runtime_controls.py": "ef307a6bf25bf18731eccbfcb473f47c8e068d455e02d2ac62fa995befa522da",
-    "run_test.py": "8eaca231d1487788829edcc4305b0023c971540fb31f717f1f58f3864b532e15",
-    "supervise.py": "78dc2fa2851b8990cbc3b1e58489cfc003cac1c180d09d1f9e59efb7175d6122",
+    "run_test.py": "32be31e9502499a986e2413bdb176c961c06760dd29c1f14b2671c617178a77e",
+    "supervise.py": "2b69cf75d851a18a864ebbcfb99c1ac4aa31809a1e669644ec56672b6323ca34",
     "trace_hooks.py": "cee48fe3bb04efd640ae09865f900f38c116e94a810f119e811c02f91172bb18",
     "coding_base/moc_adaptive_sampling/adapter.py": "037b23338f41e81c6a8bb51002f9211d326efb2cd85527c67994922023670e89",
     "coding_base/moc_adaptive_sampling/bundles.py": "da549ccd64ae1fb6576832b2619aa5389776970cb25c812461413d75f730bed9",
@@ -38,7 +38,8 @@
     "group_utility_model.json": "e2ce9cd7f69d3b4e6c2e6be7af1df0a852d44b972396989e5b02428a655fd210",
     "data_preparation.json": "e561161d7daf9d126573813b5216188f6968b9933df1c0c0168d3a4d494009ba"
   },
-  "experiment_lock_sha256": "62d2f7bcba19f19a9ca649f6e7cceed7288739b5477bcb8132a4051bd0a3912e",
+  "experiment_lock_sha256": "fd29977636be7d609f6bf2192201198820b03e7bb1c449140edd198944fbe7d2",
   "model_selection": "unchanged completed v2.1 val checkpoint; no new fitting or tuning",
-  "historical_test_exposure_disclosed": true
+  "historical_test_exposure_disclosed": true,
+  "runtime_amendment_sha256": "534fc657a7d62c8c64eed31db021f99fef19d64ddb4c05ff2e546253c3da7e8a"
 }

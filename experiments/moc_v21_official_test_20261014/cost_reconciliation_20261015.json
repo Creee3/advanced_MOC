@@ -1,0 +1,20 @@
+{
+  "known_actual_tokens": 1774668,
+  "recorded_calls": 2665,
+  "ledger_calls": 2666,
+  "unknown_call_count": 1,
+  "unknown_usage_upper_bound_tokens": 10192,
+  "unknown_call_context": {
+    "shard": 1,
+    "question_id": "1e1c06e3ce72d2d8a629a73e0c10145bda70e7642d4a2596293af130cfe84318",
+    "arm": "moc",
+    "density": 0.7
+  },
+  "exact_usage_unavailable": true,
+  "actual_tokens_not_inflated": true,
+  "original_budget": {
+    "new_calls": 2666,
+    "actual_tokens": 1774668,
+    "reserved_tokens": 10192
+  }
+}

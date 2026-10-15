@@ -1,0 +1,86 @@
+{
+  "checked_utc": "2026-10-15T01:40:19.051435+00:00",
+  "phase": "test",
+  "completed_conditions": 326,
+  "valid_conditions": 325,
+  "invalid_conditions": 1,
+  "processes": [
+    {
+      "pid": 2160566,
+      "exists": true,
+      "cmdline": "/home/liuxin/.conda/envs/moc/bin/python -u /home/liuxin/ICML2027/experiments/moc_v21_official_test_20261014/supervise.py --resume "
+    },
+    {
+      "pid": 2161731,
+      "exists": true,
+      "cmdline": "/home/liuxin/.conda/envs/moc/bin/python -u /home/liuxin/ICML2027/experiments/moc_v21_official_test_20261014/run_test.py --shard 0 --main-host http://127.0.0.1:11448 --merger-host http://127.0.0.1:11450 "
+    },
+    {
+      "pid": 2161732,
+      "exists": true,
+      "cmdline": "/home/liuxin/.conda/envs/moc/bin/python -u /home/liuxin/ICML2027/experiments/moc_v21_official_test_20261014/run_test.py --shard 1 --main-host http://127.0.0.1:11448 --merger-host http://127.0.0.1:11450 "
+    },
+    {
+      "pid": 2160750,
+      "exists": true,
+      "cmdline": "/home/liuxin/.local/bin/ollama serve "
+    },
+    {
+      "pid": 2161279,
+      "exists": true,
+      "cmdline": "/home/liuxin/.local/bin/ollama serve "
+    }
+  ],
+  "budget": {
+    "new_calls": 2691,
+    "actual_tokens": 1790034,
+    "reserved_tokens": 20384,
+    "unknown_cost_upper_bound_tokens": 10192,
+    "unknown_call_count": 1
+  },
+  "deadline": {
+    "deadline_unix": 1792050474.4160016,
+    "started_utc": "2026-10-14T15:38:01.787771+00:00",
+    "original_deadline_unix": 1792021081.7877574,
+    "prior_active_wall_seconds": 6674.112595081329,
+    "recovery_active_window_seconds": 22125,
+    "user_approval": {
+      "user_message": "\u7ee7\u7eed\u8dd1\u5457",
+      "recorded_utc": "2026-10-15T01:37:50.273042+00:00",
+      "remaining_seconds": 22125,
+      "original_total_wall_cap_seconds": 28800,
+      "original_token_cap": 12000000,
+      "original_call_cap": 30000,
+      "prior_active_seconds": 6674.112595081329,
+      "no_completed_conditions_repeated": true
+    },
+    "extension_started_utc": "2026-10-15T01:39:09.416007+00:00"
+  },
+  "raw_age_seconds": {
+    "test/shard0/calls_raw.jsonl": 24.8,
+    "test/shard1/calls_raw.jsonl": 0.4
+  },
+  "checkpoint_sha256": "e2ce9cd7f69d3b4e6c2e6be7af1df0a852d44b972396989e5b02428a655fd210",
+  "services": [
+    {
+      "kind": "main0",
+      "gpu": 0,
+      "pid": 2160750,
+      "size": 16757418884,
+      "size_vram": 16757418884,
+      "warmup_eval_count": 3
+    },
+    {
+      "kind": "merger",
+      "gpu": 1,
+      "pid": 2161279,
+      "size": 6567493631,
+      "size_vram": 6567493631,
+      "warmup_eval_count": 3
+    }
+  ],
+  "worker_tails": {
+    "test_worker0.log": "ing strategy 3/5...\nconpressed_prompt_tokens:758,conpressed_completion_tokens:261\n[Summary] Trying strategy 4/5...\nconpressed_prompt_tokens:751,conpressed_completion_tokens:85\n[Summary] Trying strategy 5/5...\nconpressed_prompt_tokens:749,conpressed_completion_tokens:310\n[Summary] Strategy 1 similarity: 1.8425\n[Summary] Strategy 2 similarity: 1.7818\n[Summary] Strategy 3 similarity: 1.8508\n[Summary] Strategy 4 similarity: 1.4992\n[Summary] Strategy 5 similarity: 1.8666\n[Summary] Selected best strategy with similarity: 1.8666, avg: 0.9333\n[ISM Phase 2] Merged pair (2, 3), hop=1, idx=3, sim=0.9083\n[ISM Phase 2] Iteration 1 done, 3 items remaining\n",
+    "test_worker1.log": "e the perimeter of the square.\n\n## Calculation:\n\nLet 'x' be the original side length of the square cloth.\n\n* **Rectangle Dimensions:** (x - 4) and x\n* **Triangle Area Equation:** 70 = (1/2) * (x - 4) * x\n* **Simplifying:** 140 = x^2 - 4x\n* **Rearranging:** x^2 - 4x - 140 = 0\n* **Factoring:** (x - 14)(x + 10) = 0\n* **Solving for x:** x = 14 (we discard the negative solution)\n\n* **Perimeter:** 4 * x = 4 * 14 = 56\n\n\n\nThe answer is A\n[DEBUG] get_neighbor_summary_with_ism called for node 0005\n[DEBUG] Found neighbors at hops: [1]\n[DEBUG] Collected 1 neighbor messages\n[ISM] Computed K: 2 (r=1.0)\n[ISM] Message count (1) within K (2), no merge needed\n"
+  }
+}

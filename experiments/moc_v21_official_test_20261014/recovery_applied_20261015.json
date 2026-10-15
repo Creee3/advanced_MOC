@@ -1,0 +1,13 @@
+{
+  "stage": "launched",
+  "attempt": "attempts/approved_recovery_20261015T013857_482229Z",
+  "launcher": {
+    "pid": 2160566,
+    "started_utc": "2026-10-15T01:39:09.455200+00:00",
+    "scope": "v21 frozen compact checkpoint, official test254x2 arms x2 densities",
+    "resume": true,
+    "train": false,
+    "test": true
+  },
+  "deadline_unix": 1792050474.4160016
+}

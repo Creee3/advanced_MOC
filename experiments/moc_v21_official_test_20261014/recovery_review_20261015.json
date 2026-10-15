@@ -1,5 +1,5 @@
 {
-  "status": "approved_preparing",
+  "status": "approved_preflight_passed",
   "original_terminal_conditions": 324,
   "matched_pairs_by_density": {
     "0.3": 81,
@@ -11,7 +11,7 @@
   "old_absolute_deadline_beijing": "2026-10-15 07:38:01",
   "elapsed_until_failure_seconds": 6674.112595081329,
   "proposed_remaining_active_window_seconds": 22125,
-  "deadline_extended": false,
+  "deadline_extended": true,
   "budget_reset": false,
   "runtime_only_patch": {
     "common.py": {
@@ -36,8 +36,8 @@
     }
   },
   "checkpoint_unchanged": true,
-  "regression_checks": "5 local checks pending rerun; native Graph preflight required before GPU",
-  "cloud_sources_modified": false,
+  "regression_checks": "5 passed; 4 native Graph fake conditions passed",
+  "cloud_sources_modified": true,
   "services_running": false,
   "archive_sha256": "263ca7e026fee328ce87a206ca977b2a70a2624a859ef94a38fc2360b42f63df",
   "next_steps_after_approval": [
@@ -57,5 +57,10 @@
     "original_call_cap": 30000,
     "prior_active_seconds": 6674.112595081329,
     "no_completed_conditions_repeated": true
-  }
+  },
+  "original_conditions_preserved": 324,
+  "recovered_invalid_conditions": 1,
+  "runtime_manifest_sha256": "534fc657a7d62c8c64eed31db021f99fef19d64ddb4c05ff2e546253c3da7e8a",
+  "attempt_archive": "attempts/approved_recovery_20261015T013857_482229Z",
+  "new_deadline_unix": 1792050474.4160016
 }
