@@ -1,0 +1,81 @@
+{
+  "status": "expired_incomplete_preserved",
+  "created_utc": "2026-10-16T00:44:08.831989+00:00",
+  "remote_directory": "/home/liuxin/ICML2027/experiments/moc_remaining_datasets_plan_20261015/expired_archives/moc_v21_svamp_train40_test_20261015",
+  "archive_sha256": "9395abc1dfbaf27e533def227e6fa0ce621b39640c287027445634c7c3b93e46",
+  "archive_bytes": 10774390,
+  "member_manifest_sha256": "599f7238c4e381425614de5628b48028df8bd16decb8182c8048c84b071fd88b",
+  "members": 126,
+  "run_start": {
+    "deadline_unix": 1792111216.6382632,
+    "started_utc": "2026-10-15T16:40:16.638274+00:00"
+  },
+  "original_budget": {
+    "new_calls": 7444,
+    "actual_tokens": 3908073,
+    "reserved_tokens": 10192,
+    "unknown_cost_upper_bound_tokens": 0
+  },
+  "effective_cost_audit": {
+    "actual_tokens": 3908073,
+    "new_calls": 7444,
+    "pending_tokens": 0,
+    "unknown_cost_upper_bound_tokens": 10192,
+    "cap_accounted_tokens": 3918265
+  },
+  "independent_reconciliations": [
+    {
+      "event_type": "backend_request_reconciled_unknown",
+      "reservation_id": "main-1792111215015014674",
+      "reserved_tokens": 10192,
+      "unknown_cost_upper_bound_tokens": 10192,
+      "question_id": "svamp:author_test:chal-795",
+      "arm": "moc",
+      "density": 0.7,
+      "reason": "Supervisor enforced original deadline and killed owned worker/service; no response usage exists",
+      "source": "independent closure audit; original trace and budget unchanged"
+    }
+  ],
+  "original_trace_started": 7441,
+  "original_trace_settled": 7440,
+  "audit_pending_count": 0,
+  "known_raw_calls": 7443,
+  "known_raw_tokens": 3908073,
+  "warmup_calls": 3,
+  "warmup_tokens": 48,
+  "stage_costs": {
+    "training": {
+      "actual_tokens": 722203,
+      "new_calls": 1101,
+      "logical_tokens": 858136,
+      "cache_hits": 219
+    },
+    "test": {
+      "actual_tokens": 3185822,
+      "new_calls": 6339,
+      "logical_tokens": 4988209,
+      "cache_hits": 5425
+    }
+  },
+  "test_coverage": {
+    "adapted|0.3|ok": 300,
+    "adapted|0.7|ok": 300,
+    "moc|0.3|ok": 215,
+    "moc|0.7|ok": 213
+  },
+  "missing_original_moc": 172,
+  "duplicates": 0,
+  "invalid": 0,
+  "cleanup": {
+    "remaining_ports": [],
+    "owned_children_remaining": [],
+    "owned_processes_remaining": [],
+    "cleanup_complete": true
+  },
+  "locked_source_data_policy_verified": true,
+  "no_launch_or_restart": true,
+  "no_original_budget_status_trace_or_deadline_mutation": true,
+  "no_test_gold_scoring": true,
+  "cause": "Original eight-hour deadline enforced by supervisor; worker0 also logged BudgetExceeded",
+  "note": "Incomplete original-MOC comparison: no accuracy/comparison scoring. Preserve all adapted and partial baseline terminals; no automatic extension or recovery. Unknown is a conservative bound, not actual; raw reservation is replaced only in this independent audit, never added twice."
+}

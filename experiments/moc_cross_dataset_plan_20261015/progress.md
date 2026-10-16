@@ -102,3 +102,85 @@
 2026-10-16 01:40 heartbeat：GSM原MOC481/600（.3:241/.7:240），总test1081全有效无重复；真实协调器/监督器/worker健康，raw14.0/0.8秒前更新，source/data锁及两模型digest/全显存驻留正常，无STOP/error。actual7542179tokens/11089新调用、pending26576/unknown0，原窗口剩557秒。Pro适配560已清理、待原序MOC，actual4127233/pending0/unknown0，原窗口剩575秒。已完成val补测不恢复。证据healthcheck_20261016_014002.json。阶段未变，维持原deadline；到期必须停并清理，不能为补齐对照延长或重置。不重复launch、不读test gold/评分。
 
 2026-10-16 01:50到期收口：GSM原MOC504/600（253/251），适配600保留；Pro适配560保留、原MOC尚未启动。原run_start截止已过，worker根因BudgetExceeded: STOP or GPU wall deadline，协调器保护退出；真实PID/自有子进程/端口11448/49/50全部清理。GSM实际7736331tokens/11386calls，Pro4127233/5134；非缓存raw+热身与账本逐项一致，trace reservation全部settled，pending/unknown0。唯一archive261成员本地SHA全核对，SHA655af57509630c51a4e6ee2b09c6f3160919f52260f601d707c922137291fc08，文件在expiry_closure_20261016/；未更改预算/deadline/终态，未读取test gold或评分，不续跑、不延长。窗口到期收口不等于完整对照完成；之后只检查保留状态，不反复通知同一到期等待条件。新两批继续，总监控ACTIVE。
+
+2026-10-16 02:00 heartbeat：到期旧两批与已完成val补测状态保持，GSM原MOC504/600、适配600；Pro适配560、原MOC未启动。真实进程均已退出、自有端口拒绝连接正常，清理完成，pending/unknown0，累计费用与已核验归档一致；source/data锁匹配，无新调用或终态改变。证据healthcheck_20261016_020002.json。不将既有deadline错误当成新故障、不恢复或重复通知、不重跑归档和评分、不延长窗口。
+
+2026-10-16 02:10 heartbeat：原到期两批与已审计val补测保持已清理、不再调用状态；GSM原MOC504/600、适配600，Pro适配560且原MOC未启动，累计actual/调用与01:50归档一致、pending/unknown0，source/data锁匹配，旧端口关闭正常。证据healthcheck_20261016_021001.json。不视同一到期状态为新故障、不恢复/重复通知、不重跑归档或部分对照评分、不延长窗口。
+
+2026-10-16 02:20 heartbeat：旧到期两批与已审计val补测保持清理和费用/终态不变，GSM原MOC504/600、适配600，Pro适配560且原MOC未启动；source/data锁匹配、真实进程均退出、旧端口关闭正常，pending/unknown0。证据healthcheck_20261016_022001.json。不恢复或重复通知同一到期状态、不重跑归档、不评分部分对照、不延长窗口。
+
+2026-10-16 02:30 heartbeat：到期旧两批与已完成val补测保持已清理及原费用/终态不变，pending/unknown0，source/data锁匹配，真实进程退出/旧端口关闭正常。证据healthcheck_20261016_023003.json。没有新授权窗口，不恢复、不重归档或重复通知，不评分部分对照。
+
+2026-10-16 02:40 heartbeat：旧到期两批与已审计val补测仍保持清理、原终态/费用不变，pending/unknown0，source/data锁匹配，真实进程退出与旧端口关闭正常。证据healthcheck_20261016_024000.json。不恢复、不重复到期通知或归档、不评分部分对照、不延长窗口。
+
+2026-10-16 02:50 heartbeat：原到期两批与已审计val补测保持已清理、费用/终态不变、pending/unknown0，source/data锁匹配，真实进程退出与旧端口关闭正常。证据healthcheck_20261016_025001.json。无新窗口授权，不恢复、不重复通知或归档，不评分部分对照、不延长截止。
+
+2026-10-16 03:00 heartbeat：原到期两批与已审计val补测保持已清理，原终态/费用不变、pending/unknown0，source/data锁匹配，进程退出/旧端口关闭正常。证据healthcheck_20261016_030009.json。没有新窗口授权，不恢复、不重复通知或归档，不评分部分对照、不延长截止。
+
+2026-10-16 03:10 heartbeat：原到期两批与已审计val补测保持清理，费用/终态不变，pending/unknown0，source/data锁匹配，进程退出与旧端口关闭正常。证据healthcheck_20261016_031010.json。无新窗口授权，不恢复、不重复通知或归档、不评分部分对照、不延长截止。
+
+2026-10-16 03:20 heartbeat：原到期两批与已审计val补测保持清理，终态与费用不变，pending/unknown0，source/data锁匹配，真实进程退出与原端口关闭正常。证据healthcheck_20261016_032003.json。无新窗口授权，不恢复、不重复归档或通知、不评分部分对照、不延长截止。
+
+2026-10-16 03:30 heartbeat：原到期GSM/Pro与已审计Pro val补测终态、费用和清理状态不变，pending/unknown0，source/data锁匹配，原自有进程退出及端口关闭正常。证据healthcheck_20261016_033000.json。无新窗口授权，不恢复、不重复通知或归档、不评分部分对照、不延长截止。
+
+2026-10-16 03:40 heartbeat：原到期GSM/Pro与已审计Pro val补测终态/费用不变，pending/unknown0，source/data锁匹配，自有进程/端口保持已清理。证据healthcheck_20261016_034000.json。无新窗口授权，不恢复、不延长截止、不评分部分对照、不重复通知或归档。
+
+2026-10-16 03:50 heartbeat：原到期GSM/Pro与已审计Pro val补测状态/终态/费用均不变，pending/unknown0，source/data锁匹配，自有进程与端口保持已清理。证据healthcheck_20261016_035000.json。无新窗口授权，不恢复或延长、不评分部分对照、不重复通知或归档。
+
+2026-10-16 04:00 heartbeat：原到期GSM/Pro与已审计Pro val补测状态、终态和费用不变，pending/unknown0，source/data锁匹配，自有进程/端口保持清理。证据healthcheck_20261016_040000.json。无新窗口授权，不恢复、不延长、不评分部分对照、不重复通知或归档。
+
+2026-10-16 04:10 heartbeat：原到期GSM/Pro与已审计Pro val补测终态/费用/清理状态不变，pending/unknown0，source/data锁匹配，真实进程退出及原端口关闭正常。证据healthcheck_20261016_041001.json。无新窗口授权，不恢复、不延长、不评分部分对照、不重复通知或归档。
+
+2026-10-16 04:20 heartbeat：原到期GSM/Pro与已审计Pro val补测终态/费用/清理状态不变，pending/unknown0、source/data锁匹配、实际进程与端口关闭正常。证据healthcheck_20261016_042000.json。无新窗口授权，不恢复、不延长、不评分部分对照、不重复通知或归档。
+
+2026-10-16 04:30 heartbeat：原到期GSM/Pro与已审计Pro val补测状态/终态/费用不变，pending/unknown0，source/data锁匹配，自有进程和端口保持清理。证据healthcheck_20261016_043002.json。无新窗口授权，不恢复、不延长、不评分部分对照、不重复通知或归档。
+
+2026-10-16 04:40 heartbeat：原到期GSM/Pro与已审计Pro val补测终态、费用与清理状态不变，pending/unknown0，source/data锁匹配，实际进程退出与旧端口关闭正常。证据healthcheck_20261016_044001.json。无新窗口授权，不恢复、不延长、不评分部分对照、不重复通知或归档。
+
+2026-10-16 04:50 heartbeat：原到期GSM/Pro与已审计Pro val补测终态/费用/清理状态保持不变，pending/unknown0，source/data锁匹配，原进程退出与端口关闭正常。证据healthcheck_20261016_045001.json。无新窗口授权，不恢复、不延长、不评分部分对照、不重复通知或归档。
+
+2026-10-16 05:00 heartbeat：原到期GSM/Pro与已审计Pro val补测终态、费用与清理状态不变，pending/unknown0，source/data锁匹配，实际进程退出与原端口关闭正常。证据healthcheck_20261016_050001.json。无新窗口授权，不恢复、不延长、不评分部分对照、不重复通知或归档。
+
+2026-10-16 05:10 heartbeat：原到期GSM/Pro与已审计Pro val补测终态、费用和清理状态保持，pending/unknown0，source/data锁匹配，真实进程退出与原端口关闭正常。证据healthcheck_20261016_051002.json。无新窗口授权，不恢复、不延长、不评分部分对照、不重复通知或归档。
+
+2026-10-16 05:20 heartbeat：原到期GSM/Pro与已审计Pro val补测终态、费用和清理状态不变，pending/unknown0，source/data锁匹配，真实进程退出及原端口关闭正常。证据healthcheck_20261016_052002.json。无新窗口授权，不恢复、不延长、不评分部分对照、不重复通知或归档。
+
+2026-10-16 05:30 heartbeat：原到期GSM/Pro与已审计Pro val补测终态、费用和清理状态不变，pending/unknown0，source/data锁匹配，实际进程退出及原端口关闭正常。证据healthcheck_20261016_053002.json。无新窗口授权，不恢复、不延长、不评分部分对照、不重复通知或归档。
+
+2026-10-16 05:40 heartbeat：原到期GSM/Pro与已审计Pro val补测终态、费用和清理状态不变，pending/unknown0，source/data锁匹配，真实进程退出与原端口关闭正常。证据healthcheck_20261016_054002.json。无新窗口授权，不恢复、不延长、不评分部分对照、不重复通知或归档。
+
+2026-10-16 05:50 heartbeat：原到期GSM/Pro与已审计Pro val补测终态、费用及清理状态不变，pending/unknown0，source/data锁匹配，实际进程退出与原端口关闭正常。证据healthcheck_20261016_055003.json。无新窗口授权，不恢复、不延长、不评分部分对照、不重复通知或归档。
+
+2026-10-16 06:00 heartbeat：原到期GSM/Pro与已审计Pro val补测终态、费用及清理状态不变，pending/unknown0，source/data锁匹配，实际进程退出与原端口关闭正常。证据healthcheck_20261016_060002.json。无新窗口授权，不恢复、不延长、不评分部分对照、不重复通知或归档。
+
+2026-10-16 06:10 heartbeat：原到期GSM/Pro与已审计Pro val补测终态、费用及清理状态不变，pending/unknown0，source/data锁匹配，实际进程退出与原端口关闭正常。证据healthcheck_20261016_061004.json。无新窗口授权，不恢复、不延长、不评分部分对照、不重复通知或归档。
+
+2026-10-16 06:20 heartbeat：原到期GSM/Pro与已审计Pro val补测终态、费用及清理状态不变，pending/unknown0，source/data锁匹配，实际进程退出与原端口关闭正常。证据healthcheck_20261016_062004.json。无新窗口授权，不恢复、不延长、不评分部分对照、不重复通知或归档。
+
+2026-10-16 06:30 heartbeat：原到期GSM/Pro与已审计Pro val补测终态、费用及清理状态不变，pending/unknown0，source/data锁匹配，实际进程退出与原端口关闭正常。证据healthcheck_20261016_063021.json。无新窗口授权，不恢复、不延长、不评分部分对照、不重复通知或归档。
+
+2026-10-16 06:40 heartbeat：原到期GSM/Pro与已审计Pro val补测终态、费用及清理状态不变，pending/unknown0，source/data锁匹配，实际进程退出与原端口关闭正常。证据healthcheck_20261016_064002.json。无新窗口授权，不恢复、不延长、不评分部分对照、不重复通知或归档。
+
+2026-10-16 06:50 heartbeat：原到期GSM/Pro与已审计Pro val补测终态、费用及清理状态不变，pending/unknown0，source/data锁匹配，实际进程退出与原端口关闭正常。证据healthcheck_20261016_065004.json。无新窗口授权，不恢复、不延长、不评分部分对照、不重复通知或归档。
+
+2026-10-16 07:00 heartbeat：原到期GSM/Pro与已审计Pro val补测终态、费用与清理状态不变，pending/unknown0，source/data锁匹配，实际进程退出与原端口关闭正常。证据healthcheck_20261016_070005.json。无新窗口授权，不恢复、不延长、不评分部分对照、不重复通知或归档。
+
+2026-10-16 07:10 heartbeat：原到期GSM/Pro与已审计Pro val补测终态、费用及清理状态不变，pending/unknown0，source/data锁匹配，实际进程退出与原端口关闭正常。证据healthcheck_20261016_071005.json。无新窗口授权，不恢复、不延长、不评分部分对照、不重复通知或归档。
+
+2026-10-16 07:20 heartbeat：原到期GSM/Pro与已审计Pro val补测终态、费用及清理状态不变，pending/unknown0，source/data锁匹配，实际进程退出与原端口关闭正常。证据healthcheck_20261016_072005.json。无新窗口授权，不恢复、不延长、不评分部分对照、不重复通知或归档。
+
+2026-10-16 07:30 heartbeat：原到期GSM/Pro与已审计Pro val补测终态、费用及清理状态不变，pending/unknown0，source/data锁匹配，实际进程退出与原端口关闭正常。证据healthcheck_20261016_073006.json。无新窗口授权，不恢复、不延长、不评分部分对照、不重复通知或归档。
+
+2026-10-16 07:40 heartbeat：原到期GSM/Pro与已审计Pro val补测终态、费用及清理状态不变，pending/unknown0，source/data锁匹配，实际进程退出与原端口关闭正常。证据healthcheck_20261016_074004.json。无新窗口授权，不恢复、不延长、不评分部分对照、不重复通知或归档。
+
+2026-10-16 07:50 heartbeat：原到期GSM/Pro与已审计Pro val补测终态、费用及清理状态不变，pending/unknown0，source/data锁匹配，实际进程退出与原端口关闭正常。证据healthcheck_20261016_075004.json。无新窗口授权，不恢复、不延长、不评分部分对照、不重复通知或归档。
+
+2026-10-16 08:00 heartbeat：原到期GSM/Pro与已审计Pro val补测终态、费用及清理状态不变，pending/unknown0，source/data锁匹配，实际进程退出与原端口关闭正常。证据healthcheck_20261016_080005.json。无新窗口授权，不恢复、不延长、不评分部分对照、不重复通知或归档。
+
+2026-10-16 08:10 heartbeat：原到期GSM/Pro与已审计Pro val补测终态、费用及清理状态不变，pending/unknown0，source/data锁匹配，实际进程退出与原端口关闭正常。证据healthcheck_20261016_081007.json。无新窗口授权，不恢复、不延长、不评分部分对照、不重复通知或归档。
+
+2026-10-16 08:20 heartbeat：原到期GSM/Pro与已审计Pro val补测终态、费用及清理状态不变，pending/unknown0，source/data锁匹配，实际进程退出与原端口关闭正常。证据healthcheck_20261016_082007.json。无新窗口授权，不恢复、不延长、不评分部分对照、不重复通知或归档。
+
+2026-10-16 08:30 heartbeat：原到期GSM/Pro与已审计Pro val补测终态、费用及清理状态不变，pending/unknown0，source/data锁匹配，实际进程退出与原端口关闭正常。证据healthcheck_20261016_083008.json。无新窗口授权，不恢复、不延长、不评分部分对照、不重复通知或归档。
+
+2026-10-16 08:45最新状态（覆盖早先运行进度，不改变授权）：MMLU新批1140/1140全有效并完成raw/成本/缓存/本地原解析器评分及资源清理审计；115文件归档SHA98b5cb78eb26766a812963aa5411253f1870e35671eeaf65dfe68b789969f4b4，completion_audit passed、实际7870810token/12846calls、pending/unknown0，永不自动重跑。SVAMP于原deadline08:40:16（1792111216.6382632）停止并08:40:24完成全部自有进程/子进程及11454/11455清理；适配600/600保持，原MOC仅428/600（0.3为215、0.7为213），总1028有效、无重复/已提交invalid，缺172，不评分部分test、不声称完整比较。实际3908073token、7444新调用，其中7443次有返回用量（含3热身）；一个截止时被中断请求无返回，原budget的10192 pending保持不改，独立closure_report以reservation_id核对started7441-settled7440后记录reconciled_unknown，审计pending0、独立unknown保守上界10192，cap合计3918265，不能再与原pending重复相加或冒充actual。126文件完整唯一归档已下载逐文件SHA核验，SHA9395abc1dfbaf27e533def227e6fa0ce621b39640c287027445634c7c3b93e46；本地SVAMP expiry_closure_20261016/closure_report.json和窗口到期收口记录.md，远端新计划expired_archives/moc_v21_svamp_train40_test_20261015/。原GSM/Pro到期未完成与已完成Pro val不变。现在没有活动生成；moc仍ACTIVE只读核查保留证据，无变化保持安静，不重复到期提醒。SVAMP和原GSM/Pro均禁止自动dispatch/恢复/延长；只有新的可信人类明确窗口授权才重新评审续未提交。原budget中该10192预留是已独立核销为unknown的同一项，后续不得当作新故障反复通知或重复收费。未达到所有五批完整实验完成审计且用户未取消，不PAUSED。

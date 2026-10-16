@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "verified_utc": "2026-10-16T00:44:44.071228+00:00",
+  "archive_sha256": "9395abc1dfbaf27e533def227e6fa0ce621b39640c287027445634c7c3b93e46",
+  "manifest_sha256": "599f7238c4e381425614de5628b48028df8bd16decb8182c8048c84b071fd88b",
+  "members_verified": 126,
+  "original_run_files_unchanged": true,
+  "no_gold_access_or_scoring": true,
+  "effective_cost_audit": {
+    "actual_tokens": 3908073,
+    "new_calls": 7444,
+    "pending_tokens": 0,
+    "unknown_cost_upper_bound_tokens": 10192,
+    "cap_accounted_tokens": 3918265
+  }
+}

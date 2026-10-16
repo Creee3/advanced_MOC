@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "update_mechanism": "mcp__codex_app__automation_update",
+  "read_back": "C:/Users/dell/.codex/automations/moc/automation.toml",
+  "trusted_prompt": "monitor_prompt_utf8.txt",
+  "prompt_exact_after_strip": true,
+  "replacement_characters": 0,
+  "name": "继续",
+  "automation_id": "moc",
+  "kind": "heartbeat",
+  "rrule": "RRULE:FREQ=MINUTELY;INTERVAL=10",
+  "automation_status": "ACTIVE",
+  "target_thread_id": "01a11c24-c60c-7b42-99e6-70e3c00dea5e",
+  "name_schedule_thread_status_preserved": true,
+  "summary_checks": ["MMLU1140/1140完成审计", "SVAMP原MOC428/600到期未完成", "unknown10192独立核销不重复计原pending", "不自动恢复或延长", "无变化安静"]
+}
