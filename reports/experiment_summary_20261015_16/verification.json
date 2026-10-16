@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "source_files_sha256_verified": 54,
+  "test_comparisons": 12,
+  "test_arms": 24,
+  "question_rows": 7148,
+  "test_rows": 6332,
+  "val_rows": 816,
+  "unique_condition_keys": true,
+  "correct_counts_and_logical_tokens_match_raw_extract": true,
+  "xlsx_exported_cached_values_match": true,
+  "xlsx_formula_cells_present": true,
+  "xlsx_error_cells": [],
+  "xlsx_filters_present": true,
+  "input_change_recalculation": "verified in artifact-tool before export; audited inputs restored",
+  "visual_qa": "all six worksheets rendered; eight ranges inspected; labels, wrapping and arm names corrected",
+  "new_model_calls": 0,
+  "totals": {
+    "actual_tokens": 39181781,
+    "unknown_upper": 69536,
+    "pending": 0,
+    "new_calls": 60218,
+    "conditions": 6444,
+    "valid": 6435,
+    "invalid": 9
+  },
+  "limits": [
+    "local artifact consistency audit, not independent reproduction",
+    "bootstrap intervals retained from audited original analyses",
+    "logical tokens are known main+merger tokens including cache hits",
+    "seven-batch cumulative cost, not strict calendar-day spending"
+  ]
+}
