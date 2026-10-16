@@ -1,0 +1,17 @@
+{
+  "status": "pause_requested_unconfirmed",
+  "checked_utc": "2026-10-16T03:52:49.580521+00:00",
+  "all_five_completion_audits_passed": true,
+  "results_commit": "c99ef64",
+  "automation_id": "moc",
+  "requested_status": "PAUSED",
+  "observed_status": "ACTIVE",
+  "observed_prompt_matches": false,
+  "expected_prompt_sha256": "981d3aa41b5fff447f7c60cab1b802a5547a8bee34a161023588004748b237a7",
+  "request_attempts": 2,
+  "tool_response": "Both automation_update calls still pending; no success confirmation",
+  "name": "继续",
+  "rrule": "RRULE:FREQ=MINUTELY;INTERVAL=10",
+  "target_thread_id": "01a11c24-c60c-7b42-99e6-70e3c00dea5e",
+  "direct_toml_edit": false
+}
