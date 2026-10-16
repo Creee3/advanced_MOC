@@ -1,0 +1,9 @@
+# 续跑诊断
+
+原三批因为原八小时截止停止，无模型/硬件根因。GSM原MOC504/600、Pro0/560、SVAMP428/600；各自adapted终态完整。MMLU与Pro val已经完成。
+
+09:29前现场GPU1/2/6主卡门槛合格，其余卡空闲显存约20747MiB可作9B合并器，不能作为27B主卡。准入仍需连续两次间隔10秒确认；不可清理他人占用来凑主卡。
+
+GSM与Pro原merger均11450，并行时Pro使用新私有端口11456。原backend只在common.py和merger_backend.py各一处检查run_start截止；管理worker加载器仅移除这两处wall条件，STOP、累计预算、请求、缓存、作者代码和生成参数均原样。原监督器stage使用无限实验截止，600秒trace静默/请求超时/代码隔离上限仍保留，防止失控。
+
+SVAMP原budget.pending10192对应唯一未返回请求main-1792111215015014674，已在独立closure_report作为unknown保守上界保留。续跑前在归档验证后原子移入预算unknown、追加reconciled_unknown trace记录；不改actual3908073或calls7444，不重复计费。

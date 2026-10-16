@@ -1,0 +1,13 @@
+{
+  "authorization_id": "human_continue_no_deadline_20261016",
+  "human_instruction": "我操了，感觉开始，别设置什么窗口期，尽可能占用gpu去跑完",
+  "experiment_wall_deadline": null,
+  "parallel_gpu_limit": 6,
+  "gpu_allocation": "one disjoint 27B+9B pair per unfinished baseline, idle admission only",
+  "runs": ["moc_v21_gsm8k_fewshot_20261015", "moc_v21_mmlu_pro_fewshot_20261015", "moc_v21_svamp_train40_test_20261015"],
+  "retain_cumulative_call_and_token_caps": true,
+  "retain_stop_and_runtime_safety_limits": true,
+  "resume_only_uncommitted_test_moc": true,
+  "never_retrain_or_rerun_terminals": true,
+  "never_touch_other_users_processes": true
+}

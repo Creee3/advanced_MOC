@@ -1,0 +1,132 @@
+{
+  "status": "passed",
+  "created_utc": "2026-10-16T01:33:53.058740+00:00",
+  "attempt": "/home/liuxin/ICML2027/experiments/moc_remaining_datasets_plan_20261015/resume_no_deadline_20261016/attempts/pre_resume_20261016T013334_588750Z",
+  "archive_sha256": "576c6a6d64c3e27e04bff2b9e6c01ba40afb1ba33c0652a00550dac34c9f6a5b",
+  "archive_bytes": 45736322,
+  "members": 363,
+  "manifest_sha256": "8316bf9213bf84efebcb33fc275b59f93afb25938ba6c66f841df668ebcec401",
+  "runs": {
+    "moc_v21_gsm8k_fewshot_20261015": {
+      "budget": {
+        "new_calls": 11386,
+        "actual_tokens": 7736331,
+        "reserved_tokens": 0,
+        "unknown_cost_upper_bound_tokens": 0
+      },
+      "original_run_start": {
+        "deadline_unix": 1792086556.3871992,
+        "started_utc": "2026-10-15T09:49:16.387211+00:00"
+      },
+      "adapted": 600,
+      "moc": 504,
+      "unresolved": {},
+      "policy_sha256": "8c421231a3a9cb94ff8de27320ae9f696f0728e0b665e588993dfa642b948878",
+      "terminal_files": {
+        "test/shard0/results.jsonl": {
+          "sha256": "b35ce78e4c22f3265d64c5b9f578718320287d3a931f59bbda465bbc57b94fd1",
+          "bytes": 13446651
+        },
+        "test/shard1/results.jsonl": {
+          "sha256": "4d2d56c1fbf7f24ebbc80e1fc7cb9d443ec738ef173b0b779483ab6ed42e4efc",
+          "bytes": 13404070
+        }
+      },
+      "cleanup_verified": true,
+      "source_data_policy_verified": true
+    },
+    "moc_v21_mmlu_pro_fewshot_20261015": {
+      "budget": {
+        "new_calls": 5134,
+        "actual_tokens": 4127233,
+        "reserved_tokens": 0,
+        "unknown_cost_upper_bound_tokens": 0
+      },
+      "original_run_start": {
+        "deadline_unix": 1792086576.4089835,
+        "started_utc": "2026-10-15T09:49:36.408996+00:00"
+      },
+      "adapted": 560,
+      "moc": 0,
+      "unresolved": {},
+      "policy_sha256": "18569fb8a30245f5419027d775dbff99ba0dc0da0d1b5a1da73620d165802794",
+      "terminal_files": {
+        "test/shard0/results.jsonl": {
+          "sha256": "1e04ec2117683f59457144ecc188c06e77338f131c9722ca5989ef1c2e75f0c4",
+          "bytes": 13029249
+        },
+        "test/shard1/results.jsonl": {
+          "sha256": "044a753c3eae1830b4cdd27c6fae7bd5ce0906816da963b43982e0279dc5977f",
+          "bytes": 12979623
+        }
+      },
+      "cleanup_verified": true,
+      "source_data_policy_verified": true
+    },
+    "moc_v21_svamp_train40_test_20261015": {
+      "budget": {
+        "new_calls": 7444,
+        "actual_tokens": 3908073,
+        "reserved_tokens": 10192,
+        "unknown_cost_upper_bound_tokens": 0
+      },
+      "original_run_start": {
+        "deadline_unix": 1792111216.6382632,
+        "started_utc": "2026-10-15T16:40:16.638274+00:00"
+      },
+      "adapted": 600,
+      "moc": 428,
+      "unresolved": {
+        "main-1792111215015014674": {
+          "event_index": 11494,
+          "event_type": "backend_request_started",
+          "time_unix": 1792111215.015025,
+          "stage": "test",
+          "request": {
+            "model": "gemma2:27b",
+            "messages": [
+              {
+                "role": "system",
+                "content": "You are a mathematical analyst. You will be given a math problem, analysis and code from other agents. You need to first analyze the problem-solving process, where the variables are represented by letters. Then you substitute the values into the analysis process to perform calculations and get the results.The last line of your output contains only the final result without any units, for example: The answer is 140\n"
+              },
+              {
+                "role": "user",
+                "content": "Q:Context: Baker made 110 cakes. He sold 75 of them. Then he made 76 more cakes.\nQuestion: How many cakes would baker still have?\nAnswer: At the same time, there are the following responses to the same question for your reference:\n\nAgent 0003, role is Mathematical Analyst,output is:\n## Problem Analysis:\n\n1. **Start:** Baker has 110 cakes.\n2. **Selling:** He sells 75 cakes, leaving him with 110 - 75 = 35 cakes.\n3. **Baking More:** He bakes 76 more cakes, increasing his total to 35 + 76 = 111 cakes.\n\n## Calculation:\n\n* Initial cakes: 110\n* Cakes sold: 75\n* Cakes remaining after selling: 110 - 75 = 35\n* Additional cakes baked: 76\n* Total cakes: 35 + 76 = 111\n\n\nThe answer is 111 \n\n\nAgent 0005, role is Inspector,output is:\nAgent 0003's logic and calculation are correct. The code accurately reflects the steps outlined in the analysis. \n\nHere's my own solving process:\n\n* **Step 1:** Baker starts with 110 cakes.\n* **Step 2:** He sells 75 cakes, leaving him with 110 - 75 = 35 cakes.\n* **Step 3:** He bakes 76 more cakes, bringing his total to 35 + 76 = 111 cakes.\n\n111 \n\n\nAgent 0002 & 0006, role is Math Solver & Math Solver,output is:\n* **Start:** The baker begins with 110 cakes.\n* **Sales:** He sells 75 cakes, leaving him with 110 - 75 = 35 cakes.\n* **Baking:** He then bakes 76 more cakes, increasing his total to 35 + 76 = 111 cakes. \n\n111\n\nAgent 0004 & 0008, role is Programming Expert & Programming Expert,output is:\n```python\ndef fun():\n  cakes = 110\n  cakes -= 75\n  cakes += 76\n  return cakes\nanswer = fun() \n```\nthe answer is 111\n\n"
+              }
+            ],
+            "stream": false,
+            "options": {
+              "num_predict": 2000,
+              "temperature": 0,
+              "seed": 42,
+              "num_ctx": 8192,
+              "num_gpu": 999
+            }
+          },
+          "question_id": "svamp:author_test:chal-795",
+          "arm": "moc",
+          "density": 0.7,
+          "phase": "test",
+          "reservation_id": "main-1792111215015014674",
+          "reserved_tokens": 10192
+        }
+      },
+      "policy_sha256": "728a99c19645a2ff230132ddd220ec243a7ea644bc11776e261ae193e4d4633e",
+      "terminal_files": {
+        "test/shard0/results.jsonl": {
+          "sha256": "0e8ac2361c22167756fc10b976595b866f4d30def103889dcaf4abfc51191c1c",
+          "bytes": 12357783
+        },
+        "test/shard1/results.jsonl": {
+          "sha256": "6dd483d152ebd1fae1433147dc6c2fbb1b7a24301377a05b4b5c104c647b0eb4",
+          "bytes": 12346812
+        }
+      },
+      "cleanup_verified": true,
+      "source_data_policy_verified": true
+    }
+  },
+  "authorization_sha256": "87950562d317f5d93c223e08685e7398cd8ff9edb1fb6f6b870df1058d089ec2",
+  "no_model_calls": true,
+  "no_run_mutation": true
+}
