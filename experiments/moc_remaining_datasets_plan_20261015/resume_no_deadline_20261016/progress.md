@@ -54,3 +54,18 @@ All five completion_audit passed: GSM1200,Pro1120,MMLU1140,SVAMP1200 author test
 
 
 Final automation limitation: all five completed audits and results committed c99ef64. Two identical idempotent automation_update PAUSED requests have not returned; readback still ACTIVE with prior prompt. Do not claim PAUSED until confirmed. No raw TOML edit or workaround schedule. Final trusted prompt on disk records all completed; no further experiment work authorized. Recheck the tool result or retry pause on next heartbeat if necessary.
+
+
+2026-10-16 11:54 heartbeat: five local completion audits still passed, all budgets pending0, no generation or audit work remains. Existing two automation_update pause requests remain pending; readback status=ACTIVE. No third duplicate mutation, no raw TOML edit, no restart/dispatch. Same application response condition already notified; quiet.
+
+
+2026-10-16 12:04 heartbeat: all five completed local audits unchanged; no generation/audit work remains. Two prior pause requests still pending after ten minutes; one identical idempotent bounded retry also pending (cell730). Readback=ACTIVE, final prompt not applied. Same app-response condition, already notified; no TOML edits, no more immediate duplicates, quiet.
+
+
+2026-10-16 12:14 heartbeat: all five completed audit SHA hashes match final index. Existing three automation_update requests remain pending; readback=ACTIVE, final prompt not applied. No fourth mutation or config bypass; same application-response condition already reported. No generation/audit work, quiet.
+
+
+2026-10-16 12:24 heartbeat: five completed audit hashes unchanged; automation readback still ACTIVE. Three pause requests remain unreturned for over20min. No repeated mutation/config bypass or experiment work. Escalate once to manual pause of named automation because app interface has not applied requests; do not repeat this manual-action notice on unchanged later heartbeats.
+
+
+2026-10-16 12:34 heartbeat: five audit hashes unchanged; automation still ACTIVE, three update calls unreturned. Manual pause notice already sent12:24; same condition, do not repeat. No experiment work or extra mutation.
