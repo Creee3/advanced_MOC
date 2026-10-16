@@ -1,0 +1,31 @@
+{
+  "status": "generation_complete_archived",
+  "created_utc": "2026-10-16T02:24:25.299497+00:00",
+  "remote_directory": "/home/liuxin/ICML2027/experiments/moc_remaining_datasets_plan_20261015/resume_no_deadline_20261016/completed_archives/moc_v21_svamp_train40_test_20261015",
+  "archive_sha256": "3566562d22e4709aa62a619616e653f2a7d6b7c0bb50f92623e03ef1998338be",
+  "archive_bytes": 12647754,
+  "member_manifest_sha256": "f90c4160147d29ef3cc2ee6b59db420567eefc8825549131b93480c7242c5935",
+  "members": 202,
+  "questions": 300,
+  "conditions": 1200,
+  "invalid": 0,
+  "budget": {
+    "new_calls": 9322,
+    "actual_tokens": 4880647,
+    "reserved_tokens": 0,
+    "unknown_cost_upper_bound_tokens": 10192
+  },
+  "source_data_policy_verified": true,
+  "raw_known_actual_exact": true,
+  "known_calls": 9321,
+  "unknown_calls": 1,
+  "unresolved_reservations": 0,
+  "original_terminal_prefixes_preserved": true,
+  "original_run_start_preserved": true,
+  "owned_cleanup_verified": true,
+  "author_commit": "9c67c92507570704a7df73e452552a3f49e83897",
+  "author_worktree_clean": true,
+  "all_runtime_management_source_included": true,
+  "author_python_source_included": true,
+  "no_gold_scoring": true
+}

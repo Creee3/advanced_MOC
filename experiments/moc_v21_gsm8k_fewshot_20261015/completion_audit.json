@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "dataset": "GSM8K",
+  "members_verified": 214,
+  "archive_sha256": "3026f8e527411367aaa91ca1f8104335854f4af45b2ef8f0b770083df02c9446",
+  "source_data_policy_verified": true,
+  "local_gold_hash_verified": true,
+  "original_parser_sha256": "fd2aa8f182d090da2f7996ea266c95ff409af312b0fd346ab45f925290741a5d",
+  "original_parser_rechecked": true,
+  "author_commit": "9c67c92507570704a7df73e452552a3f49e83897",
+  "author_worktree_clean": true,
+  "archived_parser_matches_git_blob": true,
+  "local_parser_checkout_eol_only_difference": true,
+  "conditions": 1200,
+  "exact_coverage": true,
+  "duplicates": 0,
+  "invalid": 0,
+  "budget": {
+    "new_calls": 12530,
+    "actual_tokens": 8494089,
+    "reserved_tokens": 0,
+    "unknown_cost_upper_bound_tokens": 0
+  },
+  "known_raw_actual_and_calls_match": true,
+  "unknown_calls": 0,
+  "unknown_reconciled_once": true,
+  "pending_trace_reservations": 0,
+  "cleanup_verified": true,
+  "original_terminal_prefixes_preserved": true,
+  "original_run_start_preserved": true,
+  "no_independent_reproduction_claim": true
+}

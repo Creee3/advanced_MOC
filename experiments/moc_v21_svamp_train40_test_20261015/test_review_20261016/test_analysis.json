@@ -1,0 +1,409 @@
+{
+  "status": "completed_local_scoring",
+  "dataset": "SVAMP",
+  "questions": 300,
+  "conditions": 1200,
+  "arms": {
+    "moc|0.3": {
+      "n": 300,
+      "correct": 272,
+      "accuracy": 0.9066666666666666,
+      "invalid": 0,
+      "logical_model_tokens": 1288602,
+      "main_model_tokens": 1288602,
+      "merger_model_tokens": 0,
+      "new_model_tokens": 1207741,
+      "logical_calls": 2400,
+      "main_calls": 2400,
+      "merger_calls": 0,
+      "cache_hits": 300,
+      "selection_sizes": {},
+      "stop_reasons": {},
+      "selected_hops": {},
+      "candidate_hops": {},
+      "support_evaluations": {},
+      "encoding_input_tokens": 0,
+      "encoding_seconds": 0,
+      "routing_seconds": 0
+    },
+    "adapted|0.3": {
+      "n": 300,
+      "correct": 269,
+      "accuracy": 0.8966666666666666,
+      "invalid": 0,
+      "logical_model_tokens": 923956,
+      "main_model_tokens": 923956,
+      "merger_model_tokens": 0,
+      "new_model_tokens": 709487,
+      "logical_calls": 2400,
+      "main_calls": 2400,
+      "merger_calls": 0,
+      "cache_hits": 900,
+      "selection_sizes": {
+        "0": 2100
+      },
+      "stop_reasons": {
+        "no_candidates": 300,
+        "expected_net_utility_nonpositive": 1500,
+        "no_supported_expected_action": 300
+      },
+      "selected_hops": {},
+      "candidate_hops": {
+        "1": 2100,
+        "2": 1500,
+        "3": 1200,
+        "4": 900
+      },
+      "support_evaluations": {
+        "supported": 3600,
+        "unsupported": 6000
+      },
+      "encoding_input_tokens": 310775,
+      "encoding_seconds": 113.01449547789525,
+      "routing_seconds": 11.392941969097592
+    },
+    "moc|0.7": {
+      "n": 300,
+      "correct": 271,
+      "accuracy": 0.9033333333333333,
+      "invalid": 0,
+      "logical_model_tokens": 3088108,
+      "main_model_tokens": 1556620,
+      "merger_model_tokens": 1531488,
+      "new_model_tokens": 2228924,
+      "logical_calls": 7275,
+      "main_calls": 2400,
+      "merger_calls": 4875,
+      "cache_hits": 2689,
+      "selection_sizes": {},
+      "stop_reasons": {},
+      "selected_hops": {},
+      "candidate_hops": {},
+      "support_evaluations": {},
+      "encoding_input_tokens": 0,
+      "encoding_seconds": 0,
+      "routing_seconds": 0
+    },
+    "adapted|0.7": {
+      "n": 300,
+      "correct": 269,
+      "accuracy": 0.8966666666666666,
+      "invalid": 0,
+      "logical_model_tokens": 923956,
+      "main_model_tokens": 923956,
+      "merger_model_tokens": 0,
+      "new_model_tokens": 0,
+      "logical_calls": 2400,
+      "main_calls": 2400,
+      "merger_calls": 0,
+      "cache_hits": 2400,
+      "selection_sizes": {
+        "0": 2100
+      },
+      "stop_reasons": {
+        "no_candidates": 300,
+        "expected_net_utility_nonpositive": 600,
+        "no_supported_expected_action": 1200
+      },
+      "selected_hops": {},
+      "candidate_hops": {
+        "1": 4500,
+        "2": 1800
+      },
+      "support_evaluations": {
+        "supported": 5100,
+        "unsupported": 10200
+      },
+      "encoding_input_tokens": 310775,
+      "encoding_seconds": 89.6624887259095,
+      "routing_seconds": 18.010580189991742
+    }
+  },
+  "paired": {
+    "0.3": {
+      "gains": 6,
+      "losses": 9,
+      "accuracy_difference": -0.01,
+      "bootstrap95": [
+        -0.03666666666666667,
+        0.013333333333333334
+      ],
+      "bootstrap_replicates": 20000,
+      "bootstrap_unit": "question",
+      "seed": 42,
+      "mcnemar_exact_two_sided": 0.60723876953125,
+      "logical_token_change": -0.2829779869967608
+    },
+    "0.7": {
+      "gains": 5,
+      "losses": 7,
+      "accuracy_difference": -0.006666666666666667,
+      "bootstrap95": [
+        -0.03,
+        0.016666666666666666
+      ],
+      "bootstrap_replicates": 20000,
+      "bootstrap_unit": "question",
+      "seed": 42,
+      "mcnemar_exact_two_sided": 0.7744140625,
+      "logical_token_change": -0.7008019149589328
+    }
+  },
+  "budget": {
+    "new_calls": 9322,
+    "actual_tokens": 4880647,
+    "reserved_tokens": 0,
+    "unknown_cost_upper_bound_tokens": 10192
+  },
+  "training": {
+    "planned_questions": 40,
+    "effective_questions": 40,
+    "excluded": [],
+    "labels": 200,
+    "coverage": [
+      [
+        "Inspector",
+        1,
+        1,
+        0
+      ],
+      [
+        "Math Solver",
+        3,
+        1,
+        0
+      ],
+      [
+        "Math Solver",
+        4,
+        1,
+        0
+      ],
+      [
+        "Math Solver",
+        4,
+        2,
+        0
+      ],
+      [
+        "Mathematical Analyst",
+        1,
+        1,
+        0
+      ],
+      [
+        "Mathematical Analyst",
+        2,
+        1,
+        0
+      ],
+      [
+        "Mathematical Analyst",
+        2,
+        2,
+        0
+      ],
+      [
+        "Programming Expert",
+        3,
+        1,
+        0
+      ],
+      [
+        "Programming Expert",
+        4,
+        1,
+        0
+      ],
+      [
+        "Programming Expert",
+        4,
+        2,
+        0
+      ]
+    ],
+    "metadata": {
+      "fit_questions": [
+        "svamp:official_full:chal-14",
+        "svamp:official_full:chal-155",
+        "svamp:official_full:chal-171",
+        "svamp:official_full:chal-173",
+        "svamp:official_full:chal-191",
+        "svamp:official_full:chal-23",
+        "svamp:official_full:chal-317",
+        "svamp:official_full:chal-358",
+        "svamp:official_full:chal-379",
+        "svamp:official_full:chal-410",
+        "svamp:official_full:chal-427",
+        "svamp:official_full:chal-46",
+        "svamp:official_full:chal-464",
+        "svamp:official_full:chal-508",
+        "svamp:official_full:chal-519",
+        "svamp:official_full:chal-528",
+        "svamp:official_full:chal-579",
+        "svamp:official_full:chal-608",
+        "svamp:official_full:chal-610",
+        "svamp:official_full:chal-629",
+        "svamp:official_full:chal-64",
+        "svamp:official_full:chal-741",
+        "svamp:official_full:chal-77",
+        "svamp:official_full:chal-770",
+        "svamp:official_full:chal-775",
+        "svamp:official_full:chal-784",
+        "svamp:official_full:chal-80",
+        "svamp:official_full:chal-800",
+        "svamp:official_full:chal-821",
+        "svamp:official_full:chal-837",
+        "svamp:official_full:chal-85",
+        "svamp:official_full:chal-857",
+        "svamp:official_full:chal-887",
+        "svamp:official_full:chal-889",
+        "svamp:official_full:chal-901",
+        "svamp:official_full:chal-906",
+        "svamp:official_full:chal-911",
+        "svamp:official_full:chal-941",
+        "svamp:official_full:chal-952",
+        "svamp:official_full:chal-989"
+      ],
+      "fit_question_count": 40,
+      "fit_rows": 200,
+      "fit_episode_count": 80,
+      "target": "expected fixed-material downstream correctness change",
+      "weight_scheme": "equal question mass; equal episode mass within question; equal action mass within episode; sum=n_rows",
+      "sample_weight_sum": 200.0,
+      "regularization": 10.0,
+      "seed": 42,
+      "bootstrap_unit": "question",
+      "bootstrap_replicates": 32,
+      "bootstrap_scope": "descriptive question-bootstrap model variation; not a confidence or prediction interval",
+      "primary_prediction": "deterministic all-fit weighted ridge; clip/renormalize help and harm",
+      "standardization_scope": "weighted current fit partition only; reused by bootstrap replicates",
+      "calibration_as_confidence_interval": false,
+      "support_scope": "observed role/hop/group-size metadata with selected_count=0; abstain otherwise",
+      "feature_mode": "compact",
+      "feature_selection": [
+        "added_group_size",
+        "group_pair_cosine_mean",
+        "group_pair_cosine_min",
+        "group_min_hop",
+        "group_max_hop",
+        "group_hop_span",
+        "group_is_connected_path",
+        "group_incremental_cost_fraction",
+        "group_projected_cost_fraction",
+        "group_solver_fraction",
+        "group_analyst_fraction",
+        "group_programmer_fraction",
+        "group_inspector_fraction",
+        "member_mean_base_similarity",
+        "member_mean_ladies_mass",
+        "member_mean_same_role",
+        "member_mean_receiver_solver",
+        "member_mean_receiver_analyst",
+        "member_mean_receiver_programmer",
+        "member_mean_receiver_inspector",
+        "member_max_base_similarity",
+        "member_max_ladies_mass"
+      ],
+      "limitations": "single noisy outcomes and dependent actions; no adaptive or full-MAS coverage guarantee"
+    }
+  },
+  "policy_sha256": "728a99c19645a2ff230132ddd220ec243a7ea644bc11776e261ae193e4d4633e",
+  "support_metadata_keys": [
+    [
+      "Inspector",
+      1,
+      1,
+      0
+    ],
+    [
+      "Math Solver",
+      3,
+      1,
+      0
+    ],
+    [
+      "Math Solver",
+      4,
+      1,
+      0
+    ],
+    [
+      "Math Solver",
+      4,
+      2,
+      0
+    ],
+    [
+      "Mathematical Analyst",
+      1,
+      1,
+      0
+    ],
+    [
+      "Mathematical Analyst",
+      2,
+      1,
+      0
+    ],
+    [
+      "Mathematical Analyst",
+      2,
+      2,
+      0
+    ],
+    [
+      "Programming Expert",
+      3,
+      1,
+      0
+    ],
+    [
+      "Programming Expert",
+      4,
+      1,
+      0
+    ],
+    [
+      "Programming Expert",
+      4,
+      2,
+      0
+    ]
+  ],
+  "process_cost": {
+    "training": {
+      "actual_tokens": 722203,
+      "new_calls": 1101,
+      "logical_tokens_all_process_raw": 858136,
+      "cache_hits": 219,
+      "terminal_attributed_new_tokens": 722203,
+      "interrupted_unattributed_actual_tokens": 0
+    },
+    "val": {
+      "actual_tokens": 0,
+      "new_calls": 0,
+      "logical_tokens_all_process_raw": 0,
+      "cache_hits": 0,
+      "terminal_attributed_new_tokens": 0,
+      "interrupted_unattributed_actual_tokens": 0
+    },
+    "test": {
+      "actual_tokens": 4158364,
+      "new_calls": 8215,
+      "logical_tokens_all_process_raw": 6241755,
+      "cache_hits": 6305,
+      "terminal_attributed_new_tokens": 4146152,
+      "interrupted_unattributed_actual_tokens": 12212
+    },
+    "warmup": {
+      "actual_tokens": 80,
+      "new_calls": 5
+    },
+    "unknown": {
+      "calls": 1,
+      "conservative_upper_bound_tokens": 10192
+    }
+  },
+  "output_cap_responses": []
+}

@@ -1,13 +1,16 @@
 {
-  "status": "passed",
-  "name": "\u7ee7\u7eed",
-  "automation_id": "moc",
-  "kind": "heartbeat",
+  "verified": true,
+  "prompt_sha256": "66c0a971778d493fce7f52ed9dacf8861fb072b439aeda4b877e208383c872c3",
+  "name": "继续",
+  "status": "ACTIVE",
   "rrule": "RRULE:FREQ=MINUTELY;INTERVAL=10",
-  "state": "ACTIVE",
   "target_thread_id": "01a11c24-c60c-7b42-99e6-70e3c00dea5e",
-  "prompt_sha256": "b3e66e9b975de9c10f3577306b30413faa2fd18c386551a328b812396eb7b79a",
-  "trusted_prompt_exact": true,
-  "utf8_valid": true,
-  "no_deadline_authorization": true
+  "completed": [
+    "GSM8K",
+    "SVAMP",
+    "MMLU",
+    "Pro val"
+  ],
+  "active": "MMLU-Pro",
+  "verified_at": "2026-10-16T02:31:55.493997+00:00"
 }

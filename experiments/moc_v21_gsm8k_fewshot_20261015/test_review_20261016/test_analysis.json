@@ -1,0 +1,407 @@
+{
+  "status": "completed_local_scoring",
+  "dataset": "GSM8K",
+  "questions": 300,
+  "conditions": 1200,
+  "arms": {
+    "moc|0.3": {
+      "n": 300,
+      "correct": 272,
+      "accuracy": 0.9066666666666666,
+      "invalid": 0,
+      "logical_model_tokens": 1643555,
+      "main_model_tokens": 1643555,
+      "merger_model_tokens": 0,
+      "new_model_tokens": 1543366,
+      "logical_calls": 2400,
+      "main_calls": 2400,
+      "merger_calls": 0,
+      "cache_hits": 305,
+      "selection_sizes": {},
+      "stop_reasons": {},
+      "selected_hops": {},
+      "candidate_hops": {},
+      "support_evaluations": {},
+      "encoding_input_tokens": 0,
+      "encoding_seconds": 0,
+      "routing_seconds": 0
+    },
+    "adapted|0.3": {
+      "n": 300,
+      "correct": 273,
+      "accuracy": 0.91,
+      "invalid": 0,
+      "logical_model_tokens": 1308283,
+      "main_model_tokens": 1308283,
+      "merger_model_tokens": 0,
+      "new_model_tokens": 1181507,
+      "logical_calls": 2400,
+      "main_calls": 2400,
+      "merger_calls": 0,
+      "cache_hits": 374,
+      "selection_sizes": {
+        "0": 1483,
+        "2": 283,
+        "1": 334
+      },
+      "stop_reasons": {
+        "no_candidates": 300,
+        "expected_net_utility_nonpositive": 883,
+        "no_supported_expected_action": 300,
+        "one_evidence_set_selected": 617
+      },
+      "selected_hops": {
+        "4": 210,
+        "3": 309,
+        "2": 185,
+        "1": 196
+      },
+      "candidate_hops": {
+        "1": 2100,
+        "2": 1500,
+        "3": 1200,
+        "4": 900
+      },
+      "support_evaluations": {
+        "supported": 3600,
+        "unsupported": 6000
+      },
+      "encoding_input_tokens": 450966,
+      "encoding_seconds": 132.73943993501598,
+      "routing_seconds": 13.215424216468818
+    },
+    "moc|0.7": {
+      "n": 300,
+      "correct": 271,
+      "accuracy": 0.9033333333333333,
+      "invalid": 0,
+      "logical_model_tokens": 4235029,
+      "main_model_tokens": 1930563,
+      "merger_model_tokens": 2304466,
+      "new_model_tokens": 3177850,
+      "logical_calls": 7780,
+      "main_calls": 2400,
+      "merger_calls": 5380,
+      "cache_hits": 2581,
+      "selection_sizes": {},
+      "stop_reasons": {},
+      "selected_hops": {},
+      "candidate_hops": {},
+      "support_evaluations": {},
+      "encoding_input_tokens": 0,
+      "encoding_seconds": 0,
+      "routing_seconds": 0
+    },
+    "adapted|0.7": {
+      "n": 300,
+      "correct": 270,
+      "accuracy": 0.9,
+      "invalid": 0,
+      "logical_model_tokens": 1236444,
+      "main_model_tokens": 1236444,
+      "merger_model_tokens": 0,
+      "new_model_tokens": 512966,
+      "logical_calls": 2400,
+      "main_calls": 2400,
+      "merger_calls": 0,
+      "cache_hits": 1977,
+      "selection_sizes": {
+        "0": 1894,
+        "2": 191,
+        "1": 15
+      },
+      "stop_reasons": {
+        "no_candidates": 300,
+        "expected_net_utility_nonpositive": 394,
+        "no_supported_expected_action": 1200,
+        "one_evidence_set_selected": 206
+      },
+      "selected_hops": {
+        "2": 201,
+        "1": 196
+      },
+      "candidate_hops": {
+        "1": 4500,
+        "2": 1800
+      },
+      "support_evaluations": {
+        "supported": 5100,
+        "unsupported": 10200
+      },
+      "encoding_input_tokens": 452689,
+      "encoding_seconds": 119.01277146115899,
+      "routing_seconds": 22.36152390058851
+    }
+  },
+  "paired": {
+    "0.3": {
+      "gains": 9,
+      "losses": 8,
+      "accuracy_difference": 0.0033333333333333335,
+      "bootstrap95": [
+        -0.023333333333333334,
+        0.03
+      ],
+      "bootstrap_replicates": 20000,
+      "bootstrap_unit": "question",
+      "seed": 42,
+      "mcnemar_exact_two_sided": 1,
+      "logical_token_change": -0.20399195646023405
+    },
+    "0.7": {
+      "gains": 8,
+      "losses": 9,
+      "accuracy_difference": -0.0033333333333333335,
+      "bootstrap95": [
+        -0.03,
+        0.023333333333333334
+      ],
+      "bootstrap_replicates": 20000,
+      "bootstrap_unit": "question",
+      "seed": 42,
+      "mcnemar_exact_two_sided": 1,
+      "logical_token_change": -0.7080435576710337
+    }
+  },
+  "budget": {
+    "new_calls": 12530,
+    "actual_tokens": 8494089,
+    "reserved_tokens": 0,
+    "unknown_cost_upper_bound_tokens": 0
+  },
+  "training": {
+    "planned_questions": 24,
+    "effective_questions": 24,
+    "excluded": [],
+    "labels": 120,
+    "coverage": [
+      [
+        "Inspector",
+        1,
+        1,
+        0
+      ],
+      [
+        "Math Solver",
+        3,
+        1,
+        0
+      ],
+      [
+        "Math Solver",
+        4,
+        1,
+        0
+      ],
+      [
+        "Math Solver",
+        4,
+        2,
+        0
+      ],
+      [
+        "Mathematical Analyst",
+        1,
+        1,
+        0
+      ],
+      [
+        "Mathematical Analyst",
+        2,
+        1,
+        0
+      ],
+      [
+        "Mathematical Analyst",
+        2,
+        2,
+        0
+      ],
+      [
+        "Programming Expert",
+        3,
+        1,
+        0
+      ],
+      [
+        "Programming Expert",
+        4,
+        1,
+        0
+      ],
+      [
+        "Programming Expert",
+        4,
+        2,
+        0
+      ]
+    ],
+    "metadata": {
+      "fit_questions": [
+        "gsm8k:train:1273",
+        "gsm8k:train:1685",
+        "gsm8k:train:2164",
+        "gsm8k:train:2209",
+        "gsm8k:train:2282",
+        "gsm8k:train:2403",
+        "gsm8k:train:2809",
+        "gsm8k:train:3843",
+        "gsm8k:train:4583",
+        "gsm8k:train:5081",
+        "gsm8k:train:5132",
+        "gsm8k:train:5358",
+        "gsm8k:train:5359",
+        "gsm8k:train:5582",
+        "gsm8k:train:56",
+        "gsm8k:train:5734",
+        "gsm8k:train:5829",
+        "gsm8k:train:6009",
+        "gsm8k:train:6113",
+        "gsm8k:train:6227",
+        "gsm8k:train:626",
+        "gsm8k:train:6633",
+        "gsm8k:train:7274",
+        "gsm8k:train:7457"
+      ],
+      "fit_question_count": 24,
+      "fit_rows": 120,
+      "fit_episode_count": 48,
+      "target": "expected fixed-material downstream correctness change",
+      "weight_scheme": "equal question mass; equal episode mass within question; equal action mass within episode; sum=n_rows",
+      "sample_weight_sum": 120.0,
+      "regularization": 10.0,
+      "seed": 42,
+      "bootstrap_unit": "question",
+      "bootstrap_replicates": 32,
+      "bootstrap_scope": "descriptive question-bootstrap model variation; not a confidence or prediction interval",
+      "primary_prediction": "deterministic all-fit weighted ridge; clip/renormalize help and harm",
+      "standardization_scope": "weighted current fit partition only; reused by bootstrap replicates",
+      "calibration_as_confidence_interval": false,
+      "support_scope": "observed role/hop/group-size metadata with selected_count=0; abstain otherwise",
+      "feature_mode": "compact",
+      "feature_selection": [
+        "added_group_size",
+        "group_pair_cosine_mean",
+        "group_pair_cosine_min",
+        "group_min_hop",
+        "group_max_hop",
+        "group_hop_span",
+        "group_is_connected_path",
+        "group_incremental_cost_fraction",
+        "group_projected_cost_fraction",
+        "group_solver_fraction",
+        "group_analyst_fraction",
+        "group_programmer_fraction",
+        "group_inspector_fraction",
+        "member_mean_base_similarity",
+        "member_mean_ladies_mass",
+        "member_mean_same_role",
+        "member_mean_receiver_solver",
+        "member_mean_receiver_analyst",
+        "member_mean_receiver_programmer",
+        "member_mean_receiver_inspector",
+        "member_max_base_similarity",
+        "member_max_ladies_mass"
+      ],
+      "limitations": "single noisy outcomes and dependent actions; no adaptive or full-MAS coverage guarantee"
+    }
+  },
+  "policy_sha256": "8c421231a3a9cb94ff8de27320ae9f696f0728e0b665e588993dfa642b948878",
+  "support_metadata_keys": [
+    [
+      "Inspector",
+      1,
+      1,
+      0
+    ],
+    [
+      "Math Solver",
+      3,
+      1,
+      0
+    ],
+    [
+      "Math Solver",
+      4,
+      1,
+      0
+    ],
+    [
+      "Math Solver",
+      4,
+      2,
+      0
+    ],
+    [
+      "Mathematical Analyst",
+      1,
+      1,
+      0
+    ],
+    [
+      "Mathematical Analyst",
+      2,
+      1,
+      0
+    ],
+    [
+      "Mathematical Analyst",
+      2,
+      2,
+      0
+    ],
+    [
+      "Programming Expert",
+      3,
+      1,
+      0
+    ],
+    [
+      "Programming Expert",
+      4,
+      1,
+      0
+    ],
+    [
+      "Programming Expert",
+      4,
+      2,
+      0
+    ]
+  ],
+  "process_cost": {
+    "training": {
+      "actual_tokens": 579378,
+      "new_calls": 690,
+      "logical_tokens_all_process_raw": 665096,
+      "cache_hits": 102,
+      "terminal_attributed_new_tokens": 579378,
+      "interrupted_unattributed_actual_tokens": 0
+    },
+    "val": {
+      "actual_tokens": 1486499,
+      "new_calls": 2071,
+      "logical_tokens_all_process_raw": 2137758,
+      "cache_hits": 1769,
+      "terminal_attributed_new_tokens": 1486499,
+      "interrupted_unattributed_actual_tokens": 0
+    },
+    "test": {
+      "actual_tokens": 6428132,
+      "new_calls": 9764,
+      "logical_tokens_all_process_raw": 8447687,
+      "cache_hits": 5260,
+      "terminal_attributed_new_tokens": 6415689,
+      "interrupted_unattributed_actual_tokens": 12443
+    },
+    "warmup": {
+      "actual_tokens": 80,
+      "new_calls": 5
+    },
+    "unknown": {
+      "calls": 0,
+      "conservative_upper_bound_tokens": 0
+    }
+  },
+  "output_cap_responses": []
+}

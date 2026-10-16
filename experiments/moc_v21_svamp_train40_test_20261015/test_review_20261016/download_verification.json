@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "checked_utc": "2026-10-16T02:24:55.191983+00:00",
+  "archive_sha256": "3566562d22e4709aa62a619616e653f2a7d6b7c0bb50f92623e03ef1998338be",
+  "members_verified": 202,
+  "all_hashes_match": true,
+  "safe_regular_members_only": true,
+  "no_gold_scoring": true
+}
