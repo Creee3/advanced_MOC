@@ -20,12 +20,14 @@ from preflight_archive import active, read, sha
 HERE=Path(__file__).resolve().parent
 
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--root',required=True);p.add_argument('--main-gpu',required=True);p.add_argument('--merger-gpu',required=True);p.add_argument('--merger-port',type=int,required=True);a=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--root',required=True);p.add_argument('--main-gpu',required=True);p.add_argument('--merger-gpu',required=True);p.add_argument('--merger-port',type=int,required=True);p.add_argument('--review',default='pre_resume_review.json');a=p.parse_args()
     root=Path(a.root).resolve();validate_authorization(root)
     assert subprocess.check_output(['systemd-detect-virt'],text=True).strip() in ('lxc','lxd')
     assert ctypes.CDLL(None).prctl(36,1,0,0,0)==0
     lock=(root/'supervisor.lock').open('a');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
-    old=read(root/'status.json');review=read(HERE/'pre_resume_review.json')['runs'][root.name]
+    review_path=(HERE/a.review).resolve();assert review_path.parent==HERE
+    reviewed=read(review_path);assert reviewed['status']=='passed'
+    old=read(root/'status.json');review=reviewed['runs'][root.name]
     assert old['cleanup_complete'] and old['phase'] in ('failed','adaptive_complete')
     assert not active(old.get('supervisor_pid')) and not (root/'STOP').exists() and not (HERE.parent/'STOP').exists()
     sys.path.insert(0,str(root))
@@ -76,6 +78,7 @@ def main():
     try:
         first={g['uuid']:g for g in gpu.gpu_snapshot()};time.sleep(10)
         second={g['uuid']:g for g in gpu.gpu_snapshot()}
+        original.publish(admission_checks=dict(first=first,second=second),assigned_gpus=[a.main_gpu,a.merger_gpu])
         assert a.main_gpu!=a.merger_gpu
         for uuid,minimum in ((a.main_gpu,21000),(a.merger_gpu,10000)):
             assert uuid in first and uuid in second and max(first[uuid]['utilization'],second[uuid]['utilization'])<=15

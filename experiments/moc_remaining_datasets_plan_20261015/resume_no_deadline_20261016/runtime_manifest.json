@@ -1,9 +1,12 @@
 {
+  "archive_resource_retry.py": "c5b3676faea228bb96106de249d97770404c3fd2cd379b8b8e93451060c48b35",
   "authorization.json": "87950562d317f5d93c223e08685e7398cd8ff9edb1fb6f6b870df1058d089ec2",
+  "capture_launch_verification.py": "91352eeb14bd3a61ada54ba4b6ca70cc9f797722cc45d4fd1ab57d6c4bb779c2",
   "preflight_archive.py": "684f81cd4c6bc4239cbca4a121c2b57a8f0f4d37aea017c83cc289a582194f77",
   "resume_dispatch.py": "e6f3b7932271b207413a2448d6715912a5e9aa63f1460f6979581b806b39cd9d",
-  "resume_supervisor.py": "9d1eb3d5bb42519042b4c1742ceacf44566a63b2d5a0345465a469e987e10a34",
+  "resume_supervisor.py": "b9d9ce79e34c326be8effd07c5ee3b91d7d94b5e0633cd2cd2ee926571d29332",
   "resume_worker.py": "4019f083c960f2b3b18a5728c556c028b69674cce82fb72892029b36a83a5956",
+  "retry_resource_admission.py": "43153da2f6f205ff0c2367ea0986ef6db1ef58cc0a408991a761c7db986b30a0",
   "test_runtime_override.py": "2cc6fe5e054c79407c0b1cde3bafbb0432527fd677550526675ef27246815b33",
   "verify_pre_resume_download.py": "959e7072a1d23dcc029588f9c9f38acb35a5aef7b45cf23102e6c23ffed60689"
 }

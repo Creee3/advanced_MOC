@@ -1,0 +1,150 @@
+{
+  "phase": "launched",
+  "started": [
+    {
+      "dataset": "moc_v21_mmlu_pro_fewshot_20261015",
+      "pid": 3007459,
+      "started_utc": "2026-10-16T01:37:11.751287+00:00",
+      "main": {
+        "index": 1,
+        "uuid": "GPU-d7d04192-bf97-dfdb-3276-75ff261a9f51",
+        "util": 0,
+        "free": 24081
+      },
+      "merger": {
+        "index": 4,
+        "uuid": "GPU-89523765-dcd4-46ea-1f2d-4ff7d509138c",
+        "util": 0,
+        "free": 20747
+      },
+      "merger_port": 11456,
+      "cmd": [
+        "/home/liuxin/.conda/envs/moc/bin/python",
+        "-u",
+        "/home/liuxin/ICML2027/experiments/moc_remaining_datasets_plan_20261015/resume_no_deadline_20261016/resume_supervisor.py",
+        "--root",
+        "/home/liuxin/ICML2027/experiments/moc_v21_mmlu_pro_fewshot_20261015",
+        "--main-gpu",
+        "GPU-d7d04192-bf97-dfdb-3276-75ff261a9f51",
+        "--merger-gpu",
+        "GPU-89523765-dcd4-46ea-1f2d-4ff7d509138c",
+        "--merger-port",
+        "11456"
+      ]
+    },
+    {
+      "dataset": "moc_v21_gsm8k_fewshot_20261015",
+      "pid": 3007460,
+      "started_utc": "2026-10-16T01:37:11.752497+00:00",
+      "main": {
+        "index": 2,
+        "uuid": "GPU-2121fa39-275f-d7eb-3c84-c7292ed702bc",
+        "util": 0,
+        "free": 24081
+      },
+      "merger": {
+        "index": 5,
+        "uuid": "GPU-8b952bd3-5cdf-11d4-561a-bc9ef3717773",
+        "util": 0,
+        "free": 20747
+      },
+      "merger_port": 11450,
+      "cmd": [
+        "/home/liuxin/.conda/envs/moc/bin/python",
+        "-u",
+        "/home/liuxin/ICML2027/experiments/moc_remaining_datasets_plan_20261015/resume_no_deadline_20261016/resume_supervisor.py",
+        "--root",
+        "/home/liuxin/ICML2027/experiments/moc_v21_gsm8k_fewshot_20261015",
+        "--main-gpu",
+        "GPU-2121fa39-275f-d7eb-3c84-c7292ed702bc",
+        "--merger-gpu",
+        "GPU-8b952bd3-5cdf-11d4-561a-bc9ef3717773",
+        "--merger-port",
+        "11450"
+      ]
+    },
+    {
+      "dataset": "moc_v21_svamp_train40_test_20261015",
+      "pid": 3007461,
+      "started_utc": "2026-10-16T01:37:11.753651+00:00",
+      "main": {
+        "index": 6,
+        "uuid": "GPU-0179fbe0-2ace-59a4-7794-fa483dda1e46",
+        "util": 0,
+        "free": 24081
+      },
+      "merger": {
+        "index": 7,
+        "uuid": "GPU-e230f5a4-ad5d-341f-2840-4f737f3c0c26",
+        "util": 0,
+        "free": 20747
+      },
+      "merger_port": 11455,
+      "cmd": [
+        "/home/liuxin/.conda/envs/moc/bin/python",
+        "-u",
+        "/home/liuxin/ICML2027/experiments/moc_remaining_datasets_plan_20261015/resume_no_deadline_20261016/resume_supervisor.py",
+        "--root",
+        "/home/liuxin/ICML2027/experiments/moc_v21_svamp_train40_test_20261015",
+        "--main-gpu",
+        "GPU-0179fbe0-2ace-59a4-7794-fa483dda1e46",
+        "--merger-gpu",
+        "GPU-e230f5a4-ad5d-341f-2840-4f737f3c0c26",
+        "--merger-port",
+        "11455"
+      ]
+    }
+  ],
+  "pending": [],
+  "gpu_snapshot": {
+    "GPU-0a075077-3745-799a-aff3-f0d34a17b6ac": {
+      "index": 0,
+      "uuid": "GPU-0a075077-3745-799a-aff3-f0d34a17b6ac",
+      "util": 0,
+      "free": 20747
+    },
+    "GPU-d7d04192-bf97-dfdb-3276-75ff261a9f51": {
+      "index": 1,
+      "uuid": "GPU-d7d04192-bf97-dfdb-3276-75ff261a9f51",
+      "util": 0,
+      "free": 24081
+    },
+    "GPU-2121fa39-275f-d7eb-3c84-c7292ed702bc": {
+      "index": 2,
+      "uuid": "GPU-2121fa39-275f-d7eb-3c84-c7292ed702bc",
+      "util": 0,
+      "free": 24081
+    },
+    "GPU-dcb52b28-8342-ab3b-cd6f-74719b63586f": {
+      "index": 3,
+      "uuid": "GPU-dcb52b28-8342-ab3b-cd6f-74719b63586f",
+      "util": 0,
+      "free": 20747
+    },
+    "GPU-89523765-dcd4-46ea-1f2d-4ff7d509138c": {
+      "index": 4,
+      "uuid": "GPU-89523765-dcd4-46ea-1f2d-4ff7d509138c",
+      "util": 0,
+      "free": 20747
+    },
+    "GPU-8b952bd3-5cdf-11d4-561a-bc9ef3717773": {
+      "index": 5,
+      "uuid": "GPU-8b952bd3-5cdf-11d4-561a-bc9ef3717773",
+      "util": 0,
+      "free": 20747
+    },
+    "GPU-0179fbe0-2ace-59a4-7794-fa483dda1e46": {
+      "index": 6,
+      "uuid": "GPU-0179fbe0-2ace-59a4-7794-fa483dda1e46",
+      "util": 0,
+      "free": 24081
+    },
+    "GPU-e230f5a4-ad5d-341f-2840-4f737f3c0c26": {
+      "index": 7,
+      "uuid": "GPU-e230f5a4-ad5d-341f-2840-4f737f3c0c26",
+      "util": 0,
+      "free": 20747
+    }
+  },
+  "updated_utc": "2026-10-16T01:37:11.754005+00:00"
+}

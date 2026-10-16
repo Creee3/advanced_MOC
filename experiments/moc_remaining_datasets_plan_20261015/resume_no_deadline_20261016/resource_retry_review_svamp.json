@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "attempt": "/home/liuxin/ICML2027/experiments/moc_remaining_datasets_plan_20261015/resume_no_deadline_20261016/attempts/resource_admission_retry_20261016T013849_496603Z",
+  "archive_sha256": "00d4dd4b47f272e80779be368fd66d7f2b841cb86f4c49ed5c82663c23334f00",
+  "archive_bytes": 10746752,
+  "manifest_sha256": "887527828de9e3aa511e4eb11dc473b59c97d2d97f86df179eb1de9bc5b836f7",
+  "members": 119,
+  "runs": {
+    "moc_v21_svamp_train40_test_20261015": {
+      "budget": {
+        "new_calls": 7444,
+        "actual_tokens": 3908073,
+        "reserved_tokens": 0,
+        "unknown_cost_upper_bound_tokens": 10192
+      },
+      "original_run_start": {
+        "deadline_unix": 1792111216.6382632,
+        "started_utc": "2026-10-15T16:40:16.638274+00:00"
+      },
+      "adapted": 600,
+      "moc": 428,
+      "unresolved": {},
+      "policy_sha256": "728a99c19645a2ff230132ddd220ec243a7ea644bc11776e261ae193e4d4633e",
+      "terminal_files": {
+        "test/shard0/results.jsonl": {
+          "sha256": "0e8ac2361c22167756fc10b976595b866f4d30def103889dcaf4abfc51191c1c",
+          "bytes": 12357783
+        },
+        "test/shard1/results.jsonl": {
+          "sha256": "6dd483d152ebd1fae1433147dc6c2fbb1b7a24301377a05b4b5c104c647b0eb4",
+          "bytes": 12346812
+        }
+      },
+      "cleanup_verified": true,
+      "source_data_policy_verified": true
+    }
+  },
+  "cause": "Second idle GPU admission check rejected utilization; failed before any service/model call",
+  "diagnosed_pid": 3007461,
+  "root_cause_retry_number": 1,
+  "unknown_already_carried_once": true
+}

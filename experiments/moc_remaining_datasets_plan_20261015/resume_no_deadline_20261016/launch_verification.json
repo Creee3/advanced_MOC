@@ -1,0 +1,319 @@
+{
+  "checked_utc": "2026-10-16T01:41:23.385885+00:00",
+  "runs": {
+    "moc_v21_mmlu_pro_fewshot_20261015": {
+      "supervisor_pid": 3007459,
+      "worker_pids": [
+        3009594,
+        3009595
+      ],
+      "actual_cmdlines": {
+        "3007459": "/home/liuxin/.conda/envs/moc/bin/python -u /home/liuxin/ICML2027/experiments/moc_remaining_datasets_plan_20261015/resume_no_deadline_20261016/resume_supervisor.py --root /home/liuxin/ICML2027/experiments/moc_v21_mmlu_pro_fewshot_20261015 --main-gpu GPU-d7d04192-bf97-dfdb-3276-75ff261a9f51 --merger-gpu GPU-89523765-dcd4-46ea-1f2d-4ff7d509138c --merger-port 11456 ",
+        "3009594": "/home/liuxin/.conda/envs/moc/bin/python -u /home/liuxin/ICML2027/experiments/moc_remaining_datasets_plan_20261015/resume_no_deadline_20261016/resume_worker.py --root /home/liuxin/ICML2027/experiments/moc_v21_mmlu_pro_fewshot_20261015 --phase test --shard 0 --arm moc --main-host http://127.0.0.1:11449 --merger-host http://127.0.0.1:11456 ",
+        "3009595": "/home/liuxin/.conda/envs/moc/bin/python -u /home/liuxin/ICML2027/experiments/moc_remaining_datasets_plan_20261015/resume_no_deadline_20261016/resume_worker.py --root /home/liuxin/ICML2027/experiments/moc_v21_mmlu_pro_fewshot_20261015 --phase test --shard 1 --arm moc --main-host http://127.0.0.1:11449 --merger-host http://127.0.0.1:11456 ",
+        "3007743": "/home/liuxin/.local/bin/ollama serve ",
+        "3008732": "/home/liuxin/.local/bin/ollama serve "
+      },
+      "services": [
+        {
+          "kind": "main0",
+          "pid": 3007743,
+          "port": 11449,
+          "gpu": {
+            "index": 1,
+            "uuid": "GPU-d7d04192-bf97-dfdb-3276-75ff261a9f51",
+            "utilization": 0,
+            "free_mib": 24081
+          },
+          "loaded": {
+            "name": "gemma2:27b",
+            "model": "gemma2:27b",
+            "size": 16757418884,
+            "digest": "53261bc9c192c1cb5fcc898dd3aa15da093f5ab6f08e17e48cf838bb1c58abfe",
+            "details": {
+              "parent_model": "",
+              "format": "gguf",
+              "family": "gemma2",
+              "families": [
+                "gemma2"
+              ],
+              "parameter_size": "27.2B",
+              "quantization_level": "Q4_0"
+            },
+            "expires_at": "2026-10-16T01:46:14.752760619Z",
+            "size_vram": 16757418884,
+            "context_length": 8192,
+            "runner": "llamacpp"
+          },
+          "cuda_probe_passed": true,
+          "warmup_passed": true
+        },
+        {
+          "kind": "merger",
+          "pid": 3008732,
+          "port": 11456,
+          "gpu": {
+            "index": 4,
+            "uuid": "GPU-89523765-dcd4-46ea-1f2d-4ff7d509138c",
+            "utilization": 0,
+            "free_mib": 20747
+          },
+          "loaded": {
+            "name": "gemma2:9b",
+            "model": "gemma2:9b",
+            "size": 6567493631,
+            "digest": "ff02c3702f322b9e075e9568332d96c0a7028002f1a5a056e0a6784320a4db0b",
+            "details": {
+              "parent_model": "",
+              "format": "gguf",
+              "family": "gemma2",
+              "families": [
+                "gemma2"
+              ],
+              "parameter_size": "9.2B",
+              "quantization_level": "Q4_0"
+            },
+            "expires_at": "2026-10-16T01:46:14.986912708Z",
+            "size_vram": 6567493631,
+            "context_length": 8192,
+            "runner": "llamacpp"
+          },
+          "cuda_probe_passed": true,
+          "warmup_passed": true
+        }
+      ],
+      "experiment_wall_deadline": null,
+      "original_run_start_unchanged": true,
+      "original_terminal_prefixes_preserved": true,
+      "policy_source_data_verified": true,
+      "budget": {
+        "new_calls": 5315,
+        "actual_tokens": 4236036,
+        "reserved_tokens": 20384,
+        "unknown_cost_upper_bound_tokens": 0
+      },
+      "moc_committed": 16,
+      "moc_counts": {
+        "0.3": 8,
+        "0.7": 8
+      },
+      "adapted_committed": 560,
+      "duplicates": 0,
+      "invalid": 0,
+      "raw_age_seconds": [
+        3.1,
+        1.7
+      ]
+    },
+    "moc_v21_gsm8k_fewshot_20261015": {
+      "supervisor_pid": 3007460,
+      "worker_pids": [
+        3009599,
+        3009600
+      ],
+      "actual_cmdlines": {
+        "3007460": "/home/liuxin/.conda/envs/moc/bin/python -u /home/liuxin/ICML2027/experiments/moc_remaining_datasets_plan_20261015/resume_no_deadline_20261016/resume_supervisor.py --root /home/liuxin/ICML2027/experiments/moc_v21_gsm8k_fewshot_20261015 --main-gpu GPU-2121fa39-275f-d7eb-3c84-c7292ed702bc --merger-gpu GPU-8b952bd3-5cdf-11d4-561a-bc9ef3717773 --merger-port 11450 ",
+        "3009599": "/home/liuxin/.conda/envs/moc/bin/python -u /home/liuxin/ICML2027/experiments/moc_remaining_datasets_plan_20261015/resume_no_deadline_20261016/resume_worker.py --root /home/liuxin/ICML2027/experiments/moc_v21_gsm8k_fewshot_20261015 --phase test --shard 0 --arm moc --main-host http://127.0.0.1:11448 --merger-host http://127.0.0.1:11450 ",
+        "3009600": "/home/liuxin/.conda/envs/moc/bin/python -u /home/liuxin/ICML2027/experiments/moc_remaining_datasets_plan_20261015/resume_no_deadline_20261016/resume_worker.py --root /home/liuxin/ICML2027/experiments/moc_v21_gsm8k_fewshot_20261015 --phase test --shard 1 --arm moc --main-host http://127.0.0.1:11448 --merger-host http://127.0.0.1:11450 ",
+        "3007786": "/home/liuxin/.local/bin/ollama serve ",
+        "3008785": "/home/liuxin/.local/bin/ollama serve "
+      },
+      "services": [
+        {
+          "kind": "main0",
+          "pid": 3007786,
+          "port": 11448,
+          "gpu": {
+            "index": 2,
+            "uuid": "GPU-2121fa39-275f-d7eb-3c84-c7292ed702bc",
+            "utilization": 0,
+            "free_mib": 24081
+          },
+          "loaded": {
+            "name": "gemma2:27b",
+            "model": "gemma2:27b",
+            "size": 16757418884,
+            "digest": "53261bc9c192c1cb5fcc898dd3aa15da093f5ab6f08e17e48cf838bb1c58abfe",
+            "details": {
+              "parent_model": "",
+              "format": "gguf",
+              "family": "gemma2",
+              "families": [
+                "gemma2"
+              ],
+              "parameter_size": "27.2B",
+              "quantization_level": "Q4_0"
+            },
+            "expires_at": "2026-10-16T01:46:09.294175075Z",
+            "size_vram": 16757418884,
+            "context_length": 8192,
+            "runner": "llamacpp"
+          },
+          "cuda_probe_passed": true,
+          "warmup_passed": true
+        },
+        {
+          "kind": "merger",
+          "pid": 3008785,
+          "port": 11450,
+          "gpu": {
+            "index": 5,
+            "uuid": "GPU-8b952bd3-5cdf-11d4-561a-bc9ef3717773",
+            "utilization": 0,
+            "free_mib": 20747
+          },
+          "loaded": {
+            "name": "gemma2:9b",
+            "model": "gemma2:9b",
+            "size": 6567493631,
+            "digest": "ff02c3702f322b9e075e9568332d96c0a7028002f1a5a056e0a6784320a4db0b",
+            "details": {
+              "parent_model": "",
+              "format": "gguf",
+              "family": "gemma2",
+              "families": [
+                "gemma2"
+              ],
+              "parameter_size": "9.2B",
+              "quantization_level": "Q4_0"
+            },
+            "expires_at": "2026-10-16T01:46:10.477599677Z",
+            "size_vram": 6567493631,
+            "context_length": 8192,
+            "runner": "llamacpp"
+          },
+          "cuda_probe_passed": true,
+          "warmup_passed": true
+        }
+      ],
+      "experiment_wall_deadline": null,
+      "original_run_start_unchanged": true,
+      "original_terminal_prefixes_preserved": true,
+      "policy_source_data_verified": true,
+      "budget": {
+        "new_calls": 11513,
+        "actual_tokens": 7816362,
+        "reserved_tokens": 20384,
+        "unknown_cost_upper_bound_tokens": 0
+      },
+      "moc_committed": 513,
+      "moc_counts": {
+        "0.3": 257,
+        "0.7": 256
+      },
+      "adapted_committed": 600,
+      "duplicates": 0,
+      "invalid": 0,
+      "raw_age_seconds": [
+        3.4,
+        7.0
+      ]
+    },
+    "moc_v21_svamp_train40_test_20261015": {
+      "supervisor_pid": 3011499,
+      "worker_pids": [
+        3012697,
+        3012698
+      ],
+      "actual_cmdlines": {
+        "3011499": "/home/liuxin/.conda/envs/moc/bin/python -u /home/liuxin/ICML2027/experiments/moc_remaining_datasets_plan_20261015/resume_no_deadline_20261016/resume_supervisor.py --root /home/liuxin/ICML2027/experiments/moc_v21_svamp_train40_test_20261015 --main-gpu GPU-0179fbe0-2ace-59a4-7794-fa483dda1e46 --merger-gpu GPU-0a075077-3745-799a-aff3-f0d34a17b6ac --merger-port 11455 --review resource_retry_review_svamp.json ",
+        "3012697": "/home/liuxin/.conda/envs/moc/bin/python -u /home/liuxin/ICML2027/experiments/moc_remaining_datasets_plan_20261015/resume_no_deadline_20261016/resume_worker.py --root /home/liuxin/ICML2027/experiments/moc_v21_svamp_train40_test_20261015 --phase test --shard 0 --arm moc --main-host http://127.0.0.1:11454 --merger-host http://127.0.0.1:11455 ",
+        "3012698": "/home/liuxin/.conda/envs/moc/bin/python -u /home/liuxin/ICML2027/experiments/moc_remaining_datasets_plan_20261015/resume_no_deadline_20261016/resume_worker.py --root /home/liuxin/ICML2027/experiments/moc_v21_svamp_train40_test_20261015 --phase test --shard 1 --arm moc --main-host http://127.0.0.1:11454 --merger-host http://127.0.0.1:11455 ",
+        "3011649": "/home/liuxin/.local/bin/ollama serve ",
+        "3012234": "/home/liuxin/.local/bin/ollama serve "
+      },
+      "services": [
+        {
+          "kind": "main0",
+          "pid": 3011649,
+          "port": 11454,
+          "gpu": {
+            "index": 6,
+            "uuid": "GPU-0179fbe0-2ace-59a4-7794-fa483dda1e46",
+            "utilization": 0,
+            "free_mib": 24081
+          },
+          "loaded": {
+            "name": "gemma2:27b",
+            "model": "gemma2:27b",
+            "size": 16757418884,
+            "digest": "53261bc9c192c1cb5fcc898dd3aa15da093f5ab6f08e17e48cf838bb1c58abfe",
+            "details": {
+              "parent_model": "",
+              "format": "gguf",
+              "family": "gemma2",
+              "families": [
+                "gemma2"
+              ],
+              "parameter_size": "27.2B",
+              "quantization_level": "Q4_0"
+            },
+            "expires_at": "2026-10-16T01:46:09.274698038Z",
+            "size_vram": 16757418884,
+            "context_length": 8192,
+            "runner": "llamacpp"
+          },
+          "cuda_probe_passed": true,
+          "warmup_passed": true
+        },
+        {
+          "kind": "merger",
+          "pid": 3012234,
+          "port": 11455,
+          "gpu": {
+            "index": 0,
+            "uuid": "GPU-0a075077-3745-799a-aff3-f0d34a17b6ac",
+            "utilization": 14,
+            "free_mib": 20747
+          },
+          "loaded": {
+            "name": "gemma2:9b",
+            "model": "gemma2:9b",
+            "size": 6567493631,
+            "digest": "ff02c3702f322b9e075e9568332d96c0a7028002f1a5a056e0a6784320a4db0b",
+            "details": {
+              "parent_model": "",
+              "format": "gguf",
+              "family": "gemma2",
+              "families": [
+                "gemma2"
+              ],
+              "parameter_size": "9.2B",
+              "quantization_level": "Q4_0"
+            },
+            "expires_at": "2026-10-16T01:46:17.959231595Z",
+            "size_vram": 6567493631,
+            "context_length": 8192,
+            "runner": "llamacpp"
+          },
+          "cuda_probe_passed": true,
+          "warmup_passed": true
+        }
+      ],
+      "experiment_wall_deadline": null,
+      "original_run_start_unchanged": true,
+      "original_terminal_prefixes_preserved": true,
+      "policy_source_data_verified": true,
+      "budget": {
+        "new_calls": 7496,
+        "actual_tokens": 3932541,
+        "reserved_tokens": 20384,
+        "unknown_cost_upper_bound_tokens": 10192
+      },
+      "moc_committed": 432,
+      "moc_counts": {
+        "0.3": 217,
+        "0.7": 215
+      },
+      "adapted_committed": 600,
+      "duplicates": 0,
+      "invalid": 0,
+      "raw_age_seconds": [
+        0.3,
+        2.7
+      ]
+    }
+  },
+  "all_six_gpu_verified": true,
+  "status": "running_verified"
+}

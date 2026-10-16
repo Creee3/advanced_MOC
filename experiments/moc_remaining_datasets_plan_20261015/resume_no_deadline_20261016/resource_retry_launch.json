@@ -1,0 +1,64 @@
+{
+  "pid": 3011499,
+  "started_utc": "2026-10-16T01:39:39.037810+00:00",
+  "main": {
+    "index": 6,
+    "uuid": "GPU-0179fbe0-2ace-59a4-7794-fa483dda1e46",
+    "util": 0,
+    "free": 24081
+  },
+  "merger": {
+    "index": 0,
+    "uuid": "GPU-0a075077-3745-799a-aff3-f0d34a17b6ac",
+    "util": 0,
+    "free": 20747
+  },
+  "merger_port": 11455,
+  "cmd": [
+    "/home/liuxin/.conda/envs/moc/bin/python",
+    "-u",
+    "/home/liuxin/ICML2027/experiments/moc_remaining_datasets_plan_20261015/resume_no_deadline_20261016/resume_supervisor.py",
+    "--root",
+    "/home/liuxin/ICML2027/experiments/moc_v21_svamp_train40_test_20261015",
+    "--main-gpu",
+    "GPU-0179fbe0-2ace-59a4-7794-fa483dda1e46",
+    "--merger-gpu",
+    "GPU-0a075077-3745-799a-aff3-f0d34a17b6ac",
+    "--merger-port",
+    "11455",
+    "--review",
+    "resource_retry_review_svamp.json"
+  ],
+  "prior_admission_launch": {
+    "pid": 3007461,
+    "started_utc": "2026-10-16T01:37:11.753651+00:00",
+    "main": {
+      "index": 6,
+      "uuid": "GPU-0179fbe0-2ace-59a4-7794-fa483dda1e46",
+      "util": 0,
+      "free": 24081
+    },
+    "merger": {
+      "index": 7,
+      "uuid": "GPU-e230f5a4-ad5d-341f-2840-4f737f3c0c26",
+      "util": 0,
+      "free": 20747
+    },
+    "merger_port": 11455,
+    "cmd": [
+      "/home/liuxin/.conda/envs/moc/bin/python",
+      "-u",
+      "/home/liuxin/ICML2027/experiments/moc_remaining_datasets_plan_20261015/resume_no_deadline_20261016/resume_supervisor.py",
+      "--root",
+      "/home/liuxin/ICML2027/experiments/moc_v21_svamp_train40_test_20261015",
+      "--main-gpu",
+      "GPU-0179fbe0-2ace-59a4-7794-fa483dda1e46",
+      "--merger-gpu",
+      "GPU-e230f5a4-ad5d-341f-2840-4f737f3c0c26",
+      "--merger-port",
+      "11455"
+    ]
+  },
+  "resource_retry": 1,
+  "review": "resource_retry_review_svamp.json"
+}
