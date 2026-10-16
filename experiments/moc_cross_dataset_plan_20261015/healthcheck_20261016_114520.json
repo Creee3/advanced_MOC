@@ -1,0 +1,1042 @@
+{
+  "checked_utc": "2026-10-16T03:45:15.841008+00:00",
+  "coordinator": {
+    "phase": "needs_attention",
+    "error_type": "RuntimeError",
+    "error": "MOC baseline failure; inspect before recovery",
+    "pid": 2612991,
+    "updated_utc": "2026-10-15T17:49:32.741108+00:00",
+    "actual_cmdline": null
+  },
+  "runs": {
+    "moc_v21_gsm8k_fewshot_20261015": {
+      "status": {
+        "phase": "complete",
+        "mode": "baseline",
+        "arm": "moc",
+        "supervisor_pid": 3007460,
+        "worker_pids": [
+          3009599,
+          3009600
+        ],
+        "services": [
+          {
+            "kind": "main0",
+            "gpu": {
+              "index": 2,
+              "uuid": "GPU-2121fa39-275f-d7eb-3c84-c7292ed702bc",
+              "utilization": 0,
+              "free_mib": 24081
+            },
+            "pid": 3007786,
+            "port": 11448,
+            "host": "http://127.0.0.1:11448",
+            "version": {
+              "version": "0.40.2"
+            },
+            "model": {
+              "name": "gemma2:27b",
+              "model": "gemma2:27b",
+              "modified_at": "2026-10-09T08:36:43.817866393Z",
+              "size": 15628387458,
+              "digest": "53261bc9c192c1cb5fcc898dd3aa15da093f5ab6f08e17e48cf838bb1c58abfe",
+              "details": {
+                "parent_model": "",
+                "format": "gguf",
+                "family": "gemma2",
+                "families": [
+                  "gemma2"
+                ],
+                "parameter_size": "27.2B",
+                "quantization_level": "Q4_0",
+                "context_length": 8192,
+                "embedding_length": 4608,
+                "runner": "ggml"
+              },
+              "capabilities": [
+                "completion"
+              ]
+            },
+            "loaded": {
+              "name": "gemma2:27b",
+              "model": "gemma2:27b",
+              "size": 16757418884,
+              "digest": "53261bc9c192c1cb5fcc898dd3aa15da093f5ab6f08e17e48cf838bb1c58abfe",
+              "details": {
+                "parent_model": "",
+                "format": "gguf",
+                "family": "gemma2",
+                "families": [
+                  "gemma2"
+                ],
+                "parameter_size": "27.2B",
+                "quantization_level": "Q4_0"
+              },
+              "expires_at": "2026-10-16T01:42:33.708193069Z",
+              "size_vram": 16757418884,
+              "context_length": 8192,
+              "runner": "llamacpp"
+            },
+            "warmup": {
+              "model": "gemma2:27b",
+              "created_at": "2026-10-16T01:37:33.706115853Z",
+              "response": "OK.",
+              "done": true,
+              "done_reason": "stop",
+              "context": [
+                106,
+                1645,
+                108,
+                1946,
+                675,
+                11530,
+                235265,
+                107,
+                108,
+                106,
+                2516,
+                108,
+                4083,
+                235265
+              ],
+              "total_duration": 7469209172,
+              "load_duration": 7308489724,
+              "prompt_eval_count": 13,
+              "prompt_eval_cached_count": 0,
+              "prompt_eval_duration": 94042000,
+              "eval_count": 3,
+              "eval_duration": 59202000
+            },
+            "time_utc": "2026-10-16T01:37:33.710557+00:00",
+            "cuda_allocation_probe": "{\"phase\": \"started\", \"visible\": \"GPU-2121fa39-275f-d7eb-3c84-c7292ed702bc\"}\ncuInit 0\ncuDeviceGet 0 0\ncuCtxCreate 0\ncuMemAlloc 0\ncuMemFree 0\ncuCtxDestroy 0\n",
+            "explicit_existing_cuda_library": "/home/liuxin/.local/opt/ollama/0.40.2/lib/ollama/cuda_v13/libggml-cuda.so"
+          },
+          {
+            "kind": "merger",
+            "gpu": {
+              "index": 5,
+              "uuid": "GPU-8b952bd3-5cdf-11d4-561a-bc9ef3717773",
+              "utilization": 0,
+              "free_mib": 20747
+            },
+            "pid": 3008785,
+            "port": 11450,
+            "host": "http://127.0.0.1:11450",
+            "version": {
+              "version": "0.40.2"
+            },
+            "model": {
+              "name": "gemma2:9b",
+              "model": "gemma2:9b",
+              "modified_at": "2026-10-09T07:12:44.77248478Z",
+              "size": 5443152417,
+              "digest": "ff02c3702f322b9e075e9568332d96c0a7028002f1a5a056e0a6784320a4db0b",
+              "details": {
+                "parent_model": "",
+                "format": "gguf",
+                "family": "gemma2",
+                "families": [
+                  "gemma2"
+                ],
+                "parameter_size": "9.2B",
+                "quantization_level": "Q4_0",
+                "context_length": 8192,
+                "embedding_length": 3584,
+                "runner": "ggml"
+              },
+              "capabilities": [
+                "completion"
+              ]
+            },
+            "loaded": {
+              "name": "gemma2:9b",
+              "model": "gemma2:9b",
+              "size": 6567493631,
+              "digest": "ff02c3702f322b9e075e9568332d96c0a7028002f1a5a056e0a6784320a4db0b",
+              "details": {
+                "parent_model": "",
+                "format": "gguf",
+                "family": "gemma2",
+                "families": [
+                  "gemma2"
+                ],
+                "parameter_size": "9.2B",
+                "quantization_level": "Q4_0"
+              },
+              "expires_at": "2026-10-16T01:42:41.548391037Z",
+              "size_vram": 6567493631,
+              "context_length": 8192,
+              "runner": "llamacpp"
+            },
+            "warmup": {
+              "model": "gemma2:9b",
+              "created_at": "2026-10-16T01:37:41.546880073Z",
+              "response": "OK.",
+              "done": true,
+              "done_reason": "stop",
+              "context": [
+                106,
+                1645,
+                108,
+                1946,
+                675,
+                11530,
+                235265,
+                107,
+                108,
+                106,
+                2516,
+                108,
+                4083,
+                235265
+              ],
+              "total_duration": 4786438170,
+              "load_duration": 4673216925,
+              "prompt_eval_count": 13,
+              "prompt_eval_cached_count": 0,
+              "prompt_eval_duration": 70467000,
+              "eval_count": 3,
+              "eval_duration": 38579000
+            },
+            "time_utc": "2026-10-16T01:37:41.551163+00:00",
+            "cuda_allocation_probe": "{\"phase\": \"started\", \"visible\": \"GPU-8b952bd3-5cdf-11d4-561a-bc9ef3717773\"}\ncuInit 0\ncuDeviceGet 0 0\ncuCtxCreate 0\ncuMemAlloc 0\ncuMemFree 0\ncuCtxDestroy 0\n",
+            "explicit_existing_cuda_library": "/home/liuxin/.local/opt/ollama/0.40.2/lib/ollama/cuda_v13/libggml-cuda.so"
+          }
+        ],
+        "cleanup_complete": true,
+        "experiment_wall_deadline": null,
+        "human_authorization_id": "human_continue_no_deadline_20261016",
+        "resume_attempt": "/home/liuxin/ICML2027/experiments/moc_v21_gsm8k_fewshot_20261015/attempts/human_no_deadline_20261016T013712_087548Z",
+        "original_deadline_unix": 1792086556.3871992,
+        "updated_utc": "2026-10-16T02:13:26.756852+00:00",
+        "budget": {
+          "new_calls": 12530,
+          "actual_tokens": 8494089,
+          "reserved_tokens": 0,
+          "unknown_cost_upper_bound_tokens": 0
+        },
+        "progress": {
+          "training": [
+            {
+              "terminal_questions": 12,
+              "valid_questions": 12,
+              "target_questions": 12
+            },
+            {
+              "terminal_questions": 12,
+              "valid_questions": 12,
+              "target_questions": 12
+            }
+          ],
+          "val": [
+            {
+              "terminal_conditions": 240,
+              "last_question": "gsm8k:train:2064",
+              "arm": "adapted"
+            },
+            {
+              "terminal_conditions": 240,
+              "last_question": "gsm8k:train:7419",
+              "arm": "adapted"
+            }
+          ],
+          "test": [
+            {
+              "terminal_conditions": 600,
+              "last_question": "gsm8k:author_test:ae9a505b22246b8a1402f2efc7c924a22b1df5080f0e8f6b4ff98c25287d7c04",
+              "arm": "moc"
+            },
+            {
+              "terminal_conditions": 600,
+              "last_question": "gsm8k:author_test:f6155af9e7a23f9fc0a583906f27cb734c809eb22193a61e024c7edc79e7fd18",
+              "arm": "moc"
+            }
+          ]
+        },
+        "error": null,
+        "error_type": null,
+        "remaining_ports": [],
+        "owned_children_remaining": [],
+        "owned_processes_remaining": []
+      },
+      "processes": [
+        {
+          "pid": 3007460,
+          "cmdline": null
+        },
+        {
+          "pid": 3009599,
+          "cmdline": null
+        },
+        {
+          "pid": 3009600,
+          "cmdline": null
+        },
+        {
+          "pid": 3007786,
+          "cmdline": null
+        },
+        {
+          "pid": 3008785,
+          "cmdline": null
+        }
+      ],
+      "progress": {
+        "training": {
+          "committed": 24,
+          "valid": 24,
+          "raw_age_seconds": [
+            62188.7,
+            62307.5
+          ]
+        },
+        "val": {
+          "committed": 480,
+          "valid": 480,
+          "raw_age_seconds": [
+            55338.2,
+            55315.5
+          ]
+        },
+        "test": {
+          "committed": 1200,
+          "valid": 1200,
+          "raw_age_seconds": [
+            5613.1,
+            5523.0
+          ]
+        }
+      },
+      "remaining_wall_seconds": -35761,
+      "all_locked_hashes_match": true,
+      "budget_live": {
+        "new_calls": 12530,
+        "actual_tokens": 8494089,
+        "reserved_tokens": 0,
+        "unknown_cost_upper_bound_tokens": 0
+      },
+      "caps": {
+        "max_new_calls": 20000,
+        "max_new_model_tokens": 16000000
+      },
+      "stop_present": false,
+      "coverage": {
+        "val": {
+          "counts": {
+            "frozen_transfer|0.3|ok": 120,
+            "frozen_transfer|0.7|ok": 120,
+            "adapted|0.3|ok": 120,
+            "adapted|0.7|ok": 120
+          },
+          "duplicates": 0,
+          "invalid_reasons": []
+        },
+        "test": {
+          "counts": {
+            "adapted|0.3|ok": 300,
+            "adapted|0.7|ok": 300,
+            "moc|0.3|ok": 300,
+            "moc|0.7|ok": 300
+          },
+          "duplicates": 0,
+          "invalid_reasons": []
+        }
+      },
+      "loaded": {
+        "11448": {
+          "error": "<urlopen error [Errno 111] Connection refused>"
+        },
+        "11450": {
+          "error": "<urlopen error [Errno 111] Connection refused>"
+        }
+      },
+      "supervisor_log_tail": [
+        "Traceback (most recent call last):",
+        "  File \"/home/liuxin/ICML2027/experiments/moc_v21_gsm8k_fewshot_20261015/supervise.py\", line 136, in <module>",
+        "    if __name__=='__main__':main()",
+        "  File \"/home/liuxin/ICML2027/experiments/moc_v21_gsm8k_fewshot_20261015/supervise.py\", line 108, in main",
+        "    stage('test','moc',services,deadline);verify_coverage(False);publish(phase='complete')",
+        "  File \"/home/liuxin/ICML2027/experiments/moc_v21_gsm8k_fewshot_20261015/supervise.py\", line 60, in stage",
+        "    if any(p.returncode for p in workers):raise RuntimeError('worker final nonzero exit')",
+        "RuntimeError: worker final nonzero exit"
+      ],
+      "cleanup": {
+        "remaining_ports": [],
+        "owned_children_remaining": [],
+        "owned_processes_remaining": [],
+        "cleanup_complete": true
+      }
+    },
+    "moc_v21_mmlu_pro_fewshot_20261015": {
+      "status": {
+        "phase": "complete",
+        "mode": "baseline",
+        "arm": "moc",
+        "supervisor_pid": 3007459,
+        "worker_pids": [
+          3009594,
+          3009595
+        ],
+        "services": [
+          {
+            "kind": "main0",
+            "gpu": {
+              "index": 1,
+              "uuid": "GPU-d7d04192-bf97-dfdb-3276-75ff261a9f51",
+              "utilization": 0,
+              "free_mib": 24081
+            },
+            "pid": 3007743,
+            "port": 11449,
+            "host": "http://127.0.0.1:11449",
+            "version": {
+              "version": "0.40.2"
+            },
+            "model": {
+              "name": "gemma2:27b",
+              "model": "gemma2:27b",
+              "modified_at": "2026-10-09T08:36:43.817866393Z",
+              "size": 15628387458,
+              "digest": "53261bc9c192c1cb5fcc898dd3aa15da093f5ab6f08e17e48cf838bb1c58abfe",
+              "details": {
+                "parent_model": "",
+                "format": "gguf",
+                "family": "gemma2",
+                "families": [
+                  "gemma2"
+                ],
+                "parameter_size": "27.2B",
+                "quantization_level": "Q4_0",
+                "context_length": 8192,
+                "embedding_length": 4608,
+                "runner": "ggml"
+              },
+              "capabilities": [
+                "completion"
+              ]
+            },
+            "loaded": {
+              "name": "gemma2:27b",
+              "model": "gemma2:27b",
+              "size": 16757418884,
+              "digest": "53261bc9c192c1cb5fcc898dd3aa15da093f5ab6f08e17e48cf838bb1c58abfe",
+              "details": {
+                "parent_model": "",
+                "format": "gguf",
+                "family": "gemma2",
+                "families": [
+                  "gemma2"
+                ],
+                "parameter_size": "27.2B",
+                "quantization_level": "Q4_0"
+              },
+              "expires_at": "2026-10-16T01:42:33.312172408Z",
+              "size_vram": 16757418884,
+              "context_length": 8192,
+              "runner": "llamacpp"
+            },
+            "warmup": {
+              "model": "gemma2:27b",
+              "created_at": "2026-10-16T01:37:33.310483828Z",
+              "response": "OK.",
+              "done": true,
+              "done_reason": "stop",
+              "context": [
+                106,
+                1645,
+                108,
+                1946,
+                675,
+                11530,
+                235265,
+                107,
+                108,
+                106,
+                2516,
+                108,
+                4083,
+                235265
+              ],
+              "total_duration": 7206129537,
+              "load_duration": 7054081689,
+              "prompt_eval_count": 13,
+              "prompt_eval_cached_count": 0,
+              "prompt_eval_duration": 90705000,
+              "eval_count": 3,
+              "eval_duration": 57117000
+            },
+            "time_utc": "2026-10-16T01:37:33.315860+00:00",
+            "cuda_allocation_probe": "{\"phase\": \"started\", \"visible\": \"GPU-d7d04192-bf97-dfdb-3276-75ff261a9f51\"}\ncuInit 0\ncuDeviceGet 0 0\ncuCtxCreate 0\ncuMemAlloc 0\ncuMemFree 0\ncuCtxDestroy 0\n",
+            "explicit_existing_cuda_library": "/home/liuxin/.local/opt/ollama/0.40.2/lib/ollama/cuda_v13/libggml-cuda.so"
+          },
+          {
+            "kind": "merger",
+            "gpu": {
+              "index": 4,
+              "uuid": "GPU-89523765-dcd4-46ea-1f2d-4ff7d509138c",
+              "utilization": 0,
+              "free_mib": 20747
+            },
+            "pid": 3008732,
+            "port": 11456,
+            "host": "http://127.0.0.1:11456",
+            "version": {
+              "version": "0.40.2"
+            },
+            "model": {
+              "name": "gemma2:9b",
+              "model": "gemma2:9b",
+              "modified_at": "2026-10-09T07:12:44.77248478Z",
+              "size": 5443152417,
+              "digest": "ff02c3702f322b9e075e9568332d96c0a7028002f1a5a056e0a6784320a4db0b",
+              "details": {
+                "parent_model": "",
+                "format": "gguf",
+                "family": "gemma2",
+                "families": [
+                  "gemma2"
+                ],
+                "parameter_size": "9.2B",
+                "quantization_level": "Q4_0",
+                "context_length": 8192,
+                "embedding_length": 3584,
+                "runner": "ggml"
+              },
+              "capabilities": [
+                "completion"
+              ]
+            },
+            "loaded": {
+              "name": "gemma2:9b",
+              "model": "gemma2:9b",
+              "size": 6567493631,
+              "digest": "ff02c3702f322b9e075e9568332d96c0a7028002f1a5a056e0a6784320a4db0b",
+              "details": {
+                "parent_model": "",
+                "format": "gguf",
+                "family": "gemma2",
+                "families": [
+                  "gemma2"
+                ],
+                "parameter_size": "9.2B",
+                "quantization_level": "Q4_0"
+              },
+              "expires_at": "2026-10-16T01:42:41.301355115Z",
+              "size_vram": 6567493631,
+              "context_length": 8192,
+              "runner": "llamacpp"
+            },
+            "warmup": {
+              "model": "gemma2:9b",
+              "created_at": "2026-10-16T01:37:41.299728918Z",
+              "response": "OK.",
+              "done": true,
+              "done_reason": "stop",
+              "context": [
+                106,
+                1645,
+                108,
+                1946,
+                675,
+                11530,
+                235265,
+                107,
+                108,
+                106,
+                2516,
+                108,
+                4083,
+                235265
+              ],
+              "total_duration": 4670397236,
+              "load_duration": 4536656712,
+              "prompt_eval_count": 13,
+              "prompt_eval_cached_count": 0,
+              "prompt_eval_duration": 83020000,
+              "eval_count": 3,
+              "eval_duration": 44931000
+            },
+            "time_utc": "2026-10-16T01:37:41.303658+00:00",
+            "cuda_allocation_probe": "{\"phase\": \"started\", \"visible\": \"GPU-89523765-dcd4-46ea-1f2d-4ff7d509138c\"}\ncuInit 0\ncuDeviceGet 0 0\ncuCtxCreate 0\ncuMemAlloc 0\ncuMemFree 0\ncuCtxDestroy 0\n",
+            "explicit_existing_cuda_library": "/home/liuxin/.local/opt/ollama/0.40.2/lib/ollama/cuda_v13/libggml-cuda.so"
+          }
+        ],
+        "cleanup_complete": true,
+        "experiment_wall_deadline": null,
+        "human_authorization_id": "human_continue_no_deadline_20261016",
+        "resume_attempt": "/home/liuxin/ICML2027/experiments/moc_v21_mmlu_pro_fewshot_20261015/attempts/human_no_deadline_20261016T013712_021200Z",
+        "original_deadline_unix": 1792086576.4089835,
+        "updated_utc": "2026-10-16T03:43:21.763486+00:00",
+        "budget": {
+          "new_calls": 11456,
+          "actual_tokens": 8331785,
+          "reserved_tokens": 0,
+          "unknown_cost_upper_bound_tokens": 0
+        },
+        "progress": {
+          "training": [
+            {
+              "terminal_questions": 7,
+              "valid_questions": 7,
+              "target_questions": 7
+            },
+            {
+              "terminal_questions": 7,
+              "valid_questions": 7,
+              "target_questions": 7
+            }
+          ],
+          "val": [
+            {
+              "terminal_conditions": 112,
+              "last_question": "mmlu_pro:official_validation:68",
+              "arm": "adapted"
+            },
+            {
+              "terminal_conditions": 112,
+              "last_question": "mmlu_pro:official_validation:69",
+              "arm": "adapted"
+            }
+          ],
+          "test": [
+            {
+              "terminal_conditions": 560,
+              "last_question": "mmlu_pro:author_test:2137",
+              "arm": "moc"
+            },
+            {
+              "terminal_conditions": 560,
+              "last_question": "mmlu_pro:author_test:2522",
+              "arm": "moc"
+            }
+          ]
+        },
+        "error": null,
+        "error_type": null,
+        "remaining_ports": [],
+        "owned_children_remaining": [],
+        "owned_processes_remaining": []
+      },
+      "processes": [
+        {
+          "pid": 3007459,
+          "cmdline": null
+        },
+        {
+          "pid": 3009594,
+          "cmdline": null
+        },
+        {
+          "pid": 3009595,
+          "cmdline": null
+        },
+        {
+          "pid": 3007743,
+          "cmdline": null
+        },
+        {
+          "pid": 3008732,
+          "cmdline": null
+        }
+      ],
+      "progress": {
+        "training": {
+          "committed": 14,
+          "valid": 14,
+          "raw_age_seconds": [
+            63484.8,
+            63468.0
+          ]
+        },
+        "val": {
+          "committed": 224,
+          "valid": 224,
+          "raw_age_seconds": [
+            60383.4,
+            60397.5
+          ]
+        },
+        "test": {
+          "committed": 1120,
+          "valid": 1120,
+          "raw_age_seconds": [
+            127.9,
+            188.3
+          ]
+        }
+      },
+      "remaining_wall_seconds": -35743,
+      "all_locked_hashes_match": true,
+      "budget_live": {
+        "new_calls": 11456,
+        "actual_tokens": 8331785,
+        "reserved_tokens": 0,
+        "unknown_cost_upper_bound_tokens": 0
+      },
+      "caps": {
+        "max_new_calls": 20000,
+        "max_new_model_tokens": 16000000
+      },
+      "stop_present": false,
+      "coverage": {
+        "val": {
+          "counts": {
+            "frozen_transfer|0.3|ok": 56,
+            "frozen_transfer|0.7|ok": 56,
+            "adapted|0.3|ok": 56,
+            "adapted|0.7|ok": 56
+          },
+          "duplicates": 0,
+          "invalid_reasons": []
+        },
+        "test": {
+          "counts": {
+            "adapted|0.3|ok": 280,
+            "adapted|0.7|ok": 280,
+            "moc|0.3|ok": 280,
+            "moc|0.7|ok": 280
+          },
+          "duplicates": 0,
+          "invalid_reasons": []
+        }
+      },
+      "loaded": {
+        "11449": {
+          "error": "<urlopen error [Errno 111] Connection refused>"
+        },
+        "11456": {
+          "error": "<urlopen error [Errno 111] Connection refused>"
+        }
+      },
+      "supervisor_log_tail": [],
+      "cleanup": {
+        "remaining_ports": [],
+        "owned_children_remaining": [],
+        "owned_processes_remaining": [],
+        "cleanup_complete": true
+      }
+    },
+    "moc_mmlu_pro_val_baseline_20261015": {
+      "status": {
+        "phase": "complete",
+        "mode": "baseline",
+        "supervisor_pid": 2497046,
+        "cleanup_complete": true,
+        "updated_utc": "2026-10-15T12:03:20.592819+00:00",
+        "budget": {
+          "new_calls": 1400,
+          "actual_tokens": 802056,
+          "reserved_tokens": 0,
+          "unknown_cost_upper_bound_tokens": 0
+        },
+        "progress": {
+          "training": [],
+          "val": [
+            {
+              "terminal_conditions": 56,
+              "last_question": "mmlu_pro:official_validation:68",
+              "arm": "moc"
+            },
+            {
+              "terminal_conditions": 56,
+              "last_question": "mmlu_pro:official_validation:69",
+              "arm": "moc"
+            }
+          ],
+          "test": []
+        },
+        "gpu_snapshot": [
+          {
+            "index": 0,
+            "uuid": "GPU-0a075077-3745-799a-aff3-f0d34a17b6ac",
+            "utilization": 0,
+            "free_mib": 24081
+          },
+          {
+            "index": 4,
+            "uuid": "GPU-89523765-dcd4-46ea-1f2d-4ff7d509138c",
+            "utilization": 0,
+            "free_mib": 24081
+          }
+        ],
+        "services": [
+          {
+            "kind": "main0",
+            "gpu": {
+              "index": 0,
+              "uuid": "GPU-0a075077-3745-799a-aff3-f0d34a17b6ac",
+              "utilization": 0,
+              "free_mib": 24081
+            },
+            "pid": 2497248,
+            "port": 11451,
+            "host": "http://127.0.0.1:11451",
+            "version": {
+              "version": "0.40.2"
+            },
+            "model": {
+              "name": "gemma2:27b",
+              "model": "gemma2:27b",
+              "modified_at": "2026-10-09T08:36:43.817866393Z",
+              "size": 15628387458,
+              "digest": "53261bc9c192c1cb5fcc898dd3aa15da093f5ab6f08e17e48cf838bb1c58abfe",
+              "details": {
+                "parent_model": "",
+                "format": "gguf",
+                "family": "gemma2",
+                "families": [
+                  "gemma2"
+                ],
+                "parameter_size": "27.2B",
+                "quantization_level": "Q4_0",
+                "context_length": 8192,
+                "embedding_length": 4608,
+                "runner": "ggml"
+              },
+              "capabilities": [
+                "completion"
+              ]
+            },
+            "loaded": {
+              "name": "gemma2:27b",
+              "model": "gemma2:27b",
+              "size": 16757418884,
+              "digest": "53261bc9c192c1cb5fcc898dd3aa15da093f5ab6f08e17e48cf838bb1c58abfe",
+              "details": {
+                "parent_model": "",
+                "format": "gguf",
+                "family": "gemma2",
+                "families": [
+                  "gemma2"
+                ],
+                "parameter_size": "27.2B",
+                "quantization_level": "Q4_0"
+              },
+              "expires_at": "2026-10-15T11:35:46.689927082Z",
+              "size_vram": 16757418884,
+              "context_length": 8192,
+              "runner": "llamacpp"
+            },
+            "warmup": {
+              "model": "gemma2:27b",
+              "created_at": "2026-10-15T11:30:46.686730241Z",
+              "response": "OK.",
+              "done": true,
+              "done_reason": "stop",
+              "context": [
+                106,
+                1645,
+                108,
+                1946,
+                675,
+                11530,
+                235265,
+                107,
+                108,
+                106,
+                2516,
+                108,
+                4083,
+                235265
+              ],
+              "total_duration": 6725395112,
+              "load_duration": 6581206380,
+              "prompt_eval_count": 13,
+              "prompt_eval_cached_count": 0,
+              "prompt_eval_duration": 84377000,
+              "eval_count": 3,
+              "eval_duration": 57084000
+            },
+            "time_utc": "2026-10-15T11:30:46.693889+00:00",
+            "cuda_allocation_probe": "{\"phase\": \"started\", \"visible\": \"GPU-0a075077-3745-799a-aff3-f0d34a17b6ac\"}\ncuInit 0\ncuDeviceGet 0 0\ncuCtxCreate 0\ncuMemAlloc 0\ncuMemFree 0\ncuCtxDestroy 0\n",
+            "explicit_existing_cuda_library": "/home/liuxin/.local/opt/ollama/0.40.2/lib/ollama/cuda_v13/libggml-cuda.so"
+          },
+          {
+            "kind": "merger",
+            "gpu": {
+              "index": 4,
+              "uuid": "GPU-89523765-dcd4-46ea-1f2d-4ff7d509138c",
+              "utilization": 0,
+              "free_mib": 24081
+            },
+            "pid": 2497656,
+            "port": 11452,
+            "host": "http://127.0.0.1:11452",
+            "version": {
+              "version": "0.40.2"
+            },
+            "model": {
+              "name": "gemma2:9b",
+              "model": "gemma2:9b",
+              "modified_at": "2026-10-09T07:12:44.77248478Z",
+              "size": 5443152417,
+              "digest": "ff02c3702f322b9e075e9568332d96c0a7028002f1a5a056e0a6784320a4db0b",
+              "details": {
+                "parent_model": "",
+                "format": "gguf",
+                "family": "gemma2",
+                "families": [
+                  "gemma2"
+                ],
+                "parameter_size": "9.2B",
+                "quantization_level": "Q4_0",
+                "context_length": 8192,
+                "embedding_length": 3584,
+                "runner": "ggml"
+              },
+              "capabilities": [
+                "completion"
+              ]
+            },
+            "loaded": {
+              "name": "gemma2:9b",
+              "model": "gemma2:9b",
+              "size": 6567493631,
+              "digest": "ff02c3702f322b9e075e9568332d96c0a7028002f1a5a056e0a6784320a4db0b",
+              "details": {
+                "parent_model": "",
+                "format": "gguf",
+                "family": "gemma2",
+                "families": [
+                  "gemma2"
+                ],
+                "parameter_size": "9.2B",
+                "quantization_level": "Q4_0"
+              },
+              "expires_at": "2026-10-15T11:35:54.639808288Z",
+              "size_vram": 6567493631,
+              "context_length": 8192,
+              "runner": "llamacpp"
+            },
+            "warmup": {
+              "model": "gemma2:9b",
+              "created_at": "2026-10-15T11:30:54.638789314Z",
+              "response": "OK.",
+              "done": true,
+              "done_reason": "stop",
+              "context": [
+                106,
+                1645,
+                108,
+                1946,
+                675,
+                11530,
+                235265,
+                107,
+                108,
+                106,
+                2516,
+                108,
+                4083,
+                235265
+              ],
+              "total_duration": 4995300626,
+              "load_duration": 4824121691,
+              "prompt_eval_count": 13,
+              "prompt_eval_cached_count": 0,
+              "prompt_eval_duration": 130953000,
+              "eval_count": 3,
+              "eval_duration": 34787000
+            },
+            "time_utc": "2026-10-15T11:30:54.647194+00:00",
+            "cuda_allocation_probe": "{\"phase\": \"started\", \"visible\": \"GPU-89523765-dcd4-46ea-1f2d-4ff7d509138c\"}\ncuInit 0\ncuDeviceGet 0 0\ncuCtxCreate 0\ncuMemAlloc 0\ncuMemFree 0\ncuCtxDestroy 0\n",
+            "explicit_existing_cuda_library": "/home/liuxin/.local/opt/ollama/0.40.2/lib/ollama/cuda_v13/libggml-cuda.so"
+          }
+        ],
+        "arm": "moc",
+        "worker_pids": [
+          2498180,
+          2498181
+        ],
+        "remaining_ports": [],
+        "owned_children_remaining": [],
+        "owned_processes_remaining": []
+      },
+      "processes": [
+        {
+          "pid": 2497046,
+          "cmdline": null
+        },
+        {
+          "pid": 2498180,
+          "cmdline": null
+        },
+        {
+          "pid": 2498181,
+          "cmdline": null
+        },
+        {
+          "pid": 2497248,
+          "cmdline": null
+        },
+        {
+          "pid": 2497656,
+          "cmdline": null
+        }
+      ],
+      "progress": {
+        "training": {
+          "committed": 0,
+          "valid": 0,
+          "raw_age_seconds": []
+        },
+        "val": {
+          "committed": 112,
+          "valid": 112,
+          "raw_age_seconds": [
+            56600.0,
+            56526.1
+          ]
+        },
+        "test": {
+          "committed": 0,
+          "valid": 0,
+          "raw_age_seconds": []
+        }
+      },
+      "remaining_wall_seconds": -51302,
+      "all_locked_hashes_match": true,
+      "budget_live": {
+        "new_calls": 1400,
+        "actual_tokens": 802056,
+        "reserved_tokens": 0,
+        "unknown_cost_upper_bound_tokens": 0
+      },
+      "caps": {
+        "max_new_calls": 6000,
+        "max_new_model_tokens": 4000000
+      },
+      "stop_present": false,
+      "coverage": {
+        "val": {
+          "counts": {
+            "moc|0.3|ok": 56,
+            "moc|0.7|ok": 56
+          },
+          "duplicates": 0,
+          "invalid_reasons": []
+        },
+        "test": {
+          "counts": {},
+          "duplicates": 0,
+          "invalid_reasons": []
+        }
+      },
+      "loaded": {
+        "11451": {
+          "error": "<urlopen error [Errno 111] Connection refused>"
+        },
+        "11452": {
+          "error": "<urlopen error [Errno 111] Connection refused>"
+        }
+      },
+      "supervisor_log_tail": [],
+      "cleanup": {
+        "remaining_ports": [],
+        "owned_children_remaining": [],
+        "owned_processes_remaining": [],
+        "cleanup_complete": true
+      }
+    }
+  }
+}

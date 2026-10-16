@@ -1,0 +1,610 @@
+{
+  "status": "completed_local_scoring",
+  "dataset": "MMLU-Pro",
+  "questions": 280,
+  "conditions": 1120,
+  "arms": {
+    "moc|0.3": {
+      "n": 280,
+      "correct": 146,
+      "accuracy": 0.5214285714285715,
+      "invalid": 0,
+      "logical_model_tokens": 1974316,
+      "main_model_tokens": 1974316,
+      "merger_model_tokens": 0,
+      "new_model_tokens": 1545066,
+      "logical_calls": 2240,
+      "main_calls": 2240,
+      "merger_calls": 0,
+      "cache_hits": 550,
+      "selection_sizes": {},
+      "stop_reasons": {},
+      "selected_hops": {},
+      "candidate_hops": {},
+      "support_evaluations": {},
+      "encoding_input_tokens": 0,
+      "encoding_seconds": 0,
+      "routing_seconds": 0
+    },
+    "adapted|0.3": {
+      "n": 280,
+      "correct": 145,
+      "accuracy": 0.5178571428571429,
+      "invalid": 0,
+      "logical_model_tokens": 1817560,
+      "main_model_tokens": 1817560,
+      "merger_model_tokens": 0,
+      "new_model_tokens": 1817560,
+      "logical_calls": 2240,
+      "main_calls": 2240,
+      "merger_calls": 0,
+      "cache_hits": 0,
+      "selection_sizes": {
+        "0": 300,
+        "1": 1637,
+        "2": 23
+      },
+      "stop_reasons": {
+        "no_candidates": 280,
+        "one_evidence_set_selected": 1660,
+        "expected_net_utility_nonpositive": 20
+      },
+      "selected_hops": {
+        "1": 1353,
+        "2": 309,
+        "3": 21
+      },
+      "candidate_hops": {
+        "1": 1960,
+        "2": 1400,
+        "3": 1120,
+        "4": 840
+      },
+      "support_evaluations": {
+        "supported": 7526,
+        "unsupported": 1389
+      },
+      "encoding_input_tokens": 724089,
+      "encoding_seconds": 171.2922337895725,
+      "routing_seconds": 16.179651288082823
+    },
+    "moc|0.7": {
+      "n": 280,
+      "correct": 139,
+      "accuracy": 0.49642857142857144,
+      "invalid": 0,
+      "logical_model_tokens": 3741539,
+      "main_model_tokens": 2271390,
+      "merger_model_tokens": 1470149,
+      "new_model_tokens": 2659454,
+      "logical_calls": 6495,
+      "main_calls": 2240,
+      "merger_calls": 4255,
+      "cache_hits": 1865,
+      "selection_sizes": {},
+      "stop_reasons": {},
+      "selected_hops": {},
+      "candidate_hops": {},
+      "support_evaluations": {},
+      "encoding_input_tokens": 0,
+      "encoding_seconds": 0,
+      "routing_seconds": 0
+    },
+    "adapted|0.7": {
+      "n": 280,
+      "correct": 153,
+      "accuracy": 0.5464285714285714,
+      "invalid": 0,
+      "logical_model_tokens": 1860601,
+      "main_model_tokens": 1860601,
+      "merger_model_tokens": 0,
+      "new_model_tokens": 1151527,
+      "logical_calls": 2240,
+      "main_calls": 2240,
+      "merger_calls": 0,
+      "cache_hits": 968,
+      "selection_sizes": {
+        "0": 507,
+        "1": 1283,
+        "2": 170
+      },
+      "stop_reasons": {
+        "no_candidates": 280,
+        "one_evidence_set_selected": 1453,
+        "expected_net_utility_nonpositive": 227
+      },
+      "selected_hops": {
+        "1": 1290,
+        "2": 333
+      },
+      "candidate_hops": {
+        "1": 4200,
+        "2": 1680
+      },
+      "support_evaluations": {
+        "supported": 12198,
+        "unsupported": 1921
+      },
+      "encoding_input_tokens": 765009,
+      "encoding_seconds": 156.79981425747974,
+      "routing_seconds": 29.34620490798261
+    }
+  },
+  "paired": {
+    "0.3": {
+      "gains": 10,
+      "losses": 11,
+      "accuracy_difference": -0.0035714285714285713,
+      "bootstrap95": [
+        -0.03571428571428571,
+        0.02857142857142857
+      ],
+      "bootstrap_replicates": 20000,
+      "bootstrap_unit": "question",
+      "seed": 42,
+      "mcnemar_exact_two_sided": 1,
+      "logical_token_change": -0.07939762429114694
+    },
+    "0.7": {
+      "gains": 20,
+      "losses": 6,
+      "accuracy_difference": 0.05,
+      "bootstrap95": [
+        0.014285714285714285,
+        0.08571428571428572
+      ],
+      "bootstrap_replicates": 20000,
+      "bootstrap_unit": "question",
+      "seed": 42,
+      "mcnemar_exact_two_sided": 0.009355306625366211,
+      "logical_token_change": -0.502717731927958
+    }
+  },
+  "budget": {
+    "new_calls": 11456,
+    "actual_tokens": 8331785,
+    "reserved_tokens": 0,
+    "unknown_cost_upper_bound_tokens": 0
+  },
+  "training": {
+    "planned_questions": 14,
+    "effective_questions": 14,
+    "excluded": [],
+    "labels": 74,
+    "coverage": [
+      [
+        "Doctor",
+        1,
+        1,
+        0
+      ],
+      [
+        "Doctor",
+        2,
+        1,
+        0
+      ],
+      [
+        "Doctor",
+        2,
+        2,
+        0
+      ],
+      [
+        "Doctor",
+        3,
+        1,
+        0
+      ],
+      [
+        "Doctor",
+        4,
+        1,
+        0
+      ],
+      [
+        "Doctor",
+        4,
+        2,
+        0
+      ],
+      [
+        "Historian",
+        1,
+        1,
+        0
+      ],
+      [
+        "Historian",
+        1,
+        2,
+        0
+      ],
+      [
+        "Historian",
+        2,
+        1,
+        0
+      ],
+      [
+        "Historian",
+        2,
+        2,
+        0
+      ],
+      [
+        "Knowlegable Expert",
+        1,
+        1,
+        0
+      ],
+      [
+        "Knowlegable Expert",
+        2,
+        1,
+        0
+      ],
+      [
+        "Knowlegable Expert",
+        2,
+        2,
+        0
+      ],
+      [
+        "Knowlegable Expert",
+        3,
+        1,
+        0
+      ],
+      [
+        "Knowlegable Expert",
+        4,
+        1,
+        0
+      ],
+      [
+        "Knowlegable Expert",
+        4,
+        2,
+        0
+      ],
+      [
+        "Lawyer",
+        1,
+        1,
+        0
+      ],
+      [
+        "Lawyer",
+        2,
+        1,
+        0
+      ],
+      [
+        "Lawyer",
+        2,
+        2,
+        0
+      ],
+      [
+        "Lawyer",
+        3,
+        1,
+        0
+      ],
+      [
+        "Lawyer",
+        4,
+        1,
+        0
+      ],
+      [
+        "Lawyer",
+        4,
+        2,
+        0
+      ],
+      [
+        "Mathematician",
+        1,
+        1,
+        0
+      ],
+      [
+        "Mathematician",
+        1,
+        2,
+        0
+      ],
+      [
+        "Mathematician",
+        2,
+        1,
+        0
+      ],
+      [
+        "Mathematician",
+        3,
+        1,
+        0
+      ],
+      [
+        "Mathematician",
+        3,
+        2,
+        0
+      ],
+      [
+        "Psychologist",
+        1,
+        1,
+        0
+      ]
+    ],
+    "metadata": {
+      "fit_questions": [
+        "mmlu_pro:official_validation:11",
+        "mmlu_pro:official_validation:18",
+        "mmlu_pro:official_validation:20",
+        "mmlu_pro:official_validation:26",
+        "mmlu_pro:official_validation:34",
+        "mmlu_pro:official_validation:38",
+        "mmlu_pro:official_validation:4",
+        "mmlu_pro:official_validation:40",
+        "mmlu_pro:official_validation:49",
+        "mmlu_pro:official_validation:5",
+        "mmlu_pro:official_validation:50",
+        "mmlu_pro:official_validation:55",
+        "mmlu_pro:official_validation:63",
+        "mmlu_pro:official_validation:67"
+      ],
+      "fit_question_count": 14,
+      "fit_rows": 74,
+      "fit_episode_count": 28,
+      "target": "expected fixed-material downstream correctness change",
+      "weight_scheme": "equal question mass; equal episode mass within question; equal action mass within episode; sum=n_rows",
+      "sample_weight_sum": 74.00000000000001,
+      "regularization": 10.0,
+      "seed": 42,
+      "bootstrap_unit": "question",
+      "bootstrap_replicates": 32,
+      "bootstrap_scope": "descriptive question-bootstrap model variation; not a confidence or prediction interval",
+      "primary_prediction": "deterministic all-fit weighted ridge; clip/renormalize help and harm",
+      "standardization_scope": "weighted current fit partition only; reused by bootstrap replicates",
+      "calibration_as_confidence_interval": false,
+      "support_scope": "observed role/hop/group-size metadata with selected_count=0; abstain otherwise",
+      "feature_mode": "compact",
+      "feature_selection": [
+        "added_group_size",
+        "group_pair_cosine_mean",
+        "group_pair_cosine_min",
+        "group_min_hop",
+        "group_max_hop",
+        "group_hop_span",
+        "group_is_connected_path",
+        "group_incremental_cost_fraction",
+        "group_projected_cost_fraction",
+        "group_solver_fraction",
+        "group_analyst_fraction",
+        "group_programmer_fraction",
+        "group_inspector_fraction",
+        "member_mean_base_similarity",
+        "member_mean_ladies_mass",
+        "member_mean_same_role",
+        "member_mean_receiver_solver",
+        "member_mean_receiver_analyst",
+        "member_mean_receiver_programmer",
+        "member_mean_receiver_inspector",
+        "member_max_base_similarity",
+        "member_max_ladies_mass"
+      ],
+      "limitations": "single noisy outcomes and dependent actions; no adaptive or full-MAS coverage guarantee"
+    }
+  },
+  "policy_sha256": "18569fb8a30245f5419027d775dbff99ba0dc0da0d1b5a1da73620d165802794",
+  "support_metadata_keys": [
+    [
+      "Doctor",
+      1,
+      1,
+      0
+    ],
+    [
+      "Doctor",
+      2,
+      1,
+      0
+    ],
+    [
+      "Doctor",
+      2,
+      2,
+      0
+    ],
+    [
+      "Doctor",
+      3,
+      1,
+      0
+    ],
+    [
+      "Doctor",
+      4,
+      1,
+      0
+    ],
+    [
+      "Doctor",
+      4,
+      2,
+      0
+    ],
+    [
+      "Historian",
+      1,
+      1,
+      0
+    ],
+    [
+      "Historian",
+      1,
+      2,
+      0
+    ],
+    [
+      "Historian",
+      2,
+      1,
+      0
+    ],
+    [
+      "Historian",
+      2,
+      2,
+      0
+    ],
+    [
+      "Knowlegable Expert",
+      1,
+      1,
+      0
+    ],
+    [
+      "Knowlegable Expert",
+      2,
+      1,
+      0
+    ],
+    [
+      "Knowlegable Expert",
+      2,
+      2,
+      0
+    ],
+    [
+      "Knowlegable Expert",
+      3,
+      1,
+      0
+    ],
+    [
+      "Knowlegable Expert",
+      4,
+      1,
+      0
+    ],
+    [
+      "Knowlegable Expert",
+      4,
+      2,
+      0
+    ],
+    [
+      "Lawyer",
+      1,
+      1,
+      0
+    ],
+    [
+      "Lawyer",
+      2,
+      1,
+      0
+    ],
+    [
+      "Lawyer",
+      2,
+      2,
+      0
+    ],
+    [
+      "Lawyer",
+      3,
+      1,
+      0
+    ],
+    [
+      "Lawyer",
+      4,
+      1,
+      0
+    ],
+    [
+      "Lawyer",
+      4,
+      2,
+      0
+    ],
+    [
+      "Mathematician",
+      1,
+      1,
+      0
+    ],
+    [
+      "Mathematician",
+      1,
+      2,
+      0
+    ],
+    [
+      "Mathematician",
+      2,
+      1,
+      0
+    ],
+    [
+      "Mathematician",
+      3,
+      1,
+      0
+    ],
+    [
+      "Mathematician",
+      3,
+      2,
+      0
+    ],
+    [
+      "Psychologist",
+      1,
+      1,
+      0
+    ]
+  ],
+  "process_cost": {
+    "training": {
+      "actual_tokens": 408512,
+      "new_calls": 545,
+      "logical_tokens_all_process_raw": 419344,
+      "cache_hits": 13,
+      "terminal_attributed_new_tokens": 408512,
+      "interrupted_unattributed_actual_tokens": 0
+    },
+    "val": {
+      "actual_tokens": 749618,
+      "new_calls": 1076,
+      "logical_tokens_all_process_raw": 1229881,
+      "cache_hits": 716,
+      "terminal_attributed_new_tokens": 749618,
+      "interrupted_unattributed_actual_tokens": 0
+    },
+    "test": {
+      "actual_tokens": 7173607,
+      "new_calls": 9832,
+      "logical_tokens_all_process_raw": 9394016,
+      "cache_hits": 3383,
+      "terminal_attributed_new_tokens": 7173607,
+      "interrupted_unattributed_actual_tokens": 0
+    },
+    "warmup": {
+      "actual_tokens": 48,
+      "new_calls": 3
+    },
+    "unknown": {
+      "calls": 0,
+      "conservative_upper_bound_tokens": 0
+    }
+  },
+  "output_cap_responses": []
+}

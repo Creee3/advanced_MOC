@@ -1,0 +1,73 @@
+{
+  "status": "all_completed_clean",
+  "runs": {
+    "moc_v21_mmlu_pro_fewshot_20261015": {
+      "phase": "complete",
+      "cleanup_complete": true,
+      "owned_pids_all_dead": [
+        3007459,
+        3009594,
+        3009595,
+        3007743,
+        3008732
+      ],
+      "deadline": null,
+      "policy_run_start_terminal_prefixes_verified": true,
+      "budget": {
+        "new_calls": 11456,
+        "actual_tokens": 8331785,
+        "reserved_tokens": 0,
+        "unknown_cost_upper_bound_tokens": 0
+      }
+    },
+    "moc_v21_gsm8k_fewshot_20261015": {
+      "phase": "complete",
+      "cleanup_complete": true,
+      "owned_pids_all_dead": [
+        3007460,
+        3009599,
+        3009600,
+        3007786,
+        3008785
+      ],
+      "deadline": null,
+      "policy_run_start_terminal_prefixes_verified": true,
+      "budget": {
+        "new_calls": 12530,
+        "actual_tokens": 8494089,
+        "reserved_tokens": 0,
+        "unknown_cost_upper_bound_tokens": 0
+      }
+    },
+    "moc_v21_svamp_train40_test_20261015": {
+      "phase": "complete",
+      "cleanup_complete": true,
+      "owned_pids_all_dead": [
+        3011499,
+        3012697,
+        3012698,
+        3011649,
+        3012234
+      ],
+      "deadline": null,
+      "policy_run_start_terminal_prefixes_verified": true,
+      "budget": {
+        "new_calls": 9322,
+        "actual_tokens": 4880647,
+        "reserved_tokens": 0,
+        "unknown_cost_upper_bound_tokens": 10192
+      }
+    }
+  },
+  "all_private_ports_closed": [
+    11448,
+    11449,
+    11450,
+    11451,
+    11452,
+    11453,
+    11454,
+    11455,
+    11456
+  ]
+}
